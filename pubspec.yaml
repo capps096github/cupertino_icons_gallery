@@ -1,0 +1,40 @@
+name: cupertino_icons_gallery
+description: A Gallery of Cupertion Icons used in Flutter
+
+publish_to: "none"
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.16.2 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # icons
+  cupertino_icons: ^1.0.2
+
+  # state management
+  flutter_riverpod: ^1.0.3
+
+  # search highlight
+  substring_highlight: ^1.0.33
+
+  # navigation and routing
+  go_router: ^3.1.0
+
+  # fonts
+  google_fonts: ^2.3.2
+
+  # Navigation Animations
+  animations: ^2.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^1.0.0
+
+flutter:
+  uses-material-design: true
