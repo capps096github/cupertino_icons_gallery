@@ -8,5 +8,12 @@ class GalleryIcon {
   // the icon itself
   final IconData icon;
 
-  GalleryIcon({required this.name, required this.icon});
+  // aliases
+  final List<String> aliases;
+
+  const GalleryIcon({
+    required this.name,
+    required this.icon,
+    this.aliases = const [],
+  });
 }
