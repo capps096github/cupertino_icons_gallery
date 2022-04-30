@@ -1,19 +1,12 @@
 import '../gallery_exporter.dart';
-
-// about, icons, github and contributors
-const screens = [
-  // about
-  // AboutScreen(),
-  // icons
-  // IconsScreen(),
-];
+import 'navbar/exporter.dart';
 
 class HomeScreens extends ConsumerWidget {
   const HomeScreens({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    // final navBarIndex = ref.watch(selectedNavBarIndexProvider.state).state;
+    final navBarIndex = ref.watch(selectedNavBarIndexProvider.state).state;
 
     return PageTransitionSwitcher(
       transitionBuilder: (child, animation, secondaryAnimation) {
@@ -25,7 +18,7 @@ class HomeScreens extends ConsumerWidget {
         );
       },
       duration: halfSeconds,
-      // child: navbarIcons[navBarIndex].bodyWidget,
+      child: navbarIcons[navBarIndex].bodyWidget,
     );
   }
 }
