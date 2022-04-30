@@ -4,13 +4,14 @@ import 'gallery_icons_data.dart';
 
 ///Provides the Current Page  for the Essentials Page
 final selectedIconIndexProvider = StateProvider<int>((ref) {
-  return 0;
+  return -1;
 });
 
 ///This is a list of all icons and can be filtered by the user
 final allIconsProvider = StateProvider<List<GalleryIcon>>((ref) {
-// Sort the icons in ascending order by name
-  cupertinoIcons.sort((a, b) => a.name.compareTo(b.name));
+//   const icons = cupertinoIcons;
+// // Sort the icons in ascending order by name
+//   icons.sort((a, b) => a.name.compareTo(b.name));
 
   return cupertinoIcons;
 });

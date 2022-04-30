@@ -33,10 +33,12 @@ class IconGrid extends ConsumerWidget {
     // if we are on tablet
     final isTablet = GalleryResponsive.isTablet(context);
 
-    final int gridCrossAxisCount = isMobile ? 2 : (isTablet ? 3 : 4);
+    final int gridCrossAxisCount = isMobile ? 3 : (isTablet ? 6 : 9);
 
     final iconTextColor = showGrid ? galleryWhite : galleryBlack;
     final iconBackColor = showGrid ? galleryBlack : galleryWhite;
+
+// maintain scroll position, set the width for the icon details, even on tap, edit it so that it only goes to next page if we are on Mobile and on side for tablet and desktop
 
     return AnimatedSwitcher(
       duration: aHundredMilliseconds,
@@ -46,34 +48,27 @@ class IconGrid extends ConsumerWidget {
         reverseDuration: twoHundredMilliseconds,
         switchInCurve: Curves.fastOutSlowIn,
         child: showGrid
-            ? LiveGrid(
+            ? GridView.builder(
                 shrinkWrap: true,
                 padding: const EdgeInsets.all(8.0),
-                delay: fiftyMilliseconds,
-                itemCount: totalIconCount,
                 gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                   crossAxisCount: gridCrossAxisCount,
-                  crossAxisSpacing: 8,
-                  mainAxisSpacing: 8,
-                  // mainAxisExtent: 120,
                 ),
-                itemBuilder: (context, pointsIndex, animation) {
+                itemCount: totalIconCount,
+                itemBuilder: (BuildContext context, int pointsIndex) {
                   // get the subject at a given index in the list
                   final selectedIcon = galleryIconList[pointsIndex];
 
-                  return ScaleTransition(
-                    scale: animation,
-                    child: IconSquare(
-                      text: selectedIcon.name,
-                      icon: selectedIcon.icon,
-                      textColor: iconTextColor,
-                      squareColor: iconBackColor,
-                      onTap: () {
-                        //update the selected value provider
-                        ref.watch(selectedIconIndexProvider.notifier).state =
-                            (pointsIndex);
-                      },
-                    ),
+                  return IconSquare(
+                    text: selectedIcon.name,
+                    icon: selectedIcon.icon,
+                    textColor: iconTextColor,
+                    squareColor: iconBackColor,
+                    onTap: () {
+                      //update the selected value provider
+                      ref.watch(selectedIconIndexProvider.notifier).state =
+                          (pointsIndex);
+                    },
                   );
                 },
               )
