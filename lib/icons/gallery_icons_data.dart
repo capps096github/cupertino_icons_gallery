@@ -5,7 +5,7 @@ import 'gallery_icon.dart';
 // this is the full list of all cupertino icons in Alphabetical order
 //source: https://api.flutter.dev/flutter/cupertino/CupertinoIcons-class.html#constants
 
- List<GalleryIcon> cupertinoIcons = [
+List<GalleryIcon> cupertinoIcons = [
 // BEGIN LEGACY PRE SF SYMBOLS NAMES
 // We need to leave them as-is with the same codepoints for backward
 // compatibility with cupertino_icons <0.1.3.
@@ -820,6 +820,37 @@ import 'gallery_icon.dart';
     name: "arrow_down_circle_fill",
     icon: CupertinoIcons.arrow_down_circle_fill,
   ),
+
+  // arrow_down_doc
+  GalleryIcon(
+    name: "arrow_down_doc",
+    icon: CupertinoIcons.arrow_down_doc,
+  ),
+
+  // arrow_down_doc_fill
+  GalleryIcon(
+    name: "arrow_down_doc_fill",
+    icon: CupertinoIcons.arrow_down_doc_fill,
+  ),
+
+  // arrow_down_left
+  GalleryIcon(
+    name: "arrow_down_left",
+    icon: CupertinoIcons.arrow_down_left,
+  ),
+
+  // arrow_down_left_circle
+  GalleryIcon(
+    name: "arrow_down_left_circle",
+    icon: CupertinoIcons.arrow_down_left_circle,
+  ),
+
+  // arrow_down_left_circle_fill
+  GalleryIcon(
+    name: "arrow_down_left_circle_fill",
+    icon: CupertinoIcons.arrow_down_left_circle_fill,
+  ),
+
   // arrow_down_left_square
   GalleryIcon(
     name: "arrow_down_left_square",
@@ -1083,11 +1114,7 @@ import 'gallery_icon.dart';
     name: "arrow_up_arrow_down_square_fill",
     icon: CupertinoIcons.arrow_up_arrow_down_square_fill,
   ),
-  // arrow_turn_left_down
-  GalleryIcon(
-    name: "arrow_turn_left_down",
-    icon: CupertinoIcons.arrow_turn_left_down,
-  ),
+
   // arrow_up_bin
   GalleryIcon(
     name: "arrow_up_bin",
@@ -1098,11 +1125,7 @@ import 'gallery_icon.dart';
     name: "arrow_up_bin_fill",
     icon: CupertinoIcons.arrow_up_bin_fill,
   ),
-  // arrow_turn_left_down
-  GalleryIcon(
-    name: "arrow_turn_left_down",
-    icon: CupertinoIcons.arrow_turn_left_down,
-  ),
+
   // arrow_up_circle
   GalleryIcon(
     name: "arrow_up_circle",
@@ -1113,11 +1136,7 @@ import 'gallery_icon.dart';
     name: "arrow_up_circle_fill",
     icon: CupertinoIcons.arrow_up_circle_fill,
   ),
-  // arrow_turn_left_down
-  GalleryIcon(
-    name: "arrow_turn_left_down",
-    icon: CupertinoIcons.arrow_turn_left_down,
-  ),
+
   // arrow_up_doc
   GalleryIcon(
     name: "arrow_up_doc",
@@ -1138,11 +1157,7 @@ import 'gallery_icon.dart';
     name: "arrow_up_down_circle",
     icon: CupertinoIcons.arrow_up_down_circle,
   ),
-  // arrow_turn_left_down
-  GalleryIcon(
-    name: "arrow_turn_left_down",
-    icon: CupertinoIcons.arrow_turn_left_down,
-  ),
+
   // arrow_up_down_circle_fill
   GalleryIcon(
     name: "arrow_up_down_circle_fill",
