@@ -3,6 +3,8 @@ import '../gallery_icon.dart';
 import '../icon_providers.dart';
 import 'icon_square.dart';
 
+final _controller = ScrollController();
+
 class IconGridView extends ConsumerWidget {
   const IconGridView({
     Key? key,
@@ -45,48 +47,52 @@ class IconGridView extends ConsumerWidget {
                             : isLargeTablet
                                 ? 8
                                 : 9;
-// TODO add scroll bars here to help us know how much we've scrolled downwards, get it from old calcut version
-//  ADd keys to maintain scroll position too from old calcut
-        return GridView.builder(
-          shrinkWrap: true,
-          padding: const EdgeInsets.all(8.0),
-          gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-            crossAxisCount: gridCrossAxisCount,
-            childAspectRatio: 1.0,
-            crossAxisSpacing: 8.0,
-            mainAxisSpacing: 8.0,
+
+        return GalleryScrollbar(
+          controller: _controller,
+          child: GridView.builder(
+            controller: _controller,
+            key: const PageStorageKey(PageStorageKeys.cupertinoIconsKey),
+            shrinkWrap: true,
+            padding: const EdgeInsets.all(8.0),
+            gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+              crossAxisCount: gridCrossAxisCount,
+              childAspectRatio: 1.0,
+              crossAxisSpacing: 8.0,
+              mainAxisSpacing: 8.0,
+            ),
+            itemCount: totalIconCount,
+            itemBuilder: (BuildContext context, int pointsIndex) {
+              // get the subject at a given index in the list
+              final selectedIcon = galleryIconList[pointsIndex];
+
+              // is selected icon index equal to the index of the subject
+              final isSelected = (selectedIconIndex == pointsIndex);
+
+              final iconTextColor = isSelected ? galleryWhite : galleryBlack;
+              final iconBackColor = isSelected ? galleryBlack : galleryWhite;
+
+              return IconSquare(
+                text: selectedIcon.name,
+                icon: selectedIcon.icon,
+                textColor: iconTextColor,
+                squareColor: iconBackColor,
+                onTap: () {
+                  //update the selected value provider
+                  // first check if its selected then update the value to -1 else update the value to the index of the subject
+                  if (isSelected) {
+                    ref.watch(selectedIconIndexProvider.notifier).state = -1;
+                  } else {
+                    ref.watch(selectedIconIndexProvider.notifier).state =
+                        pointsIndex;
+                  }
+
+                  ref.watch(selectedGalleryIconProvider.notifier).state =
+                      selectedIcon;
+                },
+              );
+            },
           ),
-          itemCount: totalIconCount,
-          itemBuilder: (BuildContext context, int pointsIndex) {
-            // get the subject at a given index in the list
-            final selectedIcon = galleryIconList[pointsIndex];
-
-            // is selected icon index equal to the index of the subject
-            final isSelected = (selectedIconIndex == pointsIndex);
-
-            final iconTextColor = isSelected ? galleryWhite : galleryBlack;
-            final iconBackColor = isSelected ? galleryBlack : galleryWhite;
-
-            return IconSquare(
-              text: selectedIcon.name,
-              icon: selectedIcon.icon,
-              textColor: iconTextColor,
-              squareColor: iconBackColor,
-              onTap: () {
-                //update the selected value provider
-                // first check if its selected then update the value to -1 else update the value to the index of the subject
-                if (isSelected) {
-                  ref.watch(selectedIconIndexProvider.notifier).state = -1;
-                } else {
-                  ref.watch(selectedIconIndexProvider.notifier).state =
-                      pointsIndex;
-                }
-
-                ref.watch(selectedGalleryIconProvider.notifier).state =
-                    selectedIcon;
-              },
-            );
-          },
         );
       },
     );

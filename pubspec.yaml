@@ -29,8 +29,12 @@ dependencies:
 
   # Navigation Animations
   animations: ^2.0.2
+
+  # scrollable rows x columns
   flextras: ^0.0.2
-  auto_animated: ^3.0.1
+
+  # scrollbars
+  draggable_scrollbar: ^0.1.0
 
 dev_dependencies:
   flutter_test:

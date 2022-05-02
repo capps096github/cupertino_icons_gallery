@@ -18,8 +18,8 @@ export 'package:animations/animations.dart';
 // flextras
 export 'package:flextras/flextras.dart';
 
-// list animations
-export 'package:auto_animated/auto_animated.dart';
+// scrollbars
+export 'package:draggable_scrollbar/draggable_scrollbar.dart';
 
 // ------- IN APP FILES -------
 // responsive design

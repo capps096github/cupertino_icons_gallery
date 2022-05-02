@@ -33,32 +33,29 @@ class IconGrid extends ConsumerWidget {
     return Container(
       constraints: const BoxConstraints(minWidth: sideBarDesktopWidth),
       child: AnimatedSwitcher(
-        duration: aHundredMilliseconds,
-        child: AnimatedSwitcher(
-          key: ValueKey(selectedIconIndex),
-          duration: twoHundredMilliseconds,
-          reverseDuration: twoHundredMilliseconds,
-          switchInCurve: Curves.fastOutSlowIn,
-          child: (!showDetails)
-              ? IconGridView(
-                  totalIconCount: totalIconCount,
-                  galleryIconList: galleryIconList,
-                  selectedIconIndex: selectedIconIndex,
-                )
-              : IconDetails(
-                  onTap: () {
-                    // reset the current value to -1
-                    ref.watch(selectedIconIndexProvider.notifier).state = -1;
+        key: ValueKey(selectedIconIndex),
+        duration: twoHundredMilliseconds,
+        reverseDuration: twoHundredMilliseconds,
+        switchInCurve: Curves.fastOutSlowIn,
+        child: (!showDetails)
+            ? IconGridView(
+                totalIconCount: totalIconCount,
+                galleryIconList: galleryIconList,
+                selectedIconIndex: selectedIconIndex,
+              )
+            : IconDetails(
+                onTap: () {
+                  // reset the current value to -1
+                  ref.watch(selectedIconIndexProvider.notifier).state = -1;
 
-                  },
-                ),
-          transitionBuilder: (child, animation) {
-            return ScaleTransition(
-              scale: animation,
-              child: child,
-            );
-          },
-        ),
+                },
+              ),
+        transitionBuilder: (child, animation) {
+          return ScaleTransition(
+            scale: animation,
+            child: child,
+          );
+        },
       ),
     );
   }
