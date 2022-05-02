@@ -2,9 +2,6 @@ import 'package:flutter/cupertino.dart';
 
 import 'gallery_icon.dart';
 
-// TODO: Sort this list in Ascending order A-Z when displaying it in the app
-//  use riverpod to filter this list
-
 // this is the full list of all cupertino icons in Alphabetical order
 //source: https://api.flutter.dev/flutter/cupertino/CupertinoIcons-class.html#constants
 
