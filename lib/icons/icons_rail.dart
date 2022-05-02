@@ -10,9 +10,6 @@ class IconsRail extends ConsumerWidget {
     // check if we are on mobile
     final isMobile = GalleryResponsive.isMobile(context);
 
-    // isRailOpenProvider
-    // final isRailOpen = ref.watch(isRailOpenProvider.state).state;
-
     // access the value stored at the current page gradeValue provider
     final selectedIconIndex = ref.watch(selectedIconIndexProvider.state).state;
 
@@ -23,7 +20,7 @@ class IconsRail extends ConsumerWidget {
       color: galleryColor,
       elevation: 8,
       child: AnimatedContainer(
-        duration: threeHundredMilliseconds,
+        duration: quarterSeconds,
         height: double.infinity,
         width: showDetails ? sideBarDesktopWidth : 0,
         decoration: const BoxDecoration(

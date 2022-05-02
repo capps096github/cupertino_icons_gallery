@@ -10,8 +10,8 @@ final List<NavbarIconData> navbarIcons = [
   NavbarIconData(
     label: "Cupertino Icons",
     tooltip: "View a list of all Cupertino icons",
-    selectedIcon: CupertinoIcons.square_grid_2x2,
-    unselectedIcon: CupertinoIcons.square_grid_2x2_fill,
+    selectedIcon: CupertinoIcons.square_grid_2x2_fill,
+    unselectedIcon: CupertinoIcons.square_grid_2x2,
     bodyWidget: const IconScreen(),
   ),
   NavbarIconData(

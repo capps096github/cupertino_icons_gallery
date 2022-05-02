@@ -24,7 +24,7 @@ class HomeNavRail extends ConsumerWidget {
       color: primary,
       elevation: 8,
       child: AnimatedContainer(
-        duration: threeHundredMilliseconds,
+        duration: quarterSeconds,
         width: isRailOpen ? sideBarDesktopWidth : sideBarTabletWidth,
         height: double.infinity,
         decoration: BoxDecoration(

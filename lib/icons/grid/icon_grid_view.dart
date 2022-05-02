@@ -45,7 +45,8 @@ class IconGridView extends ConsumerWidget {
                             : isLargeTablet
                                 ? 8
                                 : 9;
-
+// TODO add scroll bars here to help us know how much we've scrolled downwards, get it from old calcut version
+//  ADd keys to maintain scroll position too from old calcut
         return GridView.builder(
           shrinkWrap: true,
           padding: const EdgeInsets.all(8.0),
