@@ -43,12 +43,9 @@ class DrawerIcon extends ConsumerWidget {
                       Icons.arrow_back,
                       color: onPrimary,
                     )
-                  : RotatedBox(
-                      quarterTurns: 3,
-                      child: Icon(
-                        CupertinoIcons.waveform,
-                        color: onPrimary,
-                      ),
+                  : Icon(
+                      CupertinoIcons.line_horizontal_3_decrease_circle_fill,
+                      color: onPrimary,
                     ),
             ),
           ),

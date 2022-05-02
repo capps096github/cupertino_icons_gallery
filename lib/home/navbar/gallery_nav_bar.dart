@@ -5,8 +5,8 @@ import 'navbar_icon.dart';
 // Height of the Nav Bar
 const double nominalHeight = 60;
 
-class FCNavBar extends ConsumerWidget {
-  const FCNavBar({
+class GalleryNavBar extends ConsumerWidget {
+  const GalleryNavBar({
     Key? key,
   }) : super(key: key);
 

@@ -24,21 +24,11 @@ class IconGrid extends ConsumerWidget {
     // access the value stored at the current page gradeValue provider
     final selectedIconIndex = ref.watch(selectedIconIndexProvider.state).state;
 
-    //this is the condition to show the grid, only when the user has not selected anything i.e value == -1
-    final showGrid = (selectedIconIndex == -1);
-
-    // check if we are on mobile or desktop
+    // check if we are on mobile
     final isMobile = GalleryResponsive.isMobile(context);
 
-    // if we are on tablet
-    final isTablet = GalleryResponsive.isTablet(context);
-
-    final int gridCrossAxisCount = isMobile ? 3 : (isTablet ? 6 : 9);
-
-    final iconTextColor = showGrid ? galleryWhite : galleryBlack;
-    final iconBackColor = showGrid ? galleryBlack : galleryWhite;
-
-// maintain scroll position, set the width for the icon details, even on tap, edit it so that it only goes to next page if we are on Mobile and on side for tablet and desktop
+    // show Detail here only if we are onMobile
+    final showDetails = (selectedIconIndex != -1) && isMobile;
 
     return AnimatedSwitcher(
       duration: aHundredMilliseconds,
@@ -47,30 +37,11 @@ class IconGrid extends ConsumerWidget {
         duration: twoHundredMilliseconds,
         reverseDuration: twoHundredMilliseconds,
         switchInCurve: Curves.fastOutSlowIn,
-        child: showGrid
-            ? GridView.builder(
-                shrinkWrap: true,
-                padding: const EdgeInsets.all(8.0),
-                gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                  crossAxisCount: gridCrossAxisCount,
-                ),
-                itemCount: totalIconCount,
-                itemBuilder: (BuildContext context, int pointsIndex) {
-                  // get the subject at a given index in the list
-                  final selectedIcon = galleryIconList[pointsIndex];
-
-                  return IconSquare(
-                    text: selectedIcon.name,
-                    icon: selectedIcon.icon,
-                    textColor: iconTextColor,
-                    squareColor: iconBackColor,
-                    onTap: () {
-                      //update the selected value provider
-                      ref.watch(selectedIconIndexProvider.notifier).state =
-                          (pointsIndex);
-                    },
-                  );
-                },
+        child: (!showDetails)
+            ? IconGridView(
+                totalIconCount: totalIconCount,
+                galleryIconList: galleryIconList,
+                selectedIconIndex: selectedIconIndex,
               )
             : IconDetails(
                 onTap: () {
@@ -85,6 +56,92 @@ class IconGrid extends ConsumerWidget {
           );
         },
       ),
+    );
+  }
+}
+
+class IconGridView extends ConsumerWidget {
+  const IconGridView({
+    Key? key,
+    required this.totalIconCount,
+    required this.galleryIconList,
+    required this.selectedIconIndex,
+  }) : super(key: key);
+
+  final int totalIconCount;
+  final List<GalleryIcon> galleryIconList;
+  final int selectedIconIndex;
+
+  @override
+  Widget build(BuildContext context, ref) {
+    return LayoutBuilder(
+      builder: (BuildContext context, BoxConstraints constraints) {
+        // base on the constraints, we will decide the gridCrossAxisCount
+        //3 on mobile, 6 on tablet and 9 on desktop
+        final currentWidth = constraints.maxWidth;
+
+        final smallestMobile = currentWidth < 300;
+        final isSmallMobile = (currentWidth < 400);
+        final isMediumMobile = (currentWidth >= 400 && currentWidth < 600);
+        final isLargeMobile = (currentWidth >= 600 && currentWidth < 800);
+        final isSmallTablet = (currentWidth >= 800 && currentWidth < 1000);
+        final isLargeTablet = (currentWidth >= 1000 && currentWidth < 1200);
+        // final isDesktop = (currentWidth >= 1200);
+
+        // gridCrossAxisCount
+        final gridCrossAxisCount = smallestMobile
+            ? 2
+            : isSmallMobile
+                ? 3
+                : isMediumMobile
+                    ? 4
+                    : isLargeMobile
+                        ? 5
+                        : isSmallTablet
+                            ? 6
+                            : isLargeTablet
+                                ? 8
+                                : 9;
+
+        return GridView.builder(
+          shrinkWrap: true,
+          padding: const EdgeInsets.all(8.0),
+          gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+            crossAxisCount: gridCrossAxisCount,
+            childAspectRatio: 1.0,
+            crossAxisSpacing: 8.0,
+            mainAxisSpacing: 8.0,
+          ),
+          itemCount: totalIconCount,
+          itemBuilder: (BuildContext context, int pointsIndex) {
+            // get the subject at a given index in the list
+            final selectedIcon = galleryIconList[pointsIndex];
+
+            // is selected icon index equal to the index of the subject
+            final isSelected = (selectedIconIndex == pointsIndex);
+
+            final iconTextColor = isSelected ? galleryWhite : galleryBlack;
+            final iconBackColor = isSelected ? galleryBlack : galleryWhite;
+
+            return IconSquare(
+              text: selectedIcon.name,
+              icon: selectedIcon.icon,
+              textColor: iconTextColor,
+              squareColor: iconBackColor,
+              onTap: () {
+                //update the selected value provider
+                // first check if its selected then update the value to -1 else update the value to the index of the subject
+                if (isSelected) {
+                  ref.watch(selectedIconIndexProvider.notifier).state = -1;
+                } else {
+                  ref.watch(selectedIconIndexProvider.notifier).state =
+                      pointsIndex;
+                }
+              },
+            );
+          },
+        );
+      },
     );
   }
 }

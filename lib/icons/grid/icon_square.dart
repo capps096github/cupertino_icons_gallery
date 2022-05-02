@@ -44,7 +44,7 @@ class _IconSquareState extends State<IconSquare> {
   Widget build(BuildContext context) {
     return Center(
       child: Material(
-        color: Colors.transparent,
+        color: widget.textColor.withOpacity(.2),
         borderRadius: borderRadius,
         elevation: elevation,
         shadowColor: widget.textColor,
@@ -63,30 +63,33 @@ class _IconSquareState extends State<IconSquare> {
               borderRadius: borderRadius,
               color: widget.squareColor,
             ),
-            child: SizedBox(
-              height: squareSize,
-              width: squareSize,
-              child: Center(
-                child: ExpandedScrollingColumn(
-                  mainAxisSize: MainAxisSize.min,
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Icon(
-                      widget.icon,
-                      color: widget.textColor,
-                      size: iconSize,
-                    ),
-                    const VerticalSpacing(of: 5),
-                    Text(
-                      widget.text,
-                      textAlign: TextAlign.center,
-                      style: TextStyle(
+            child: Padding(
+              padding: const EdgeInsets.all(4.0),
+              child: SizedBox(
+                height: squareSize,
+                width: squareSize,
+                child: Center(
+                  child: ExpandedScrollingColumn(
+                    mainAxisSize: MainAxisSize.min,
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Icon(
+                        widget.icon,
                         color: widget.textColor,
-                        fontSize: textSize,
-                        fontWeight: FontWeight.bold,
+                        size: iconSize,
                       ),
-                    ),
-                  ],
+                      const VerticalSpacing(of: 5),
+                      Text(
+                        widget.text,
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                          color: widget.textColor,
+                          fontSize: textSize,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ],
+                  ),
                 ),
               ),
             ),

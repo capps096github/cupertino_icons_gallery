@@ -5,15 +5,13 @@ import '../../icons/icons_screen.dart';
 import '../../theme/colors.dart';
 import 'navbar_icon_data.dart';
 
-
-
 // list of NavbarIconData
 final List<NavbarIconData> navbarIcons = [
   NavbarIconData(
     label: "Cupertino",
     tooltip: "View a list of all Cupertino icons",
-    selectedIcon: CupertinoIcons.layers_alt_fill,
-    unselectedIcon: CupertinoIcons.layers_alt,
+    selectedIcon: CupertinoIcons.square_grid_2x2,
+    unselectedIcon: CupertinoIcons.square_grid_2x2_fill,
     bodyWidget: const IconScreen(),
   ),
   NavbarIconData(

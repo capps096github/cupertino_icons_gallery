@@ -1,5 +1,6 @@
 import '../gallery_exporter.dart';
 import 'home_screens.dart';
+import 'rail/navrail.dart';
 
 class CupertinoIconsHome extends StatelessWidget {
   const CupertinoIconsHome({Key? key}) : super(key: key);
@@ -18,7 +19,7 @@ class CupertinoIconsHome extends StatelessWidget {
       desktop: Row(
         children: const [
           // rail
-          // const HomeNavRail(),
+          HomeNavRail(),
           // body
           Expanded(
             child: Scaffold(
@@ -28,6 +29,7 @@ class CupertinoIconsHome extends StatelessWidget {
           ),
 
           // Icons Rail
+          // IconRail(),
         ],
       ),
     );

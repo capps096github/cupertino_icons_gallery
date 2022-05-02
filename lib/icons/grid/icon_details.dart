@@ -10,13 +10,14 @@ class IconDetails extends StatelessWidget {
     return Scaffold(
       backgroundColor: galleryBlack,
       appBar: AppBar(
-        title: const Text('Icon Details'),
+        // title: const Text('Icon Details'),
+        leading: CloseButton(
+          color: galleryWhite,
+          onPressed: onTap,
+        ),
         automaticallyImplyLeading: false,
-        actions: [
-          CloseButton(
-            color: galleryWhite,
-            onPressed: onTap,
-          )
+        actions: const [
+          //  actions like share will be here
         ],
       ),
       body: Container(
