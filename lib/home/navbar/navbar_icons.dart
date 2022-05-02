@@ -8,7 +8,7 @@ import 'navbar_icon_data.dart';
 // list of NavbarIconData
 final List<NavbarIconData> navbarIcons = [
   NavbarIconData(
-    label: "Cupertino",
+    label: "Cupertino Icons",
     tooltip: "View a list of all Cupertino icons",
     selectedIcon: CupertinoIcons.square_grid_2x2,
     unselectedIcon: CupertinoIcons.square_grid_2x2_fill,

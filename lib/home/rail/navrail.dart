@@ -24,7 +24,7 @@ class HomeNavRail extends ConsumerWidget {
       color: primary,
       elevation: 8,
       child: AnimatedContainer(
-        duration: fourHundredMilliseconds,
+        duration: threeHundredMilliseconds,
         width: isRailOpen ? sideBarDesktopWidth : sideBarTabletWidth,
         height: double.infinity,
         decoration: BoxDecoration(
@@ -45,7 +45,6 @@ class HomeNavRail extends ConsumerWidget {
           children: [
             //Drawer Icon
             const DrawerIcon(),
-
 
             // divider
             Center(
@@ -71,11 +70,10 @@ class HomeNavRail extends ConsumerWidget {
 
             const Spacer(),
 
-          
             if (isRailOpen) ...[
               // divider
               const VerticalSpacing(of: 10),
-              
+
               //  from
               // show my profile pic if not open
               // const FromXephas(),

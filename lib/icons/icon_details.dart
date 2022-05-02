@@ -1,4 +1,4 @@
-import '../../gallery_exporter.dart';
+import '../gallery_exporter.dart';
 
 class IconDetails extends StatelessWidget {
   const IconDetails({Key? key, required this.onTap}) : super(key: key);
@@ -22,10 +22,10 @@ class IconDetails extends StatelessWidget {
       ),
       body: Container(
         color: galleryBlack,
-        child: Center(
+        child: const Center(
           child: Text(
             'Icon Details',
-            style: Theme.of(context).textTheme.headline4,
+            style: TextStyle(color: galleryWhite),
           ),
         ),
       ),

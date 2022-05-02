@@ -27,9 +27,6 @@ class CupertinoIconsHome extends StatelessWidget {
               body: HomeScreens(),
             ),
           ),
-
-          // Icons Rail
-          // IconRail(),
         ],
       ),
     );

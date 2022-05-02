@@ -11,7 +11,7 @@ class GalleryIcon {
   // aliases
   final List<String> aliases;
 
-  const GalleryIcon({
+   GalleryIcon({
     required this.name,
     required this.icon,
     this.aliases = const [],
