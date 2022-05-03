@@ -1,9 +1,7 @@
-import 'package:flutter/scheduler.dart';
-
 import '../../gallery_exporter.dart';
 import '../gallery_icon.dart';
 import '../icon_providers.dart';
-import '../icon_details.dart';
+import '../details/icon_details.dart';
 import 'icon_grid_view.dart';
 
 class IconGrid extends ConsumerWidget {
@@ -11,9 +9,6 @@ class IconGrid extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    //time dilation for the animation
-    timeDilation = 2.0;
-
     /// State Provider for all subjects
     final List<GalleryIcon> galleryIconList =
         ref.watch(allIconsProvider.state).state;
@@ -47,12 +42,11 @@ class IconGrid extends ConsumerWidget {
                 onTap: () {
                   // reset the current value to -1
                   ref.watch(selectedIconIndexProvider.notifier).state = -1;
-
                 },
               ),
         transitionBuilder: (child, animation) {
-          return ScaleTransition(
-            scale: animation,
+          return SlideFadeTransition(
+            animation: animation,
             child: child,
           );
         },

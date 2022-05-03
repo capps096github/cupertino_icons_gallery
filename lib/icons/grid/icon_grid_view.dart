@@ -52,8 +52,6 @@ class IconGridView extends ConsumerWidget {
           controller: _controller,
           child: GridView.builder(
             controller: _controller,
-            key: const PageStorageKey(PageStorageKeys.cupertinoIconsKey),
-            shrinkWrap: true,
             padding: const EdgeInsets.all(8.0),
             gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
               crossAxisCount: gridCrossAxisCount,

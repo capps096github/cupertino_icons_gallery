@@ -6,6 +6,7 @@ import 'title_banner.dart';
 AppBar homeAppBar() {
   return AppBar(
     automaticallyImplyLeading: false,
+    elevation: 10,
     title: Consumer(builder: (context, ref, _) {
       // current index of the navbar
       final navBarIndex = ref.watch(selectedNavBarIndexProvider.state).state;

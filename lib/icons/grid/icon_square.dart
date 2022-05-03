@@ -42,54 +42,52 @@ class _IconSquareState extends State<IconSquare> {
 
   @override
   Widget build(BuildContext context) {
-    return Center(
-      child: Material(
-        color: widget.textColor.withOpacity(.2),
+    return Material(
+      color: widget.textColor.withOpacity(.2),
+      borderRadius: borderRadius,
+      elevation: elevation,
+      shadowColor: widget.textColor,
+      child: InkWell(
+        splashColor: widget.textColor,
+        highlightColor: galleryBackground.withOpacity(.5),
         borderRadius: borderRadius,
-        elevation: elevation,
-        shadowColor: widget.textColor,
-        child: InkWell(
-          splashColor: widget.textColor,
-          highlightColor: galleryBackground.withOpacity(.5),
-          borderRadius: borderRadius,
-          onTap: widget.onTap,
-          onHover: (isHover) {
-            setState(() {
-              isHover ? elevation = 10 : elevation = 0;
-            });
-          },
-          child: Ink(
-            decoration: BoxDecoration(
-              borderRadius: borderRadius,
-              color: widget.squareColor,
-            ),
-            child: Padding(
-              padding: const EdgeInsets.all(4.0),
-              child: SizedBox(
-                height: squareSize,
-                width: squareSize,
-                child: Center(
-                  child: ExpandedScrollingColumn(
-                    mainAxisSize: MainAxisSize.min,
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Icon(
-                        widget.icon,
+        onTap: widget.onTap,
+        onHover: (isHover) {
+          setState(() {
+            isHover ? elevation = 10 : elevation = 0;
+          });
+        },
+        child: Ink(
+          decoration: BoxDecoration(
+            borderRadius: borderRadius,
+            color: widget.squareColor,
+          ),
+          child: Padding(
+            padding: const EdgeInsets.all(4.0),
+            child: SizedBox(
+              height: squareSize,
+              width: squareSize,
+              child: Center(
+                child: ExpandedScrollingColumn(
+                  mainAxisSize: MainAxisSize.min,
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Icon(
+                      widget.icon,
+                      color: widget.textColor,
+                      size: iconSize,
+                    ),
+                    const VerticalSpacing(of: 5),
+                    Text(
+                      widget.text,
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
                         color: widget.textColor,
-                        size: iconSize,
+                        fontSize: textSize,
+                        fontWeight: FontWeight.bold,
                       ),
-                      const VerticalSpacing(of: 5),
-                      Text(
-                        widget.text,
-                        textAlign: TextAlign.center,
-                        style: TextStyle(
-                          color: widget.textColor,
-                          fontSize: textSize,
-                          fontWeight: FontWeight.bold,
-                        ),
-                      ),
-                    ],
-                  ),
+                    ),
+                  ],
                 ),
               ),
             ),

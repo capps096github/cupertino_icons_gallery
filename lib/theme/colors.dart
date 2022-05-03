@@ -16,5 +16,13 @@ const galleryError = Color(0xFFFF0000);
 // transparent
 const galleryTransparent = Color(0x00000000);
 
+// blue 
+const galleryBlue = Color(0xFF0000FF);
+
 // black
 const galleryBlack = galleryColor;
+
+// -------- Icon Details -------------
+const detailsColor = galleryColor;
+
+const detailsTextColor = galleryWhite;

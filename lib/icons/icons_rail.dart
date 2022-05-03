@@ -1,5 +1,5 @@
 import '../gallery_exporter.dart';
-import 'icon_details.dart';
+import 'details/icon_details.dart';
 import 'icon_providers.dart';
 
 class IconsRail extends ConsumerWidget {
@@ -22,7 +22,7 @@ class IconsRail extends ConsumerWidget {
       child: AnimatedContainer(
         duration: quarterSeconds,
         height: double.infinity,
-        width: showDetails ? sideBarDesktopWidth : 0,
+        width: showDetails ? iconDetailsWidth : 0,
         decoration: const BoxDecoration(
           border: Border(
             right: BorderSide(
@@ -31,10 +31,24 @@ class IconsRail extends ConsumerWidget {
             ),
           ),
         ),
-        child: IconDetails(
-          onTap: () {
-            // reset the current value to -1
-            ref.watch(selectedIconIndexProvider.notifier).state = -1;
+
+        // this here is to prevent overflow errors when opening up the side bar
+        child: AnimatedSwitcher(
+          duration: quarterSeconds,
+          child: showDetails
+              ? IconDetails(
+                  key: ValueKey(selectedIconIndex),
+                  onTap: () {
+                    // reset the current value to -1
+                    ref.watch(selectedIconIndexProvider.notifier).state = -1;
+                  },
+                )
+              : const SizedBox(),
+              transitionBuilder: (child, animation) {
+            return ScaleTransition(
+              scale: animation,
+              child: child,
+            );
           },
         ),
       ),
