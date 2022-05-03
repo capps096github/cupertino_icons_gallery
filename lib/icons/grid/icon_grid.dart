@@ -28,7 +28,6 @@ class IconGrid extends ConsumerWidget {
     return Container(
       constraints: const BoxConstraints(minWidth: sideBarDesktopWidth),
       child: AnimatedSwitcher(
-        key: ValueKey(selectedIconIndex),
         duration: twoHundredMilliseconds,
         reverseDuration: twoHundredMilliseconds,
         switchInCurve: Curves.fastOutSlowIn,

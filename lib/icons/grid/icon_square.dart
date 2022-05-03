@@ -68,7 +68,7 @@ class _IconSquareState extends State<IconSquare> {
               height: squareSize,
               width: squareSize,
               child: Center(
-                child: ExpandedScrollingColumn(
+                child: Column(
                   mainAxisSize: MainAxisSize.min,
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [

@@ -6,8 +6,11 @@ AppBar detailsAppbar({required VoidCallback onTap}) {
   return AppBar(
     leading: Padding(
       padding: const EdgeInsets.all(8.0),
-      child: CircleAvatar(
-        backgroundColor: detailsTextColor,
+      child: Container(
+        decoration: BoxDecoration(
+          color: detailsTextColor,
+          borderRadius: BorderRadius.circular(8),
+        ),
         child: CloseButton(
           color: detailsColor,
           onPressed: onTap,
