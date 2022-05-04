@@ -16,3 +16,6 @@ class IconScreen extends ConsumerWidget {
     );
   }
 }
+
+
+// tap on an icon to view its details banner or even intro
