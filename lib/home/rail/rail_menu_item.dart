@@ -1,5 +1,7 @@
+// Flutter imports:
 import 'package:flutter/cupertino.dart';
 
+// Project imports:
 import '../../gallery_exporter.dart';
 import '../navbar/navbar_notifier.dart';
 import 'leading_icon.dart';

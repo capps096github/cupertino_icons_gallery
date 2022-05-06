@@ -1,6 +1,9 @@
 // about, icons, github and contributors
+
+// Flutter imports:
 import 'package:flutter/cupertino.dart';
 
+// Project imports:
 import '../../icons/icons_screen.dart';
 import '../../theme/colors.dart';
 import 'navbar_icon_data.dart';

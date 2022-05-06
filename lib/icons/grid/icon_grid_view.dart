@@ -1,3 +1,4 @@
+// Project imports:
 import '../../gallery_exporter.dart';
 import '../filter/icon_filter.dart';
 import '../search/search_container.dart';
@@ -15,12 +16,13 @@ class IconGridView extends StatelessWidget {
       slivers: [
         // search bar and filter
         SliverAppBar(
-          pinned: true,
+          floating: true,
+          snap: true,
           title: SearchContainer(),
         ),
 
         SliverAppBar(
-          floating: true,
+          pinned: true,
           title: IconFilter(),
         ),
 

@@ -1,4 +1,6 @@
+// Project imports:
 import '../../gallery_exporter.dart';
+
 // on tap, open up the right page on Desktop and open new page on mobile
 
 class IconTile extends StatefulWidget {

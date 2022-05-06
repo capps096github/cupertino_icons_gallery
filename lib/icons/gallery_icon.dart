@@ -1,4 +1,6 @@
 // a class that we shall use to represent the cupertiono icon in this app
+
+// Flutter imports:
 import 'package:flutter/material.dart';
 
 class GalleryIcon {

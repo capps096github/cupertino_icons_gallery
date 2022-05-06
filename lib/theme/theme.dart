@@ -1,4 +1,4 @@
-
+// Project imports:
 import '../gallery_exporter.dart';
 
 final ThemeData galleryTheme = _buildgalleryTheme();

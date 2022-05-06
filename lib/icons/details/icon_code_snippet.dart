@@ -1,6 +1,8 @@
+// Flutter imports:
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/services.dart';
 
+// Project imports:
 import '../../gallery_exporter.dart';
 
 class IconCodeSnippet extends StatelessWidget {

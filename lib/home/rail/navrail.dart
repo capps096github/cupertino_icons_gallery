@@ -1,3 +1,4 @@
+// Project imports:
 import '../../gallery_exporter.dart';
 import 'drawer_icon.dart';
 import 'rail_items.dart';
@@ -51,6 +52,7 @@ class HomeNavRail extends ConsumerWidget {
               child: ThickHorizontalDivider(
                 dividerColor: onPrimary,
                 thickness: 4,
+                dividerWidth: 60,
               ),
             ),
 

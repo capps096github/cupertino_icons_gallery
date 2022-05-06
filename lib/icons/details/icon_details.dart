@@ -1,3 +1,4 @@
+// Project imports:
 import '../../gallery_exporter.dart';
 import '../icon_providers.dart';
 import 'details_appbar.dart';

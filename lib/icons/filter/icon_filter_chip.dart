@@ -1,5 +1,7 @@
+// Flutter imports:
 import 'package:flutter/cupertino.dart';
 
+// Project imports:
 import '../../gallery_exporter.dart';
 import '../icon_providers.dart';
 
@@ -27,7 +29,6 @@ class IconFilterChip extends ConsumerWidget {
       duration: quarterSeconds,
       padding: EdgeInsets.all(isSelected ? 4 : 2),
       child: FilterChip(
-        
         pressElevation: 10,
         label: Text(filterText),
         backgroundColor: galleryWhite,
@@ -39,13 +40,13 @@ class IconFilterChip extends ConsumerWidget {
                   child: Icon(
                     CupertinoIcons.checkmark_alt,
                     size: 14,
-                    color: galleryColor,
+                    color: galleryBlue,
                   ),
                 ),
               )
             : null,
         showCheckmark: false,
-        selectedColor: galleryColor,
+        selectedColor: galleryBlue,
         labelStyle: TextStyle(
           color: isSelected ? galleryWhite : galleryColor,
         ),

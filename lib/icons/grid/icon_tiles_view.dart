@@ -1,9 +1,8 @@
+// Project imports:
 import '../../gallery_exporter.dart';
 import '../gallery_icon.dart';
 import '../icon_providers.dart';
 import 'icon_tile.dart';
-
-final _controller = ScrollController();
 
 class IconTilesView extends ConsumerWidget {
   const IconTilesView({Key? key}) : super(key: key);

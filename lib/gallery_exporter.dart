@@ -24,6 +24,9 @@ export 'package:draggable_scrollbar/draggable_scrollbar.dart';
 // text animations
 export 'package:animated_text_kit/animated_text_kit.dart';
 
+// urls
+export 'package:url_launcher/url_launcher.dart';
+
 // ------- IN APP FILES -------
 // responsive design
 export 'responsive.dart';
@@ -45,3 +48,6 @@ export 'home/exporter.dart';
 
 // ui
 export 'ui/exporter.dart';
+
+// link
+export 'link/exporter.dart';
