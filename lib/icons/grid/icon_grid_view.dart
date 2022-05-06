@@ -11,24 +11,27 @@ class IconGridView extends StatelessWidget {
   Widget build(BuildContext context) {
     //
     return const CustomScrollView(
+      key: PageStorageKey(PageStorageKeys.cupertinoIconsKey),
       slivers: [
         // search bar and filter
         SliverAppBar(
-          backgroundColor: galleryBlue,
-          floating: true,
-          elevation: 8,
+          pinned: true,
           title: SearchContainer(),
-          bottom: PreferredSize(
-            preferredSize: Size.fromHeight(kToolbarHeight),
-            child: IconFilter(),
-          ),
+        ),
+
+        SliverAppBar(
+          floating: true,
+          title: IconFilter(),
         ),
 
         // brief intro
         IconGridIntro(),
 
         // tiles
-        IconTilesView(),
+        SliverPadding(
+          padding: EdgeInsets.all(8.0),
+          sliver: IconTilesView(),
+        ),
       ],
     );
   }

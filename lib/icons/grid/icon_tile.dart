@@ -9,6 +9,7 @@ class IconTile extends StatefulWidget {
     required this.squareColor,
     required this.textColor,
     required this.icon,
+    required this.showText,
   }) : super(key: key);
   final VoidCallback onTap;
 
@@ -20,6 +21,9 @@ class IconTile extends StatefulWidget {
 
   ///Icon of a given subject
   final IconData icon;
+
+  // showText
+  final bool showText;
 
   @override
   State<IconTile> createState() => _IconTileState();
@@ -67,19 +71,21 @@ class _IconTileState extends State<IconTile> {
             child: SizedBox(
               height: squareSize,
               width: squareSize,
-              child: Center(
-                child: Column(
-                  mainAxisSize: MainAxisSize.min,
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Icon(
-                      widget.icon,
-                      color: widget.textColor,
-                      size: iconSize,
-                    ),
-                    const VerticalSpacing(of: 5),
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Icon(
+                    widget.icon,
+                    color: widget.textColor,
+                    size: iconSize,
+                  ),
+                  if (widget.showText) const VerticalSpacing(of: 5),
+                  if (widget.showText)
                     Text(
                       widget.text,
+                      maxLines: 2,
+                      overflow: TextOverflow.ellipsis,
                       textAlign: TextAlign.center,
                       style: TextStyle(
                         color: widget.textColor,
@@ -87,8 +93,7 @@ class _IconTileState extends State<IconTile> {
                         fontWeight: FontWeight.bold,
                       ),
                     ),
-                  ],
-                ),
+                ],
               ),
             ),
           ),

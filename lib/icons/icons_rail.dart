@@ -35,7 +35,11 @@ class IconsRail extends ConsumerWidget {
         // this here is to prevent overflow errors when opening up the side bar
         child: AnimatedSwitcher(
           duration: quarterSeconds,
-          child: showDetails ? const IconDetails() : const SizedBox(),
+          child: showDetails
+              ? IconDetails(
+                  key: UniqueKey(),
+                )
+              : const SizedBox(),
           transitionBuilder: (child, animation) {
             return ScaleTransition(
               scale: animation,

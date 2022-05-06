@@ -14,7 +14,6 @@ class IconFilter extends StatelessWidget {
         child: ListView.builder(
           scrollDirection: Axis.horizontal,
           itemCount: alphabetFilters.length,
-          shrinkWrap: true,
           itemBuilder: (context, index) {
             return IconFilterChip(
               index: index,
