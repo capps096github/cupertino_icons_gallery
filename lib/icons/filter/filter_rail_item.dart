@@ -41,37 +41,32 @@ class FilterRailItem extends ConsumerWidget {
     final backgroundColor = isSelected ? galleryBlue : galleryTransparent;
 
 // text style for the rail item
-    final railTextStyle = TextStyle(
-      fontWeight: isSelected ? FontWeight.w900 : null,
+    final railTextStyle = GoogleFonts.spartan(
+      fontWeight: isSelected ? FontWeight.w700 : null,
       fontSize: 16,
       color: iconColor,
     );
 
-    return Tooltip(
-      message: tooltip,
-      textStyle: const TextStyle(color: iconColor),
+    return AnimatedContainer(
+      duration: quarterSeconds,
+      clipBehavior: Clip.antiAlias,
       decoration: BoxDecoration(
-        color: galleryBlue,
-        borderRadius: BorderRadius.circular(4),
+        color: backgroundColor,
+        borderRadius: BorderRadius.circular(8),
       ),
-      child: Container(
-        clipBehavior: Clip.antiAlias,
+      margin: const EdgeInsets.all(2.0),
+      padding: const EdgeInsets.all(16.0),
+      child: Tooltip(
+        message: tooltip,
+        textStyle: const TextStyle(color: iconColor),
         decoration: BoxDecoration(
-          color: backgroundColor,
-          borderRadius: BorderRadius.circular(8),
+          color: galleryBlue,
+          borderRadius: BorderRadius.circular(4),
         ),
-        margin: const EdgeInsets.all(2.0),
-        padding: const EdgeInsets.all(18.0),
         child: InkWell(
           borderRadius: BorderRadius.circular(6),
           onTap: () {
-            // update the selected filter index
-            if (isSelected) {
-              ref.watch(selectedFilterIndexProvider.notifier).state = 0;
-            } else {
-              ref.watch(selectedFilterIndexProvider.notifier).state =
-                  filterIndex;
-            }
+            ref.watch(selectedFilterIndexProvider.notifier).state = filterIndex;
 
             // reset the selected icon index too
             ref.watch(selectedIconIndexProvider.notifier).state = -1;

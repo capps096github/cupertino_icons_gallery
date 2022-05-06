@@ -5,17 +5,17 @@ import '../icon_providers.dart';
 AppBar detailsAppbar() {
 //
   return AppBar(
-    backgroundColor: detailsColor,
+    backgroundColor: galleryColor,
     leading: Padding(
       padding: const EdgeInsets.all(8.0),
       child: Container(
         decoration: BoxDecoration(
-          color: detailsTextColor,
+          color: detailsColor,
           borderRadius: BorderRadius.circular(8),
         ),
         child: Consumer(builder: (context, ref, _) {
           return CloseButton(
-            color: detailsColor,
+            color: detailsTextColor,
             onPressed: () {
               // reset the current value to -1
               ref.watch(selectedIconIndexProvider.notifier).state = -1;

@@ -23,7 +23,7 @@ Icon(
     final smallCodeSnippet = selectedGalleryIcon.name;
 
     return Scaffold(
-      backgroundColor: galleryWhite,
+      backgroundColor: galleryColor,
       appBar: detailsAppbar(),
       body: Padding(
         padding: const EdgeInsets.all(8.0),
@@ -43,7 +43,7 @@ Icon(
             Text(
               'Use in Code',
               style: GoogleFonts.spartan(
-                color: detailsColor,
+                color: detailsTextColor,
                 fontWeight: FontWeight.bold,
                 fontSize: 20,
               ),
@@ -58,7 +58,7 @@ Icon(
             Text(
               'Flutter ID',
               style: GoogleFonts.spartan(
-                color: detailsColor,
+                color: detailsTextColor,
                 fontWeight: FontWeight.bold,
                 fontSize: 20,
               ),

@@ -115,7 +115,7 @@ class IconTilesView extends ConsumerWidget {
               children: const [
                 Icon(
                   CupertinoIcons.doc_text_search,
-                  color: detailsColor,
+                  color: galleryColor,
                   size: 128,
                 ),
                 Center(
@@ -123,7 +123,7 @@ class IconTilesView extends ConsumerWidget {
                     'No icons found',
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
-                      color: galleryBlue,
+                      color: galleryColor,
                     ),
                   ),
                 ),
