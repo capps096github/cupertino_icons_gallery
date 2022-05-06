@@ -53,7 +53,7 @@ class CopyIcon extends StatelessWidget {
     final snackBar = copyIconSnackbar(context);
 
     return IconButton(
-      icon: const Icon(Icons.content_copy),
+      icon: const Icon(Icons.content_copy, color: detailsColor),
       onPressed: () async {
         // copy the code snippet to the clipboard
         await Clipboard.setData(ClipboardData(text: codeSnippet));

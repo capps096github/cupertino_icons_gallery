@@ -1,7 +1,7 @@
 import '../../gallery_exporter.dart';
 import '../icon_providers.dart';
 
-AppBar detailsAppbar({required VoidCallback onTap}) {
+AppBar detailsAppbar() {
 //
   return AppBar(
     leading: Padding(
@@ -11,10 +11,15 @@ AppBar detailsAppbar({required VoidCallback onTap}) {
           color: detailsTextColor,
           borderRadius: BorderRadius.circular(8),
         ),
-        child: CloseButton(
-          color: detailsColor,
-          onPressed: onTap,
-        ),
+        child: Consumer(builder: (context, ref, _) {
+          return CloseButton(
+            color: detailsColor,
+            onPressed: () {
+              // reset the current value to -1
+              ref.watch(selectedIconIndexProvider.notifier).state = -1;
+            },
+          );
+        }),
       ),
     ),
     automaticallyImplyLeading: false,

@@ -1,8 +1,8 @@
 import '../../gallery_exporter.dart';
 // on tap, open up the right page on Desktop and open new page on mobile
 
-class IconSquare extends StatefulWidget {
-  const IconSquare({
+class IconTile extends StatefulWidget {
+  const IconTile({
     Key? key,
     required this.onTap,
     required this.text,
@@ -22,10 +22,10 @@ class IconSquare extends StatefulWidget {
   final IconData icon;
 
   @override
-  State<IconSquare> createState() => _IconSquareState();
+  State<IconTile> createState() => _IconTileState();
 }
 
-class _IconSquareState extends State<IconSquare> {
+class _IconTileState extends State<IconTile> {
   double elevation = 0;
 
   ///squareSize

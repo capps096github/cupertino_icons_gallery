@@ -35,16 +35,8 @@ class IconsRail extends ConsumerWidget {
         // this here is to prevent overflow errors when opening up the side bar
         child: AnimatedSwitcher(
           duration: quarterSeconds,
-          child: showDetails
-              ? IconDetails(
-                  key: ValueKey(selectedIconIndex),
-                  onTap: () {
-                    // reset the current value to -1
-                    ref.watch(selectedIconIndexProvider.notifier).state = -1;
-                  },
-                )
-              : const SizedBox(),
-              transitionBuilder: (child, animation) {
+          child: showDetails ? const IconDetails() : const SizedBox(),
+          transitionBuilder: (child, animation) {
             return ScaleTransition(
               scale: animation,
               child: child,

@@ -36,6 +36,9 @@ dependencies:
   # scrollbars
   draggable_scrollbar: ^0.1.0
 
+  # Animating Text
+  animated_text_kit:
+
 dev_dependencies:
   flutter_test:
     sdk: flutter

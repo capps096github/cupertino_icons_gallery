@@ -4,9 +4,7 @@ import 'details_appbar.dart';
 import 'icon_code_snippet.dart';
 
 class IconDetails extends ConsumerWidget {
-  const IconDetails({Key? key, required this.onTap}) : super(key: key);
-
-  final VoidCallback onTap;
+  const IconDetails({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context, ref) {
@@ -24,7 +22,7 @@ Icon(
 
     return Scaffold(
       backgroundColor: detailsColor,
-      appBar: detailsAppbar(onTap: onTap),
+      appBar: detailsAppbar(),
       body: Padding(
         padding: const EdgeInsets.all(8.0),
         child: ExpandedScrollingColumn(

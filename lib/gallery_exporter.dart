@@ -21,6 +21,9 @@ export 'package:flextras/flextras.dart';
 // scrollbars
 export 'package:draggable_scrollbar/draggable_scrollbar.dart';
 
+// text animations
+export 'package:animated_text_kit/animated_text_kit.dart';
+
 // ------- IN APP FILES -------
 // responsive design
 export 'responsive.dart';

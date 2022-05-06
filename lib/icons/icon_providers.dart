@@ -4,7 +4,7 @@ import '../gallery_exporter.dart';
 import 'gallery_icon.dart';
 import 'gallery_icons_data.dart';
 
-///Provides the Current Page  for the Essentials Page
+///Provides the Current Index of the selected icon
 final selectedIconIndexProvider = StateProvider<int>((ref) {
   return -1;
 });
@@ -24,4 +24,10 @@ final allIconsProvider = StateProvider<List<GalleryIcon>>((ref) {
 
   // return cupertinoIcons;
   return cupertinoIcons;
+});
+
+
+///Provides the Current Page  for the Essentials Page
+final selectedFilterIndexProvider = StateProvider<int>((ref) {
+  return 0;
 });
