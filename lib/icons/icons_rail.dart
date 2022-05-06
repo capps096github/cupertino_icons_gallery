@@ -18,7 +18,7 @@ class IconsRail extends ConsumerWidget {
     final showDetails = (selectedIconIndex != -1) && !isMobile;
 
     return Material(
-      color: galleryColor,
+      color: detailsColor,
       elevation: 8,
       child: AnimatedContainer(
         duration: quarterSeconds,

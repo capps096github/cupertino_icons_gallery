@@ -43,9 +43,6 @@ export 'constants/exporter.dart';
 // routes
 export 'routes/exporter.dart';
 
-// home
-export 'home/exporter.dart';
-
 // ui
 export 'ui/exporter.dart';
 
