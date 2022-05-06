@@ -11,17 +11,15 @@ class IconFilter extends StatelessWidget {
     return Container(
       height: kToolbarHeight,
       padding: const EdgeInsets.symmetric(horizontal: 8),
-      child: Center(
-        child: ListView.builder(
-          scrollDirection: Axis.horizontal,
-          itemCount: alphabetFilters.length,
-          itemBuilder: (context, index) {
-            return IconFilterChip(
-              index: index,
-              filterText: alphabetFilters[index],
-            );
-          },
-        ),
+      child: ListView.builder(
+        scrollDirection: Axis.horizontal,
+        itemCount: alphabetFilters.length,
+        itemBuilder: (context, index) {
+          return IconFilterChip(
+            index: index,
+            filterText: alphabetFilters[index],
+          );
+        },
       ),
     );
   }

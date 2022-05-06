@@ -10,13 +10,14 @@ class IconTile extends StatefulWidget {
     required this.text,
     required this.squareColor,
     required this.textColor,
+    required this.selectedColor,
     required this.icon,
     required this.showText,
   }) : super(key: key);
   final VoidCallback onTap;
 
   // circle - text color
-  final Color squareColor, textColor;
+  final Color squareColor, textColor, selectedColor;
 
   //text
   final String text;
@@ -66,7 +67,7 @@ class _IconTileState extends State<IconTile> {
         child: Ink(
           decoration: BoxDecoration(
             borderRadius: borderRadius,
-            color: widget.squareColor,
+            color: widget.selectedColor,
           ),
           child: Padding(
             padding: const EdgeInsets.all(4.0),

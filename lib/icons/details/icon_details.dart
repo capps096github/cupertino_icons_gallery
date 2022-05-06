@@ -13,7 +13,8 @@ class IconDetails extends ConsumerWidget {
     final selectedGalleryIcon =
         ref.watch(selectedGalleryIconProvider.state).state;
 
-    final largeCodeSnippet = '''
+    final largeCodeSnippet =
+        '''
 Icon(
   CupertinoIcons.${selectedGalleryIcon.name},
 ),
@@ -22,7 +23,7 @@ Icon(
     final smallCodeSnippet = selectedGalleryIcon.name;
 
     return Scaffold(
-      backgroundColor: detailsColor,
+      backgroundColor: galleryWhite,
       appBar: detailsAppbar(),
       body: Padding(
         padding: const EdgeInsets.all(8.0),
@@ -33,7 +34,7 @@ Icon(
               padding: const EdgeInsets.all(8.0),
               child: Icon(
                 selectedGalleryIcon.icon,
-                color: detailsTextColor,
+                color: detailsColor,
                 size: 128,
               ),
             ),
@@ -41,8 +42,8 @@ Icon(
             const VerticalSpacing(of: 10),
             Text(
               'Use in Code',
-              style: GoogleFonts.jetBrainsMono(
-                color: detailsTextColor,
+              style: GoogleFonts.spartan(
+                color: detailsColor,
                 fontWeight: FontWeight.bold,
                 fontSize: 20,
               ),
@@ -56,14 +57,13 @@ Icon(
 
             Text(
               'Flutter ID',
-              style: GoogleFonts.jetBrainsMono(
-                color: detailsTextColor,
+              style: GoogleFonts.spartan(
+                color: detailsColor,
                 fontWeight: FontWeight.bold,
                 fontSize: 20,
               ),
             ),
             IconCodeSnippet(codeSnippet: smallCodeSnippet),
-
             const Spacer(),
           ],
         ),

@@ -5,6 +5,7 @@ import '../icon_providers.dart';
 AppBar detailsAppbar() {
 //
   return AppBar(
+    backgroundColor: detailsColor,
     leading: Padding(
       padding: const EdgeInsets.all(8.0),
       child: Container(
@@ -32,7 +33,7 @@ AppBar detailsAppbar() {
       return Text(
         selectedGalleryIcon.name,
         maxLines: 1,
-        style: GoogleFonts.jetBrainsMono(
+        style: GoogleFonts.spartan(
           fontSize: 18,
           color: detailsTextColor,
         ),

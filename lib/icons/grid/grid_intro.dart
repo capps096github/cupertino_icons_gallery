@@ -1,4 +1,6 @@
 // Project imports:
+import 'package:flutter/cupertino.dart';
+
 import '../../gallery_exporter.dart';
 import '../gallery_icon.dart';
 import '../icon_providers.dart';
@@ -12,11 +14,13 @@ class IconGridIntro extends StatelessWidget {
       child: Padding(
         padding: const EdgeInsets.all(8.0),
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          mainAxisSize: MainAxisSize.min,
           children: [
             //
 
             const SectionTitle(
-              sectionText: "Hello, Welcome",
+              sectionText: "In the Gallery",
               backgroundColor: galleryBlue,
             ),
 
@@ -30,18 +34,24 @@ class IconGridIntro extends StatelessWidget {
                 // provides the length of the subjects list
                 final int totalIconCount = galleryIconList.length;
 
+                // check if we have icons
+                final hasIcons = totalIconCount > 0;
+
                 return RichText(
                   textAlign: TextAlign.center,
                   text: TextSpan(
-                    text: 'Explore over ',
+                    text: hasIcons ? 'Explore  ' : '',
                     style: GoogleFonts.spartan(
                       color: galleryColor,
                       fontSize: 16,
                       height: 1.5,
+                      fontWeight: FontWeight.bold,
                     ),
                     children: [
                       TextSpan(
-                        text: '$totalIconCount',
+                        text: totalIconCount > 2
+                            ? '${totalIconCount - 2}+ '
+                            : '$totalIconCount',
                         style: const TextStyle(
                           fontSize: 20,
                           fontWeight: FontWeight.bold,
@@ -97,17 +107,42 @@ class IconGridIntro extends StatelessWidget {
                   ),
                   const TextSpan(
                     text:
-                        '. Feel free to clone it, use it in your own projects and above all contribute to it. Thanks.\n\n',
+                        '. Feel free to clone, fork, star and use it in your own projects and above all contribute to it. Thanks.',
                   ),
                 ],
               ),
             ),
 
-            // This app is Open Source. and you can find the source code on GitHub ,
-            // open source is a great way to get your own copy of the code.
-            // vie source code on GitHub button
-            // feel free to contribute to the project and lets make it even better
-            // Built with ❤️ by Cephas Brian for the Flutter Community
+            const SectionTitle(sectionText: "Hint"),
+
+            Row(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                const Padding(
+                  padding: EdgeInsets.all(10),
+                  child: Icon(
+                    CupertinoIcons.hand_draw,
+                    color: galleryColor,
+                  ),
+                ),
+                Flexible(
+                  child: Text(
+                    "Tap on an Icon to View its Source Code for use in your Flutter App.",
+                    softWrap: true,
+                    style: GoogleFonts.spartan(
+                      fontWeight: FontWeight.bold,
+                      color: galleryColor,
+                      fontSize: 16,
+                    ),
+                  ),
+                ),
+              ],
+            ),
+
+            const SectionTitle(
+              sectionText: "Icons",
+              backgroundColor: galleryBlue,
+            ),
           ],
         ),
       ),

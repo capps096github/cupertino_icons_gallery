@@ -60,11 +60,8 @@ class IconFilterChip extends ConsumerWidget {
             ref.watch(selectedFilterIndexProvider.notifier).state = index;
           }
 
-          // isSelected
-          //     ? context
-          //         .read(menuListNotifier)
-          //         .setFoodCategory(foodCategories[index])
-          //     : context.read(menuListNotifier).resetFoodCategory();
+          // reset the selected icon index too
+          ref.watch(selectedIconIndexProvider.notifier).state = -1;
         },
       ),
     );

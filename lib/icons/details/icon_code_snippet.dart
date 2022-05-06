@@ -24,13 +24,13 @@ class IconCodeSnippet extends StatelessWidget {
           padding: const EdgeInsets.all(8.0),
           width: double.infinity,
           decoration: BoxDecoration(
-            color: detailsTextColor,
-            borderRadius: BorderRadius.circular(8),
+            color: detailsColor,
+            borderRadius: BorderRadius.circular(6),
           ),
           child: SelectableText(
             codeSnippet,
             style: GoogleFonts.jetBrainsMono(
-              color: detailsColor,
+              color: detailsTextColor,
             ),
           ),
         ),
@@ -55,7 +55,7 @@ class CopyIcon extends StatelessWidget {
     final snackBar = copyIconSnackbar(context);
 
     return IconButton(
-      icon: const Icon(Icons.content_copy, color: detailsColor),
+      icon: const Icon(Icons.content_copy, color: detailsTextColor),
       onPressed: () async {
         // copy the code snippet to the clipboard
         await Clipboard.setData(ClipboardData(text: codeSnippet));
