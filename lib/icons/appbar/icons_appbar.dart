@@ -27,6 +27,13 @@ AppBar iconsAppBar() {
         ),
       ],
     ),
+    actions: [
+      // github icon
+      IconButton(
+        icon: const Icon(Ionicons.logo_github),
+        onPressed: () async => await linkLauncher(repoLink),
+      ),
+    ],
     bottom: const PreferredSize(
       preferredSize: Size.fromHeight(kToolbarHeight),
       child: TitleBanner(

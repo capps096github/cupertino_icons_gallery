@@ -27,6 +27,10 @@ export 'package:animated_text_kit/animated_text_kit.dart';
 // urls
 export 'package:url_launcher/url_launcher.dart';
 
+// supplementary icons
+export 'package:ionicons/ionicons.dart';
+
+
 // ------- IN APP FILES -------
 // responsive design
 export 'responsive.dart';

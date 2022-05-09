@@ -41,6 +41,7 @@ dependencies:
 
   # opening urls
   url_launcher: ^6.1.0
+  ionicons: ^0.1.2
 
 dev_dependencies:
   flutter_test:
