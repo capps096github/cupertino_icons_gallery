@@ -2,7 +2,6 @@
 import 'package:flutter/cupertino.dart';
 
 import '../../gallery_exporter.dart';
-import '../gallery_icon.dart';
 import '../icon_providers.dart';
 
 class IconGridIntro extends StatelessWidget {

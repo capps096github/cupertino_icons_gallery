@@ -1,5 +1,4 @@
 // Project imports:
-import 'package:flutter/cupertino.dart';
 
 import '../../gallery_exporter.dart';
 import 'title_banner.dart';
@@ -9,24 +8,7 @@ AppBar iconsAppBar() {
   return AppBar(
     automaticallyImplyLeading: false,
     elevation: 10,
-    title: Stack(
-      children: const [
-        Positioned(
-          bottom: -.5,
-          right: -.5,
-          child: Icon(
-            CupertinoIcons.rectangle_3_offgrid_fill,
-            size: 40,
-            color: galleryWhite,
-          ),
-        ),
-        Icon(
-          CupertinoIcons.rectangle_3_offgrid_fill,
-          size: 40,
-          color: galleryBlue,
-        ),
-      ],
-    ),
+    title: const GalleryLogo(),
     actions: [
       // github icon
       IconButton(

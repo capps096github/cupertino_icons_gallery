@@ -1,13 +1,14 @@
 // Project imports:
 import '../gallery_exporter.dart';
-import '../icons/icons_screen.dart';
+
+// TODO: Add firebase analytics into the app for tracking purposes on Number of Users.
+
 
 final galleryRouterProvider = GoRouter(
   routes: [
     GoRoute(
       path: '/',
-      // TODO: Add firebase into the app for tracking purposes on Number of Users.
-      builder: (context, state) => const CupertinoIconsScreen(),
+      builder: (context, state) => const GalleryConnect(),
       routes: [
         // ? ----- Repository -----
         GoRoute(

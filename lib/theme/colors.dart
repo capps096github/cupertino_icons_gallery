@@ -20,7 +20,8 @@ const galleryError = Color(0xFFFF0000);
 const galleryTransparent = Color(0x00000000);
 
 // blue
-const galleryBlue = Color(0xFF0000FF);
+// const galleryBlue = Color(0xFF0000FF);
+const galleryBlue = Color(0xFF2962FF);
 
 // black
 const galleryBlack = galleryColor;

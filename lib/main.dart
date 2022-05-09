@@ -1,17 +1,23 @@
 // Project imports:
 import 'gallery_exporter.dart';
 
-void main() {
+void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  
-// TODO: put firebase here instaed, so that we no longer use the firebase connect widget 
-  //  When we launch this app don't forget to make this repo public
-  // 
+
+  // Initailize the Hive DB
+  await Hive.initFlutter();
+
+  // Register the Hive Adapters
+  Hive.registerAdapter(GalleryIconAdapter());
+  Hive.registerAdapter(RecentSearchItemAdapter());
+
+// TODO: When we launch this app don't forget to make this repo public
+// 
   runApp(
     const ProviderScope(
       child: RootRestorationScope(
         restorationId: galleryId,
-        child: CupertinoIconsGallery(),
+        child: FirebaseConnect(),
       ),
     ),
   );

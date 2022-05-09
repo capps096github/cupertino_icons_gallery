@@ -3,11 +3,13 @@ import 'package:flutter/cupertino.dart';
 
 // Project imports:
 import '../../gallery_exporter.dart';
+import 'gallery_search_delegate.dart';
 
 final searchTexts = [
   'Search through the Icons',
   'Search by Name',
   'Search by Category',
+  'Happy Searching!',
   'Search for a Cupertino Icon',
 ];
 
@@ -19,10 +21,10 @@ class SearchContainer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return InkWell(
-      // onTap: () => showSearch(
-      //   context: context,
-      //   delegate: CalcutSearchDelegate(),
-      // ),
+      onTap: () => showSearch(
+        context: context,
+        delegate: GallerySearchDelegate(),
+      ),
       child: Container(
         margin: const EdgeInsets.all(4),
         constraints: const BoxConstraints(maxWidth: 900),
@@ -45,10 +47,10 @@ class SearchContainer extends StatelessWidget {
                     .map((searchText) =>
                         typewriterAnimatedText(searchText, galleryColor))
                     .toList(),
-                // onTap: () => showSearch(
-                //   context: context,
-                //   delegate: CalcutSearchDelegate(),
-                // ),
+                onTap: () => showSearch(
+                  context: context,
+                  delegate: GallerySearchDelegate(),
+                ),
               ),
             ),
             Container(

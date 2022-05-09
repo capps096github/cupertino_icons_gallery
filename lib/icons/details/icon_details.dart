@@ -13,7 +13,8 @@ class IconDetails extends ConsumerWidget {
     final selectedGalleryIcon =
         ref.watch(selectedGalleryIconProvider.state).state;
 
-    final largeCodeSnippet = '''
+    final largeCodeSnippet =
+        '''
 Icon(
   CupertinoIcons.${selectedGalleryIcon.name},
 ),
@@ -29,8 +30,12 @@ Icon(
         child: ExpandedScrollingColumn(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Padding(
-              padding: const EdgeInsets.all(8.0),
+            Container(
+              padding: const EdgeInsets.all(15.0),
+              decoration: const BoxDecoration(
+                color: detailsColor,
+                shape: BoxShape.circle,
+              ),
               child: Icon(
                 selectedGalleryIcon.icon,
                 color: detailsTextColor,

@@ -30,6 +30,16 @@ export 'package:url_launcher/url_launcher.dart';
 // supplementary icons
 export 'package:ionicons/ionicons.dart';
 
+// dotted_border
+export 'package:dotted_border/dotted_border.dart';
+
+// svgs
+export 'package:flutter_svg/flutter_svg.dart';
+
+// hive db
+export 'package:hive/hive.dart';
+export 'package:hive_flutter/hive_flutter.dart';
+
 
 // ------- IN APP FILES -------
 // responsive design
@@ -52,3 +62,6 @@ export 'ui/exporter.dart';
 
 // link
 export 'link/exporter.dart';
+
+// icons
+export 'icons/exporter.dart';

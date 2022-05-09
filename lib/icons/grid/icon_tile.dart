@@ -1,5 +1,7 @@
 // Project imports:
 import '../../gallery_exporter.dart';
+import '../icon_providers.dart';
+import '../search/search_highlighter.dart';
 
 // on tap, open up the right page on Desktop and open new page on mobile
 
@@ -7,26 +9,28 @@ class IconTile extends StatefulWidget {
   const IconTile({
     Key? key,
     required this.onTap,
-    required this.text,
-    required this.squareColor,
-    required this.textColor,
-    required this.selectedColor,
-    required this.icon,
     required this.showText,
+    required this.pointsIndex,
+    required this.selectedIcon,
+    this.isInSearch = false,
+    this.searchQuery,
   }) : super(key: key);
   final VoidCallback onTap;
 
-  // circle - text color
-  final Color squareColor, textColor, selectedColor;
-
-  //text
-  final String text;
-
-  ///Icon of a given subject
-  final IconData icon;
-
   // showText
   final bool showText;
+
+// whether we are searching or not
+  final bool isInSearch;
+
+  // search query
+  final String? searchQuery;
+
+  // index
+  final int pointsIndex;
+
+  // icon
+  final GalleryIcon selectedIcon;
 
   @override
   State<IconTile> createState() => _IconTileState();
@@ -47,65 +51,106 @@ class _IconTileState extends State<IconTile> {
   /// border radius
   final borderRadius = BorderRadius.circular(8.0);
 
+//  text: selectedIcon.name,
+//                       icon: ,
+
   @override
   Widget build(BuildContext context) {
-    return AnimatedSwitcher(
-      duration: oneSecond,
-      child: Material(
-        key: ValueKey(widget.text),
-        color: widget.textColor.withOpacity(.2),
-        borderRadius: borderRadius,
-        elevation: elevation,
-        shadowColor: widget.textColor,
-        child: InkWell(
-          splashColor: widget.textColor,
-          highlightColor: galleryBackground.withOpacity(.5),
+    //text
+    final iconName = widget.selectedIcon.name;
+
+    ///Icon of a given subject
+    final iconData = widget.selectedIcon.icon;
+
+    return Consumer(builder: (context, ref, _) {
+      // index of the currently selected icon
+      final selectedIconIndex =
+          ref.watch(selectedIconIndexProvider.state).state;
+
+      // is selected icon index equal to the index of the subject
+      final isSelected = (selectedIconIndex == widget.pointsIndex);
+
+      final iconTextColor = isSelected ? galleryWhite : galleryBlack;
+      final selectedColor = isSelected ? galleryBlue : galleryWhite;
+
+      return AnimatedSwitcher(
+        duration: oneSecond,
+        child: Material(
+          key: ValueKey(iconName),
+          color: iconTextColor.withOpacity(.2),
           borderRadius: borderRadius,
-          onTap: widget.onTap,
-          onHover: (isHover) {
-            setState(() {
-              isHover ? elevation = 10 : elevation = 0;
-            });
-          },
-          child: Ink(
-            decoration: BoxDecoration(
-              borderRadius: borderRadius,
-              color: widget.selectedColor,
-            ),
-            child: Padding(
-              padding: const EdgeInsets.all(4.0),
-              child: SizedBox(
-                height: squareSize,
-                width: squareSize,
-                child: Column(
-                  mainAxisSize: MainAxisSize.min,
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Icon(
-                      widget.icon,
-                      color: widget.textColor,
-                      size: iconSize,
-                    ),
-                    if (widget.showText) const VerticalSpacing(of: 5),
-                    if (widget.showText)
-                      Text(
-                        widget.text,
-                        maxLines: 2,
-                        overflow: TextOverflow.ellipsis,
-                        textAlign: TextAlign.center,
-                        style: TextStyle(
-                          color: widget.textColor,
-                          fontSize: textSize,
-                          fontWeight: FontWeight.bold,
-                        ),
+          elevation: elevation,
+          shadowColor: iconTextColor,
+          child: InkWell(
+            splashColor: iconTextColor,
+            highlightColor: galleryBackground.withOpacity(.5),
+            borderRadius: borderRadius,
+            // onTap: widget.onTap,
+            onTap: () {
+              //update the selected value provider
+              // first check if its selected then update the value to -1 else update the value to the index of the subject
+              if (isSelected) {
+                ref.watch(selectedIconIndexProvider.notifier).state = -1;
+              } else {
+                ref.watch(selectedIconIndexProvider.notifier).state =
+                    widget.pointsIndex;
+              }
+
+              ref.watch(selectedGalleryIconProvider.notifier).state =
+                  widget.selectedIcon;
+            },
+            onHover: (isHover) {
+              setState(() {
+                isHover ? elevation = 10 : elevation = 0;
+              });
+            },
+            child: Ink(
+              decoration: BoxDecoration(
+                borderRadius: borderRadius,
+                color: selectedColor,
+              ),
+              child: Padding(
+                padding: const EdgeInsets.all(4.0),
+                child: SizedBox(
+                  height: squareSize,
+                  width: squareSize,
+                  child: Column(
+                    mainAxisSize: MainAxisSize.min,
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Icon(
+                        iconData,
+                        color: iconTextColor,
+                        size: iconSize,
                       ),
-                  ],
+                      if (widget.showText) const VerticalSpacing(of: 5),
+                      if (widget.showText && !widget.isInSearch)
+                        Text(
+                          iconName,
+                          maxLines: 2,
+                          overflow: TextOverflow.ellipsis,
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                            color: iconTextColor,
+                            fontSize: textSize,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+
+                      // search highlighter
+                      if (widget.isInSearch)
+                        SearchHighlighter(
+                          searchQuery: widget.searchQuery,
+                          text: iconName,
+                        ),
+                    ],
+                  ),
                 ),
               ),
             ),
           ),
         ),
-      ),
-    );
+      );
+    });
   }
 }

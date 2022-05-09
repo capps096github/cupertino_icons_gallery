@@ -2,7 +2,7 @@
 import 'package:flutter/cupertino.dart';
 
 // Project imports:
-import 'gallery_icon.dart';
+import 'gallery_icon/gallery_icon.dart';
 
 // this is the full list of all cupertino icons in Alphabetical order
 //source: https://api.flutter.dev/flutter/cupertino/CupertinoIcons-class.html#constants

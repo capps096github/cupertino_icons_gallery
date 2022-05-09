@@ -1,27 +1,24 @@
 // Project imports:
-import 'package:flutter/cupertino.dart';
 
 import '../../gallery_exporter.dart';
-import '../gallery_icon.dart';
+import '../cant_find_icon.dart';
 import '../icon_providers.dart';
 import 'icon_tile.dart';
 
 class IconTilesView extends ConsumerWidget {
-  const IconTilesView({Key? key}) : super(key: key);
+  const IconTilesView({required this.galleryIconList, Key? key})
+      : super(key: key);
+  final List<GalleryIcon> galleryIconList;
 
   @override
   Widget build(BuildContext context, ref) {
-    /// State Provider for all subjects
-    final List<GalleryIcon> galleryIconList =
-        ref.watch(allIconsProvider.state).state;
-
     // provides the length of the subjects list
     final int totalIconCount = galleryIconList.length;
 
     // check if we have icons
     final hasIcons = totalIconCount > 0;
 
-    // access the value stored at the current page gradeValue provider
+// index of the currently selected icon
     final selectedIconIndex = ref.watch(selectedIconIndexProvider.state).state;
 
     //
@@ -74,20 +71,10 @@ class IconTilesView extends ConsumerWidget {
                     // is selected icon index equal to the index of the subject
                     final isSelected = (selectedIconIndex == pointsIndex);
 
-                    final iconTextColor =
-                        isSelected ? galleryWhite : galleryBlack;
-                    final iconBackColor =
-                        isSelected ? galleryBlack : galleryWhite;
-                    final selectedColor =
-                        isSelected ? galleryBlue : galleryWhite;
-
                     return IconTile(
+                      pointsIndex: pointsIndex,
                       showText: !smallestMobile,
-                      text: selectedIcon.name,
-                      icon: selectedIcon.icon,
-                      textColor: iconTextColor,
-                      selectedColor: selectedColor,
-                      squareColor: iconBackColor,
+                      selectedIcon: selectedIcon,
                       onTap: () {
                         //update the selected value provider
                         // first check if its selected then update the value to -1 else update the value to the index of the subject
@@ -109,26 +96,9 @@ class IconTilesView extends ConsumerWidget {
               );
             },
           )
-        : SliverToBoxAdapter(
-            child: Column(
-              mainAxisSize: MainAxisSize.min,
-              children: [
-                const Icon(
-                  CupertinoIcons.doc_text_search,
-                  color: galleryColor,
-                  size: 128,
-                ),
-                Center(
-                  child: Text(
-                    'No icons found',
-                    style: GoogleFonts.spartan(
-                      fontWeight: FontWeight.bold,
-                      color: galleryColor,
-                      fontSize: 24,
-                    ),
-                  ),
-                ),
-              ],
+        : const SliverToBoxAdapter(
+            child: CantFindIcon(
+              errorText: "No icons found",
             ),
           );
   }

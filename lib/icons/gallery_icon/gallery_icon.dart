@@ -3,17 +3,24 @@
 // Flutter imports:
 import 'package:flutter/material.dart';
 
-class GalleryIcon {
+import 'package:hive/hive.dart';
+
+part 'gallery_icon.g.dart';
+
+@HiveType(typeId: 2)
+class GalleryIcon extends HiveObject {
+  @HiveField(0)
   // name of the icon
   final String name;
 
-  // the icon itself
+  @HiveField(1)
+  // icon
   final IconData icon;
 
   // aliases
   final List<String> aliases;
 
-   GalleryIcon({
+  GalleryIcon({
     required this.name,
     required this.icon,
     this.aliases = const [],

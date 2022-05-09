@@ -4,7 +4,6 @@ import 'package:flutter/cupertino.dart';
 // Project imports:
 import '../gallery_exporter.dart';
 import 'filter/filter_provider.dart';
-import 'gallery_icon.dart';
 import 'gallery_icons_data.dart';
 
 ///Provides the Current Index of the selected icon
@@ -41,8 +40,8 @@ final allIconsProvider = StateProvider<List<GalleryIcon>>(
     } else {
       // print
       return cupertinoIcons
-          .where((icon) => icon.name.startsWith(
-              alphabetFilters[(selectedFilterIndex )].toLowerCase()))
+          .where((icon) => icon.name
+              .startsWith(alphabetFilters[(selectedFilterIndex)].toLowerCase()))
           .toList();
     }
   },
