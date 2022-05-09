@@ -13,8 +13,7 @@ class IconDetails extends ConsumerWidget {
     final selectedGalleryIcon =
         ref.watch(selectedGalleryIconProvider.state).state;
 
-    final largeCodeSnippet =
-        '''
+    final largeCodeSnippet = '''
 Icon(
   CupertinoIcons.${selectedGalleryIcon.name},
 ),
@@ -34,7 +33,7 @@ Icon(
               padding: const EdgeInsets.all(8.0),
               child: Icon(
                 selectedGalleryIcon.icon,
-                color: detailsColor,
+                color: detailsTextColor,
                 size: 128,
               ),
             ),

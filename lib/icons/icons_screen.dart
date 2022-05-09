@@ -13,6 +13,7 @@ class CupertinoIconsScreen extends StatelessWidget {
     // this will have a search and filter section too
     return Scaffold(
       appBar: iconsAppBar(),
+      key: UniqueKey(),
       extendBody: true,
       body: Row(
         children: const [

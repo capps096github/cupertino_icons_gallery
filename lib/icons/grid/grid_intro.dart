@@ -92,14 +92,36 @@ class IconGridIntro extends StatelessWidget {
                     link: xephasTwitter,
                   ),
                   const TextSpan(
-                    text: ' for the ',
+                    text: ' in ',
                   ),
                   linkTextSpan(
                     text: 'Flutter',
                     link: flutterLink,
                   ),
                   const TextSpan(
-                    text: ' Community. It is now available on ',
+                    text: ' for the ',
+                  ),
+                  linkTextSpan(
+                    text: 'Flutter Community.',
+                    link: flutterCommunityLink,
+                  ),
+                ],
+              ),
+            ),
+
+            const SectionTitle(sectionText: "Open Source"),
+
+            // subtitle
+            RichText(
+              textAlign: TextAlign.center,
+              text: TextSpan(
+                style: GoogleFonts.spartan(
+                  color: galleryColor,
+                  height: 1.5,
+                ),
+                children: [
+                  const TextSpan(
+                    text: 'It is now available on ',
                   ),
                   linkTextSpan(
                     text: 'Github (capps096github/cupertino_icons_gallery)',

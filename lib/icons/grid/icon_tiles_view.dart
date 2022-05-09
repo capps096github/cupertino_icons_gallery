@@ -112,8 +112,8 @@ class IconTilesView extends ConsumerWidget {
         : SliverToBoxAdapter(
             child: Column(
               mainAxisSize: MainAxisSize.min,
-              children: const [
-                Icon(
+              children: [
+                const Icon(
                   CupertinoIcons.doc_text_search,
                   color: galleryColor,
                   size: 128,
@@ -121,9 +121,10 @@ class IconTilesView extends ConsumerWidget {
                 Center(
                   child: Text(
                     'No icons found',
-                    style: TextStyle(
+                    style: GoogleFonts.spartan(
                       fontWeight: FontWeight.bold,
                       color: galleryColor,
+                      fontSize: 24,
                     ),
                   ),
                 ),
