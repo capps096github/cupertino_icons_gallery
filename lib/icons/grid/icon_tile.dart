@@ -10,21 +10,18 @@ class IconTile extends StatefulWidget {
     Key? key,
     required this.onTap,
     required this.showText,
+    this.isShownInRecentSearch = false,
     required this.pointsIndex,
     required this.selectedIcon,
-    this.isInSearch = false,
-    this.searchQuery,
+    required this.searchQuery,
   }) : super(key: key);
   final VoidCallback onTap;
 
   // showText
-  final bool showText;
-
-// whether we are searching or not
-  final bool isInSearch;
+  final bool showText, isShownInRecentSearch;
 
   // search query
-  final String? searchQuery;
+  final String searchQuery;
 
   // index
   final int pointsIndex;
@@ -50,9 +47,6 @@ class _IconTileState extends State<IconTile> {
 
   /// border radius
   final borderRadius = BorderRadius.circular(8.0);
-
-//  text: selectedIcon.name,
-//                       icon: ,
 
   @override
   Widget build(BuildContext context) {
@@ -86,7 +80,7 @@ class _IconTileState extends State<IconTile> {
             highlightColor: galleryBackground.withOpacity(.5),
             borderRadius: borderRadius,
             // onTap: widget.onTap,
-            onTap: () {
+            onTap: () async {
               //update the selected value provider
               // first check if its selected then update the value to -1 else update the value to the index of the subject
               if (isSelected) {
@@ -98,6 +92,17 @@ class _IconTileState extends State<IconTile> {
 
               ref.watch(selectedGalleryIconProvider.notifier).state =
                   widget.selectedIcon;
+
+              // add item to recent searches
+
+              if (!widget.isShownInRecentSearch) {
+                await ref.read(recentSearchNotifier).addItemToRecentSearches(
+                      RecentSearchItem(
+                        searchQuery: widget.searchQuery,
+                        selectedIcon: widget.selectedIcon,
+                      ),
+                    );
+              }
             },
             onHover: (isHover) {
               setState(() {
@@ -124,24 +129,14 @@ class _IconTileState extends State<IconTile> {
                         size: iconSize,
                       ),
                       if (widget.showText) const VerticalSpacing(of: 5),
-                      if (widget.showText && !widget.isInSearch)
-                        Text(
-                          iconName,
-                          maxLines: 2,
-                          overflow: TextOverflow.ellipsis,
-                          textAlign: TextAlign.center,
-                          style: TextStyle(
-                            color: iconTextColor,
-                            fontSize: textSize,
-                            fontWeight: FontWeight.bold,
-                          ),
-                        ),
 
                       // search highlighter
-                      if (widget.isInSearch)
+                      // if (widget.isInSearch)
+                      if (widget.showText)
                         SearchHighlighter(
                           searchQuery: widget.searchQuery,
                           text: iconName,
+                          textColor: iconTextColor,
                         ),
                     ],
                   ),

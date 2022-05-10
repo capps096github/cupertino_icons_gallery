@@ -6,9 +6,16 @@ import '../icon_providers.dart';
 import 'icon_tile.dart';
 
 class IconTilesView extends ConsumerWidget {
-  const IconTilesView({required this.galleryIconList, Key? key})
-      : super(key: key);
+  const IconTilesView({
+    required this.galleryIconList,
+    this.searchQuery = '',
+    Key? key,
+  }) : super(key: key);
   final List<GalleryIcon> galleryIconList;
+
+  // search query
+  final String searchQuery;
+
 
   @override
   Widget build(BuildContext context, ref) {
@@ -75,6 +82,7 @@ class IconTilesView extends ConsumerWidget {
                       pointsIndex: pointsIndex,
                       showText: !smallestMobile,
                       selectedIcon: selectedIcon,
+                      searchQuery: searchQuery,
                       onTap: () {
                         //update the selected value provider
                         // first check if its selected then update the value to -1 else update the value to the index of the subject

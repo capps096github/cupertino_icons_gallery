@@ -51,3 +51,26 @@ final allIconsProvider = StateProvider<List<GalleryIcon>>(
 final selectedFilterIndexProvider = StateProvider<int>((ref) {
   return 0;
 });
+
+// searchIconsProvider
+final searchIconsProvider =
+    StateProvider.family<List<GalleryIcon>, String>((ref, searchQuery) {
+  // Sort the icons in ascending order by name
+  cupertinoIcons.sort((a, b) => a.name.compareTo(b.name));
+
+// if the search query is empty return all icons else filter the icons
+  if (searchQuery.isEmpty) {
+    return cupertinoIcons;
+  } else {
+    return cupertinoIcons
+        .where((galleryIcon) =>
+            galleryIcon.name
+                .toLowerCase()
+                .contains(searchQuery.toLowerCase()) ||
+            galleryIcon.icon
+                .toString()
+                .toLowerCase()
+                .contains(searchQuery.toLowerCase()))
+        .toList();
+  }
+});

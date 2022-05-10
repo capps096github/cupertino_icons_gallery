@@ -3,6 +3,10 @@
 class PageStorageKeys {
   /// [CupertinoIconGrid] Key
   static const String cupertinoIconsKey = 'cupertino_icons_key';
+
+  /// [CupertinoIconGrid] Key
+  static const String cupertinoSearchKey = 'cupertino_search_key';
+
   /// [CupertinoIconGrid] Key
   static const String cupertinoFilterKey = 'cupertino_filter_key';
 }

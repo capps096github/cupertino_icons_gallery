@@ -6,41 +6,39 @@ class SearchHighlighter extends StatelessWidget {
     required this.searchQuery,
     required this.text,
     this.textColor = galleryColor,
-    this.textStyle,
     this.textAlign = TextAlign.start,
-    this.maxLines = 1,
     this.fontSize = 16,
   }) : super(key: key);
-  final String? searchQuery;
-  
+  final String searchQuery;
+
   final String text;
   final Color textColor;
-  final TextStyle? textStyle;
 
   final TextAlign textAlign;
-
-  final int maxLines;
 
   final double fontSize;
 
   @override
   Widget build(BuildContext context) {
-    final textStyleHighlight = textStyle ??
-       TextStyle(
-          fontSize: fontSize,
-          fontWeight: FontWeight.normal,
-          color: textColor,
-        );
+    final textStyleHighlight = TextStyle(
+      fontSize: fontSize,
+      fontWeight: FontWeight.normal,
+      color: textColor,
+    );
+
+    // check if we are on mobile
+    final isMobile = GalleryResponsive.isMobile(context);
 
     return SubstringHighlight(
       text: text,
       term: searchQuery,
-      textAlign: textAlign,
-      maxLines: maxLines,
+      textAlign: TextAlign.center,
+      maxLines: isMobile ? 1 : 2,
       overflow: TextOverflow.ellipsis,
-      textStyle: textStyleHighlight,
+      textStyle: textStyleHighlight.copyWith(fontSize: 14),
       textStyleHighlight: textStyleHighlight.copyWith(
         backgroundColor: galleryBlue,
+        color: galleryWhite,
       ),
     );
   }

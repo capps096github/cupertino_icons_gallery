@@ -58,6 +58,7 @@ class SearchedResultsList extends ConsumerWidget {
                 pointsIndex: pointsIndex,
                 showText: !smallestMobile,
                 searchQuery: query,
+                isShownInRecentSearch: true,
                 selectedIcon: selectedIcon,
                 onTap: () {
                   //update the selected value provider

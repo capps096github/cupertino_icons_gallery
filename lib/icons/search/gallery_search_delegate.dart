@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 
 import '../../gallery_exporter.dart';
 import 'recents/recents_list.dart';
+import 'search_icons_screen.dart';
 import 'search_suggestion_list.dart';
 import 'ui/perform_search.dart';
 
@@ -145,7 +146,7 @@ class GallerySearchDelegate extends SearchDelegate {
         return AnimatedSwitcher(
           duration: const Duration(milliseconds: 500),
           child: query.isNotEmpty
-              ? SearchSuggestionList(query: query)
+              ? SearchIconsScreen(searchQuery: query)
               : RecentSearchesList(
                   onRecentTermTapped: () => query = updatedSearchQuery,
                 ),
