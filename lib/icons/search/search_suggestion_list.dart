@@ -44,7 +44,6 @@ class SearchSuggestionList extends ConsumerWidget {
                           padding: const EdgeInsets.all(8.0),
                           sliver: IconTilesView(
                             galleryIconList: searchList,
-                            
                             searchQuery: query,
                           ),
                         ),
@@ -53,6 +52,6 @@ class SearchSuggestionList extends ConsumerWidget {
                   : const IconDetails(),
             ),
           )
-        : CantFindIcon(errorText: "Icon $query not found");
+        : CantFindIcon(errorText: 'Icon "$query" not found');
   }
 }

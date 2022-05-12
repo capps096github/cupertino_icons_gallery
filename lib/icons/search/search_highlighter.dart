@@ -37,7 +37,7 @@ class SearchHighlighter extends StatelessWidget {
       overflow: TextOverflow.ellipsis,
       textStyle: textStyleHighlight.copyWith(fontSize: 14),
       textStyleHighlight: textStyleHighlight.copyWith(
-        backgroundColor: galleryBlue,
+        backgroundColor: galleryPink,
         color: galleryWhite,
       ),
     );

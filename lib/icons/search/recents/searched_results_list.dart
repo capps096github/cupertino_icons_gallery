@@ -1,6 +1,7 @@
 import '../../../gallery_exporter.dart';
 import '../../grid/icon_tile.dart';
 
+// TODO: Start here and make the recent results list appear on the list
 ///This returns a list of recently searched results
 class SearchedResultsList extends ConsumerWidget {
   const SearchedResultsList({Key? key, required this.recentSearchItemsList})

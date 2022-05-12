@@ -17,37 +17,34 @@ class IconsRail extends ConsumerWidget {
     //this is the condition to show the grid, only when the user has not selected anything i.e value == -1
     final showDetails = (selectedIconIndex != -1) && !isMobile;
 
-    return Material(
-      color: detailsColor,
-      elevation: 8,
-      child: AnimatedContainer(
-        duration: quarterSeconds,
-        height: double.infinity,
-        width: showDetails ? iconDetailsWidth : 0,
-        decoration: const BoxDecoration(
-          border: Border(
-            right: BorderSide(
-              width: .25,
-              color: galleryWhite,
-            ),
+    return AnimatedContainer(
+      duration: quarterSeconds,
+      height: double.infinity,
+      width: showDetails ? iconDetailsWidth : 0,
+      decoration: const BoxDecoration(
+        color: galleryColor,
+        border: Border(
+          left: BorderSide(
+            width: .25,
+            color: galleryWhite,
           ),
         ),
+      ),
 
-        // this here is to prevent overflow errors when opening up the side bar
-        child: AnimatedSwitcher(
-          duration: quarterSeconds,
-          child: showDetails
-              ? IconDetails(
-                  key: UniqueKey(),
-                )
-              : const SizedBox(),
-          transitionBuilder: (child, animation) {
-            return ScaleTransition(
-              scale: animation,
-              child: child,
-            );
-          },
-        ),
+      // this here is to prevent overflow errors when opening up the side bar
+      child: AnimatedSwitcher(
+        duration: quarterSeconds,
+        child: showDetails
+            ? IconDetails(
+                key: ValueKey(selectedIconIndex),
+              )
+            : const SizedBox(),
+        transitionBuilder: (child, animation) {
+          return ScaleTransition(
+            scale: animation,
+            child: child,
+          );
+        },
       ),
     );
   }

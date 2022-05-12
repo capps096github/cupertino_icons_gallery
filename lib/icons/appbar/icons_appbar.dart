@@ -7,15 +7,7 @@ import 'title_banner.dart';
 AppBar iconsAppBar() {
   return AppBar(
     automaticallyImplyLeading: false,
-    elevation: 10,
     title: const GalleryLogo(),
-    actions: [
-      // github icon
-      IconButton(
-        icon: const Icon(Ionicons.logo_github),
-        onPressed: () async => await linkLauncher(repoLink),
-      ),
-    ],
     bottom: const PreferredSize(
       preferredSize: Size.fromHeight(kToolbarHeight),
       child: TitleBanner(

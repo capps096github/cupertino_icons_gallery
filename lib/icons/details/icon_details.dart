@@ -13,8 +13,7 @@ class IconDetails extends ConsumerWidget {
     final selectedGalleryIcon =
         ref.watch(selectedGalleryIconProvider.state).state;
 
-    final largeCodeSnippet =
-        '''
+    final largeCodeSnippet = '''
 Icon(
   CupertinoIcons.${selectedGalleryIcon.name},
 ),

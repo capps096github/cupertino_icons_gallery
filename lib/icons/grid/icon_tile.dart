@@ -96,12 +96,12 @@ class _IconTileState extends State<IconTile> {
               // add item to recent searches
 
               if (!widget.isShownInRecentSearch) {
-                await ref.read(recentSearchNotifier).addItemToRecentSearches(
-                      RecentSearchItem(
-                        searchQuery: widget.searchQuery,
-                        selectedIcon: widget.selectedIcon,
-                      ),
-                    );
+                // await ref.read(recentSearchNotifier).addItemToRecentSearches(
+                //       RecentSearchItem(
+                //         searchQuery: widget.searchQuery,
+                //         selectedIcon: widget.selectedIcon,
+                //       ),
+                //     );
               }
             },
             onHover: (isHover) {
