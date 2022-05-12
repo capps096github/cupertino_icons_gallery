@@ -165,6 +165,8 @@ class IconGridIntro extends StatelessWidget {
               ],
             ),
 
+            const VerticalSpacing(of: 20),
+
             const IconsTitle(),
           ],
         ),
