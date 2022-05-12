@@ -12,7 +12,6 @@ export 'package:flutter_riverpod/flutter_riverpod.dart';
 // fonts
 export 'package:google_fonts/google_fonts.dart';
 
-
 // flextras
 export 'package:flextras/flextras.dart';
 
@@ -31,6 +30,11 @@ export 'package:ionicons/ionicons.dart';
 // svgs
 export 'package:flutter_svg/flutter_svg.dart';
 
+// Firebase
+export 'package:firebase_core/firebase_core.dart';
+
+// Firebase Analytics
+export 'package:firebase_analytics/firebase_analytics.dart';
 
 // ------- IN APP FILES -------
 // responsive design

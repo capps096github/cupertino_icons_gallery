@@ -1,7 +1,8 @@
 // Project imports:
 import '../gallery_exporter.dart';
 
-// TODO: Add firebase analytics into the app for tracking purposes on Number of Users.
+// for app analytics
+FirebaseAnalytics _analytics = FirebaseAnalytics.instance;
 
 final galleryRouterProvider = GoRouter(
   routes: [
@@ -16,9 +17,11 @@ final galleryRouterProvider = GoRouter(
   initialLocation: initialLocation,
   //  here our firebase analytics observers
   observers: [
-    // FirebaseAnalyticsObserver(analytics: _analytics),
+    // disable for windows
+    if (!isGalleryWindows) FirebaseAnalyticsObserver(analytics: _analytics),
   ],
   restorationScopeId: galleryId,
-  errorBuilder: (context, state) =>
-      GalleryError(errorText: state.error.toString()),
+  errorBuilder: (context, state) => GalleryError(
+    errorText: state.error.toString(),
+  ),
 );
