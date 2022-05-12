@@ -3,6 +3,7 @@ import 'package:flutter/cupertino.dart';
 
 // Project imports:
 import '../../gallery_exporter.dart';
+import '../icon_providers.dart';
 import 'gallery_search_delegate.dart';
 
 final searchTexts = [
@@ -13,18 +14,27 @@ final searchTexts = [
   'Search for a Cupertino Icon',
 ];
 
-class SearchContainer extends StatelessWidget {
+class SearchContainer extends ConsumerWidget {
   const SearchContainer({
     Key? key,
   }) : super(key: key);
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, ref) {
     return InkWell(
-      onTap: () => showSearch(
-        context: context,
-        delegate: GallerySearchDelegate(),
-      ),
+      onTap: () {
+        // search
+        showSearch(
+          context: context,
+          delegate: GallerySearchDelegate(),
+        );
+
+        // reset the filters
+        ref.watch(selectedFilterIndexProvider.notifier).state = 0;
+
+        // reset the selected icon index too
+        ref.watch(selectedIconIndexProvider.notifier).state = -1;
+      },
       child: Container(
         margin: const EdgeInsets.all(4),
         constraints: const BoxConstraints(maxWidth: 900),
@@ -47,10 +57,19 @@ class SearchContainer extends StatelessWidget {
                     .map((searchText) =>
                         typewriterAnimatedText(searchText, galleryColor))
                     .toList(),
-                onTap: () => showSearch(
-                  context: context,
-                  delegate: GallerySearchDelegate(),
-                ),
+                onTap: () {
+                  // search
+                  showSearch(
+                    context: context,
+                    delegate: GallerySearchDelegate(),
+                  );
+
+                  // reset the filters
+                  ref.watch(selectedFilterIndexProvider.notifier).state = 0;
+
+                  // reset the selected icon index too
+                  ref.watch(selectedIconIndexProvider.notifier).state = -1;
+                },
               ),
             ),
             Container(

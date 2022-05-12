@@ -2,6 +2,7 @@
 import '../../gallery_exporter.dart';
 import '../cant_find_icon.dart';
 import '../details/icon_details.dart';
+import '../grid/credits.dart';
 import '../grid/icon_tiles_view.dart';
 import '../icon_providers.dart';
 
@@ -48,6 +49,9 @@ class SearchSuggestionList extends ConsumerWidget {
                             searchQuery: query,
                           ),
                         ),
+
+                        // app credits
+                        const GridCredits(),
                       ],
                     )
                   : const IconDetails(),

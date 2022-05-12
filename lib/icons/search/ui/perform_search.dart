@@ -40,6 +40,15 @@ class PerformSearch extends ConsumerWidget {
                   ),
                 ),
               ),
+
+              const SliverToBoxAdapter(
+                child: SectionTitle(
+                  sectionText: "All Icons",
+                  backgroundColor: galleryBlack,
+                ),
+              ),
+
+              // icons
               SliverPadding(
                 padding: const EdgeInsets.all(8.0),
                 sliver: IconTilesView(

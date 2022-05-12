@@ -3,6 +3,7 @@ import 'package:flutter/cupertino.dart';
 
 // Project imports:
 import '../../gallery_exporter.dart';
+import '../filter/filter_provider.dart';
 import '../icon_providers.dart';
 
 class IconGridIntro extends StatelessWidget {
@@ -164,13 +165,41 @@ class IconGridIntro extends StatelessWidget {
               ],
             ),
 
-            const SectionTitle(
-              sectionText: "Icons",
-              backgroundColor: galleryBlack,
-            ),
+            const IconsTitle(),
           ],
         ),
       ),
+    );
+  }
+}
+
+class IconsTitle extends StatelessWidget {
+  const IconsTitle({
+    Key? key,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Consumer(
+      builder: (context, ref, child) {
+        // get the current filter index
+        final currentFilterIndex =
+            ref.watch(selectedFilterIndexProvider.state).state;
+
+        // get the current filter alphabet
+        final currentFilterAlphabet = alphabetFilters[currentFilterIndex];
+
+        // all selected
+        final isAllSelected =
+            (currentFilterIndex == 0 || currentFilterIndex == -1);
+
+        return SectionTitle(
+          sectionText: isAllSelected
+              ? "All Icons"
+              : "Icons starting with ${currentFilterAlphabet.toLowerCase()}",
+          backgroundColor: galleryBlack,
+        );
+      },
     );
   }
 }

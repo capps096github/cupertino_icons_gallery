@@ -19,7 +19,7 @@ class CantFindIcon extends StatelessWidget {
       children: [
         const Icon(
           CupertinoIcons.doc_text_search,
-          color: galleryColor,
+          color: galleryBlack,
           size: 128,
         ),
         Center(
@@ -27,7 +27,7 @@ class CantFindIcon extends StatelessWidget {
             errorText,
             style: GoogleFonts.spartan(
               fontWeight: FontWeight.bold,
-              color: galleryColor,
+              color: galleryBlack,
               fontSize: 24,
             ),
           ),

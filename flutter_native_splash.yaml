@@ -1,0 +1,9 @@
+# For the Splash Screen
+
+flutter_native_splash:
+  color: "#0553B1"
+  image: images/logo.png
+  web: false
+
+  # Always Disable splash screen generation
+  #  for the flutter web coz it disables our PWA support

@@ -18,13 +18,15 @@ class GridCredits extends StatelessWidget {
           // from
           const FromXephas(
             textColor: galleryColor,
-            builderColor: galleryColor,
+            builderColor: galleryPink,
           ),
 
+          const VerticalSpacing(of: 10),
           // in flutter
           Center(
             child: Image.asset(
               "images/with_flutter.png",
+              height: 80,
             ),
           ),
         ],

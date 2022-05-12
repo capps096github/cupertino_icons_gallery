@@ -1,0 +1,10 @@
+flutter_icons:
+  android: true
+  ios: true
+  windows: true
+  image_path: "images/logo.png"
+  image_path_android: "images/logo.png"
+  image_path_ios: "images/ios_logo.png"
+
+
+# source help : https://icon.kitchen/
