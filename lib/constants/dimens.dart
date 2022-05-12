@@ -1,4 +1,6 @@
 // drawer width on desktop (when open)
+
+// Project imports:
 import '../gallery_exporter.dart';
 
 const double sideBarDesktopWidth = 300;

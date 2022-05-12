@@ -1,6 +1,7 @@
-// Project imports:
+// Flutter imports:
 import 'package:flutter/cupertino.dart';
 
+// Project imports:
 import '../../gallery_exporter.dart';
 import '../icon_providers.dart';
 

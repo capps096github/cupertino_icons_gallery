@@ -1,3 +1,4 @@
+// Project imports:
 import '../gallery_exporter.dart';
 
 class GallerySplash extends StatelessWidget {

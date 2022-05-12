@@ -2,6 +2,7 @@
 import '../../gallery_exporter.dart';
 import '../icon_providers.dart';
 import '../search/search_container.dart';
+import 'credits.dart';
 import 'grid_intro.dart';
 import 'icon_tiles_view.dart';
 
@@ -36,6 +37,9 @@ class IconGridView extends StatelessWidget {
             },
           ),
         ),
+
+        // built by
+        const GridCredits(),
       ],
     );
   }

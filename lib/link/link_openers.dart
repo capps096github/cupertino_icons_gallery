@@ -14,3 +14,8 @@ Future<void> linkLauncher(String link) async {
 void openXephasTwitter() async {
   await linkLauncher(xephasTwitter);
 }
+
+// Open Xephas Twitter Account
+void visitFlutterCommunity() async {
+  await linkLauncher(flutterCommunityLink);
+}

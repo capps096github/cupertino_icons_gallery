@@ -1,3 +1,4 @@
+// Project imports:
 import '../../gallery_exporter.dart';
 import '../icons_rail.dart';
 import 'search_suggestion_list.dart';

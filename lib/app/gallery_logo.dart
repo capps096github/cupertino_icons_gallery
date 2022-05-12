@@ -1,5 +1,6 @@
-import 'package:flutter/cupertino.dart';
+// Flutter imports:
 
+// Project imports:
 import '../gallery_exporter.dart';
 
 class GalleryLogo extends StatelessWidget {
@@ -16,7 +17,7 @@ class GalleryLogo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Icon(
-      CupertinoIcons.rectangle_3_offgrid_fill,
+      Icons.noise_aware,
       size: iconSize,
       color: iconColor,
     );

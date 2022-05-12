@@ -1,4 +1,7 @@
+// Package imports:
 import 'package:firebase_core/firebase_core.dart';
+
+// Project imports:
 import '../firebase_options.dart';
 import '../gallery_exporter.dart';
 
@@ -15,11 +18,13 @@ class FirebaseConnect extends ConsumerWidget {
       data: (_) => const CupertinoIconsGallery(),
       loading: () => Container(
         color: galleryColor,
-        //  child: Image.asset(
-        //   "icons/fc.png",
-        //   height: 56,
-        //   width: 56,
-        // ),
+        child: Center(
+          child: SvgPicture.asset(
+            "images/cupertino_icon_white.svg",
+            height: 80,
+            width: 80,
+          ),
+        ),
       ),
       error: (error, stackTrace) => ErrorWidget(error),
     );

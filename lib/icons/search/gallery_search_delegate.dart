@@ -1,9 +1,9 @@
-import 'package:flutter/cupertino.dart';
+// Flutter imports:
 
+// Project imports:
 import '../../gallery_exporter.dart';
-import 'recents/recents_list.dart';
+import '../appbar/title_banner.dart';
 import 'search_icons_screen.dart';
-import 'search_suggestion_list.dart';
 import 'ui/perform_search.dart';
 
 const _accentColor = galleryWhite;
@@ -73,16 +73,25 @@ class GallerySearchDelegate extends SearchDelegate {
       child: Center(
         child: Padding(
           padding: const EdgeInsets.all(8.0),
-          child: DottedBorder(
-            padding: const EdgeInsets.all(4),
-            radius: const Radius.circular(10),
-            borderType: BorderType.RRect,
-            color: galleryWhite,
-            child: const Icon(
-              CupertinoIcons.rectangle_3_offgrid_fill,
-              size: 40,
-              color: galleryWhite,
-            ),
+          child: Row(
+            mainAxisSize: MainAxisSize.min,
+            children: const [
+              // icon
+              Icon(
+                Icons.noise_aware,
+                size: 40,
+                color: galleryWhite,
+              ),
+
+              // text
+              HorizontalSpacing(of: 8),
+
+              // text
+              TitleBanner(
+                homeTitle: "Cupertino Icons Search",
+                showDivider: false,
+              ),
+            ],
           ),
         ),
       ),
@@ -103,10 +112,7 @@ class GallerySearchDelegate extends SearchDelegate {
                       Ionicons.close_circle,
                       color: _accentColor,
                     ),
-                    onPressed: () {
-                      query = '';
-                      // ref.watch(recentSearchNotifier).updateSearchQuery('');
-                    },
+                    onPressed: () => query = '',
                   );
                 },
               )
@@ -128,30 +134,14 @@ class GallerySearchDelegate extends SearchDelegate {
 
   @override
   Widget buildResults(BuildContext context) {
-    return AnimatedSwitcher(
-      duration: const Duration(milliseconds: 500),
-      child: query.isNotEmpty
-          ? SearchSuggestionList(query: query)
-          : const PerformSearch(),
-    );
+    return SearchIconsScreen(searchQuery: query);
   }
 
   @override
   Widget buildSuggestions(BuildContext context) {
-    return Consumer(
-      builder: (context, ref, child) {
-        final updatedSearchQuery =
-            ref.watch(recentSearchNotifier).recentSearchQuery;
-
-        return AnimatedSwitcher(
-          duration: const Duration(milliseconds: 500),
-          child: query.isNotEmpty
-              ? SearchIconsScreen(searchQuery: query)
-              : RecentSearchesList(
-                  onRecentTermTapped: () => query = updatedSearchQuery,
-                ),
-        );
-      },
-    );
+//
+    return query.isNotEmpty
+        ? SearchIconsScreen(searchQuery: query)
+        : const PerformSearch();
   }
 }

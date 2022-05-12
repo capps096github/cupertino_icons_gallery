@@ -27,9 +27,6 @@ dependencies:
   # fonts
   google_fonts: ^2.3.2
 
-  # Navigation Animations
-  animations: ^2.0.2
-
   # scrollable rows x columns
   flextras: ^0.0.2
 
@@ -45,15 +42,10 @@ dependencies:
   # icons
   ionicons: ^0.1.2
 
-  # border
-  dotted_border: ^2.0.0+2
-
   # svgs
   flutter_svg: ^1.0.3
 
-  # local database
-  hive: ^2.0.6
-  hive_flutter: ^1.1.0
+  # firebase
   firebase_core: ^1.16.0
 
 dev_dependencies:
@@ -62,7 +54,6 @@ dev_dependencies:
 
   flutter_lints: ^1.0.0
   import_sorter: ^4.6.0
-  hive_generator: ^1.1.2
   build_runner: ^2.1.10
 
 flutter:

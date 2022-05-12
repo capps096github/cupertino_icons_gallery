@@ -3,17 +3,10 @@
 // Flutter imports:
 import 'package:flutter/material.dart';
 
-import 'package:hive/hive.dart';
-
-part 'gallery_icon.g.dart';
-
-@HiveType(typeId: 2)
-class GalleryIcon extends HiveObject {
-  @HiveField(0)
+class GalleryIcon  {
   // name of the icon
   final String name;
 
-  @HiveField(1)
   // icon
   final IconData icon;
 

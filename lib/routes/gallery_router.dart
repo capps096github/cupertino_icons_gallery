@@ -7,7 +7,7 @@ final galleryRouterProvider = GoRouter(
   routes: [
     GoRoute(
       path: '/',
-      builder: (context, state) => const GalleryConnect(),
+      builder: (context, state) => const CupertinoIconsScreen(),
     ),
   ],
 

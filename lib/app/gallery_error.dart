@@ -9,7 +9,7 @@ class GalleryError extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    //TODO add some styling here, like forwarding the error to the DEvs
+    //TODO add some styling here,
     return ErrorWidget(errorText);
   }
 }
