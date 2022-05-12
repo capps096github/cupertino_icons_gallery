@@ -3,6 +3,7 @@
 // Project imports:
 import '../../gallery_exporter.dart';
 import '../appbar/title_banner.dart';
+import '../icon_providers.dart';
 import 'search_icons_screen.dart';
 import 'ui/perform_search.dart';
 
@@ -68,6 +69,8 @@ class GallerySearchDelegate extends SearchDelegate {
 
   @override
   PreferredSizeWidget? buildBottom(BuildContext context) {
+    // is mobile
+    final isMobile = GalleryResponsive.isMobile(context);
     return PreferredSize(
       preferredSize: const Size.fromHeight(galleryAppbarHeight),
       child: Center(
@@ -75,21 +78,24 @@ class GallerySearchDelegate extends SearchDelegate {
           padding: const EdgeInsets.all(8.0),
           child: Row(
             mainAxisSize: MainAxisSize.min,
-            children: const [
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
               // icon
-              Icon(
+              const Icon(
                 Icons.noise_aware,
                 size: 40,
                 color: galleryWhite,
               ),
 
               // text
-              HorizontalSpacing(of: 8),
+              const HorizontalSpacing(of: 8),
 
               // text
-              TitleBanner(
-                homeTitle: "Cupertino Icons Search",
-                showDivider: false,
+              Flexible(
+                child: TitleBanner(
+                  homeTitle: isMobile ? "Search" : "Cupertino Icons Search",
+                  showDivider: false,
+                ),
               ),
             ],
           ),
@@ -104,17 +110,13 @@ class GallerySearchDelegate extends SearchDelegate {
       AnimatedContainer(
         duration: quarterSeconds,
         child: query.isNotEmpty
-            ? Consumer(
-                builder: (context, ref, child) {
-                  return IconButton(
-                    padding: EdgeInsets.zero,
-                    icon: const Icon(
-                      Ionicons.close_circle,
-                      color: _accentColor,
-                    ),
-                    onPressed: () => query = '',
-                  );
-                },
+            ? IconButton(
+                padding: EdgeInsets.zero,
+                icon: const Icon(
+                  Ionicons.close_circle,
+                  color: _accentColor,
+                ),
+                onPressed: () => query = '',
               )
             : const SizedBox(),
       ),
@@ -123,12 +125,28 @@ class GallerySearchDelegate extends SearchDelegate {
 
   @override
   Widget? buildLeading(BuildContext context) {
-    return IconButton(
-      icon: const Icon(
-        Icons.arrow_back,
-        color: _accentColor,
-      ),
-      onPressed: () => close(context, ''),
+    return Consumer(
+      builder: (context, ref, child) {
+        return IconButton(
+          icon: const Icon(
+            Icons.arrow_back,
+            color: _accentColor,
+          ),
+          onPressed: () {
+            // unfocus the search field if it is focused then unfocus it
+            if (query.isNotEmpty) {
+              FocusScope.of(context).unfocus();
+            }
+
+            // otherwise close the search
+            close(context, '');
+
+            // reset everything
+            // reset the selected icon index too
+            ref.watch(selectedIconIndexProvider.notifier).state = -1;
+          },
+        );
+      },
     );
   }
 

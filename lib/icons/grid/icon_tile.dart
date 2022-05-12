@@ -93,15 +93,9 @@ class _IconTileState extends State<IconTile> {
               ref.watch(selectedGalleryIconProvider.notifier).state =
                   widget.selectedIcon;
 
-              // add item to recent searches
-
-              if (!widget.isShownInRecentSearch) {
-                // await ref.read(recentSearchNotifier).addItemToRecentSearches(
-                //       RecentSearchItem(
-                //         searchQuery: widget.searchQuery,
-                //         selectedIcon: widget.selectedIcon,
-                //       ),
-                //     );
+              // unfocus the search field if it is focused then unfocus it
+              if (widget.searchQuery.isNotEmpty) {
+                FocusScope.of(context).unfocus();
               }
             },
             onHover: (isHover) {
@@ -131,7 +125,6 @@ class _IconTileState extends State<IconTile> {
                       if (widget.showText) const VerticalSpacing(of: 5),
 
                       // search highlighter
-                      // if (widget.isInSearch)
                       if (widget.showText)
                         SearchHighlighter(
                           searchQuery: widget.searchQuery,

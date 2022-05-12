@@ -1,5 +1,5 @@
 name: cupertino_icons_gallery
-description: A Gallery of Cupertion Icons used in Flutter
+description: The Home of over 1,335 Cupertion Icons used in Flutter
 
 publish_to: "none"
 
@@ -60,6 +60,11 @@ dev_dependencies:
   build_runner: ^2.1.10
   flutter_launcher_icons: ^0.9.2
   firebase_analytics: ^9.1.7
+  flutter_app_name: ^0.1.1
+
+flutter_app_name:
+  name: "Cupertino Icons Gallery"
+
 
 flutter:
   uses-material-design: true

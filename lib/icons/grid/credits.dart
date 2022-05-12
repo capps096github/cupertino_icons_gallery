@@ -26,9 +26,11 @@ class GridCredits extends StatelessWidget {
           Center(
             child: Image.asset(
               "images/with_flutter.png",
-              height: 80,
+              height: 50,
             ),
           ),
+
+          const VerticalSpacing(of: 20),
         ],
       ),
     );

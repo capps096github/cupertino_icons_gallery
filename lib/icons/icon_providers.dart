@@ -64,13 +64,7 @@ final searchIconsProvider =
   } else {
     return cupertinoIcons
         .where((galleryIcon) =>
-            galleryIcon.name
-                .toLowerCase()
-                .contains(searchQuery.toLowerCase()) ||
-            galleryIcon.icon
-                .toString()
-                .toLowerCase()
-                .contains(searchQuery.toLowerCase()))
+            galleryIcon.name.toLowerCase().contains(searchQuery.toLowerCase()))
         .toList();
   }
 });
