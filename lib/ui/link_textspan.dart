@@ -7,7 +7,7 @@ import '../gallery_exporter.dart';
 TextSpan linkTextSpan({
   required String text,
   required String link,
-  Color linkColor = galleryBlue,
+  Color linkColor = galleryColor,
 }) {
   return TextSpan(
     text: text,
@@ -15,7 +15,7 @@ TextSpan linkTextSpan({
       ..onTap = () async {
         await linkLauncher(link);
       },
-    style:  TextStyle(
+    style: TextStyle(
       color: linkColor,
       fontWeight: FontWeight.bold,
       decoration: TextDecoration.underline,

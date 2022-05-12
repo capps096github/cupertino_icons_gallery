@@ -24,7 +24,7 @@ class IconCodeSnippet extends StatelessWidget {
           padding: const EdgeInsets.all(8.0),
           width: double.infinity,
           decoration: BoxDecoration(
-            color: detailsColor,
+            color: detailsColor.withOpacity(.4),
             borderRadius: BorderRadius.circular(6),
           ),
           child: SelectableText(
@@ -55,6 +55,7 @@ class CopyIcon extends StatelessWidget {
     final snackBar = copyIconSnackbar(context);
 
     return IconButton(
+      tooltip: "Copy to clipboard",
       icon: const Icon(Icons.content_copy, color: detailsTextColor),
       onPressed: () async {
         // copy the code snippet to the clipboard
@@ -69,7 +70,7 @@ class CopyIcon extends StatelessWidget {
   ///Snack bar for feedback after saving
   SnackBar copyIconSnackbar(BuildContext context) {
     return SnackBar(
-      backgroundColor: galleryBlue,
+      backgroundColor: galleryPink,
       margin: const EdgeInsets.all(4),
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(8),

@@ -20,7 +20,7 @@ class IconGridIntro extends StatelessWidget {
 
             const SectionTitle(
               sectionText: "In the Gallery",
-              backgroundColor: galleryBlue,
+              backgroundColor: galleryBlack,
             ),
 
             // title
@@ -54,7 +54,7 @@ class IconGridIntro extends StatelessWidget {
                         style: const TextStyle(
                           fontSize: 20,
                           fontWeight: FontWeight.bold,
-                          color: galleryBlue,
+                          color: galleryBlack,
                         ),
                       ),
                       const TextSpan(
@@ -70,7 +70,7 @@ class IconGridIntro extends StatelessWidget {
 
             const SectionTitle(
               sectionText: "Keynote",
-              backgroundColor: galleryBlue,
+              backgroundColor: galleryBlack,
             ),
 
             // subtitle
@@ -165,7 +165,7 @@ class IconGridIntro extends StatelessWidget {
 
             const SectionTitle(
               sectionText: "Icons",
-              backgroundColor: galleryBlue,
+              backgroundColor: galleryBlack,
             ),
           ],
         ),

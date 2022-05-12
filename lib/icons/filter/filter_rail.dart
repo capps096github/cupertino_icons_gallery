@@ -90,7 +90,7 @@ class CurrentFilter extends ConsumerWidget {
     return Container(
       width: double.infinity,
       decoration: BoxDecoration(
-        color: galleryBlue,
+        color: galleryPink,
         borderRadius: BorderRadius.circular(8),
       ),
       margin: const EdgeInsets.all(2.0),

@@ -6,10 +6,14 @@ import '../gallery_exporter.dart';
 // gallery color
 // const galleryColor = galleryBlue;
 // const galleryColor = Color(0xFF000000);
-const galleryColor = Color(0xFF042B59);
+// const galleryColor = Color(0xFF042B59);
+const galleryColor = Color(0xFF0553B1);
+
+const galleryColorDark = Color(0xFF042B59);
 
 // gallery background
-const galleryBackground = Color(0xFFEDF1F4);
+// const galleryBackground = Color(0xFFF8FAFC);
+const galleryBackground = Color(0xFFF0F7FF);
 
 // white
 const galleryWhite = Color(0xFFFFFFFF);
@@ -23,16 +27,13 @@ const galleryTransparent = Color(0x00000000);
 // pink
 const galleryPink = Color(0xFFF8074B);
 
-// blue
-// const galleryBlue = Color(0xFF0000FF);
-// const galleryBlue = Color(0xFF2962FF);
-const galleryBlue = Color(0xFF0553B1);
-
 // black
-const galleryBlack = galleryColor;
+const galleryBlack = Color(0xFF000000);
 
 // -------- Icon Details -------------
-// const detailsColor = galleryColor;
-const detailsColor = galleryBlue;
+const detailsColor = galleryColorDark;
+// const detailsColor = galleryBlue;
+// const detailsColor = Color(0xFF042B59);
+// const detailsColor = galleryBlack;
 
 const detailsTextColor = galleryWhite;

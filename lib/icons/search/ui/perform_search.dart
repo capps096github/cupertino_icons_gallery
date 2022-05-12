@@ -33,7 +33,7 @@ class PerformSearch extends ConsumerWidget {
                         "images/search.svg",
                         height: svgImageSize,
                         width: svgImageSize,
-                        color: galleryPink,
+                        color: galleryColor,
                       ),
                     ],
                   ),

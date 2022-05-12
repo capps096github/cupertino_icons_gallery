@@ -31,9 +31,9 @@ ThemeData _buildgalleryTheme() {
     ),
     //* -- text themes
     textTheme: _buildgalleryTextTheme(base: galleryBaseTheme.textTheme),
-    textSelectionTheme: TextSelectionThemeData(
-      selectionColor: galleryColor.withOpacity(.25),
-      cursorColor: galleryColor,
+    textSelectionTheme: const TextSelectionThemeData(
+      selectionColor: galleryPink,
+      cursorColor: galleryPink,
     ),
 
     //* -- Visual Density
@@ -52,8 +52,8 @@ ThemeData _buildgalleryTheme() {
     tooltipTheme: TooltipThemeData(
       textStyle: const TextStyle(color: galleryWhite),
       decoration: BoxDecoration(
-        color: galleryColor,
-        borderRadius: BorderRadius.circular(6),
+        color: galleryPink,
+        borderRadius: BorderRadius.circular(4),
       ),
     ),
     //* -- text button

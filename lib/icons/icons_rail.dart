@@ -23,12 +23,6 @@ class IconsRail extends ConsumerWidget {
       width: showDetails ? iconDetailsWidth : 0,
       decoration: const BoxDecoration(
         color: galleryColor,
-        border: Border(
-          left: BorderSide(
-            width: .25,
-            color: galleryWhite,
-          ),
-        ),
       ),
 
       // this here is to prevent overflow errors when opening up the side bar

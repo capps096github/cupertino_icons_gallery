@@ -10,7 +10,7 @@ AppBar detailsAppbar() {
       padding: const EdgeInsets.all(8.0),
       child: Container(
         decoration: BoxDecoration(
-          color: detailsColor,
+          color: galleryPink,
           borderRadius: BorderRadius.circular(8),
         ),
         child: Consumer(builder: (context, ref, _) {

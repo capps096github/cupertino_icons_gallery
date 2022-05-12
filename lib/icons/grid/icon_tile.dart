@@ -65,7 +65,7 @@ class _IconTileState extends State<IconTile> {
       final isSelected = (selectedIconIndex == widget.pointsIndex);
 
       final iconTextColor = isSelected ? galleryWhite : galleryBlack;
-      final selectedColor = isSelected ? galleryBlue : galleryWhite;
+      final selectedColor = isSelected ? galleryColor : galleryWhite;
 
       return AnimatedSwitcher(
         duration: oneSecond,

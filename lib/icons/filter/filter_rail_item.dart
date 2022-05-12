@@ -38,7 +38,7 @@ class FilterRailItem extends ConsumerWidget {
     bool isSelected = (selectedFilterIndex == filterIndex);
 
     const iconColor = galleryWhite;
-    final backgroundColor = isSelected ? galleryBlue : galleryTransparent;
+    final backgroundColor = isSelected ? galleryPink : galleryTransparent;
 
 // text style for the rail item
     final railTextStyle = GoogleFonts.spartan(
@@ -47,35 +47,44 @@ class FilterRailItem extends ConsumerWidget {
       color: iconColor,
     );
 
-    return AnimatedContainer(
-      duration: quarterSeconds,
-      clipBehavior: Clip.antiAlias,
-      decoration: BoxDecoration(
+    return Padding(
+      padding: const EdgeInsets.all(2.0),
+      child: Material(
         color: backgroundColor,
+        clipBehavior: Clip.antiAlias,
         borderRadius: BorderRadius.circular(8),
-      ),
-      margin: const EdgeInsets.all(2.0),
-      padding: const EdgeInsets.all(16.0),
-      child: Tooltip(
-        message: tooltip,
-        textStyle: const TextStyle(color: iconColor),
-        decoration: BoxDecoration(
-          color: galleryBlue,
-          borderRadius: BorderRadius.circular(4),
-        ),
-        child: InkWell(
-          borderRadius: BorderRadius.circular(6),
-          onTap: () {
-            ref.watch(selectedFilterIndexProvider.notifier).state = filterIndex;
+        child: Tooltip(
+          message: tooltip,
+          textStyle: const TextStyle(color: iconColor),
+          decoration: BoxDecoration(
+            color: galleryPink,
+            borderRadius: BorderRadius.circular(6),
+          ),
+          child: InkWell(
+            splashColor: textColor,
+            borderRadius: BorderRadius.circular(6),
+            onTap: () {
+              ref.watch(selectedFilterIndexProvider.notifier).state =
+                  filterIndex;
 
-            // reset the selected icon index too
-            ref.watch(selectedIconIndexProvider.notifier).state = -1;
-          },
-          child: Text(
-            filterAlphabet,
-            textAlign: TextAlign.center,
-            style: railTextStyle,
-            maxLines: 1,
+              // reset the selected icon index too
+              ref.watch(selectedIconIndexProvider.notifier).state = -1;
+            },
+            child: Ink(
+              decoration: BoxDecoration(
+                color: backgroundColor,
+                borderRadius: BorderRadius.circular(8),
+              ),
+              child: Padding(
+                padding: const EdgeInsets.all(16.0),
+                child: Text(
+                  filterAlphabet,
+                  textAlign: TextAlign.center,
+                  style: railTextStyle,
+                  maxLines: 1,
+                ),
+              ),
+            ),
           ),
         ),
       ),
