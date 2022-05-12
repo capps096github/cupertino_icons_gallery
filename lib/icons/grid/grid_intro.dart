@@ -108,19 +108,22 @@ class IconGridIntro extends StatelessWidget {
               ),
             ),
 
-            const SectionTitle(sectionText: "Open Source"),
+            const SectionTitle(
+              sectionText: "Open Source",
+              backgroundColor: galleryPink,
+            ),
 
             // subtitle
             RichText(
               textAlign: TextAlign.center,
               text: TextSpan(
                 style: GoogleFonts.spartan(
-                  color: galleryColor,
+                  color: galleryPink,
                   height: 1.5,
                 ),
                 children: [
                   const TextSpan(
-                    text: 'It is now available on ',
+                    text: 'This app is now available on ',
                   ),
                   linkTextSpan(
                     text: 'Github (capps096github/cupertino_icons_gallery)',
