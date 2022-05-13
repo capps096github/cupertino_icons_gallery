@@ -4,9 +4,7 @@
 import '../gallery_exporter.dart';
 
 // gallery color
-// const galleryColor = galleryBlue;
-// const galleryColor = Color(0xFF000000);
-// const galleryColor = Color(0xFF042B59);
+
 const galleryColor = Color(0xFF0553B1);
 
 const galleryColorDark = Color(0xFF042B59);
