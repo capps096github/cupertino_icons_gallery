@@ -1,5 +1,4 @@
 // Package imports:
-import 'package:firebase_core/firebase_core.dart';
 
 // Project imports:
 import '../firebase_options.dart';

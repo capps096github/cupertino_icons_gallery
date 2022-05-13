@@ -139,30 +139,21 @@ class IconGridIntro extends StatelessWidget {
               ),
             ),
 
-            const SectionTitle(sectionText: "Hint"),
+            const SectionTitle(sectionText: "Hints"),
 
-            Row(
-              mainAxisSize: MainAxisSize.min,
-              children: [
-                const Padding(
-                  padding: EdgeInsets.all(10),
-                  child: Icon(
-                    CupertinoIcons.hand_draw,
-                    color: galleryColor,
-                  ),
-                ),
-                Flexible(
-                  child: Text(
-                    "Tap on an Icon to View its Source Code for use in your Flutter App.",
-                    softWrap: true,
-                    style: GoogleFonts.spartan(
-                      fontWeight: FontWeight.bold,
-                      color: galleryColor,
-                      fontSize: 16,
-                    ),
-                  ),
-                ),
-              ],
+            const GridHint(
+              icon: CupertinoIcons.hand_draw,
+              text:
+                  "Tap on an Icon to View its Source Code for use in your Flutter App.",
+            ),
+            const GridHint(
+              icon: Icons.tune,
+              text:
+                  "Use the rail on the left to filter the icons by their Alphabetical Letters.",
+            ),
+            const GridHint(
+              icon: CupertinoIcons.search,
+              text: "Search for an Icon by typing in the search bar above.",
             ),
 
             const VerticalSpacing(of: 20),
@@ -170,6 +161,50 @@ class IconGridIntro extends StatelessWidget {
             const IconsTitle(),
           ],
         ),
+      ),
+    );
+  }
+}
+
+class GridHint extends StatelessWidget {
+  const GridHint({
+    Key? key,
+    required this.icon,
+    required this.text,
+  }) : super(key: key);
+
+  // icon
+  final IconData icon;
+
+  // text
+  final String text;
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: const EdgeInsets.all(4.0),
+      child: Row(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          Padding(
+            padding: const EdgeInsets.all(10),
+            child: Icon(
+              icon,
+              color: galleryColor,
+            ),
+          ),
+          Flexible(
+            child: Text(
+              text,
+              softWrap: true,
+              style: GoogleFonts.spartan(
+                fontWeight: FontWeight.bold,
+                color: galleryColor,
+                fontSize: 16,
+              ),
+            ),
+          ),
+        ],
       ),
     );
   }

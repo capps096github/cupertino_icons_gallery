@@ -7,11 +7,9 @@ class TitleBanner extends ConsumerWidget {
   const TitleBanner({
     Key? key,
     required this.homeTitle,
-    this.showDivider = true,
   }) : super(key: key);
   final String homeTitle;
 
-  final bool showDivider;
 
   @override
   Widget build(BuildContext context, ref) {
@@ -38,11 +36,6 @@ class TitleBanner extends ConsumerWidget {
               fontWeight: FontWeight.bold,
             ),
           ),
-          if (showDivider)
-            const ThickHorizontalDivider(
-              margin: EdgeInsets.symmetric(vertical: 5),
-              dividerColor: galleryWhite,
-            ),
         ],
       ),
     );

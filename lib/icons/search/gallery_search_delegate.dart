@@ -94,7 +94,6 @@ class GallerySearchDelegate extends SearchDelegate {
               Flexible(
                 child: TitleBanner(
                   homeTitle: isMobile ? "Search" : "Cupertino Icons Search",
-                  showDivider: false,
                 ),
               ),
             ],
