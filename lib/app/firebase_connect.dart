@@ -32,8 +32,8 @@ class FirebaseConnect extends ConsumerWidget {
 
 final _firebaseProvider = FutureProvider<FirebaseApp>((ref) async {
   return await Firebase.initializeApp(
-    options: DefaultFirebaseOptions.currentPlatform,
-  );
+      options: DefaultFirebaseOptions.currentPlatform,
+      );
 });
 
 final _splashProvider = FutureProvider<dynamic>((ref) async {

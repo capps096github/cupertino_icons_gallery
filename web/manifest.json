@@ -8,6 +8,12 @@
     "description": "Explore the Home of over 1,335 Cupertino Icons used in Flutter.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
+    "display_override": [
+        "window-control-overlay",
+        "minimal-ui"
+    ],
+    "lang": "en",
+    "dir": "ltr",
     "icons": [
         {
             "src": "/favicon.ico",
@@ -36,5 +42,15 @@
             "sizes": "512x512",
             "purpose": "maskable"
         }
+    ],
+    "screenshots": [
+        {
+            "src": "icons/CupertinoIcons.png",
+            "sizes": "1920x1080",
+            "platform": "wide",
+            "label": "Explore the Home of over 1,335 Cupertino Icons used in Flutter."
+        }
     ]
 }
+
+
