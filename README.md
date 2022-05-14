@@ -4,7 +4,7 @@
 
 **[Cupertino Icons Gallery](https://cupertino.page.link/icons)** is a Home of over 1,335 Cupertino Icons used in Flutter. 
 
-[Visit Cupertino Icons Gallery on Web:](https://cupertino.page.link/icons)
+[Visit Cupertino Icons Gallery on Web or Google Play Here:](https://cupertino.page.link/icons)
 
 <br />
 
