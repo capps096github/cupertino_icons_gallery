@@ -7,12 +7,14 @@ class AppTextButton extends StatelessWidget {
     required this.onTap,
     required this.textColor,
     required this.buttonColor,
+     this.toolTipColor,
     required this.text,
     this.toolTip,
   }) : super(key: key);
 
   final VoidCallback onTap;
   final Color textColor, buttonColor;
+  final Color? toolTipColor;
 
   // text: The text to be displayed on the button
   final String text;
@@ -30,7 +32,7 @@ class AppTextButton extends StatelessWidget {
 
     return Tooltip(
       message: toolTip ?? text,
-      textStyle: TextStyle(color: buttonColor),
+      textStyle: TextStyle(color:toolTipColor?? buttonColor),
       decoration: BoxDecoration(
         color: textColor,
         borderRadius: BorderRadius.circular(4),

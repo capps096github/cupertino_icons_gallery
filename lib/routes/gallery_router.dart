@@ -18,7 +18,7 @@ final galleryRouterProvider = GoRouter(
   //  here our firebase analytics observers
   observers: [
     // disable for windows
-    if (!isGalleryWindows) FirebaseAnalyticsObserver(analytics: _analytics),
+    if (!isGalleryWindows && !isGalleryDebug) FirebaseAnalyticsObserver(analytics: _analytics),
   ],
   restorationScopeId: galleryId,
   errorBuilder: (context, state) => GalleryError(
