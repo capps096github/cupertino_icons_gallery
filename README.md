@@ -4,11 +4,18 @@
 
 **[Cupertino Icons Gallery](https://cupertino.page.link/icons)** is a Home of over 1,335 Cupertino Icons used in Flutter. 
 
-[Visit Cupertino Icons Gallery on Web or Google Play Here:](https://cupertino.page.link/icons)
+## Visit Cupertino Icons Gallery.
+
+- **Cross-platform link:** to the Cupertino Icons Gallery App. [**https://cupertino.page.link/icons**](https://cupertino.page.link/icons)
+
+- On the **Web:** [**https://cupertino-icons.web.app/**](https://cupertino-icons.web.app/) 
+
+- On **Google Play Store:** [**https://play.google.com/store/apps/details?id=com.capps096apps.cupertino_icons_gallery**](https://play.google.com/store/apps/details?id=com.capps096apps.cupertino_icons_gallery)
+
 
 <br />
 
-## How to Run Cupertino Icons Gallery on your Device.
+## To Contribute to the Cupertino Icons Gallery Repository
 
 ### 1. Install Flutter
 
@@ -48,4 +55,4 @@ Then, using the Terminal inside your IDE, run `flutter pub get` to get the depen
 > - Therefore `we recommend that you run it on Android or The Web` only to avoid any bugs that may occur as a result of running it on the other platforms that we haven't tested yet.
 > - We also recommend using the following IDE’s `Android Studio`, `Visual Studio Code` and `IntelliJ` while running the application since those are the ones we used during our production process.
 
-> The Cupertino Icons Gallery was initially developed by Brian Cephas, join him on Twitter [@xephas_official](https://twitter.com/xephas_official)
+The Cupertino Icons Gallery was initially developed by [Brian Cephas](https://twitter.com/xephas_official), join him on Twitter [@xephas_official](https://twitter.com/xephas_official)

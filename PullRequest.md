@@ -1,6 +1,12 @@
 *Replace this paragraph with a description of what this PR is changing or adding, and why. Consider including before/after screenshots.*
 
 *List which issues are fixed by this PR. You must list at least one issue.*
+Issue Fixed, cupertino icon page not found
+https://github.com/flutter/flutter/issues/88754
+
+Answers:
+https://stackoverflow.com/questions/69003317/how-to-access-cupertino-icons-1-0-0-gallery/72284660#72284660
+
 
 *If you had to change anything in the [flutter/tests] repo, include a link to the migration guide as per the [breaking change policy].*
 
