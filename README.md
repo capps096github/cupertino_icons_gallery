@@ -6,7 +6,9 @@
 
 ## Visit Cupertino Icons Gallery.
 
-- **Cross-platform link:** to the Cupertino Icons Gallery App. [**https://cupertino.page.link/icons**](https://cupertino.page.link/icons)
+- Watch a `Short YouTube Video` of Cupertino Icons Gallery App Here: https://youtu.be/Aa59ucCQxhw
+
+- **Cross-platform Access link:** to the Cupertino Icons Gallery App. [**https://cupertino.page.link/icons**](https://cupertino.page.link/icons)
 
 - On the **Web:** [**https://cupertino-icons.web.app/**](https://cupertino-icons.web.app/) 
 
