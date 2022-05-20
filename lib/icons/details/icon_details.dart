@@ -58,6 +58,8 @@ Icon(
             IconCodeSnippet(codeSnippet: largeCodeSnippet),
 
             const VerticalSpacing(of: 20),
+            // TODO: add here an option to copy the entire icon to the clipboard
+            //  e.g to copy CupertinoIcons.brightness_solid at once without having the icon widget around it
 
             Text(
               'Flutter ID',
