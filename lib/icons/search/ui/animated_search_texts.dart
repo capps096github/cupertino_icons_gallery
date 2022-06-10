@@ -25,7 +25,7 @@ class AnimatedSearchTexts extends StatelessWidget {
       speed: const Duration(milliseconds: 80),
       cursor: '|',
       curve: Curves.easeIn,
-      textStyle: GoogleFonts.spartan(
+      textStyle: GoogleFonts.leagueSpartan(
         color: galleryColor,
         fontWeight: FontWeight.bold,
       ),

@@ -17,7 +17,7 @@ class GalleryScrollbar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final mQ = MediaQuery.of(context);
-    final _mQheight =
+    final mQheight =
         (mQ.size.height * .15) - (mQ.padding.top + mQ.padding.bottom);
 
     TargetPlatform platform = Theme.of(context).platform;
@@ -29,7 +29,7 @@ class GalleryScrollbar extends StatelessWidget {
     return showScrollbar
         ? DraggableScrollbar(
             controller: controller,
-            heightScrollThumb: height ?? _mQheight,
+            heightScrollThumb: height ?? mQheight,
             backgroundColor: color,
             padding: const EdgeInsets.all(2),
             alwaysVisibleScrollThumb: true,

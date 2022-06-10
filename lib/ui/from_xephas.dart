@@ -74,7 +74,7 @@ class FromXephas extends StatelessWidget {
                             'Brian Cephas',
                             maxLines: 1,
                             textAlign: TextAlign.center,
-                            style: GoogleFonts.spartan(
+                            style: GoogleFonts.leagueSpartan(
                               fontSize: 15,
                               color: builderColor,
                               fontWeight: FontWeight.bold,

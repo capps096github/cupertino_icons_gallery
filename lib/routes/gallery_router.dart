@@ -1,4 +1,7 @@
 // Project imports:
+// ignore: depend_on_referenced_packages
+import 'package:firebase_analytics/firebase_analytics.dart';
+
 import '../gallery_exporter.dart';
 
 // for app analytics

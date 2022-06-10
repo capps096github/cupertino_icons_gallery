@@ -6,8 +6,7 @@ class GalleryResponsive extends StatelessWidget {
   final Widget? tablet;
   final Widget desktop;
 
-
-/// This is for App Wide Responsiveness
+  /// This is for App Wide Responsiveness
   const GalleryResponsive({
     Key? key,
     required this.mobile,
@@ -31,13 +30,13 @@ class GalleryResponsive extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final Size _size = MediaQuery.of(context).size;
+    final Size size = MediaQuery.of(context).size;
     // If our width is more than 1024 then we consider it a desktop
-    if (_size.width >= 1024) {
+    if (size.width >= 1024) {
       return desktop;
     }
     // If width it less then 1024 and more then 600 we consider it as tablet
-    else if (_size.width >= 600) {
+    else if (size.width >= 600) {
       return tablet ?? desktop;
     }
     // Or less then that we called it mobile

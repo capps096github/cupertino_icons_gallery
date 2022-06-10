@@ -104,7 +104,7 @@ class CurrentFilter extends ConsumerWidget {
           : Text(
               currentFilterAlphabet,
               textAlign: TextAlign.center,
-              style: GoogleFonts.spartan(
+              style: GoogleFonts.leagueSpartan(
                 fontWeight: FontWeight.w900,
                 fontSize: 16,
                 color: galleryWhite,

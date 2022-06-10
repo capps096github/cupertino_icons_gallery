@@ -62,6 +62,7 @@ class CopyIcon extends StatelessWidget {
         await Clipboard.setData(ClipboardData(text: codeSnippet));
 
         // show snackbar
+        // ignore: use_build_context_synchronously
         ScaffoldMessenger.of(context).showSnackBar(snackBar);
       },
     );

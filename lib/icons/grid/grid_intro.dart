@@ -42,7 +42,7 @@ class IconGridIntro extends StatelessWidget {
                   textAlign: TextAlign.center,
                   text: TextSpan(
                     text: hasIcons ? 'Explore  ' : '',
-                    style: GoogleFonts.spartan(
+                    style: GoogleFonts.leagueSpartan(
                       color: galleryColor,
                       fontSize: 16,
                       height: 1.5,
@@ -80,7 +80,7 @@ class IconGridIntro extends StatelessWidget {
               textAlign: TextAlign.center,
               text: TextSpan(
                 text: 'This application is an Open Source Project ',
-                style: GoogleFonts.spartan(
+                style: GoogleFonts.leagueSpartan(
                   color: galleryColor,
                   height: 1.5,
                 ),
@@ -119,7 +119,7 @@ class IconGridIntro extends StatelessWidget {
             RichText(
               textAlign: TextAlign.center,
               text: TextSpan(
-                style: GoogleFonts.spartan(
+                style: GoogleFonts.leagueSpartan(
                   color: galleryPink,
                   height: 1.5,
                 ),
@@ -197,7 +197,7 @@ class GridHint extends StatelessWidget {
             child: Text(
               text,
               softWrap: true,
-              style: GoogleFonts.spartan(
+              style: GoogleFonts.leagueSpartan(
                 fontWeight: FontWeight.bold,
                 color: galleryColor,
                 fontSize: 16,

@@ -34,7 +34,7 @@ export 'package:flutter_svg/flutter_svg.dart';
 export 'package:firebase_core/firebase_core.dart';
 
 // Firebase Analytics
-export 'package:firebase_analytics/firebase_analytics.dart';
+// export 'package:firebase_analytics/firebase_analytics.dart';
 
 // ------- IN APP FILES -------
 // responsive design

@@ -33,7 +33,7 @@ AppBar detailsAppbar() {
       return Text(
         selectedGalleryIcon.name,
         maxLines: 1,
-        style: GoogleFonts.spartan(
+        style: GoogleFonts.leagueSpartan(
           fontSize: 18,
           color: detailsTextColor,
         ),

@@ -41,7 +41,7 @@ class FilterRailItem extends ConsumerWidget {
     final backgroundColor = isSelected ? galleryPink : galleryTransparent;
 
 // text style for the rail item
-    final railTextStyle = GoogleFonts.spartan(
+    final railTextStyle = GoogleFonts.leagueSpartan(
       fontWeight: isSelected ? FontWeight.w700 : null,
       fontSize: 16,
       color: iconColor,

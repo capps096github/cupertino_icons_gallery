@@ -56,7 +56,7 @@ class GallerySearchDelegate extends SearchDelegate {
 
       //* -- text themes
       textTheme: galleryTheme.textTheme.copyWith().apply(
-            fontFamily: GoogleFonts.spartan().fontFamily,
+            fontFamily: GoogleFonts.leagueSpartan().fontFamily,
             displayColor: galleryWhite,
             bodyColor: galleryWhite,
           ),

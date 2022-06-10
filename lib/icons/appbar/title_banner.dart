@@ -30,7 +30,7 @@ class TitleBanner extends ConsumerWidget {
             textAlign: TextAlign.center,
             maxLines: 1,
             overflow: TextOverflow.ellipsis,
-            style: GoogleFonts.spartan(
+            style: GoogleFonts.leagueSpartan(
               fontSize: isDesktop ? 25 : 22.5,
               color: colorScheme.onPrimary,
               fontWeight: FontWeight.bold,

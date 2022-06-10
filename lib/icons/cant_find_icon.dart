@@ -25,7 +25,7 @@ class CantFindIcon extends StatelessWidget {
         Center(
           child: Text(
             errorText,
-            style: GoogleFonts.spartan(
+            style: GoogleFonts.leagueSpartan(
               fontWeight: FontWeight.bold,
               color: galleryBlack,
               fontSize: 24,

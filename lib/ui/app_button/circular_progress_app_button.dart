@@ -29,12 +29,12 @@ class CircularProgressAppButton extends StatelessWidget {
       duration: quarterSeconds,
       child: isTapped
           ? Container(
-              child: CircularProgressIndicator(color: textColor),
               padding: const EdgeInsets.all(6),
               decoration: BoxDecoration(
                 shape: BoxShape.circle,
                 color: buttonColor,
               ),
+              child: CircularProgressIndicator(color: textColor),
             )
           : AppButton(
               text: text,

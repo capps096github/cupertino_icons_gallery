@@ -46,7 +46,7 @@ Icon(
             const VerticalSpacing(of: 10),
             Text(
               'Use in Code',
-              style: GoogleFonts.spartan(
+              style: GoogleFonts.leagueSpartan(
                 color: detailsTextColor,
                 fontWeight: FontWeight.bold,
                 fontSize: 20,
@@ -63,7 +63,7 @@ Icon(
 
             Text(
               'Flutter ID',
-              style: GoogleFonts.spartan(
+              style: GoogleFonts.leagueSpartan(
                 color: detailsTextColor,
                 fontWeight: FontWeight.bold,
                 fontSize: 20,

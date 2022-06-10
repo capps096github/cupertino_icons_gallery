@@ -42,7 +42,7 @@ ThemeData _buildgalleryTheme() {
     appBarTheme: AppBarTheme(
       centerTitle: true,
       elevation: 0,
-      titleTextStyle: GoogleFonts.spartan(
+      titleTextStyle: GoogleFonts.leagueSpartan(
         fontSize: 25,
         fontWeight: FontWeight.w700,
         color: galleryWhite,
@@ -99,7 +99,7 @@ TextTheme _buildgalleryTextTheme({required TextTheme base}) {
         ),
       )
       .apply(
-        fontFamily: GoogleFonts.spartan().fontFamily,
+        fontFamily: GoogleFonts.leagueSpartan().fontFamily,
         displayColor: galleryColor,
         bodyColor: galleryColor,
       );

@@ -25,7 +25,7 @@ dependencies:
   go_router: ^3.1.0
 
   # fonts
-  google_fonts: ^2.3.2
+  google_fonts: ^3.0.1
 
   # scrollable rows x columns
   flextras: ^0.0.2
@@ -55,7 +55,7 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
 
-  flutter_lints: ^1.0.0
+  flutter_lints: ^2.0.1
   import_sorter: ^4.6.0
   build_runner: ^2.1.10
   flutter_launcher_icons: ^0.9.2
