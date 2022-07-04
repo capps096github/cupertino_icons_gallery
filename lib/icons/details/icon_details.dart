@@ -13,14 +13,16 @@ class IconDetails extends ConsumerWidget {
     final selectedGalleryIcon =
         ref.watch(selectedGalleryIconProvider.state).state;
 
-    final largeCodeSnippet =
-        '''
+    final largeCodeSnippet = '''
 Icon(
   CupertinoIcons.${selectedGalleryIcon.name},
 ),
 ''';
 
     final smallCodeSnippet = selectedGalleryIcon.name;
+
+    // iconDataSnippet
+    final iconDataSnippet = "CupertinoIcons.${selectedGalleryIcon.name}";
 
     return Scaffold(
       backgroundColor: galleryColor,
@@ -42,36 +44,50 @@ Icon(
                 size: 128,
               ),
             ),
-            const Spacer(),
-            const VerticalSpacing(of: 10),
-            Text(
-              'Use in Code',
-              style: GoogleFonts.leagueSpartan(
-                color: detailsTextColor,
-                fontWeight: FontWeight.bold,
-                fontSize: 20,
-              ),
-            ),
-            const VerticalSpacing(of: 8),
             // this is a container that will display a code snippet for the icon with an option to copy it
             // to the clipboard
+            const Spacer(),
+            const IconHeader(title: 'Use in Code'),
             IconCodeSnippet(codeSnippet: largeCodeSnippet),
 
-            const VerticalSpacing(of: 20),
-            // TODO: add here an option to copy the entire icon to the clipboard
+            const VerticalSpacing(of: 10),
             //  e.g to copy CupertinoIcons.brightness_solid at once without having the icon widget around it
+            const Spacer(),
+            const IconHeader(title: "Icon Data"),
+            IconCodeSnippet(codeSnippet: iconDataSnippet),
 
-            Text(
-              'Flutter ID',
-              style: GoogleFonts.leagueSpartan(
-                color: detailsTextColor,
-                fontWeight: FontWeight.bold,
-                fontSize: 20,
-              ),
-            ),
+            const VerticalSpacing(of: 10),
+            // brightness_solid is the name of the icon
+            const Spacer(),
+            const IconHeader(title: 'Flutter ID'),
             IconCodeSnippet(codeSnippet: smallCodeSnippet),
             const Spacer(),
           ],
+        ),
+      ),
+    );
+  }
+}
+
+class IconHeader extends StatelessWidget {
+  const IconHeader({
+    Key? key,
+    required this.title,
+  }) : super(key: key);
+
+// title
+  final String title;
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: const EdgeInsets.all(8.0),
+      child: Text(
+        title,
+        style: GoogleFonts.leagueSpartan(
+          color: detailsTextColor,
+          fontWeight: FontWeight.bold,
+          fontSize: 20,
         ),
       ),
     );

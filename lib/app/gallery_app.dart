@@ -7,8 +7,9 @@ class CupertinoIconsGallery extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp.router(
-      routeInformationParser: galleryRouterProvider.routeInformationParser,
-      routerDelegate: galleryRouterProvider.routerDelegate,
+      routeInformationProvider: galleryRouter.routeInformationProvider,
+      routeInformationParser: galleryRouter.routeInformationParser,
+      routerDelegate: galleryRouter.routerDelegate,
       theme: galleryTheme,
       color: galleryColor,
       title: appTitle,

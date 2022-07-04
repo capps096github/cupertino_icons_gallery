@@ -83,6 +83,7 @@ class IconGridIntro extends StatelessWidget {
                 style: GoogleFonts.leagueSpartan(
                   color: galleryColor,
                   height: 1.5,
+                  fontSize: 16,
                 ),
                 children: [
                   const TextSpan(
@@ -122,6 +123,7 @@ class IconGridIntro extends StatelessWidget {
                 style: GoogleFonts.leagueSpartan(
                   color: galleryPink,
                   height: 1.5,
+                  fontSize: 16,
                 ),
                 children: [
                   const TextSpan(

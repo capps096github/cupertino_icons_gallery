@@ -56,7 +56,7 @@ class CopyIcon extends StatelessWidget {
 
     return IconButton(
       tooltip: "Copy to clipboard",
-      icon: const Icon(Icons.content_copy, color: detailsTextColor),
+      icon: const Icon(Icons.content_copy_rounded, color: detailsTextColor),
       onPressed: () async {
         // copy the code snippet to the clipboard
         await Clipboard.setData(ClipboardData(text: codeSnippet));

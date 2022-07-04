@@ -28,6 +28,7 @@ class SectionTitle extends StatelessWidget {
           style: TextStyle(
             color: textColor,
             fontWeight: FontWeight.w900,
+            fontSize: 18,
           ),
         ),
       ),

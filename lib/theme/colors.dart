@@ -23,7 +23,8 @@ const galleryError = Color(0xFFFF0000);
 const galleryTransparent = Color(0x00000000);
 
 // pink
-const galleryPink = Color(0xFFF8074B);
+const galleryPink = Color(0xFFCD0000);
+// const galleryPink = Color(0xFFF8074B);
 
 // black
 const galleryBlack = Color(0xFF000000);

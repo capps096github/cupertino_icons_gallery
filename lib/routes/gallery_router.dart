@@ -7,7 +7,7 @@ import '../gallery_exporter.dart';
 // for app analytics
 FirebaseAnalytics _analytics = FirebaseAnalytics.instance;
 
-final galleryRouterProvider = GoRouter(
+final galleryRouter = GoRouter(
   routes: [
     GoRoute(
       path: '/',
@@ -21,7 +21,8 @@ final galleryRouterProvider = GoRouter(
   //  here our firebase analytics observers
   observers: [
     // disable for windows
-    if (!isGalleryWindows && !isGalleryDebug) FirebaseAnalyticsObserver(analytics: _analytics),
+    if (!isGalleryWindows && !isGalleryDebug)
+      FirebaseAnalyticsObserver(analytics: _analytics),
   ],
   restorationScopeId: galleryId,
   errorBuilder: (context, state) => GalleryError(

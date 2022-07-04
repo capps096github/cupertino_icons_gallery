@@ -100,7 +100,7 @@ class SearchContainer extends ConsumerWidget {
       curve: Curves.easeIn,
       textStyle: TextStyle(
         color: color,
-        fontSize: 14,
+        fontSize: 16,
         fontWeight: FontWeight.bold,
       ),
     );
