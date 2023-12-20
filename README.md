@@ -2,20 +2,17 @@
 
 ![Image of the Cupertino Icons Gallery App is here:](https://raw.githubusercontent.com/capps096github/cupertino_icons_gallery/master/web/icons/CupertinoIcons.png)
 
-**[Cupertino Icons Gallery](https://cupertino.page.link/icons)** is a Home of over 1,335 Cupertino Icons used in Flutter. 
+**[Cupertino Icons Gallery](https://cupertino.page.link/icons)** is a Home of over 1,335 Cupertino Icons used in Flutter.
 
-## Visit Cupertino Icons Gallery.
+## Visit Cupertino Icons Gallery
 
-- Watch a `Short YouTube Video` of Cupertino Icons Gallery App Here: https://youtu.be/Aa59ucCQxhw
+- Watch a `Short YouTube Video` of Cupertino Icons Gallery App Here: <https://youtu.be/Aa59ucCQxhw>
 
 - **Cross-platform Access link:** to the Cupertino Icons Gallery App. [**https://cupertino.page.link/icons**](https://cupertino.page.link/icons)
 
-- On the **Web:** [**https://cupertino-icons.web.app/**](https://cupertino-icons.web.app/) 
+- On the **Web:** [**https://cupertino-icons.web.app/**](https://cupertino-icons.web.app/)
 
 - On **Google Play Store:** [**https://play.google.com/store/apps/details?id=com.capps096apps.cupertino_icons_gallery**](https://play.google.com/store/apps/details?id=com.capps096apps.cupertino_icons_gallery)
-
-
-<br />
 
 ## To Contribute to the Cupertino Icons Gallery Repository
 
@@ -31,7 +28,8 @@ If you're new to Flutter the first thing you'll need is to follow the [setup ins
 
 1. The [Github Desktop App](https://desktop.github.com/)
 2. Your favourite Terminal by running the following command:
-   ```
+
+``` bash
    git clone https://github.com/capps096github/cupertino_icons_gallery.git
    ```
 
@@ -48,8 +46,6 @@ Then, using the Terminal inside your IDE, run `flutter pub get` to get the depen
 - If you would like to try Cupertino Icons Gallery using Flutter for web, you can use `flutter run -d chrome`.
 
 - Enjoy!
-
-<br/>
 
 > **Disclaimer**:
 >

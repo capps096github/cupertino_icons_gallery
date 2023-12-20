@@ -1,6 +1,6 @@
 # This file configures the analyzer, which statically analyzes Dart code to
 # check for errors, warnings, and lints.
-#
+
 # The issues identified by the analyzer are surfaced in the UI of Dart-enabled
 # IDEs (https://dart.dev/tools#ides-and-editors). The analyzer can also be
 # invoked from the command line by running `flutter analyze`.
@@ -9,21 +9,39 @@
 # packages, and plugins designed to encourage good coding practices.
 include: package:flutter_lints/flutter.yaml
 
-linter:
-  # The lint rules applied to this project can be customized in the
-  # section below to disable rules from the `package:flutter_lints/flutter.yaml`
-  # included above or to enable additional rules. A list of all available lints
-  # and their documentation is published at
-  # https://dart-lang.github.io/linter/lints/index.html.
-  #
-  # Instead of disabling a lint rule for the entire project in the
-  # section below, it can also be suppressed for a single line of code
-  # or a specific dart file by using the `// ignore: name_of_lint` and
-  # `// ignore_for_file: name_of_lint` syntax on the line or in the file
-  # producing the lint.
-  rules:
-    # avoid_print: false  # Uncomment to disable the `avoid_print` rule
-    prefer_relative_imports: true  # Uncomment to enable the `prefer_single_quotes` rule
+# * custom_lint
+# This is a custom_lint rule that we have added to the project and
+# is used to simplify our usage of riverpod as a state management package for the app
+# More about this can be found here https://pub.dev/packages/riverpod_lint#installing-riverpod_lint
+analyzer:
+  plugins:
+    - custom_lint
 
+custom_lint:
+  # Forcibly disable lint rules by default
+  # enable_all_lint_rules: false
+  rules:
+    # You can now enable one specific rule in the "rules" list
+    # - missing_provider_scope: false
+
+# * linter
+# The lint rules applied to this project can be customized in the
+# section below to disable rules from the `package:flutter_lints/flutter.yaml`
+# included above or to enable additional rules. A list of all available lints
+# and their documentation is published at
+# https://dart-lang.github.io/linter/lints/index.html.
+
+# Instead of disabling a lint rule for the entire project in the
+# section below, it can also be suppressed for a single line of code
+# or a specific dart file by using the `// ignore: name_of_lint` and
+# `// ignore_for_file: name_of_lint` syntax on the line or in the file
+# producing the lint.
+linter:
+  rules: 
+    # this ensures that all imports used in our project
+    # are relative to the current file in the derictory
+    prefer_relative_imports: true
+
+# * Analyzer options
 # Additional information about this file can be found at
 # https://dart.dev/guides/language/analysis-options

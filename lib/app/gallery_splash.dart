@@ -2,7 +2,7 @@
 import '../gallery_exporter.dart';
 
 class GallerySplash extends StatelessWidget {
-  const GallerySplash({Key? key}) : super(key: key);
+  const GallerySplash({super.key});
 
   @override
   Widget build(BuildContext context) {

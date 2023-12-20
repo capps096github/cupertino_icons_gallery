@@ -1,11 +1,13 @@
 // Project imports:
 import '../gallery_exporter.dart';
 
-class CupertinoIconsGallery extends StatelessWidget {
-  const CupertinoIconsGallery({Key? key}) : super(key: key);
+class CupertinoIconsGallery extends ConsumerWidget {
+  const CupertinoIconsGallery({super.key});
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, ref) {
+    final galleryTheme = ref.watch(appThemeProvider);
+
     return MaterialApp.router(
       routeInformationProvider: galleryRouter.routeInformationProvider,
       routeInformationParser: galleryRouter.routeInformationParser,

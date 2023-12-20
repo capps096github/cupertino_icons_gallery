@@ -5,10 +5,10 @@ import '../gallery_exporter.dart';
 
 class GalleryLogo extends StatelessWidget {
   const GalleryLogo({
-    Key? key,
+    super.key,
     this.iconSize = 40,
     this.iconColor = galleryWhite,
-  }) : super(key: key);
+  });
 
   final double? iconSize;
 

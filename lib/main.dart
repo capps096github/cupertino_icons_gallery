@@ -1,8 +1,14 @@
 // Project imports:
 import 'gallery_exporter.dart';
 
-void main() async {
+// ignore: depend_on_referenced_packages
+import 'package:flutter_web_plugins/url_strategy.dart';
+
+void main() {
   WidgetsFlutterBinding.ensureInitialized();
+
+  // to remove the # from the web url
+  usePathUrlStrategy();
 
   runApp(
     const ProviderScope(
@@ -15,7 +21,10 @@ void main() async {
 }
 
 // TODO: update README.md to reflect featured on Google Dev Library
+//  Add image of icons showcase to the readme file too
+// Add dark mode support
 // Post about it in group
+// Add a new signing key.properties file and update the keystore upload key on playstore and the android build.gradle for uploading a new update
 
 // https://devlibrary.withgoogle.com/products/flutter/repos/capps096github-cupertino_icons_gallery
 

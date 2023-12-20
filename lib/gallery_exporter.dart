@@ -37,26 +37,21 @@ export 'package:firebase_core/firebase_core.dart';
 // export 'package:firebase_analytics/firebase_analytics.dart';
 
 // ------- IN APP FILES -------
-// responsive design
-export 'responsive.dart';
 
 // app
 export 'app/exporter.dart';
 
 // theme
-export 'theme/exporter.dart';
-
-// constants
-export 'constants/exporter.dart';
+export 'global/theme/exporter.dart';
 
 // routes
-export 'routes/exporter.dart';
-
-// ui
-export 'ui/exporter.dart';
+export 'global/routes/exporter.dart';
 
 // link
-export 'link/exporter.dart';
+export 'global/link/exporter.dart';
 
 // icons
-export 'icons/exporter.dart';
+export 'screens/icons/exporter.dart';
+
+// global
+export 'global/exporter.dart';

@@ -6,7 +6,7 @@ import '../gallery_exporter.dart';
 
 ///This Connects the FC App to Firebase
 class FirebaseConnect extends ConsumerWidget {
-  const FirebaseConnect({Key? key}) : super(key: key);
+  const FirebaseConnect({super.key});
   @override
   Widget build(BuildContext context, ref) {
     final firebaseConnector = isGalleryWindows
@@ -32,8 +32,8 @@ class FirebaseConnect extends ConsumerWidget {
 
 final _firebaseProvider = FutureProvider<FirebaseApp>((ref) async {
   return await Firebase.initializeApp(
-      options: DefaultFirebaseOptions.currentPlatform,
-      );
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
 });
 
 final _splashProvider = FutureProvider<dynamic>((ref) async {
