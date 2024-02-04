@@ -1,11 +1,14 @@
 {
   "hosting": {
-    "public": "build/web",
+    "source": ".",
     "ignore": [
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
     ],
+    "frameworksBackend": {
+      "region": "us-central1"
+    },
     "rewrites": [
       {
         "source": "**",
