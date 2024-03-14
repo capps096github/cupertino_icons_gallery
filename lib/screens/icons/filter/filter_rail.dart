@@ -35,7 +35,6 @@ class FilterRail extends ConsumerWidget {
       height: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 8),
       child: Column(
-        crossAxisAlignment: CrossAxisAlignment.center,
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           //Drawer Icon
@@ -78,7 +77,7 @@ class CurrentFilter extends ConsumerWidget {
   });
 
   @override
-  Widget build(BuildContext context, ref) {
+  Widget build(BuildContext context, WidgetRef ref) {
     // get the current filter index
     final currentFilterIndex = ref.watch(selectedFilterIndexProvider);
 
@@ -86,7 +85,7 @@ class CurrentFilter extends ConsumerWidget {
     final currentFilterAlphabet = alphabetFilters[currentFilterIndex];
 
     // all selected
-    final isAllSelected = (currentFilterIndex == 0 || currentFilterIndex == -1);
+    final isAllSelected = currentFilterIndex == 0 || currentFilterIndex == -1;
 
     return Container(
       width: double.infinity,
@@ -94,8 +93,8 @@ class CurrentFilter extends ConsumerWidget {
         color: galleryPink,
         borderRadius: BorderRadius.circular(8),
       ),
-      margin: const EdgeInsets.all(2.0),
-      padding: const EdgeInsets.all(16.0),
+      margin: const EdgeInsets.all(2),
+      padding: const EdgeInsets.all(16),
       child: isAllSelected
           ? const Icon(
               Icons.tune,

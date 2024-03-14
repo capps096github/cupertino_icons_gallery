@@ -5,13 +5,12 @@ import '../../../gallery_exporter.dart';
 // this shows Good Morning, Good Afternoon and Good Evening respectively at their times
 class TitleBanner extends ConsumerWidget {
   const TitleBanner({
-    super.key,
-    required this.homeTitle,
+    required this.homeTitle, super.key,
   });
   final String homeTitle;
 
   @override
-  Widget build(BuildContext context, ref) {
+  Widget build(BuildContext context, WidgetRef ref) {
     // Access the colorscheme
     final colorScheme = Theme.of(context).colorScheme;
 
@@ -20,7 +19,7 @@ class TitleBanner extends ConsumerWidget {
     final isDesktop = responsiveness.isDesktopScreen;
 
     return Padding(
-      padding: const EdgeInsets.all(8.0),
+      padding: const EdgeInsets.all(8),
       child: Column(
         mainAxisSize: MainAxisSize.min,
         mainAxisAlignment: MainAxisAlignment.center,

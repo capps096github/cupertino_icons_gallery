@@ -11,7 +11,7 @@ class GridCredits extends StatelessWidget {
         mainAxisSize: MainAxisSize.min,
         children: [
           const SectionTitle(
-            sectionText: "App Credits",
+            sectionText: 'App Credits',
             backgroundColor: galleryPink,
           ),
 
@@ -25,7 +25,7 @@ class GridCredits extends StatelessWidget {
           // in flutter
           Center(
             child: Image.asset(
-              "images/with_flutter.png",
+              'images/with_flutter.png',
               height: 50,
             ),
           ),

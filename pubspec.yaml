@@ -1,20 +1,21 @@
 name: cupertino_icons_gallery
-description: "The Home of over 1,335 Cupertino Icons used in Flutter with over 16+ Stars on Github"
+description: A new Flutter project.
 
 publish_to: "none"
 
-version: 1.2.0+2
+version: 1.0.0+1
 
 environment:
-  sdk: ">=3.2.3 <4.0.0"
+  sdk: ">=3.3.1 <4.0.0"
 
 dependencies:
   flutter:
     sdk: flutter
 
+
   cupertino_icons: ^1.0.6
 
-    # state management
+  # state management
   flutter_riverpod: ^2.4.9
 
   # search highlight
@@ -52,16 +53,17 @@ dependencies:
 
   firebase_analytics: ^10.7.4
 
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
 
-  flutter_lints: ^3.0.1
-  import_sorter: ^4.6.0
+  # flutter_lints: ^3.0.1
   build_runner: ^2.4.7
-  flutter_launcher_icons: ^0.13.1
   custom_lint: ^0.5.7
-  # flutter_app_name: ^0.1.1
+  flutter_launcher_icons: ^0.13.1
+  import_sorter: ^4.6.0
+  very_good_analysis: ^5.1.0
   
 flutter:
   uses-material-design: true

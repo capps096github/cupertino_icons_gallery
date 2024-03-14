@@ -1,47 +1,15 @@
-# This file configures the analyzer, which statically analyzes Dart code to
-# check for errors, warnings, and lints.
+include: package:very_good_analysis/analysis_options.yaml
 
-# The issues identified by the analyzer are surfaced in the UI of Dart-enabled
-# IDEs (https://dart.dev/tools#ides-and-editors). The analyzer can also be
-# invoked from the command line by running `flutter analyze`.
-
-# The following line activates a set of recommended lints for Flutter apps,
-# packages, and plugins designed to encourage good coding practices.
-include: package:flutter_lints/flutter.yaml
-
-# * custom_lint
-# This is a custom_lint rule that we have added to the project and
-# is used to simplify our usage of riverpod as a state management package for the app
-# More about this can be found here https://pub.dev/packages/riverpod_lint#installing-riverpod_lint
 analyzer:
   plugins:
     - custom_lint
 
 custom_lint:
-  # Forcibly disable lint rules by default
-  # enable_all_lint_rules: false
   rules:
-    # You can now enable one specific rule in the "rules" list
-    # - missing_provider_scope: false
 
-# * linter
-# The lint rules applied to this project can be customized in the
-# section below to disable rules from the `package:flutter_lints/flutter.yaml`
-# included above or to enable additional rules. A list of all available lints
-# and their documentation is published at
-# https://dart-lang.github.io/linter/lints/index.html.
-
-# Instead of disabling a lint rule for the entire project in the
-# section below, it can also be suppressed for a single line of code
-# or a specific dart file by using the `// ignore: name_of_lint` and
-# `// ignore_for_file: name_of_lint` syntax on the line or in the file
-# producing the lint.
 linter:
-  rules: 
-    # this ensures that all imports used in our project
-    # are relative to the current file in the derictory
+  rules:
     prefer_relative_imports: true
-
-# * Analyzer options
-# Additional information about this file can be found at
-# https://dart.dev/guides/language/analysis-options
+    always_use_package_imports: false
+    lines_longer_than_80_chars: false
+    flutter_style_todos: false

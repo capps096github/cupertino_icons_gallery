@@ -12,7 +12,7 @@ AppBar iconsAppBar() {
     bottom: const PreferredSize(
       preferredSize: Size.fromHeight(kToolbarHeight),
       child: TitleBanner(
-        homeTitle: "Cupertino Icons",
+        homeTitle: 'Cupertino Icons',
       ),
     ),
   );

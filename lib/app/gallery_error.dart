@@ -3,7 +3,7 @@ import '../gallery_exporter.dart';
 
 class GalleryError extends StatelessWidget {
   ///This widget displays Erro Messages for our App
-  const GalleryError({super.key, required this.errorText});
+  const GalleryError({required this.errorText, super.key});
 
   final String errorText;
 

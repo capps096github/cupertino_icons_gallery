@@ -5,9 +5,9 @@ const xephasTwitter = 'https://twitter.com/xephas_official';
 const cappsTwitter = 'https://twitter.com/capps_team';
 
 // flutter link
-const flutterLink = "https://flutter.dev";
+const flutterLink = 'https://flutter.dev';
 
-const flutterCommunityLink = "https://flutter.dev/community";
+const flutterCommunityLink = 'https://flutter.dev/community';
 
 // repo link
-const repoLink = "https://github.com/capps096github/cupertino_icons_gallery";
+const repoLink = 'https://github.com/capps096github/cupertino_icons_gallery';

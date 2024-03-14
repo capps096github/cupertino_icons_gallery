@@ -2,15 +2,8 @@ import '../../../gallery_exporter.dart';
 
 class ButtonBody extends ConsumerWidget {
   const ButtonBody({
-    super.key,
-    required this.buttonColor,
-    required this.toolTip,
-    required this.text,
-    required this.textColor,
-    required this.iconData,
-    required this.onTap,
+    required this.buttonColor, required this.toolTip, required this.text, required this.textColor, required this.iconData, required this.onTap, required this.isSmallButton, super.key,
     this.iconWidget,
-    required this.isSmallButton,
   });
 
   final bool isSmallButton;
@@ -25,8 +18,8 @@ class ButtonBody extends ConsumerWidget {
   final Widget? iconWidget;
 
   @override
-  Widget build(BuildContext context, ref) {
-    VisualDensity density = Theme.of(context).visualDensity;
+  Widget build(BuildContext context, WidgetRef ref) {
+    final density = Theme.of(context).visualDensity;
 
     final width = MediaQuery.of(context).size.width;
 
@@ -39,13 +32,13 @@ class ButtonBody extends ConsumerWidget {
     /// True if It has an Icon
     final hasIconData = (iconData != null);
     final hasIconWidget = (iconWidget != null);
-    final hasIcon = (hasIconData || hasIconWidget);
+    final hasIcon = hasIconData || hasIconWidget;
 
     // elevation
     const elevation = spacing0;
 
     //
-    var buttonStyle = ElevatedButton.styleFrom(
+    final buttonStyle = ElevatedButton.styleFrom(
       backgroundColor: buttonColor,
       foregroundColor: textColor,
       elevation: elevation,

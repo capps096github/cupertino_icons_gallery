@@ -2,12 +2,7 @@ import '../../../gallery_exporter.dart';
 
 class CircularProgressAppButton extends StatelessWidget {
   const CircularProgressAppButton({
-    super.key,
-    required this.isTapped,
-    required this.onTap,
-    required this.text,
-    required this.textColor,
-    required this.buttonColor,
+    required this.isTapped, required this.onTap, required this.text, required this.textColor, required this.buttonColor, super.key,
     this.icon,
     this.toolTip,
     this.iconWidget,
@@ -15,7 +10,8 @@ class CircularProgressAppButton extends StatelessWidget {
   final bool isTapped;
   final VoidCallback? onTap;
   final String text;
-  final Color textColor, buttonColor;
+  final Color textColor;
+  final Color buttonColor;
   final IconData? icon;
   final String? toolTip;
 

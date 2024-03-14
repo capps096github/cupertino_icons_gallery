@@ -5,7 +5,7 @@ class CupertinoIconsGallery extends ConsumerWidget {
   const CupertinoIconsGallery({super.key});
 
   @override
-  Widget build(BuildContext context, ref) {
+  Widget build(BuildContext context, WidgetRef ref) {
     final galleryTheme = ref.watch(appThemeProvider);
 
     return MaterialApp.router(

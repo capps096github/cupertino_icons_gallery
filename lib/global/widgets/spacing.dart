@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 
 ///Adds space vertically
 class VerticalSpacing extends StatelessWidget {
-  const VerticalSpacing({super.key, required this.of});
+  const VerticalSpacing({required this.of, super.key});
   final double of;
   @override
   Widget build(BuildContext context) {
@@ -13,7 +13,7 @@ class VerticalSpacing extends StatelessWidget {
 
 ///Adds space Horiz0ntally
 class HorizontalSpacing extends StatelessWidget {
-  const HorizontalSpacing({super.key, required this.of});
+  const HorizontalSpacing({required this.of, super.key});
   final double of;
   @override
   Widget build(BuildContext context) {
@@ -23,7 +23,7 @@ class HorizontalSpacing extends StatelessWidget {
 
 ///Adds space vertically in Sliver Widgets
 class SliverVerticalSpacing extends StatelessWidget {
-  const SliverVerticalSpacing({super.key, required this.of});
+  const SliverVerticalSpacing({required this.of, super.key});
   final double of;
   @override
   Widget build(BuildContext context) {

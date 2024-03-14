@@ -8,7 +8,7 @@ class ThickHorizontalDivider extends StatelessWidget {
     this.dividerColor = galleryColor,
     this.thickness = 6.0,
     this.dividerWidth = 70,
-    this.margin = const EdgeInsets.symmetric(vertical: 16.0),
+    this.margin = const EdgeInsets.symmetric(vertical: 16),
   });
 
 //color of the divider
@@ -44,7 +44,7 @@ class ThickVerticalDivider extends StatelessWidget {
     this.dividerColor = galleryColor,
     this.thickness = 6.0,
     this.dividerHeight = 150,
-    this.margin = const EdgeInsets.symmetric(vertical: 16.0),
+    this.margin = const EdgeInsets.symmetric(vertical: 16),
   });
 
 //color of the divider

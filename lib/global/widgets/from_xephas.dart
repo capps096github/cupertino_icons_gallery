@@ -8,7 +8,9 @@ class FromXephas extends StatelessWidget {
     this.heartColor = galleryError,
   });
 
-  final Color textColor, builderColor, heartColor;
+  final Color textColor;
+  final Color builderColor;
+  final Color heartColor;
 
   @override
   Widget build(BuildContext context) {
@@ -19,10 +21,9 @@ class FromXephas extends StatelessWidget {
     );
 
     return Padding(
-      padding: const EdgeInsets.all(8.0),
+      padding: const EdgeInsets.all(8),
       child: Column(
         mainAxisSize: MainAxisSize.min,
-        crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
@@ -52,7 +53,7 @@ class FromXephas extends StatelessWidget {
             children: [
               Expanded(
                 child: Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 2.0),
+                  padding: const EdgeInsets.symmetric(horizontal: 2),
                   child: ThickHorizontalDivider(
                     thickness: 1.5,
                     dividerColor: builderColor,
@@ -94,7 +95,7 @@ class FromXephas extends StatelessWidget {
               ),
               Expanded(
                 child: Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 2.0),
+                  padding: const EdgeInsets.symmetric(horizontal: 2),
                   child: ThickHorizontalDivider(
                     thickness: 1.5,
                     dividerColor: builderColor,

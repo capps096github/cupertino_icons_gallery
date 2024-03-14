@@ -18,9 +18,9 @@ class IconTilesView extends ConsumerWidget {
   final String searchQuery;
 
   @override
-  Widget build(BuildContext context, ref) {
+  Widget build(BuildContext context, WidgetRef ref) {
     // provides the length of the subjects list
-    final int totalIconCount = galleryIconList.length;
+    final totalIconCount = galleryIconList.length;
 
     // check if we have icons
     final hasIcons = totalIconCount > 0;
@@ -37,11 +37,11 @@ class IconTilesView extends ConsumerWidget {
               final currentWidth = constraints.asBoxConstraints().maxWidth;
 
               final smallestMobile = currentWidth < 300;
-              final isSmallMobile = (currentWidth < 400);
-              final isMediumMobile = (currentWidth >= 400 && currentWidth < 600);
-              final isLargeMobile = (currentWidth >= 600 && currentWidth < 800);
-              final isSmallTablet = (currentWidth >= 800 && currentWidth < 1000);
-              final isLargeTablet = (currentWidth >= 1000 && currentWidth < 1200);
+              final isSmallMobile = currentWidth < 400;
+              final isMediumMobile = currentWidth >= 400 && currentWidth < 600;
+              final isLargeMobile = currentWidth >= 600 && currentWidth < 800;
+              final isSmallTablet = currentWidth >= 800 && currentWidth < 1000;
+              final isLargeTablet = currentWidth >= 1000 && currentWidth < 1200;
               // final isDesktop = (currentWidth >= 1200);
 
               // gridCrossAxisCount
@@ -63,9 +63,8 @@ class IconTilesView extends ConsumerWidget {
               return SliverGrid(
                 gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                   crossAxisCount: gridCrossAxisCount,
-                  childAspectRatio: 1.0,
-                  crossAxisSpacing: 8.0,
-                  mainAxisSpacing: 8.0,
+                  crossAxisSpacing: 8,
+                  mainAxisSpacing: 8,
                 ),
                 delegate: SliverChildBuilderDelegate(
                   (BuildContext context, int pointsIndex) {
@@ -100,7 +99,7 @@ class IconTilesView extends ConsumerWidget {
           )
         : const SliverToBoxAdapter(
             child: CantFindIcon(
-              errorText: "No icons found",
+              errorText: 'No icons found',
             ),
           );
   }

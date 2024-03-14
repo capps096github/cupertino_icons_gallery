@@ -3,8 +3,7 @@ import '../../gallery_exporter.dart';
 class ResponsivenessBuilder extends ConsumerWidget {
   const ResponsivenessBuilder({
     required this.mobile,
-    this.tablet,
-    required this.desktop,
+    required this.desktop, this.tablet,
     super.key,
   });
 

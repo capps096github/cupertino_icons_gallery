@@ -3,9 +3,7 @@ import '../../gallery_exporter.dart';
 
 class GalleryScrollbar extends StatelessWidget {
   const GalleryScrollbar({
-    super.key,
-    required this.controller,
-    required this.child,
+    required this.controller, required this.child, super.key,
     this.height,
     this.color = galleryColor,
   });
@@ -20,11 +18,11 @@ class GalleryScrollbar extends StatelessWidget {
     final mQheight =
         (mQ.size.height * .15) - (mQ.padding.top + mQ.padding.bottom);
 
-    TargetPlatform platform = Theme.of(context).platform;
+    final platform = Theme.of(context).platform;
 
     ///This variable declares that if we are on phone
-    final showScrollbar = (!(TargetPlatform.android == platform ||
-        TargetPlatform.iOS == platform));
+    final showScrollbar = !(TargetPlatform.android == platform ||
+        TargetPlatform.iOS == platform);
 
     return showScrollbar
         ? DraggableScrollbar(
@@ -36,7 +34,7 @@ class GalleryScrollbar extends StatelessWidget {
             child: child,
             scrollThumbBuilder:
                 (backgroundColor, thumbAnimation, labelAnimation, height,
-                    {labelConstraints, labelText}) {
+                    {labelConstraints, labelText,}) {
               return Container(
                 constraints: BoxConstraints.tight(
                   Size(8, height),

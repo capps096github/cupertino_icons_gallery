@@ -4,6 +4,12 @@
 import 'package:flutter/material.dart';
 
 class GalleryIcon {
+
+  GalleryIcon({
+    required this.name,
+    required this.icon,
+    this.aliases = const [],
+  });
   // name of the icon
   final String name;
 
@@ -12,10 +18,4 @@ class GalleryIcon {
 
   // aliases
   final List<String> aliases;
-
-  GalleryIcon({
-    required this.name,
-    required this.icon,
-    this.aliases = const [],
-  });
 }

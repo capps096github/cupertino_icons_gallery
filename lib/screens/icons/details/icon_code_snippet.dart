@@ -7,8 +7,7 @@ import '../../../gallery_exporter.dart';
 
 class IconCodeSnippet extends StatelessWidget {
   const IconCodeSnippet({
-    super.key,
-    required this.codeSnippet,
+    required this.codeSnippet, super.key,
   });
 
   final String codeSnippet;
@@ -21,7 +20,7 @@ class IconCodeSnippet extends StatelessWidget {
       alignment: Alignment.bottomRight,
       children: [
         Container(
-          padding: const EdgeInsets.all(8.0),
+          padding: const EdgeInsets.all(8),
           width: double.infinity,
           decoration: BoxDecoration(
             color: detailsColor.withOpacity(.4),
@@ -44,8 +43,7 @@ class IconCodeSnippet extends StatelessWidget {
 
 class CopyIcon extends StatelessWidget {
   const CopyIcon({
-    super.key,
-    required this.codeSnippet,
+    required this.codeSnippet, super.key,
   });
 
   final String codeSnippet;
@@ -55,7 +53,7 @@ class CopyIcon extends StatelessWidget {
     final snackBar = copyIconSnackbar(context);
 
     return IconButton(
-      tooltip: "Copy to clipboard",
+      tooltip: 'Copy to clipboard',
       icon: const Icon(Icons.content_copy_rounded, color: detailsTextColor),
       onPressed: () async {
         // copy the code snippet to the clipboard

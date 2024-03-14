@@ -15,7 +15,7 @@ final selectedIconIndexProvider = StateProvider<int>((ref) {
 final selectedGalleryIconProvider = StateProvider<GalleryIcon>((ref) {
   return GalleryIcon(
     icon: CupertinoIcons.circle_grid_hex,
-    name: "Cupertino Icon",
+    name: 'Cupertino Icon',
   );
 });
 
@@ -29,7 +29,7 @@ final allIconsProvider = StateProvider<List<GalleryIcon>>(
     final selectedFilterIndex = ref.watch(selectedFilterIndexProvider);
 
 // all selected
-    final allIconsSelected = (selectedFilterIndex == 0 || selectedFilterIndex == -1);
+    final allIconsSelected = selectedFilterIndex == 0 || selectedFilterIndex == -1;
     // perform filters based on the selected filter index
     // alphabetFilters
     if (allIconsSelected) {
@@ -39,7 +39,7 @@ final allIconsProvider = StateProvider<List<GalleryIcon>>(
       // print
       return cupertinoIcons
           .where(
-              (icon) => icon.name.startsWith(alphabetFilters[(selectedFilterIndex)].toLowerCase()))
+              (icon) => icon.name.startsWith(alphabetFilters[selectedFilterIndex].toLowerCase()),)
           .toList();
     }
   },

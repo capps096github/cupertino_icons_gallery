@@ -7,13 +7,8 @@ import '../../search/search_highlighter.dart';
 
 class IconTile extends StatefulWidget {
   const IconTile({
-    super.key,
-    required this.onTap,
-    required this.showText,
+    required this.onTap, required this.showText, required this.pointsIndex, required this.selectedIcon, required this.searchQuery, super.key,
     this.isShownInRecentSearch = false,
-    required this.pointsIndex,
-    required this.selectedIcon,
-    required this.searchQuery,
   });
   final VoidCallback onTap;
 
@@ -37,16 +32,16 @@ class _IconTileState extends State<IconTile> {
   double elevation = 0;
 
   ///squareSize
-  double squareSize = 120.0;
+  double squareSize = 120;
 
   ///textSize
-  double textSize = 10.0;
+  double textSize = 10;
 
   ///iconSize
-  double iconSize = 40.0;
+  double iconSize = 40;
 
   /// border radius
-  final borderRadius = BorderRadius.circular(8.0);
+  final borderRadius = BorderRadius.circular(8);
 
   @override
   Widget build(BuildContext context) {
@@ -106,7 +101,7 @@ class _IconTileState extends State<IconTile> {
                 color: selectedColor,
               ),
               child: Padding(
-                padding: const EdgeInsets.all(4.0),
+                padding: const EdgeInsets.all(4),
                 child: SizedBox(
                   height: squareSize,
                   width: squareSize,
@@ -136,6 +131,6 @@ class _IconTileState extends State<IconTile> {
           ),
         ),
       );
-    });
+    },);
   }
 }

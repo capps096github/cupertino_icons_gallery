@@ -11,7 +11,7 @@ class PerformSearch extends ConsumerWidget {
   });
 
   @override
-  Widget build(BuildContext context, ref) {
+  Widget build(BuildContext context, WidgetRef ref) {
     /// State Provider for all subjects
     final galleryIconList = ref.watch(allIconsProvider);
 
@@ -22,7 +22,7 @@ class PerformSearch extends ConsumerWidget {
             key: const PageStorageKey(PageStorageKeys.cupertinoIconsSuggestionsKey),
             slivers: [
               SliverPadding(
-                padding: const EdgeInsets.all(8.0),
+                padding: const EdgeInsets.all(8),
                 sliver: SliverToBoxAdapter(
                   child: Column(
                     mainAxisSize: MainAxisSize.min,
@@ -30,7 +30,7 @@ class PerformSearch extends ConsumerWidget {
                     children: [
                       const AnimatedSearchTexts(),
                       SvgPicture.asset(
-                        "images/search.svg",
+                        'images/search.svg',
                         height: svgImageSize,
                         width: svgImageSize,
                         colorFilter: const ColorFilter.mode(galleryColor, BlendMode.srcATop),
@@ -42,14 +42,14 @@ class PerformSearch extends ConsumerWidget {
 
               const SliverToBoxAdapter(
                 child: SectionTitle(
-                  sectionText: "All Icons",
+                  sectionText: 'All Icons',
                   backgroundColor: galleryBlack,
                 ),
               ),
 
               // icons
               SliverPadding(
-                padding: const EdgeInsets.all(8.0),
+                padding: const EdgeInsets.all(8),
                 sliver: IconTilesView(
                   galleryIconList: galleryIconList,
                 ),

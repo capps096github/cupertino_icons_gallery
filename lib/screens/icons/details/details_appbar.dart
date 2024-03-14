@@ -7,7 +7,7 @@ AppBar detailsAppbar() {
   return AppBar(
     backgroundColor: galleryColor,
     leading: Padding(
-      padding: const EdgeInsets.all(8.0),
+      padding: const EdgeInsets.all(8),
       child: Container(
         decoration: BoxDecoration(
           color: galleryPink,
@@ -21,7 +21,7 @@ AppBar detailsAppbar() {
               ref.watch(selectedIconIndexProvider.notifier).state = -1;
             },
           );
-        }),
+        },),
       ),
     ),
     automaticallyImplyLeading: false,
@@ -37,7 +37,7 @@ AppBar detailsAppbar() {
           color: detailsTextColor,
         ),
       );
-    }),
+    },),
     actions: const [
       //  actions like share will be here
     ],

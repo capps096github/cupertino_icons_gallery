@@ -3,9 +3,8 @@ import '../../../gallery_exporter.dart';
 
 class LeadingIcon extends StatelessWidget {
   const LeadingIcon({
-    super.key,
+    required this.iconColor, super.key,
     this.icon,
-    required this.iconColor,
   });
 
   final IconData? icon;

@@ -8,7 +8,7 @@ class IconDetails extends ConsumerWidget {
   const IconDetails({super.key});
 
   @override
-  Widget build(BuildContext context, ref) {
+  Widget build(BuildContext context, WidgetRef ref) {
     // selectedIcon
     final selectedGalleryIcon = ref.watch(selectedGalleryIconProvider);
 
@@ -21,18 +21,18 @@ Icon(
     final smallCodeSnippet = selectedGalleryIcon.name;
 
     // iconDataSnippet
-    final iconDataSnippet = "CupertinoIcons.${selectedGalleryIcon.name}";
+    final iconDataSnippet = 'CupertinoIcons.${selectedGalleryIcon.name}';
 
     return Scaffold(
       backgroundColor: galleryColor,
       appBar: detailsAppbar(),
       body: Padding(
-        padding: const EdgeInsets.all(8.0),
+        padding: const EdgeInsets.all(8),
         child: ExpandedScrollingColumn(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Container(
-              padding: const EdgeInsets.all(15.0),
+              padding: const EdgeInsets.all(15),
               decoration: BoxDecoration(
                 color: detailsColor.withOpacity(.3),
                 shape: BoxShape.circle,
@@ -52,7 +52,7 @@ Icon(
             const VerticalSpacing(of: 10),
             //  e.g to copy CupertinoIcons.brightness_solid at once without having the icon widget around it
             const Spacer(),
-            const IconHeader(title: "Icon Data"),
+            const IconHeader(title: 'Icon Data'),
             IconCodeSnippet(codeSnippet: iconDataSnippet),
 
             const VerticalSpacing(of: 10),
@@ -70,8 +70,7 @@ Icon(
 
 class IconHeader extends StatelessWidget {
   const IconHeader({
-    super.key,
-    required this.title,
+    required this.title, super.key,
   });
 
 // title
@@ -80,7 +79,7 @@ class IconHeader extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(8.0),
+      padding: const EdgeInsets.all(8),
       child: Text(
         title,
         style: GoogleFonts.leagueSpartan(

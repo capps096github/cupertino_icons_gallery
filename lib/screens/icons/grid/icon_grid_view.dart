@@ -26,7 +26,7 @@ class IconGridView extends StatelessWidget {
 
         // tiles
         SliverPadding(
-          padding: const EdgeInsets.all(8.0),
+          padding: const EdgeInsets.all(8),
           sliver: Consumer(
             builder: (context, ref, _) {
               /// State Provider for all subjects

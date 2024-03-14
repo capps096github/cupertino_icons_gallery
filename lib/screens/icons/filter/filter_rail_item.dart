@@ -24,17 +24,17 @@ class FilterRailItem extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     // all selected
-    final isAllSelected = (filterIndex == 0 || filterIndex == -1);
+    final isAllSelected = filterIndex == 0 || filterIndex == -1;
 
     // tooltip
     final tooltip = isAllSelected
         ? 'All Cupertino Icons'
-        : "Cupertino Icons starting with ${filterAlphabet.toLowerCase()}";
+        : 'Cupertino Icons starting with ${filterAlphabet.toLowerCase()}';
 
     // access the value stored at the current page gradeValue provider
     final selectedFilterIndex = ref.watch(selectedFilterIndexProvider);
 
-    bool isSelected = (selectedFilterIndex == filterIndex);
+    final isSelected = (selectedFilterIndex == filterIndex);
 
     const iconColor = galleryWhite;
     final backgroundColor = isSelected ? galleryPink : galleryTransparent;
@@ -47,7 +47,7 @@ class FilterRailItem extends ConsumerWidget {
     );
 
     return Padding(
-      padding: const EdgeInsets.all(2.0),
+      padding: const EdgeInsets.all(2),
       child: Material(
         color: backgroundColor,
         clipBehavior: Clip.antiAlias,
@@ -74,7 +74,7 @@ class FilterRailItem extends ConsumerWidget {
                 borderRadius: BorderRadius.circular(8),
               ),
               child: Padding(
-                padding: const EdgeInsets.all(16.0),
+                padding: const EdgeInsets.all(16),
                 child: Text(
                   filterAlphabet,
                   textAlign: TextAlign.center,

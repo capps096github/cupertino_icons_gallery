@@ -3,13 +3,13 @@ import '../../gallery_exporter.dart';
 
 class SectionTitle extends StatelessWidget {
   const SectionTitle({
-    super.key,
-    required this.sectionText,
+    required this.sectionText, super.key,
     this.textColor = galleryWhite,
     this.backgroundColor = galleryColor,
   });
   final String sectionText;
-  final Color textColor, backgroundColor;
+  final Color textColor;
+  final Color backgroundColor;
   @override
   Widget build(BuildContext context) {
     return Center(

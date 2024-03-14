@@ -3,11 +3,7 @@ import 'button_body.dart';
 
 class AppButton extends StatelessWidget {
   const AppButton({
-    super.key,
-    required this.text,
-    required this.onTap,
-    required this.textColor,
-    required this.buttonColor,
+    required this.text, required this.onTap, required this.textColor, required this.buttonColor, super.key,
     this.icon,
     this.iconWidget,
     this.toolTip,
@@ -41,7 +37,8 @@ class AppButton extends StatelessWidget {
   final String text;
   final Widget? iconWidget;
   final VoidCallback? onTap;
-  final Color textColor, buttonColor;
+  final Color textColor;
+  final Color buttonColor;
   final IconData? icon;
   final String? toolTip;
 

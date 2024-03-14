@@ -6,8 +6,7 @@ import '../../gallery_exporter.dart';
 
 class CantFindIcon extends StatelessWidget {
   const CantFindIcon({
-    super.key,
-    required this.errorText,
+    required this.errorText, super.key,
   });
 
   final String errorText;

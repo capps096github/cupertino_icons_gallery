@@ -4,7 +4,7 @@ import '../icons/icons_rail.dart';
 import 'search_suggestion_list.dart';
 
 class SearchIconsScreen extends StatelessWidget {
-  const SearchIconsScreen({super.key, required this.searchQuery});
+  const SearchIconsScreen({required this.searchQuery, super.key});
 
   final String searchQuery;
 

@@ -20,7 +20,7 @@ class SearchContainer extends ConsumerWidget {
   });
 
   @override
-  Widget build(BuildContext context, ref) {
+  Widget build(BuildContext context, WidgetRef ref) {
     return InkWell(
       onTap: () {
         // search
@@ -45,7 +45,7 @@ class SearchContainer extends ConsumerWidget {
         child: Row(
           children: [
             const Padding(
-              padding: EdgeInsets.all(8.0),
+              padding: EdgeInsets.all(8),
               child: Icon(
                 CupertinoIcons.search_circle_fill,
                 color: galleryColor,
@@ -76,8 +76,8 @@ class SearchContainer extends ConsumerWidget {
                 color: galleryColor,
                 borderRadius: BorderRadius.circular(8),
               ),
-              margin: const EdgeInsets.all(2.0),
-              padding: const EdgeInsets.all(6.0),
+              margin: const EdgeInsets.all(2),
+              padding: const EdgeInsets.all(6),
               child: const Icon(
                 Icons.tune,
                 color: galleryWhite,

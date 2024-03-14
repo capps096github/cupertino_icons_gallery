@@ -2,18 +2,15 @@ import '../../../gallery_exporter.dart';
 
 class AppTextButton extends ConsumerWidget {
   const AppTextButton({
-    super.key,
-    required this.onTap,
-    required this.textColor,
-    required this.buttonColor,
-    required this.text,
+    required this.onTap, required this.textColor, required this.buttonColor, required this.text, super.key,
     this.toolTip,
     this.icon,
     this.tooltipTextColor,
   });
 
   final VoidCallback onTap;
-  final Color textColor, buttonColor;
+  final Color textColor;
+  final Color buttonColor;
 
   final Color? tooltipTextColor;
 
@@ -29,7 +26,7 @@ class AppTextButton extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     /// True if It has an Icon
     final hasIcon = (icon != null);
-    VisualDensity density = Theme.of(context).visualDensity;
+    final density = Theme.of(context).visualDensity;
 
     final droidconResponsive = ref.watch(responsivenessProvider(context));
 

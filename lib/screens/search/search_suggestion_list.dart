@@ -8,8 +8,7 @@ import '../icons/icon_providers.dart';
 
 class SearchSuggestionList extends ConsumerWidget {
   const SearchSuggestionList({
-    super.key,
-    required this.query,
+    required this.query, super.key,
   });
   final String query;
   @override
@@ -45,7 +44,7 @@ class SearchSuggestionList extends ConsumerWidget {
                   ? CustomScrollView(
                       slivers: [
                         SliverPadding(
-                          padding: const EdgeInsets.all(8.0),
+                          padding: const EdgeInsets.all(8),
                           sliver: IconTilesView(
                             galleryIconList: searchList,
                             searchQuery: query,

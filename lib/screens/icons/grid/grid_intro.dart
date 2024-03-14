@@ -13,7 +13,7 @@ class IconGridIntro extends StatelessWidget {
   Widget build(BuildContext context) {
     return SliverToBoxAdapter(
       child: Padding(
-        padding: const EdgeInsets.all(8.0),
+        padding: const EdgeInsets.all(8),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           mainAxisSize: MainAxisSize.min,
@@ -21,7 +21,7 @@ class IconGridIntro extends StatelessWidget {
             //
 
             const SectionTitle(
-              sectionText: "In the Gallery",
+              sectionText: 'In the Gallery',
               backgroundColor: galleryBlack,
             ),
 
@@ -29,10 +29,10 @@ class IconGridIntro extends StatelessWidget {
             Consumer(
               builder: (context, ref, child) {
                 /// State Provider for all subjects
-                final List<GalleryIcon> galleryIconList = ref.watch(allIconsProvider);
+                final galleryIconList = ref.watch(allIconsProvider);
 
                 // provides the length of the subjects list
-                final int totalIconCount = galleryIconList.length;
+                final totalIconCount = galleryIconList.length;
 
                 // check if we have icons
                 final hasIcons = totalIconCount > 0;
@@ -68,7 +68,7 @@ class IconGridIntro extends StatelessWidget {
             const VerticalSpacing(of: 8),
 
             const SectionTitle(
-              sectionText: "Keynote",
+              sectionText: 'Keynote',
               backgroundColor: galleryBlack,
             ),
 
@@ -109,7 +109,7 @@ class IconGridIntro extends StatelessWidget {
             ),
 
             const SectionTitle(
-              sectionText: "Open Source",
+              sectionText: 'Open Source',
               backgroundColor: galleryPink,
             ),
 
@@ -138,19 +138,19 @@ class IconGridIntro extends StatelessWidget {
               ),
             ),
 
-            const SectionTitle(sectionText: "Hints"),
+            const SectionTitle(sectionText: 'Hints'),
 
             const GridHint(
               icon: CupertinoIcons.hand_draw,
-              text: "Tap on an Icon to View its Source Code for use in your Flutter App.",
+              text: 'Tap on an Icon to View its Source Code for use in your Flutter App.',
             ),
             const GridHint(
               icon: Icons.tune,
-              text: "Use the rail on the left to filter the icons by their Alphabetical Letters.",
+              text: 'Use the rail on the left to filter the icons by their Alphabetical Letters.',
             ),
             const GridHint(
               icon: CupertinoIcons.search,
-              text: "Search for an Icon by typing in the search bar above.",
+              text: 'Search for an Icon by typing in the search bar above.',
             ),
 
             const VerticalSpacing(of: 20),
@@ -165,9 +165,7 @@ class IconGridIntro extends StatelessWidget {
 
 class GridHint extends StatelessWidget {
   const GridHint({
-    super.key,
-    required this.icon,
-    required this.text,
+    required this.icon, required this.text, super.key,
   });
 
   // icon
@@ -179,7 +177,7 @@ class GridHint extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(4.0),
+      padding: const EdgeInsets.all(4),
       child: Row(
         mainAxisSize: MainAxisSize.min,
         children: [
@@ -223,12 +221,12 @@ class IconsTitle extends StatelessWidget {
         final currentFilterAlphabet = alphabetFilters[currentFilterIndex];
 
         // all selected
-        final isAllSelected = (currentFilterIndex == 0 || currentFilterIndex == -1);
+        final isAllSelected = currentFilterIndex == 0 || currentFilterIndex == -1;
 
         return SectionTitle(
           sectionText: isAllSelected
-              ? "All Icons"
-              : "Icons starting with ${currentFilterAlphabet.toLowerCase()}",
+              ? 'All Icons'
+              : 'Icons starting with ${currentFilterAlphabet.toLowerCase()}',
           backgroundColor: galleryBlack,
         );
       },

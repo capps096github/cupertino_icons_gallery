@@ -9,9 +9,9 @@ final appThemeProvider = Provider<ThemeData>((ref) {
 class AppTheme {
   static ThemeData get light {
     // text theme
-    final TextTheme textTheme = ThemeData.light().textTheme;
+    final textTheme = ThemeData.light().textTheme;
 
-    // TODO put app font here, default is Lato
+    // TODOput app font here, default is Lato
     const textStyleFunction = GoogleFonts.lato;
 
     return ThemeData(
@@ -26,7 +26,7 @@ class AppTheme {
       appBarTheme: AppBarTheme(
         centerTitle: true,
         backgroundColor: galleryColor,
-        // TODO put app font here, default is Lato
+        // TODOput app font here, default is Lato
         titleTextStyle: GoogleFonts.lato(
           fontSize: 20,
           fontWeight: FontWeight.w700,

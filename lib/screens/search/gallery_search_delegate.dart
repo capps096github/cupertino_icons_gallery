@@ -9,14 +9,11 @@ import 'ui/perform_search.dart';
 
 const _accentColor = galleryWhite;
 
-///This is responsible for configuring all searching in the saved results
+/// This is responsible for configuring all searching in the saved results
 class GallerySearchDelegate extends SearchDelegate {
-  final String hintText;
-  final WidgetRef ref;
-
+  /// [GallerySearchDelegate] constructor
   GallerySearchDelegate({
-    this.hintText = "Search through the icons",
-    required this.ref,
+    required this.ref, this.hintText = 'Search through the icons',
   }) : super(
           searchFieldLabel: hintText,
           keyboardType: TextInputType.text,
@@ -27,6 +24,11 @@ class GallerySearchDelegate extends SearchDelegate {
             color: galleryWhite,
           ),
         );
+
+  /// this is a hint text
+  final String hintText;
+  /// ref
+  final WidgetRef ref;
 
   @override
   ThemeData appBarTheme(BuildContext context) {
@@ -79,7 +81,7 @@ class GallerySearchDelegate extends SearchDelegate {
       preferredSize: const Size.fromHeight(galleryAppbarHeight),
       child: Center(
         child: Padding(
-          padding: const EdgeInsets.all(8.0),
+          padding: const EdgeInsets.all(8),
           child: Row(
             mainAxisSize: MainAxisSize.min,
             mainAxisAlignment: MainAxisAlignment.center,
@@ -97,7 +99,7 @@ class GallerySearchDelegate extends SearchDelegate {
               // text
               Flexible(
                 child: TitleBanner(
-                  homeTitle: isMobile ? "Search" : "Cupertino Icons Search",
+                  homeTitle: isMobile ? 'Search' : 'Cupertino Icons Search',
                 ),
               ),
             ],

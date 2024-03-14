@@ -3,9 +3,7 @@ import '../../gallery_exporter.dart';
 
 class SearchHighlighter extends ConsumerWidget {
   const SearchHighlighter({
-    super.key,
-    required this.searchQuery,
-    required this.text,
+    required this.searchQuery, required this.text, super.key,
     this.textColor = galleryColor,
     this.textAlign = TextAlign.start,
     this.fontSize = 16,
@@ -20,7 +18,7 @@ class SearchHighlighter extends ConsumerWidget {
   final double fontSize;
 
   @override
-  Widget build(BuildContext context, ref) {
+  Widget build(BuildContext context, WidgetRef ref) {
     final textStyleHighlight = TextStyle(
       fontSize: fontSize,
       fontWeight: FontWeight.normal,
