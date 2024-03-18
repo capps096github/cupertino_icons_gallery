@@ -6,5 +6,5 @@ const bool isGalleryWeb = kIsWeb;
 
 /// check if the current platform is Windows
 final bool isGalleryWindows = (defaultTargetPlatform == TargetPlatform.windows);
-
+/// check if the current platform is Linux
 const bool isGalleryDebug = kDebugMode;

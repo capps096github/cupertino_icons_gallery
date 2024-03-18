@@ -15,6 +15,7 @@ import 'package:flutter/foundation.dart'
 /// );
 /// ```
 class DefaultFirebaseOptions {
+  /// Returns the [FirebaseOptions] for the current platform.
   static FirebaseOptions get currentPlatform {
     if (kIsWeb) {
       return web;
@@ -42,13 +43,14 @@ class DefaultFirebaseOptions {
           'DefaultFirebaseOptions have not been configured for linux - '
           'you can reconfigure this by running the FlutterFire CLI again.',
         );
+        
       default:
         throw UnsupportedError(
           'DefaultFirebaseOptions are not supported for this platform.',
         );
     }
   }
-
+///[web] is the web platform
   static const FirebaseOptions web = FirebaseOptions(
     apiKey: 'AIzaSyA8vUJ-GRW9vAaSa68c3rDabtO9U6fPOCc',
     appId: '1:1000394936344:web:b4c5299b729443d480736d',
@@ -58,7 +60,7 @@ class DefaultFirebaseOptions {
     storageBucket: 'cupertino-icons.appspot.com',
     measurementId: 'G-SL4Y2BHEXT',
   );
-
+///[android] is the android platform
   static const FirebaseOptions android = FirebaseOptions(
     apiKey: 'AIzaSyBarAI4NKBFAmUqdtykBZB7OT4J-7yQ2nQ',
     appId: '1:1000394936344:android:5250cfab56e9a3eb80736d',

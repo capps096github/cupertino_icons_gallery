@@ -1,14 +1,18 @@
 // Project imports:
 import '../../gallery_exporter.dart';
-
+///[SectionTitle] is a widget that displays a section title
 class SectionTitle extends StatelessWidget {
+  ///[SectionTitle] constructor
   const SectionTitle({
     required this.sectionText, super.key,
     this.textColor = galleryWhite,
     this.backgroundColor = galleryColor,
   });
+  ///[sectionText] is the text of the section
   final String sectionText;
+  ///[textColor] is the color of the text
   final Color textColor;
+  ///[backgroundColor] is the color of the background
   final Color backgroundColor;
   @override
   Widget build(BuildContext context) {

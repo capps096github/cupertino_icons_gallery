@@ -3,8 +3,9 @@ import '../../../gallery_exporter.dart';
 import '../icon_providers.dart';
 import 'details_appbar.dart';
 import 'icon_code_snippet.dart';
-
+///[IconDetails] class
 class IconDetails extends ConsumerWidget {
+  ///[IconDetails] constructor
   const IconDetails({super.key});
 
   @override
@@ -67,13 +68,14 @@ Icon(
     );
   }
 }
-
+///[IconHeader] is a widget that displays an icon header
 class IconHeader extends StatelessWidget {
+  ///[IconHeader] constructor
   const IconHeader({
     required this.title, super.key,
   });
 
-// title
+/// title
   final String title;
 
   @override

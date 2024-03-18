@@ -4,12 +4,13 @@ import 'package:flutter/services.dart';
 
 // Project imports:
 import '../../../gallery_exporter.dart';
-
+///IconCodeSnippet class
 class IconCodeSnippet extends StatelessWidget {
+  ///This widget displays a code snippet for the icon with an option to copy it to the clipboard
   const IconCodeSnippet({
     required this.codeSnippet, super.key,
   });
-
+///[codeSnippet] is the code snippet
   final String codeSnippet;
   @override
   Widget build(BuildContext context) {
@@ -40,12 +41,13 @@ class IconCodeSnippet extends StatelessWidget {
     );
   }
 }
-
+///[CopyIcon] is a widget that displays a copy icon
 class CopyIcon extends StatelessWidget {
+  ///[CopyIcon] constructor
   const CopyIcon({
     required this.codeSnippet, super.key,
   });
-
+///[codeSnippet] is the code snippet
   final String codeSnippet;
 
   @override

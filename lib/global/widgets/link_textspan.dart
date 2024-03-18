@@ -3,7 +3,7 @@ import 'package:flutter/gestures.dart';
 
 // Project imports:
 import '../../gallery_exporter.dart';
-
+///[linkTextSpan] is a TextSpan with a link
 TextSpan linkTextSpan({
   required String text,
   required String link,

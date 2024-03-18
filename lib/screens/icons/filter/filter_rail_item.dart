@@ -4,7 +4,9 @@
 import '../../../gallery_exporter.dart';
 import '../icon_providers.dart';
 
+///[FilterRailItem] is the rail item for the filter rail
 class FilterRailItem extends ConsumerWidget {
+  ///[FilterRailItem] constructor
   const FilterRailItem({
     required this.filterAlphabet,
     required this.filterIndex,
@@ -12,13 +14,13 @@ class FilterRailItem extends ConsumerWidget {
     this.backColor,
     super.key,
   });
-
+///[filterAlphabet] is the alphabet to filter
   final String filterAlphabet;
 
-// index, and this will be used to com[pare with the nav bar index to detect the selected item
+///index, and this will be used to com[pare with the nav bar index to detect the selected item
   final int filterIndex;
 
-  // text and background color
+  ///text and background color
   final Color? textColor, backColor;
 
   @override

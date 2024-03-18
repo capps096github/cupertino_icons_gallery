@@ -10,12 +10,12 @@ Future<void> linkLauncher(String link) async {
   // }
 }
 
-// Open Xephas Twitter Account
+/// Open Xephas Twitter Account
 Future<void> openXephasTwitter() async {
   await linkLauncher(xephasTwitter);
 }
 
-// Open Xephas Twitter Account
+/// Open Xephas Twitter Account(For Flutter Community)
 Future<void> visitFlutterCommunity() async {
   await linkLauncher(flutterCommunityLink);
 }

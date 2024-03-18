@@ -1,25 +1,28 @@
 import '../../../gallery_exporter.dart';
-
+///AppTextButton class
 class AppTextButton extends ConsumerWidget {
+  ///[AppTextButton] constructor
   const AppTextButton({
     required this.onTap, required this.textColor, required this.buttonColor, required this.text, super.key,
     this.toolTip,
     this.icon,
     this.tooltipTextColor,
   });
-
+///[onTap] is the function to be called when the button is tapped
   final VoidCallback onTap;
+///[textColor] is the color of the text
   final Color textColor;
+///[buttonColor] is the color of the button
   final Color buttonColor;
-
+///[tooltipTextColor] is the color of the tooltip text
   final Color? tooltipTextColor;
 
-  // text: The text to be displayed on the button
+/// text: The text to be displayed on the button
   final String text;
 
-// tooltip: The tooltip to show when the user hovers over the button.
+/// tooltip: The tooltip to show when the user hovers over the button.
   final String? toolTip;
-
+/// icon: The icon to be displayed on the button
   final IconData? icon;
 
   @override

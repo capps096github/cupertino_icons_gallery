@@ -1,6 +1,7 @@
 import '../../gallery_exporter.dart';
-
+///ResponsivenessBuilder class
 class ResponsivenessBuilder extends ConsumerWidget {
+  ///[ResponsivenessBuilder] constructor
   const ResponsivenessBuilder({
     required this.mobile,
     required this.desktop, this.tablet,

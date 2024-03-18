@@ -1,7 +1,8 @@
 // Project imports:
 import '../gallery_exporter.dart';
-
+///GallerySplash class
 class GallerySplash extends StatelessWidget {
+///[GallerySplash] constructor
   const GallerySplash({super.key});
 
   @override

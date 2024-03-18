@@ -19,7 +19,7 @@ const fiftyMilliseconds = Duration(milliseconds: 50);
 ///20 milliseconds
 const twentyMilliseconds = Duration(milliseconds: 20);
 
-// navbarDuration
+/// navbarDuration
 const navbarDuration = Duration(milliseconds: 333);
 
 ///one hundred milliseconds

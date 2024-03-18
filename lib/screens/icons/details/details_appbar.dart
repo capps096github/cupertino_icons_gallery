@@ -1,7 +1,7 @@
 // Project imports:
 import '../../../gallery_exporter.dart';
 import '../icon_providers.dart';
-
+///[detailsAppbar] is the appbar for the details screen
 AppBar detailsAppbar() {
 //
   return AppBar(

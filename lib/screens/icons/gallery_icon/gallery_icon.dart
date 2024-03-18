@@ -2,20 +2,20 @@
 
 // Flutter imports:
 import 'package:flutter/material.dart';
-
+///GalleryIcon class
 class GalleryIcon {
-
+///[GalleryIcon] constructor
   GalleryIcon({
     required this.name,
     required this.icon,
     this.aliases = const [],
   });
-  // name of the icon
+  /// name of the icon
   final String name;
 
-  // icon
+  /// icon
   final IconData icon;
 
-  // aliases
+  /// aliases
   final List<String> aliases;
 }

@@ -5,8 +5,9 @@ import '../../gallery_exporter.dart';
 final appThemeProvider = Provider<ThemeData>((ref) {
   return AppTheme.light;
 });
-
+///AppTheme class
 class AppTheme {
+  ///[light] is the light theme for the app
   static ThemeData get light {
     // text theme
     final textTheme = ThemeData.light().textTheme;

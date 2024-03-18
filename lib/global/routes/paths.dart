@@ -1,8 +1,8 @@
 /// initialLocation of the app
 const initialLocation = homePath;
 
-// home
+/// home
 const homePath = '/';
 
-// icon
+/// icon
 const iconPath = '/icon';

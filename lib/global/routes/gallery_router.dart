@@ -6,7 +6,7 @@ import '../../gallery_exporter.dart';
 
 // for app analytics
 FirebaseAnalytics _analytics = FirebaseAnalytics.instance;
-
+///[galleryRouter] is the router for our app
 final galleryRouter = GoRouter(
   routes: [
     GoRoute(

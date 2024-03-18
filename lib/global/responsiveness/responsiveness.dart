@@ -2,9 +2,9 @@ import '../../gallery_exporter.dart';
 
 /// This class will be used to provide all responsiveness needed in the app
 class Responsiveness {
-
+///[context] is the current context
   Responsiveness({required this.context});
-// context
+/// context
   final BuildContext context;
 
   ///If the `Current Screen Width` is for the `SmallMobile i.e <300`

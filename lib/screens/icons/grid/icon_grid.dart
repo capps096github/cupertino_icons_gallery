@@ -3,8 +3,9 @@ import '../../../gallery_exporter.dart';
 import '../details/icon_details.dart';
 import '../icon_providers.dart';
 import 'icon_grid_view.dart';
-
+///IconGrid class creation
 class IconGrid extends ConsumerWidget {
+  ///[IconGrid] constructor
   const IconGrid({super.key});
 
   @override

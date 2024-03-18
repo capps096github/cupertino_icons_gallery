@@ -5,8 +5,9 @@ import 'package:flutter/cupertino.dart';
 import '../../../gallery_exporter.dart';
 import '../filter/filter_provider.dart';
 import '../icon_providers.dart';
-
+///IconGridIntro class
 class IconGridIntro extends StatelessWidget {
+  ///[IconGridIntro] constructor
   const IconGridIntro({super.key});
 
   @override
@@ -162,16 +163,17 @@ class IconGridIntro extends StatelessWidget {
     );
   }
 }
-
+///GridHint class
 class GridHint extends StatelessWidget {
+  ///[GridHint] constructor
   const GridHint({
     required this.icon, required this.text, super.key,
   });
 
-  // icon
+  /// icon
   final IconData icon;
 
-  // text
+  /// text
   final String text;
 
   @override
@@ -204,8 +206,9 @@ class GridHint extends StatelessWidget {
     );
   }
 }
-
+///IconsTitle class
 class IconsTitle extends StatelessWidget {
+  ///[IconsTitle] constructor
   const IconsTitle({
     super.key,
   });

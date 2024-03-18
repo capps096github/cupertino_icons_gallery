@@ -3,7 +3,7 @@
 ///72 spacing
 const double spacing72 = 72;
 
-// 64 spacing
+/// 64 spacing
 const double spacing64 = 64;
 
 /// 40 spacing = 40.0

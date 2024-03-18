@@ -1,6 +1,7 @@
 import '../../../gallery_exporter.dart';
-
+///GridCredits class
 class GridCredits extends StatelessWidget {
+  ///[GridCredits] constructor
   const GridCredits({super.key});
 
   @override

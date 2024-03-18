@@ -1,4 +1,4 @@
-// list of alphabetical letters
+/// list of alphabetical letters
 final List<String> alphabetFilters = [
   'All',
   'A',

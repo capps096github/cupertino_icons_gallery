@@ -1,15 +1,18 @@
 import '../../gallery_exporter.dart';
-
+///FromXephas class
 class FromXephas extends StatelessWidget {
+  ///[FromXephas] constructor
   const FromXephas({
     super.key,
     this.textColor = galleryWhite,
     this.builderColor = galleryWhite,
     this.heartColor = galleryError,
   });
-
+///[textColor] is the color of the text
   final Color textColor;
+  ///[builderColor] is the color of the builder
   final Color builderColor;
+  ///[heartColor] is the color of the heart
   final Color heartColor;
 
   @override

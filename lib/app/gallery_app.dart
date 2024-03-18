@@ -1,7 +1,8 @@
 // Project imports:
 import '../gallery_exporter.dart';
-
+///CupertinoIconsGallery
 class CupertinoIconsGallery extends ConsumerWidget {
+  ///[CupertinoIconsGallery] constructor
   const CupertinoIconsGallery({super.key});
 
   @override

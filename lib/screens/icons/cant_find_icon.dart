@@ -3,12 +3,13 @@ import 'package:flutter/cupertino.dart';
 
 // Project imports:
 import '../../gallery_exporter.dart';
-
+///CantFindIcon class
 class CantFindIcon extends StatelessWidget {
+  ///This widget displays an error message
   const CantFindIcon({
     required this.errorText, super.key,
   });
-
+///[errorText] is the error message
   final String errorText;
 
   @override

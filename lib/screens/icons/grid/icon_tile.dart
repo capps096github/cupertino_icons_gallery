@@ -1,15 +1,17 @@
 // Project imports:
 import '../../../gallery_exporter.dart';
-import '../icon_providers.dart';
 import '../../search/search_highlighter.dart';
+import '../icon_providers.dart';
 
 // on tap, open up the right page on Desktop and open new page on mobile
-
+///IconTile class creation
 class IconTile extends StatefulWidget {
+  ///[IconTile] constructor
   const IconTile({
     required this.onTap, required this.showText, required this.pointsIndex, required this.selectedIcon, required this.searchQuery, super.key,
     this.isShownInRecentSearch = false,
   });
+  
   final VoidCallback onTap;
 
   // showText

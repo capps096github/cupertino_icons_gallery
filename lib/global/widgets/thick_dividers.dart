@@ -3,6 +3,7 @@ import '../../gallery_exporter.dart';
 
 ///this is a horizontal divider
 class ThickHorizontalDivider extends StatelessWidget {
+  ///[ThickHorizontalDivider] constructor
   const ThickHorizontalDivider({
     super.key,
     this.dividerColor = galleryColor,
@@ -11,16 +12,16 @@ class ThickHorizontalDivider extends StatelessWidget {
     this.margin = const EdgeInsets.symmetric(vertical: 16),
   });
 
-//color of the divider
+///color of the divider
   final Color dividerColor;
 
-  // divider width
+  /// divider width
   final double dividerWidth;
 
   /// divider height
   final double thickness;
 
-  // margin
+  /// margin
   final EdgeInsetsGeometry? margin;
 
   @override
@@ -39,6 +40,7 @@ class ThickHorizontalDivider extends StatelessWidget {
 
 ///this is a vertical divider
 class ThickVerticalDivider extends StatelessWidget {
+  ///[ThickVerticalDivider] constructor
   const ThickVerticalDivider({
     super.key,
     this.dividerColor = galleryColor,
@@ -47,16 +49,16 @@ class ThickVerticalDivider extends StatelessWidget {
     this.margin = const EdgeInsets.symmetric(vertical: 16),
   });
 
-//color of the divider
+///color of the divider
   final Color dividerColor;
 
-  // divider width
+  /// divider width
   final double? dividerHeight;
 
   /// divider height
   final double thickness;
 
-  // margin
+  /// margin
   final EdgeInsetsGeometry? margin;
 
   @override

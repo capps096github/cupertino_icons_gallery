@@ -1,12 +1,13 @@
 // Project imports:
 import '../../../gallery_exporter.dart';
-import '../icon_providers.dart';
 import '../../search/search_container.dart';
+import '../icon_providers.dart';
 import 'credits.dart';
 import 'grid_intro.dart';
 import 'icon_tiles_view.dart';
-
+///IconGridView class
 class IconGridView extends StatelessWidget {
+  ///[IconGridView] constructor
   const IconGridView({super.key});
 
   @override

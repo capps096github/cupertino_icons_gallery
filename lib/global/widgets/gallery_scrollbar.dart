@@ -1,16 +1,20 @@
 // Project imports:
 import '../../gallery_exporter.dart';
-
+///[GalleryScrollbar] is a custom scrollbar for our app
 class GalleryScrollbar extends StatelessWidget {
+  ///[GalleryScrollbar] constructor
   const GalleryScrollbar({
     required this.controller, required this.child, super.key,
     this.height,
     this.color = galleryColor,
   });
-
+///[child] is the child widget OF THE SCROLLBAR
   final BoxScrollView child;
+  ///[height] is the height of the scrollbar
   final double? height;
+  ///[color] is the color of the scrollbar
   final Color color;
+  ///[controller] is the controller of the scrollbar
   final ScrollController controller;
   @override
   Widget build(BuildContext context) {

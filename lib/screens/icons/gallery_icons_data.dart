@@ -6,7 +6,7 @@ import 'gallery_icon/gallery_icon.dart';
 
 // this is the full list of all cupertino icons in Alphabetical order
 //source: https://api.flutter.dev/flutter/cupertino/CupertinoIcons-class.html#constants
-
+/// List of all cupertino icons
 List<GalleryIcon> cupertinoIcons = [
 // BEGIN LEGACY PRE SF SYMBOLS NAMES
 // We need to leave them as-is with the same codepoints for backward

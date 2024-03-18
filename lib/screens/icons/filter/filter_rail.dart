@@ -3,8 +3,9 @@ import '../../../gallery_exporter.dart';
 import '../icon_providers.dart';
 import 'filter_provider.dart';
 import 'filter_rail_item.dart';
-
+///[FilterRail] is the rail for the filter
 class FilterRail extends ConsumerWidget {
+  ///[FilterRail] constructor
   const FilterRail({super.key});
 
   @override
@@ -70,8 +71,9 @@ class FilterRail extends ConsumerWidget {
     );
   }
 }
-
+///[CurrentFilter] class
 class CurrentFilter extends ConsumerWidget {
+  ///[CurrentFilter] constructor
   const CurrentFilter({
     super.key,
   });
