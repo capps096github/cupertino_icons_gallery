@@ -4,8 +4,9 @@ import '../../icons/grid/icon_tiles_view.dart';
 import '../../icons/icon_providers.dart';
 import '../../icons/icons_rail.dart';
 import 'animated_search_texts.dart';
-
+///PerformSearch class creation
 class PerformSearch extends ConsumerWidget {
+  ///[PerformSearch] constructor
   const PerformSearch({
     super.key,
   });

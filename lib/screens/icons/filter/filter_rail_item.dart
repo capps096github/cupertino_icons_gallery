@@ -21,6 +21,7 @@ class FilterRailItem extends ConsumerWidget {
   final int filterIndex;
 
   ///text and background color
+  // ignore: avoid_multiple_declarations_per_line
   final Color? textColor, backColor;
 
   @override

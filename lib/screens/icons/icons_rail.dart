@@ -2,8 +2,9 @@
 import '../../gallery_exporter.dart';
 import 'details/icon_details.dart';
 import 'icon_providers.dart';
-
+///
 class IconsRail extends ConsumerWidget {
+  ///[IconsRail] constructor
   const IconsRail({super.key});
 
   @override

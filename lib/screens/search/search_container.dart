@@ -5,7 +5,7 @@ import 'package:flutter/cupertino.dart';
 import '../../gallery_exporter.dart';
 import '../icons/icon_providers.dart';
 import 'gallery_search_delegate.dart';
-
+///SearchContainer 
 final searchTexts = [
   'Search through the Icons',
   'Search by Name',
@@ -13,8 +13,9 @@ final searchTexts = [
   'Happy Searching!',
   'Search for a Cupertino Icon',
 ];
-
+///SearchContainer class creation
 class SearchContainer extends ConsumerWidget {
+  ///[SearchContainer] constructor
   const SearchContainer({
     super.key,
   });
@@ -89,7 +90,7 @@ class SearchContainer extends ConsumerWidget {
       ),
     );
   }
-
+///typewriterAnimatedText object creation
   TypewriterAnimatedText typewriterAnimatedText(String text, Color color) {
     return TypewriterAnimatedText(
       text,

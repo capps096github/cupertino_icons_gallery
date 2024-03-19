@@ -39,6 +39,7 @@ const double appLogoSize = 100;
 const double maxAuthWidth = 500;
 
 /// profile clipper height
+// ignore: eol_at_end_of_file
 const double profileClipperHeight = 150;
 
 

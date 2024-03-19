@@ -4,8 +4,9 @@ import 'appbar/icons_appbar.dart';
 import 'filter/filter_rail.dart';
 import 'grid/icon_grid.dart';
 import 'icons_rail.dart';
-
+///CupertinoIconsScreen class creation
 class CupertinoIconsScreen extends StatelessWidget {
+///[CupertinoIconsScreen] constructor
   const CupertinoIconsScreen({super.key});
 
   @override

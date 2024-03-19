@@ -2,10 +2,11 @@
 import '../../gallery_exporter.dart';
 import '../icons/icons_rail.dart';
 import 'search_suggestion_list.dart';
-
+///SearchIconsScreen class creation
 class SearchIconsScreen extends StatelessWidget {
+///[SearchIconsScreen] constructor
   const SearchIconsScreen({required this.searchQuery, super.key});
-
+///searchQuery
   final String searchQuery;
 
   @override

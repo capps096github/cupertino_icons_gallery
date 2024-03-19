@@ -4,6 +4,7 @@ import '../search_container.dart';
 
 ///This displays animated Search Texts
 class AnimatedSearchTexts extends StatelessWidget {
+  ///[AnimatedSearchTexts] constructor
   const AnimatedSearchTexts({super.key});
   @override
   Widget build(BuildContext context) {
@@ -16,7 +17,7 @@ class AnimatedSearchTexts extends StatelessWidget {
       ),
     );
   }
-
+///buildTypewriterAnimatedText
   TypewriterAnimatedText buildTypewriterAnimatedText(String text) {
     return TypewriterAnimatedText(
       text,

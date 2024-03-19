@@ -1,20 +1,23 @@
 // Project imports:
 import '../../gallery_exporter.dart';
-
+///SearchHighlighter class creation
 class SearchHighlighter extends ConsumerWidget {
+///[SearchHighlighter] constructor
   const SearchHighlighter({
     required this.searchQuery, required this.text, super.key,
     this.textColor = galleryColor,
     this.textAlign = TextAlign.start,
     this.fontSize = 16,
   });
+  ///searchQuery string
   final String searchQuery;
-
+///text string
   final String text;
+///textColor
   final Color textColor;
-
+///textAlign
   final TextAlign textAlign;
-
+///
   final double fontSize;
 
   @override

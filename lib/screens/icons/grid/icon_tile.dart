@@ -11,19 +11,20 @@ class IconTile extends StatefulWidget {
     required this.onTap, required this.showText, required this.pointsIndex, required this.selectedIcon, required this.searchQuery, super.key,
     this.isShownInRecentSearch = false,
   });
-  
+  ///onTap
   final VoidCallback onTap;
 
-  // showText
+  /// showText
+  // ignore: avoid_multiple_declarations_per_line
   final bool showText, isShownInRecentSearch;
 
-  // search query
+  ///search query
   final String searchQuery;
 
-  // index
+  /// index
   final int pointsIndex;
 
-  // icon
+  /// icon
   final GalleryIcon selectedIcon;
 
   @override

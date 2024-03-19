@@ -50,7 +50,7 @@ final selectedFilterIndexProvider = StateProvider<int>((ref) {
   return 0;
 });
 
-// searchIconsProvider
+/// searchIconsProvider
 final searchIconsProvider = StateProvider.family<List<GalleryIcon>, String>((ref, searchQuery) {
   // Sort the icons in ascending order by name
   cupertinoIcons.sort((a, b) => a.name.compareTo(b.name));

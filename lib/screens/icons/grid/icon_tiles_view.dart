@@ -5,16 +5,18 @@ import '../../../gallery_exporter.dart';
 import '../cant_find_icon.dart';
 import '../icon_providers.dart';
 import 'icon_tile.dart';
-
+///IconTilesView class creation
 class IconTilesView extends ConsumerWidget {
+  ///[IconTilesView] constructor
   const IconTilesView({
     required this.galleryIconList,
     this.searchQuery = '',
     super.key,
   });
+  ///galleryIconList list
   final List<GalleryIcon> galleryIconList;
 
-  // search query
+  /// search query
   final String searchQuery;
 
   @override

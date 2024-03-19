@@ -10,6 +10,7 @@ import 'ui/perform_search.dart';
 const _accentColor = galleryWhite;
 
 /// This is responsible for configuring all searching in the saved results
+// ignore: strict_raw_type
 class GallerySearchDelegate extends SearchDelegate {
   /// [GallerySearchDelegate] constructor
   GallerySearchDelegate({
