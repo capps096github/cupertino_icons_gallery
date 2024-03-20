@@ -17,7 +17,7 @@ class FilterRailItem extends ConsumerWidget {
 ///[filterAlphabet] is the alphabet to filter
   final String filterAlphabet;
 
-///index, and this will be used to com[pare with the nav bar index to detect the selected item
+///index, and this will be used to compare with the nav bar index to detect the selected item
   final int filterIndex;
 
   ///text and background color

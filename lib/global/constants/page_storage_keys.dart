@@ -1,3 +1,5 @@
+// ignore_for_file: comment_references
+
 ///This class is used to store the page storage keys
 /// these maintain the scroll position of the page in the app
 class PageStorageKeys {

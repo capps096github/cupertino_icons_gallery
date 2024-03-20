@@ -3,7 +3,7 @@ import '../../../gallery_exporter.dart';
 
 // greeting
 // this shows Good Morning, Good Afternoon and Good Evening respectively at their times
-///[Greeting] class
+///Greeting] class
 class TitleBanner extends ConsumerWidget {
   ///[TitleBanner] constructor
   const TitleBanner({
