@@ -14,6 +14,8 @@
 
 - On **Google Play Store:** [**https://play.google.com/store/apps/details?id=com.capps096apps.cupertino_icons_gallery**](https://play.google.com/store/apps/details?id=com.capps096apps.cupertino_icons_gallery)
 
+- On **Google Dev Library:** [**https://devlibrary.withgoogle.com/products/flutter/repos/capps096github-cupertino_icons_gallery**](https://devlibrary.withgoogle.com/products/flutter/repos/capps096github-cupertino_icons_gallery)
+
 
 <br />
 
