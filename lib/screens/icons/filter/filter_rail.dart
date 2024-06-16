@@ -1,8 +1,9 @@
 // Project imports:
-import '../../../gallery_exporter.dart';
+import '../../../app_exporter.dart';
 import '../icon_providers.dart';
 import 'filter_provider.dart';
 import 'filter_rail_item.dart';
+
 ///[FilterRail] is the rail for the filter
 class FilterRail extends ConsumerWidget {
   ///[FilterRail] constructor
@@ -71,6 +72,7 @@ class FilterRail extends ConsumerWidget {
     );
   }
 }
+
 ///[CurrentFilter] class
 class CurrentFilter extends ConsumerWidget {
   ///[CurrentFilter] constructor
@@ -106,7 +108,7 @@ class CurrentFilter extends ConsumerWidget {
           : Text(
               currentFilterAlphabet,
               textAlign: TextAlign.center,
-              style: GoogleFonts.leagueSpartan(
+              style: const TextStyle(
                 fontWeight: FontWeight.w900,
                 fontSize: 16,
                 color: galleryWhite,

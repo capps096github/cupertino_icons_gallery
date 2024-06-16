@@ -2,9 +2,10 @@
 import 'package:flutter/cupertino.dart';
 
 // Project imports:
-import '../../../gallery_exporter.dart';
+import '../../../app_exporter.dart';
 import '../filter/filter_provider.dart';
 import '../icon_providers.dart';
+
 ///IconGridIntro class
 class IconGridIntro extends StatelessWidget {
   ///[IconGridIntro] constructor
@@ -42,15 +43,17 @@ class IconGridIntro extends StatelessWidget {
                   textAlign: TextAlign.center,
                   text: TextSpan(
                     text: hasIcons ? 'Explore  ' : '',
-                    style: GoogleFonts.leagueSpartan(
-                      color: galleryColor,
+                    style: const TextStyle(
+                      color: appColor,
                       fontSize: 16,
                       height: 1.5,
                       fontWeight: FontWeight.bold,
                     ),
                     children: [
                       TextSpan(
-                        text: totalIconCount > 2 ? '${totalIconCount - 2}+ ' : '$totalIconCount',
+                        text: totalIconCount > 2
+                            ? '${totalIconCount - 2}+ '
+                            : '$totalIconCount',
                         style: const TextStyle(
                           fontSize: 20,
                           fontWeight: FontWeight.bold,
@@ -78,8 +81,8 @@ class IconGridIntro extends StatelessWidget {
               textAlign: TextAlign.center,
               text: TextSpan(
                 text: 'This application is an Open Source Project ',
-                style: GoogleFonts.leagueSpartan(
-                  color: galleryColor,
+                style: const TextStyle(
+                  color: appColor,
                   height: 1.5,
                   fontSize: 16,
                 ),
@@ -118,7 +121,7 @@ class IconGridIntro extends StatelessWidget {
             RichText(
               textAlign: TextAlign.center,
               text: TextSpan(
-                style: GoogleFonts.leagueSpartan(
+                style: const TextStyle(
                   color: galleryPink,
                   height: 1.5,
                   fontSize: 16,
@@ -143,11 +146,13 @@ class IconGridIntro extends StatelessWidget {
 
             const GridHint(
               icon: CupertinoIcons.hand_draw,
-              text: 'Tap on an Icon to View its Source Code for use in your Flutter App.',
+              text:
+                  'Tap on an Icon to View its Source Code for use in your Flutter App.',
             ),
             const GridHint(
               icon: Icons.tune,
-              text: 'Use the rail on the left to filter the icons by their Alphabetical Letters.',
+              text:
+                  'Use the rail on the left to filter the icons by their Alphabetical Letters.',
             ),
             const GridHint(
               icon: CupertinoIcons.search,
@@ -163,11 +168,14 @@ class IconGridIntro extends StatelessWidget {
     );
   }
 }
+
 ///GridHint class
 class GridHint extends StatelessWidget {
   ///[GridHint] constructor
   const GridHint({
-    required this.icon, required this.text, super.key,
+    required this.icon,
+    required this.text,
+    super.key,
   });
 
   /// icon
@@ -187,16 +195,16 @@ class GridHint extends StatelessWidget {
             padding: const EdgeInsets.all(10),
             child: Icon(
               icon,
-              color: galleryColor,
+              color: appColor,
             ),
           ),
           Flexible(
             child: Text(
               text,
               softWrap: true,
-              style: GoogleFonts.leagueSpartan(
+              style: const TextStyle(
                 fontWeight: FontWeight.bold,
-                color: galleryColor,
+                color: appColor,
                 fontSize: 16,
               ),
             ),
@@ -206,6 +214,7 @@ class GridHint extends StatelessWidget {
     );
   }
 }
+
 ///IconsTitle class
 class IconsTitle extends StatelessWidget {
   ///[IconsTitle] constructor
@@ -224,7 +233,8 @@ class IconsTitle extends StatelessWidget {
         final currentFilterAlphabet = alphabetFilters[currentFilterIndex];
 
         // all selected
-        final isAllSelected = currentFilterIndex == 0 || currentFilterIndex == -1;
+        final isAllSelected =
+            currentFilterIndex == 0 || currentFilterIndex == -1;
 
         return SectionTitle(
           sectionText: isAllSelected

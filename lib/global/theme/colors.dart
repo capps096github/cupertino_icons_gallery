@@ -1,10 +1,11 @@
 // black
 
 // Project imports:
-import '../../gallery_exporter.dart';
+import '../../app_exporter.dart';
 
 /// gallery color
-const galleryColor = Color(0xFF0553B1);
+const appColor = Color(0xFF010E1E);
+// const galleryColor = Color(0xFF0553B1);
 
 /// gallery color dark
 const galleryColorDark = Color(0xFF042B59);

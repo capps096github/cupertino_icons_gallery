@@ -1,4 +1,4 @@
-import '../../gallery_exporter.dart';
+import '../../app_exporter.dart';
 ///ResponsivenessBuilder class
 class ResponsivenessBuilder extends ConsumerWidget {
   ///[ResponsivenessBuilder] constructor

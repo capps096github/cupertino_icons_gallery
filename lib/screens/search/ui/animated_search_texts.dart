@@ -1,5 +1,5 @@
 // Project imports:
-import '../../../gallery_exporter.dart';
+import '../../../app_exporter.dart';
 import '../search_container.dart';
 
 ///This displays animated Search Texts
@@ -11,13 +11,12 @@ class AnimatedSearchTexts extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.all(15),
       child: AnimatedTextKit(
-        animatedTexts: searchTexts
-            .map(buildTypewriterAnimatedText)
-            .toList(),
+        animatedTexts: searchTexts.map(buildTypewriterAnimatedText).toList(),
       ),
     );
   }
-///buildTypewriterAnimatedText
+
+  ///buildTypewriterAnimatedText
   TypewriterAnimatedText buildTypewriterAnimatedText(String text) {
     return TypewriterAnimatedText(
       text,
@@ -25,8 +24,8 @@ class AnimatedSearchTexts extends StatelessWidget {
       speed: const Duration(milliseconds: 80),
       cursor: '|',
       curve: Curves.easeIn,
-      textStyle: GoogleFonts.leagueSpartan(
-        color: galleryColor,
+      textStyle: const TextStyle(
+        color: appColor,
         fontWeight: FontWeight.bold,
       ),
     );

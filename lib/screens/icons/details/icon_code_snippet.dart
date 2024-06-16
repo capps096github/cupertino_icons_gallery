@@ -3,7 +3,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/services.dart';
 
 // Project imports:
-import '../../../gallery_exporter.dart';
+import '../../../app_exporter.dart';
 ///IconCodeSnippet class
 class IconCodeSnippet extends StatelessWidget {
   ///This widget displays a code snippet for the icon with an option to copy it to the clipboard

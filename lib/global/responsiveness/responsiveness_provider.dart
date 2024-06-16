@@ -1,4 +1,4 @@
-import '../../gallery_exporter.dart';
+import '../../app_exporter.dart';
 
 //* this provides the overall responsiveness of our app
 ///[responsivenessProvider] provides the overall responsiveness of our app

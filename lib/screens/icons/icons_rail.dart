@@ -1,7 +1,8 @@
 // Project imports:
-import '../../gallery_exporter.dart';
+import '../../app_exporter.dart';
 import 'details/icon_details.dart';
 import 'icon_providers.dart';
+
 ///
 class IconsRail extends ConsumerWidget {
   ///[IconsRail] constructor
@@ -25,7 +26,7 @@ class IconsRail extends ConsumerWidget {
       height: double.infinity,
       width: showDetails ? iconDetailsWidth : 0,
       decoration: const BoxDecoration(
-        color: galleryColor,
+        color: appColor,
       ),
 
       // this here is to prevent overflow errors when opening up the side bar

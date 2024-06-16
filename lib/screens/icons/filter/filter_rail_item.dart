@@ -1,7 +1,7 @@
 // Flutter imports:
 
 // Project imports:
-import '../../../gallery_exporter.dart';
+import '../../../app_exporter.dart';
 import '../icon_providers.dart';
 
 ///[FilterRailItem] is the rail item for the filter rail
@@ -14,10 +14,11 @@ class FilterRailItem extends ConsumerWidget {
     this.backColor,
     super.key,
   });
-///[filterAlphabet] is the alphabet to filter
+
+  ///[filterAlphabet] is the alphabet to filter
   final String filterAlphabet;
 
-///index, and this will be used to compare with the nav bar index to detect the selected item
+  ///index, and this will be used to compare with the nav bar index to detect the selected item
   final int filterIndex;
 
   ///text and background color
@@ -43,7 +44,7 @@ class FilterRailItem extends ConsumerWidget {
     final backgroundColor = isSelected ? galleryPink : galleryTransparent;
 
 // text style for the rail item
-    final railTextStyle = GoogleFonts.leagueSpartan(
+    final railTextStyle = TextStyle(
       fontWeight: isSelected ? FontWeight.w700 : null,
       fontSize: 16,
       color: iconColor,
@@ -66,7 +67,8 @@ class FilterRailItem extends ConsumerWidget {
             splashColor: textColor,
             borderRadius: BorderRadius.circular(6),
             onTap: () {
-              ref.watch(selectedFilterIndexProvider.notifier).state = filterIndex;
+              ref.watch(selectedFilterIndexProvider.notifier).state =
+                  filterIndex;
 
               // reset the selected icon index too
               ref.watch(selectedIconIndexProvider.notifier).state = -1;

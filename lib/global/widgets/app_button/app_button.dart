@@ -1,4 +1,4 @@
-import '../../../gallery_exporter.dart';
+import '../../../app_exporter.dart';
 import 'button_body.dart';
 ///AppButton class
 class AppButton extends StatelessWidget {

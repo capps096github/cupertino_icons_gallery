@@ -1,5 +1,5 @@
 // Project imports:
-import '../../../gallery_exporter.dart';
+import '../../../app_exporter.dart';
 import '../../search/search_container.dart';
 import '../icon_providers.dart';
 import 'credits.dart';

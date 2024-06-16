@@ -1,7 +1,7 @@
 // Flutter imports:
 
 // Project imports:
-import '../../gallery_exporter.dart';
+import '../../app_exporter.dart';
 import '../icons/appbar/title_banner.dart';
 import '../icons/icon_providers.dart';
 import 'search_icons_screen.dart';
@@ -14,7 +14,8 @@ const _accentColor = galleryWhite;
 class GallerySearchDelegate extends SearchDelegate {
   /// [GallerySearchDelegate] constructor
   GallerySearchDelegate({
-    required this.ref, this.hintText = 'Search through the icons',
+    required this.ref,
+    this.hintText = 'Search through the icons',
   }) : super(
           searchFieldLabel: hintText,
           keyboardType: TextInputType.text,
@@ -28,6 +29,7 @@ class GallerySearchDelegate extends SearchDelegate {
 
   /// this is a hint text
   final String hintText;
+
   /// ref
   final WidgetRef ref;
 
@@ -35,7 +37,7 @@ class GallerySearchDelegate extends SearchDelegate {
   ThemeData appBarTheme(BuildContext context) {
     final galleryTheme = ref.watch(appThemeProvider);
     return galleryTheme.copyWith(
-      primaryColor: galleryColor,
+      primaryColor: appColor,
       //  input Decoration Theme
       inputDecorationTheme: InputDecorationTheme(
         contentPadding: const EdgeInsets.all(5),
@@ -62,7 +64,7 @@ class GallerySearchDelegate extends SearchDelegate {
 
       //* -- text themes
       textTheme: galleryTheme.textTheme.copyWith().apply(
-            fontFamily: GoogleFonts.leagueSpartan().fontFamily,
+            fontFamily: const TextStyle().fontFamily,
             displayColor: galleryWhite,
             bodyColor: galleryWhite,
           ),
@@ -164,6 +166,8 @@ class GallerySearchDelegate extends SearchDelegate {
   @override
   Widget buildSuggestions(BuildContext context) {
 //
-    return query.isNotEmpty ? SearchIconsScreen(searchQuery: query) : const PerformSearch();
+    return query.isNotEmpty
+        ? SearchIconsScreen(searchQuery: query)
+        : const PerformSearch();
   }
 }

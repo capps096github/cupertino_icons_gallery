@@ -1,4 +1,4 @@
-import '../../../gallery_exporter.dart';
+import '../../../app_exporter.dart';
 ///CircularProgressAppButton class
 class CircularProgressAppButton extends StatelessWidget {
  ///[CircularProgressAppButton] constructor

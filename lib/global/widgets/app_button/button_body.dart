@@ -1,4 +1,4 @@
-import '../../../gallery_exporter.dart';
+import '../../../app_exporter.dart';
 ///ButtonBody class
 class ButtonBody extends ConsumerWidget {
   ///[ButtonBody] constructor

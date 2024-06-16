@@ -1,4 +1,5 @@
-import '../../../gallery_exporter.dart';
+import '../../../app_exporter.dart';
+
 ///GridCredits class
 class GridCredits extends StatelessWidget {
   ///[GridCredits] constructor
@@ -18,7 +19,7 @@ class GridCredits extends StatelessWidget {
 
           // from
           const FromXephas(
-            textColor: galleryColor,
+            textColor: appColor,
             builderColor: galleryPink,
           ),
 

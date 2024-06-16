@@ -1,4 +1,4 @@
-import '../../gallery_exporter.dart';
+import '../../app_exporter.dart';
 
 /// * App Paddings following the 8px grid system
 

@@ -1,4 +1,4 @@
-import '../../../gallery_exporter.dart';
+import '../../../app_exporter.dart';
 ///AppTextButton class
 class AppTextButton extends ConsumerWidget {
   ///[AppTextButton] constructor

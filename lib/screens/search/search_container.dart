@@ -2,10 +2,11 @@
 import 'package:flutter/cupertino.dart';
 
 // Project imports:
-import '../../gallery_exporter.dart';
+import '../../app_exporter.dart';
 import '../icons/icon_providers.dart';
 import 'gallery_search_delegate.dart';
-///SearchContainer 
+
+///SearchContainer
 final searchTexts = [
   'Search through the Icons',
   'Search by Name',
@@ -13,6 +14,7 @@ final searchTexts = [
   'Happy Searching!',
   'Search for a Cupertino Icon',
 ];
+
 ///SearchContainer class creation
 class SearchContainer extends ConsumerWidget {
   ///[SearchContainer] constructor
@@ -49,13 +51,14 @@ class SearchContainer extends ConsumerWidget {
               padding: EdgeInsets.all(8),
               child: Icon(
                 CupertinoIcons.search_circle_fill,
-                color: galleryColor,
+                color: appColor,
               ),
             ),
             Expanded(
               child: AnimatedTextKit(
                 animatedTexts: searchTexts
-                    .map((searchText) => typewriterAnimatedText(searchText, galleryColor))
+                    .map((searchText) =>
+                        typewriterAnimatedText(searchText, appColor),)
                     .toList(),
                 onTap: () {
                   // search
@@ -74,7 +77,7 @@ class SearchContainer extends ConsumerWidget {
             ),
             Container(
               decoration: BoxDecoration(
-                color: galleryColor,
+                color: appColor,
                 borderRadius: BorderRadius.circular(8),
               ),
               margin: const EdgeInsets.all(2),
@@ -90,7 +93,8 @@ class SearchContainer extends ConsumerWidget {
       ),
     );
   }
-///typewriterAnimatedText object creation
+
+  ///typewriterAnimatedText object creation
   TypewriterAnimatedText typewriterAnimatedText(String text, Color color) {
     return TypewriterAnimatedText(
       text,

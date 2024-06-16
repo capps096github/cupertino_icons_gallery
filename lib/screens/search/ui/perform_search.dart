@@ -1,9 +1,10 @@
 // Project imports:
-import '../../../gallery_exporter.dart';
+import '../../../app_exporter.dart';
 import '../../icons/grid/icon_tiles_view.dart';
 import '../../icons/icon_providers.dart';
 import '../../icons/icons_rail.dart';
 import 'animated_search_texts.dart';
+
 ///PerformSearch class creation
 class PerformSearch extends ConsumerWidget {
   ///[PerformSearch] constructor
@@ -20,7 +21,8 @@ class PerformSearch extends ConsumerWidget {
       children: [
         Expanded(
           child: CustomScrollView(
-            key: const PageStorageKey(PageStorageKeys.cupertinoIconsSuggestionsKey),
+            key: const PageStorageKey(
+                PageStorageKeys.cupertinoIconsSuggestionsKey,),
             slivers: [
               SliverPadding(
                 padding: const EdgeInsets.all(8),
@@ -34,7 +36,8 @@ class PerformSearch extends ConsumerWidget {
                         'images/search.svg',
                         height: svgImageSize,
                         width: svgImageSize,
-                        colorFilter: const ColorFilter.mode(galleryColor, BlendMode.srcATop),
+                        colorFilter:
+                            const ColorFilter.mode(appColor, BlendMode.srcATop),
                       ),
                     ],
                   ),

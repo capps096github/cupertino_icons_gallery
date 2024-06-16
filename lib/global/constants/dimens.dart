@@ -1,7 +1,7 @@
 // drawer width on desktop (when open)
 
 // Project imports:
-import '../../gallery_exporter.dart';
+import '../../app_exporter.dart';
 ///This is the measure we have used to the svg image heights and widths used in the app
 const double sideBarDesktopWidth = 300;
 

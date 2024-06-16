@@ -1,5 +1,5 @@
 // Project imports:
-import '../../gallery_exporter.dart';
+import '../../app_exporter.dart';
 
 ///This Opens the links
 Future<void> linkLauncher(String link) async {

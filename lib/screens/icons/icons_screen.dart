@@ -1,5 +1,5 @@
 // Project imports:
-import '../../gallery_exporter.dart';
+import '../../app_exporter.dart';
 import 'appbar/icons_appbar.dart';
 import 'filter/filter_rail.dart';
 import 'grid/icon_grid.dart';

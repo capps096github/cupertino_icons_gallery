@@ -1,5 +1,6 @@
 // Project imports:
-import '../gallery_exporter.dart';
+import '../app_exporter.dart';
+
 ///CupertinoIconsGallery
 class CupertinoIconsGallery extends ConsumerWidget {
   ///[CupertinoIconsGallery] constructor
@@ -14,7 +15,7 @@ class CupertinoIconsGallery extends ConsumerWidget {
       routeInformationParser: galleryRouter.routeInformationParser,
       routerDelegate: galleryRouter.routerDelegate,
       theme: galleryTheme,
-      color: galleryColor,
+      color: appColor,
       title: appTitle,
       debugShowCheckedModeBanner: false,
       restorationScopeId: galleryId,

@@ -1,4 +1,4 @@
-import '../../gallery_exporter.dart';
+import '../../app_exporter.dart';
 
 /// This class will be used to provide all responsiveness needed in the app
 class Responsiveness {

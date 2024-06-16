@@ -1,5 +1,5 @@
 // Project imports:
-import '../../../gallery_exporter.dart';
+import '../../../app_exporter.dart';
 ///LeadingIcon class
 class LeadingIcon extends StatelessWidget {
   ///[LeadingIcon] constructor

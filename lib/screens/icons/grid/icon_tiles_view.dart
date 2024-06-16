@@ -1,7 +1,7 @@
 // Project imports:
 
 // Project imports:
-import '../../../gallery_exporter.dart';
+import '../../../app_exporter.dart';
 import '../cant_find_icon.dart';
 import '../icon_providers.dart';
 import 'icon_tile.dart';

@@ -1,4 +1,4 @@
-import '../../gallery_exporter.dart';
+import '../../app_exporter.dart';
 
 //* Circular Radii following the 8px grid system
 

@@ -1,5 +1,5 @@
 // Project imports:
-import '../../gallery_exporter.dart';
+import '../../app_exporter.dart';
 import '../icons/icons_rail.dart';
 import 'search_suggestion_list.dart';
 ///SearchIconsScreen class creation

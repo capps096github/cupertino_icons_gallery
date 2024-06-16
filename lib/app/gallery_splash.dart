@@ -1,19 +1,20 @@
 // Project imports:
-import '../gallery_exporter.dart';
+import '../app_exporter.dart';
+
 ///GallerySplash class
 class GallerySplash extends StatelessWidget {
-///[GallerySplash] constructor
+  ///[GallerySplash] constructor
   const GallerySplash({super.key});
 
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
-      backgroundColor: galleryColor,
+      backgroundColor: appColor,
       body: ExpandedScrollingColumn(
         children: [
           Expanded(
             child: Center(
-              child: GalleryLogo(iconSize: 56),
+              child: AppLogo(logoSize: 56),
             ),
           ),
           // const VerticalSpacing(of: 4),

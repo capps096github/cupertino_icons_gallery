@@ -2,7 +2,7 @@
 import 'package:flutter/cupertino.dart';
 
 // Project imports:
-import '../../gallery_exporter.dart';
+import '../../app_exporter.dart';
 import 'filter/filter_provider.dart';
 import 'gallery_icons_data.dart';
 

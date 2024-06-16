@@ -1,5 +1,5 @@
 // Project imports:
-import '../../../gallery_exporter.dart';
+import '../../../app_exporter.dart';
 
 // greeting
 // this shows Good Morning, Good Afternoon and Good Evening respectively at their times
@@ -7,8 +7,10 @@ import '../../../gallery_exporter.dart';
 class TitleBanner extends ConsumerWidget {
   ///[TitleBanner] constructor
   const TitleBanner({
-    required this.homeTitle, super.key,
+    required this.homeTitle,
+    super.key,
   });
+
   ///[homeTitle] is the title of the home page
   final String homeTitle;
 
@@ -32,7 +34,7 @@ class TitleBanner extends ConsumerWidget {
             textAlign: TextAlign.center,
             maxLines: 1,
             overflow: TextOverflow.ellipsis,
-            style: GoogleFonts.leagueSpartan(
+            style: TextStyle(
               fontSize: isDesktop ? 25 : 22.5,
               color: colorScheme.onPrimary,
               fontWeight: FontWeight.bold,

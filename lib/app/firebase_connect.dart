@@ -1,8 +1,8 @@
 // Package imports:
 
+import '../app_exporter.dart';
 // Project imports:
 import '../firebase_options.dart';
-import '../gallery_exporter.dart';
 
 ///This Connects the FC App to Firebase
 class FirebaseConnect extends ConsumerWidget {
@@ -17,7 +17,7 @@ class FirebaseConnect extends ConsumerWidget {
     return firebaseConnector.when(
       data: (_) => const CupertinoIconsGallery(),
       loading: () => ColoredBox(
-        color: galleryColor,
+        color: appColor,
         child: Center(
           child: SvgPicture.asset(
             'images/cupertino_icon_white.svg',
@@ -32,12 +32,12 @@ class FirebaseConnect extends ConsumerWidget {
 }
 
 final _firebaseProvider = FutureProvider<FirebaseApp>((ref) async {
-  return  Firebase.initializeApp(
+  return Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
   );
 });
 
 final _splashProvider = FutureProvider<dynamic>((ref) async {
   // delay for 2 seconds to show the splash screen
-  return  Future.delayed(twoSeconds);
+  return Future.delayed(twoSeconds);
 });

@@ -1,4 +1,5 @@
-import '../../gallery_exporter.dart';
+import '../../app_exporter.dart';
+
 ///FromXephas class
 class FromXephas extends StatelessWidget {
   ///[FromXephas] constructor
@@ -8,10 +9,13 @@ class FromXephas extends StatelessWidget {
     this.builderColor = galleryWhite,
     this.heartColor = galleryError,
   });
-///[textColor] is the color of the text
+
+  ///[textColor] is the color of the text
   final Color textColor;
+
   ///[builderColor] is the color of the builder
   final Color builderColor;
+
   ///[heartColor] is the color of the heart
   final Color heartColor;
 
@@ -78,7 +82,7 @@ class FromXephas extends StatelessWidget {
                             'Brian Cephas',
                             maxLines: 1,
                             textAlign: TextAlign.center,
-                            style: GoogleFonts.leagueSpartan(
+                            style: TextStyle(
                               fontSize: 15,
                               color: builderColor,
                               fontWeight: FontWeight.bold,

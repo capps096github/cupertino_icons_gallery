@@ -1,8 +1,9 @@
 // Project imports:
-import '../../../gallery_exporter.dart';
+import '../../../app_exporter.dart';
 import '../icon_providers.dart';
 import 'details_appbar.dart';
 import 'icon_code_snippet.dart';
+
 ///[IconDetails] class
 class IconDetails extends ConsumerWidget {
   ///[IconDetails] constructor
@@ -25,7 +26,7 @@ Icon(
     final iconDataSnippet = 'CupertinoIcons.${selectedGalleryIcon.name}';
 
     return Scaffold(
-      backgroundColor: galleryColor,
+      backgroundColor: appColor,
       appBar: detailsAppbar(),
       body: Padding(
         padding: const EdgeInsets.all(8),
@@ -68,14 +69,16 @@ Icon(
     );
   }
 }
+
 ///[IconHeader] is a widget that displays an icon header
 class IconHeader extends StatelessWidget {
   ///[IconHeader] constructor
   const IconHeader({
-    required this.title, super.key,
+    required this.title,
+    super.key,
   });
 
-/// title
+  /// title
   final String title;
 
   @override
@@ -84,7 +87,7 @@ class IconHeader extends StatelessWidget {
       padding: const EdgeInsets.all(8),
       child: Text(
         title,
-        style: GoogleFonts.leagueSpartan(
+        style: const TextStyle(
           color: detailsTextColor,
           fontWeight: FontWeight.bold,
           fontSize: 20,

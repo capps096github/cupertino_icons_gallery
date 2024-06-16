@@ -1,19 +1,26 @@
 // Project imports:
-import '../../gallery_exporter.dart';
+import '../../app_exporter.dart';
+
 ///[GalleryScrollbar] is a custom scrollbar for our app
 class GalleryScrollbar extends StatelessWidget {
   ///[GalleryScrollbar] constructor
   const GalleryScrollbar({
-    required this.controller, required this.child, super.key,
+    required this.controller,
+    required this.child,
+    super.key,
     this.height,
-    this.color = galleryColor,
+    this.color = appColor,
   });
-///[child] is the child widget OF THE SCROLLBAR
+
+  ///[child] is the child widget OF THE SCROLLBAR
   final BoxScrollView child;
+
   ///[height] is the height of the scrollbar
   final double? height;
+
   ///[color] is the color of the scrollbar
   final Color color;
+
   ///[controller] is the controller of the scrollbar
   final ScrollController controller;
   @override
@@ -25,8 +32,8 @@ class GalleryScrollbar extends StatelessWidget {
     final platform = Theme.of(context).platform;
 
     ///This variable declares that if we are on phone
-    final showScrollbar = !(TargetPlatform.android == platform ||
-        TargetPlatform.iOS == platform);
+    final showScrollbar =
+        !(TargetPlatform.android == platform || TargetPlatform.iOS == platform);
 
     return showScrollbar
         ? DraggableScrollbar(
@@ -36,9 +43,14 @@ class GalleryScrollbar extends StatelessWidget {
             padding: const EdgeInsets.all(2),
             alwaysVisibleScrollThumb: true,
             child: child,
-            scrollThumbBuilder:
-                (backgroundColor, thumbAnimation, labelAnimation, height,
-                    {labelConstraints, labelText,}) {
+            scrollThumbBuilder: (
+              backgroundColor,
+              thumbAnimation,
+              labelAnimation,
+              height, {
+              labelConstraints,
+              labelText,
+            }) {
               return Container(
                 constraints: BoxConstraints.tight(
                   Size(8, height),

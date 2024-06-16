@@ -1,5 +1,5 @@
 // Project imports:
-import '../gallery_exporter.dart';
+import '../app_exporter.dart';
 ///GalleryError class
 class GalleryError extends StatelessWidget {
   ///This widget displays Erro Messages for our App

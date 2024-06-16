@@ -1,10 +1,11 @@
 // Project imports:
-import '../../gallery_exporter.dart';
+import '../../app_exporter.dart';
 
 ///* this provides the default theme for the app
 final appThemeProvider = Provider<ThemeData>((ref) {
   return AppTheme.light;
 });
+
 ///AppTheme class
 class AppTheme {
   ///[light] is the light theme for the app
@@ -13,12 +14,12 @@ class AppTheme {
     final textTheme = ThemeData.light().textTheme;
 
     // TODOput app font here, default is Lato
-    const textStyleFunction = GoogleFonts.lato;
+    const textStyleFunction = GoogleFonts.nunito;
 
     return ThemeData(
       useMaterial3: true,
       brightness: Brightness.light,
-      colorSchemeSeed: galleryColor,
+      colorSchemeSeed: appColor,
 
       //* -- Visual Density
       visualDensity: VisualDensity.adaptivePlatformDensity,
@@ -26,7 +27,7 @@ class AppTheme {
       //* -- Appbar
       appBarTheme: AppBarTheme(
         centerTitle: true,
-        backgroundColor: galleryColor,
+        backgroundColor: appColor,
         // TODOput app font here, default is Lato
         titleTextStyle: GoogleFonts.lato(
           fontSize: 20,
@@ -37,7 +38,7 @@ class AppTheme {
 
       //* -- tooltip
       tooltipTheme: const TooltipThemeData(
-        textStyle: TextStyle(color: galleryColor),
+        textStyle: TextStyle(color: appColor),
         decoration: BoxDecoration(
           color: galleryPink,
           borderRadius: borderRadius4,
@@ -47,7 +48,7 @@ class AppTheme {
       //* -- text button
       textButtonTheme: TextButtonThemeData(
         style: ButtonStyle(
-          padding: MaterialStateProperty.all(padding16),
+          padding: WidgetStateProperty.all(padding16),
         ),
       ),
 

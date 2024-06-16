@@ -2,12 +2,13 @@
 import 'package:flutter/gestures.dart';
 
 // Project imports:
-import '../../gallery_exporter.dart';
+import '../../app_exporter.dart';
+
 ///[linkTextSpan] is a TextSpan with a link
 TextSpan linkTextSpan({
   required String text,
   required String link,
-  Color linkColor = galleryColor,
+  Color linkColor = appColor,
 }) {
   return TextSpan(
     text: text,
