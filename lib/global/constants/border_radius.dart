@@ -21,6 +21,9 @@ const circularRadius4 = Radius.circular(spacing4);
 /// 2 circular radius
 const circularRadius2 = Radius.circular(spacing2);
 
+/// 0 circular radius
+const circularRadius0 = Radius.zero;
+
 //* Border Radii following the 8px grid system
 /// 120 border radius
 const borderRadius120 = BorderRadius.all(circularRadius120);

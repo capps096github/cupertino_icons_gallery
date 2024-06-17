@@ -32,5 +32,8 @@ const EdgeInsets marginV16 = EdgeInsets.symmetric(vertical: 16);
 /// horizontal margin 8
 const EdgeInsets marginH8 = EdgeInsets.symmetric(horizontal: 8);
 
+/// horizontal margin 16
+const EdgeInsets marginH16 = EdgeInsets.symmetric(horizontal: 16);
+
 /// margin only left 8
 const marginLeft4 = EdgeInsets.only(left: 4);

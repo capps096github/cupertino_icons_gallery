@@ -38,7 +38,7 @@ class IconTile extends StatefulWidget {
 }
 
 class _IconTileState extends State<IconTile> {
-  // double elevation = 0;
+  double elevation = 0;
 
   ///squareSize
   double squareSize = 120;
@@ -76,10 +76,9 @@ class _IconTileState extends State<IconTile> {
         return AnimatedSwitcher(
           duration: halfSeconds,
           child: Material(
-            key: ValueKey(iconName),
             color: iconTextColor.withOpacity(.2),
             borderRadius: borderRadius,
-            // elevation: elevation,
+            elevation: elevation,
             child: InkWell(
               splashColor: iconTextColor,
               highlightColor: iconTextColor.withOpacity(.5),
@@ -106,7 +105,7 @@ class _IconTileState extends State<IconTile> {
               onHover: (isHover) {
                 setState(() {
                   isHovered = isHover;
-                  // isHover ? elevation = 10 : elevation = 0;
+                  isHover ? elevation = 10 : elevation = 0;
                 });
               },
               child: Ink(
@@ -121,7 +120,7 @@ class _IconTileState extends State<IconTile> {
                       : null,
                 ),
                 child: Padding(
-                  padding: const EdgeInsets.all(4),
+                  padding: padding4,
                   child: SizedBox(
                     height: squareSize,
                     width: squareSize,

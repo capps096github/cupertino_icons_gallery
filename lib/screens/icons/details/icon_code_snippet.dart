@@ -33,44 +33,66 @@ class IconCodeSnippet extends StatelessWidget {
           decoration: const BoxDecoration(
             color: detailsTextColor,
             borderRadius: BorderRadius.only(
-              topLeft: circularRadius4,
-              topRight: circularRadius4,
+              topLeft: circularRadius6,
+              topRight: circularRadius6,
             ),
           ),
-          child: Padding(
-            padding: padding8,
-            child: Text(
-              title,
-              textAlign: TextAlign.center,
-              style: const TextStyle(
-                color: appColor,
-                fontWeight: FontWeight.bold,
-                fontSize: 16,
-              ),
+          padding: const EdgeInsets.symmetric(
+            horizontal: spacing16,
+            vertical: spacing4,
+          ),
+          child: Text(
+            title,
+            textAlign: TextAlign.center,
+            style: const TextStyle(
+              color: appColor,
+              fontWeight: FontWeight.bold,
+              fontSize: 12,
             ),
           ),
         ),
-        Stack(
-          alignment: Alignment.bottomRight,
-          children: [
-            Container(
-              padding: padding8,
-              width: double.infinity,
-              decoration: BoxDecoration(
-                color: detailsColor.withOpacity(.8),
-                borderRadius: BorderRadius.circular(6),
-              ),
-              child: SelectableText(
-                codeSnippet,
-                style: GoogleFonts.jetBrainsMono(
-                  color: detailsTextColor,
+
+        // code container
+        Container(
+          // padding: padding8,
+          width: double.infinity,
+          decoration: BoxDecoration(
+            color: detailsColor.withOpacity(.4),
+            borderRadius: const BorderRadius.only(
+              bottomLeft: circularRadius6,
+              bottomRight: circularRadius8,
+              topRight: circularRadius6,
+            ),
+            border: Border.all(
+              color: detailsTextColor.withOpacity(.2),
+            ),
+          ),
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Padding(
+                padding: padding8,
+                child: TextSelectionTheme(
+                  data: const TextSelectionThemeData(
+                    selectionColor: galleryPink,
+                  ), // Change this to your desired color
+                  child: SelectableText(
+                    codeSnippet,
+                    style: GoogleFonts.jetBrainsMono(
+                      color: detailsTextColor,
+                    ),
+                  ),
                 ),
               ),
-            ),
-
-            // this is the copy button
-            CopyIcon(codeSnippet: codeSnippet),
-          ],
+              const Spacing(of: spacing8),
+              // this is the copy button
+              Align(
+                alignment: Alignment.bottomRight,
+                child: CopyIcon(codeSnippet: codeSnippet),
+              ),
+            ],
+          ),
         ),
       ],
     );
@@ -92,17 +114,43 @@ class CopyIcon extends StatelessWidget {
   Widget build(BuildContext context) {
     final snackBar = copyIconSnackbar(context);
 
-    return IconButton(
-      tooltip: 'Copy to clipboard',
-      icon: const Icon(Icons.content_copy_rounded, color: detailsTextColor),
-      onPressed: () async {
-        // copy the code snippet to the clipboard
-        await Clipboard.setData(ClipboardData(text: codeSnippet));
+    return Container(
+      decoration: BoxDecoration(
+        color: appWhite.withOpacity(.5),
+        borderRadius: const BorderRadius.only(
+          bottomRight: circularRadius8,
+          topLeft: circularRadius8,
+        ),
+      ),
+      padding: const EdgeInsets.symmetric(
+        horizontal: spacing8,
+        vertical: spacing4,
+      ),
+      child: InkWell(
+        // tooltip: 'Copy to clipboard',
+        child: const Row(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Icon(Icons.content_copy_rounded, size: 15, color: detailsTextColor),
+            Spacing(of: spacing4),
+            Text(
+              'Copy Code',
+              style: TextStyle(
+                color: detailsTextColor,
+                fontSize: 10,
+              ),
+            ),
+          ],
+        ),
+        onTap: () async {
+          // copy the code snippet to the clipboard
+          await Clipboard.setData(ClipboardData(text: codeSnippet));
 
-        // show snackbar
-        // ignore: use_build_context_synchronously
-        ScaffoldMessenger.of(context).showSnackBar(snackBar);
-      },
+          // show snackbar
+          // ignore: use_build_context_synchronously
+          ScaffoldMessenger.of(context).showSnackBar(snackBar);
+        },
+      ),
     );
   }
 

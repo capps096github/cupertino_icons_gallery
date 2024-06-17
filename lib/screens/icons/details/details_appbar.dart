@@ -7,6 +7,7 @@ AppBar detailsAppbar() {
 //
   return AppBar(
     backgroundColor: appColor,
+    scrolledUnderElevation: 0,
     leading: Padding(
       padding: padding8,
       child: Container(

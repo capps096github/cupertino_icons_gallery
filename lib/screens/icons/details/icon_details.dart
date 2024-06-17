@@ -61,20 +61,21 @@ Icon(
               ),
               // this is a container that will display a code snippet for the icon with an option to copy it
               // to the clipboard
-              const Spacing(of: spacing16),
+              const Spacing(of: spacing32),
+
               const IconCodeSnippet(
                 codeSnippet: packageSnippet,
                 title: 'Import the Package',
               ),
 
               const Spacing(of: spacing16),
-              IconCodeSnippet(
-                codeSnippet: largeCodeSnippet,
-                title: 'Use with Icon Widget',
-              ),
+              IconCodeSnippet(codeSnippet: iconDataSnippet, title: 'Icon Data'),
 
               const Spacing(of: spacing16),
-              IconCodeSnippet(codeSnippet: iconDataSnippet, title: 'Icon Data'),
+              IconCodeSnippet(
+                codeSnippet: largeCodeSnippet,
+                title: 'With Icon Widget',
+              ),
 
               const Spacing(of: spacing16),
               IconCodeSnippet(

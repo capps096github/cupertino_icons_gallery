@@ -15,7 +15,6 @@ class IconGridView extends StatelessWidget {
   Widget build(BuildContext context) {
     //
     return CustomScrollView(
-      key: const PageStorageKey(PageStorageKeys.cupertinoIconsKey),
       slivers: [
         // search bar and filter
         const SliverAppBar(
