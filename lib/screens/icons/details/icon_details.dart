@@ -1,4 +1,6 @@
 // Project imports:
+import 'package:flutter/cupertino.dart';
+
 import '../../../app_exporter.dart';
 import '../icon_providers.dart';
 import 'details_appbar.dart';
@@ -14,83 +16,75 @@ class IconDetails extends ConsumerWidget {
     // selectedIcon
     final selectedGalleryIcon = ref.watch(selectedGalleryIconProvider);
 
+    const packageSnippet = "import 'package:flutter/cupertino.dart';";
+
     final largeCodeSnippet = '''
 Icon(
   CupertinoIcons.${selectedGalleryIcon.name},
 ),
 ''';
 
+    // check if we are on mobile
+    final responsiveness = ref.watch(responsivenessProvider(context));
+
+    final isMobile = responsiveness.isMobileScreen;
+
     final smallCodeSnippet = selectedGalleryIcon.name;
 
     // iconDataSnippet
     final iconDataSnippet = 'CupertinoIcons.${selectedGalleryIcon.name}';
 
-    return Scaffold(
-      backgroundColor: appColor,
-      appBar: detailsAppbar(),
-      body: Padding(
-        padding: const EdgeInsets.all(8),
-        child: ExpandedScrollingColumn(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Container(
-              padding: const EdgeInsets.all(15),
-              decoration: BoxDecoration(
-                color: detailsColor.withOpacity(.3),
-                shape: BoxShape.circle,
+    return ClipRRect(
+      borderRadius: isMobile ? borderRadius0 : borderRadius8,
+      child: Scaffold(
+        backgroundColor: appColor,
+        appBar: detailsAppbar(),
+        body: Padding(
+          padding: padding8,
+          child: ExpandedScrollingColumn(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Center(
+                child: Container(
+                  padding: const EdgeInsets.all(15),
+                  decoration: BoxDecoration(
+                    color: detailsColor.withOpacity(.3),
+                    shape: BoxShape.circle,
+                  ),
+                  child: Icon(
+                    selectedGalleryIcon.icon,
+                    color: detailsTextColor,
+                    size: 128,
+                  ),
+                ),
               ),
-              child: Icon(
-                selectedGalleryIcon.icon,
-                color: detailsTextColor,
-                size: 128,
+              // this is a container that will display a code snippet for the icon with an option to copy it
+              // to the clipboard
+              const Spacing(of: spacing16),
+              const IconCodeSnippet(
+                codeSnippet: packageSnippet,
+                title: 'Import the Package',
               ),
-            ),
-            // this is a container that will display a code snippet for the icon with an option to copy it
-            // to the clipboard
-            const Spacer(),
-            const IconHeader(title: 'Use in Code'),
-            IconCodeSnippet(codeSnippet: largeCodeSnippet),
 
-            const VerticalSpacing(of: 10),
-            //  e.g to copy CupertinoIcons.brightness_solid at once without having the icon widget around it
-            const Spacer(),
-            const IconHeader(title: 'Icon Data'),
-            IconCodeSnippet(codeSnippet: iconDataSnippet),
+              const Spacing(of: spacing16),
+              IconCodeSnippet(
+                codeSnippet: largeCodeSnippet,
+                title: 'Use with Icon Widget',
+              ),
 
-            const VerticalSpacing(of: 10),
-            // brightness_solid is the name of the icon
-            const Spacer(),
-            const IconHeader(title: 'Flutter ID'),
-            IconCodeSnippet(codeSnippet: smallCodeSnippet),
-            const Spacer(),
-          ],
-        ),
-      ),
-    );
-  }
-}
+              const Spacing(of: spacing16),
+              IconCodeSnippet(codeSnippet: iconDataSnippet, title: 'Icon Data'),
 
-///[IconHeader] is a widget that displays an icon header
-class IconHeader extends StatelessWidget {
-  ///[IconHeader] constructor
-  const IconHeader({
-    required this.title,
-    super.key,
-  });
+              const Spacing(of: spacing16),
+              IconCodeSnippet(
+                codeSnippet: smallCodeSnippet,
+                title: 'Flutter ID',
+              ),
 
-  /// title
-  final String title;
-
-  @override
-  Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.all(8),
-      child: Text(
-        title,
-        style: const TextStyle(
-          color: detailsTextColor,
-          fontWeight: FontWeight.bold,
-          fontSize: 20,
+              const Spacing(of: spacing16),
+            ],
+          ),
         ),
       ),
     );

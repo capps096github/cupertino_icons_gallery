@@ -1,3 +1,5 @@
+import 'package:flutter/cupertino.dart';
+
 import '../../app_exporter.dart';
 
 ///FromXephas class
@@ -5,8 +7,8 @@ class FromXephas extends StatelessWidget {
   ///[FromXephas] constructor
   const FromXephas({
     super.key,
-    this.textColor = galleryWhite,
-    this.builderColor = galleryWhite,
+    this.textColor = appWhite,
+    this.builderColor = appWhite,
     this.heartColor = galleryError,
   });
 
@@ -21,14 +23,14 @@ class FromXephas extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final textStyle = GoogleFonts.assistant(
+    final textStyle = TextStyle(
       color: textColor,
-      fontWeight: FontWeight.w400,
+      fontWeight: FontWeight.bold,
       fontSize: 12.5,
     );
 
     return Padding(
-      padding: const EdgeInsets.all(8),
+      padding: padding8,
       child: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
@@ -36,9 +38,16 @@ class FromXephas extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             mainAxisSize: MainAxisSize.min,
             children: [
+              RichText(
+                text: linkTextSpan(
+                  text: 'Open Sourced',
+                  link: repoLink,
+                  linkColor: linkColor,
+                ),
+              ),
               Flexible(
                 child: Text(
-                  'Built with ',
+                  ' & Built with ',
                   maxLines: 1,
                   style: textStyle,
                 ),
@@ -60,7 +69,7 @@ class FromXephas extends StatelessWidget {
             children: [
               Expanded(
                 child: Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 2),
+                  padding: horizontalPadding8,
                   child: ThickHorizontalDivider(
                     thickness: 1.5,
                     dividerColor: builderColor,
@@ -70,7 +79,7 @@ class FromXephas extends StatelessWidget {
               Expanded(
                 flex: 2,
                 child: InkWell(
-                  onTap: openXephasTwitter,
+                  onTap: openXephasPortfolio,
                   child: Center(
                     child: SingleChildScrollView(
                       scrollDirection: Axis.horizontal,
@@ -79,7 +88,7 @@ class FromXephas extends StatelessWidget {
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           Text(
-                            'Brian Cephas',
+                            'Brian Cephas Mugisa',
                             maxLines: 1,
                             textAlign: TextAlign.center,
                             style: TextStyle(
@@ -88,9 +97,9 @@ class FromXephas extends StatelessWidget {
                               fontWeight: FontWeight.bold,
                             ),
                           ),
-                          const HorizontalSpacing(of: 4),
+                          const Spacing(of: spacing4),
                           Icon(
-                            Ionicons.logo_twitter,
+                            CupertinoIcons.arrow_up_right_square_fill,
                             color: builderColor,
                             size: 15,
                           ),
@@ -102,7 +111,7 @@ class FromXephas extends StatelessWidget {
               ),
               Expanded(
                 child: Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 2),
+                  padding: horizontalPadding8,
                   child: ThickHorizontalDivider(
                     thickness: 1.5,
                     dividerColor: builderColor,
@@ -111,12 +120,15 @@ class FromXephas extends StatelessWidget {
               ),
             ],
           ),
+          const Spacing(of: spacing4),
           InkWell(
             onTap: visitFlutterCommunity,
             child: Text(
               'For The Flutter Community',
               style: textStyle.copyWith(
                 decoration: TextDecoration.underline,
+                color: linkColor,
+                decorationColor: linkColor,
               ),
             ),
           ),

@@ -5,6 +5,7 @@ import '../icon_providers.dart';
 import 'credits.dart';
 import 'grid_intro.dart';
 import 'icon_tiles_view.dart';
+
 ///IconGridView class
 class IconGridView extends StatelessWidget {
   ///[IconGridView] constructor
@@ -22,12 +23,14 @@ class IconGridView extends StatelessWidget {
           title: SearchContainer(),
         ),
 
-        // brief intro
-        const IconGridIntro(),
+        // container
+        const SliverToBoxAdapter(
+          child: IconGridIntro(),
+        ),
 
         // tiles
         SliverPadding(
-          padding: const EdgeInsets.all(8),
+          padding: padding8,
           sliver: Consumer(
             builder: (context, ref, _) {
               /// State Provider for all subjects
@@ -38,9 +41,12 @@ class IconGridView extends StatelessWidget {
             },
           ),
         ),
+        const SliverSpacing(of: spacing32),
 
         // built by
         const GridCredits(),
+
+        const SliverSpacing(of: spacing8),
       ],
     );
   }

@@ -1,2 +1,2 @@
-export 'gallery_router.dart';
+export 'router.dart';
 export 'paths.dart';

@@ -26,9 +26,9 @@ class IconsRail extends ConsumerWidget {
       height: double.infinity,
       width: showDetails ? iconDetailsWidth : 0,
       decoration: const BoxDecoration(
-        color: appColor,
+        // color: appColor,
+        borderRadius: borderRadius8,
       ),
-
       // this here is to prevent overflow errors when opening up the side bar
       child: AnimatedSwitcher(
         duration: quarterSeconds,

@@ -8,11 +8,11 @@ AppBar detailsAppbar() {
   return AppBar(
     backgroundColor: appColor,
     leading: Padding(
-      padding: const EdgeInsets.all(8),
+      padding: padding8,
       child: Container(
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
           color: galleryPink,
-          borderRadius: BorderRadius.circular(8),
+          borderRadius: borderRadius8,
         ),
         child: Consumer(
           builder: (context, ref, _) {

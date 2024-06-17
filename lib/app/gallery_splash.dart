@@ -17,7 +17,7 @@ class GallerySplash extends StatelessWidget {
               child: AppLogo(logoSize: 56),
             ),
           ),
-          // const VerticalSpacing(of: 4),
+          // const Spacing(of: 4),
           // from THE C APPS TEAM
           // const FromCAPPS(),
         ],

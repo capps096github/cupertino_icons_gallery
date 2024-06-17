@@ -22,10 +22,11 @@ class PerformSearch extends ConsumerWidget {
         Expanded(
           child: CustomScrollView(
             key: const PageStorageKey(
-                PageStorageKeys.cupertinoIconsSuggestionsKey,),
+              PageStorageKeys.cupertinoIconsSuggestionsKey,
+            ),
             slivers: [
               SliverPadding(
-                padding: const EdgeInsets.all(8),
+                padding: padding8,
                 sliver: SliverToBoxAdapter(
                   child: Column(
                     mainAxisSize: MainAxisSize.min,
@@ -53,7 +54,7 @@ class PerformSearch extends ConsumerWidget {
 
               // icons
               SliverPadding(
-                padding: const EdgeInsets.all(8),
+                padding: padding8,
                 sliver: IconTilesView(
                   galleryIconList: galleryIconList,
                 ),

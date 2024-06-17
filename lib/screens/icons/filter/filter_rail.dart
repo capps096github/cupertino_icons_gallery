@@ -15,9 +15,8 @@ class FilterRail extends ConsumerWidget {
     // final isDesktop = CalcutResponsive.isDesktop(context);
 
     //App Theme colorScheme
-    final colorScheme = Theme.of(context).colorScheme;
-    final primary = colorScheme.primary;
-    final onPrimary = colorScheme.onPrimary;
+    const primary = appColor;
+    const onPrimary = appWhite;
 
     // access the value stored at the current page gradeValue provider
     final selectedIconIndex = ref.watch(selectedIconIndexProvider);
@@ -32,10 +31,13 @@ class FilterRail extends ConsumerWidget {
 
     return AnimatedContainer(
       duration: quarterSeconds,
-      color: primary,
       width: showDetails ? 0 : sideBarTabletWidth,
       height: double.infinity,
-      padding: const EdgeInsets.symmetric(horizontal: 8),
+      decoration: const BoxDecoration(
+        color: primary,
+        borderRadius: borderRadius8,
+      ),
+      padding: padding8,
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
@@ -43,7 +45,7 @@ class FilterRail extends ConsumerWidget {
           const CurrentFilter(),
 
           // divider
-          Center(
+          const Center(
             child: ThickHorizontalDivider(
               dividerColor: onPrimary,
               thickness: 4,
@@ -54,7 +56,6 @@ class FilterRail extends ConsumerWidget {
           //top rail items
           Expanded(
             child: ListView.builder(
-              key: const PageStorageKey(PageStorageKeys.cupertinoFilterKey),
               itemCount: alphabetFilters.length,
               itemBuilder: (context, index) {
                 // get the item
@@ -93,16 +94,16 @@ class CurrentFilter extends ConsumerWidget {
 
     return Container(
       width: double.infinity,
-      decoration: BoxDecoration(
+      decoration: const BoxDecoration(
         color: galleryPink,
-        borderRadius: BorderRadius.circular(8),
+        borderRadius: borderRadius8,
       ),
-      margin: const EdgeInsets.all(2),
-      padding: const EdgeInsets.all(16),
+      margin: margin2,
+      padding: padding16,
       child: isAllSelected
           ? const Icon(
               Icons.tune,
-              color: galleryWhite,
+              color: appWhite,
               semanticLabel: 'filter',
             )
           : Text(
@@ -111,7 +112,7 @@ class CurrentFilter extends ConsumerWidget {
               style: const TextStyle(
                 fontWeight: FontWeight.w900,
                 fontSize: 16,
-                color: galleryWhite,
+                color: appWhite,
               ),
             ),
     );

@@ -3,6 +3,7 @@ import '../../../app_exporter.dart';
 import '../details/icon_details.dart';
 import '../icon_providers.dart';
 import 'icon_grid_view.dart';
+
 ///IconGrid class creation
 class IconGrid extends ConsumerWidget {
   ///[IconGrid] constructor
@@ -23,11 +24,19 @@ class IconGrid extends ConsumerWidget {
 
     return Container(
       constraints: const BoxConstraints(minWidth: sideBarDesktopWidth),
+      margin: (showDetails && isMobile) ? margin0 : marginLeft4,
+      decoration: BoxDecoration(
+        borderRadius: borderRadius8,
+        border: Border.all(
+          color: appColor,
+          width: 2,
+        ),
+      ),
       child: AnimatedSwitcher(
-        duration: twoHundredMilliseconds,
-        reverseDuration: twoHundredMilliseconds,
+        duration: halfSeconds,
+        reverseDuration: halfSeconds,
         switchInCurve: Curves.fastOutSlowIn,
-        child: (!showDetails) ? const IconGridView() : const IconDetails(),
+        child: showDetails ? const IconDetails() : const IconGridView(),
         transitionBuilder: (child, animation) {
           return SlideFadeTransition(
             animation: animation,

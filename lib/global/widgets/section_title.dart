@@ -7,7 +7,7 @@ class SectionTitle extends StatelessWidget {
   const SectionTitle({
     required this.sectionText,
     super.key,
-    this.textColor = galleryWhite,
+    this.textColor = appWhite,
     this.backgroundColor = appColor,
   });
 

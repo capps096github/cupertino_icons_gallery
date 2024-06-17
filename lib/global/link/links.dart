@@ -1,6 +1,9 @@
 /// xephas twitter
 const xephasTwitter = 'https://twitter.com/xephas_official';
 
+/// xephas portfolio
+const xephasPortfolio = 'https://xephas.me/contact';
+
 /// capps twitter
 const cappsTwitter = 'https://twitter.com/capps_team';
 

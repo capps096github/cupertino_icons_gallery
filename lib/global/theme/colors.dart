@@ -5,7 +5,9 @@ import '../../app_exporter.dart';
 
 /// gallery color
 const appColor = Color(0xFF010E1E);
-// const galleryColor = Color(0xFF0553B1);
+
+/// for links
+const linkColor = Color(0xFF0553B1);
 
 /// gallery color dark
 const galleryColorDark = Color(0xFF042B59);
@@ -15,7 +17,7 @@ const galleryColorDark = Color(0xFF042B59);
 const galleryBackground = Color(0xFFF0F7FF);
 
 /// white
-const galleryWhite = Color(0xFFFFFFFF);
+const appWhite = Color(0xFFFFFFFF);
 
 /// red for error
 const galleryError = Color(0xFFFF0000);
@@ -24,7 +26,8 @@ const galleryError = Color(0xFFFF0000);
 const galleryTransparent = Color(0x00000000);
 
 /// pink
-const galleryPink = Color(0xFFCD0000);
+const galleryPink = Color(0xFFA60202);
+// const galleryPink = Color(0xFFCD0000);
 // const galleryPink = Color(0xFFF8074B);
 
 /// black
@@ -37,4 +40,4 @@ const detailsColor = galleryColorDark;
 // const detailsColor = galleryBlack;
 
 /// Details Text Color
-const detailsTextColor = galleryWhite;
+const detailsTextColor = appWhite;

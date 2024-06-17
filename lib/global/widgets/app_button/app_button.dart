@@ -12,7 +12,7 @@ class AppButton extends StatelessWidget {
   });
 ///[isSmallButton] is wether the button is small or not
   static Widget small({
-    required String label,
+    required String text,
     required VoidCallback onTap,
     required Color textColor,
     required Color buttonColor,
@@ -21,7 +21,7 @@ class AppButton extends StatelessWidget {
     String? toolTip,
   }) =>
       AppButton(
-        text: label,
+        text: text,
         onTap: onTap,
         textColor: textColor,
         buttonColor: buttonColor,

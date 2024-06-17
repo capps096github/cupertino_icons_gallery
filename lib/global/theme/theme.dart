@@ -14,7 +14,7 @@ class AppTheme {
     final textTheme = ThemeData.light().textTheme;
 
     // TODOput app font here, default is Lato
-    const textStyleFunction = GoogleFonts.nunito;
+    const textStyleFunction = GoogleFonts.urbanist;
 
     return ThemeData(
       useMaterial3: true,
@@ -32,13 +32,13 @@ class AppTheme {
         titleTextStyle: GoogleFonts.lato(
           fontSize: 20,
           fontWeight: FontWeight.w700,
-          color: galleryWhite,
+          color: appWhite,
         ),
       ),
 
       //* -- tooltip
       tooltipTheme: const TooltipThemeData(
-        textStyle: TextStyle(color: appColor),
+        textStyle: TextStyle(color: appWhite),
         decoration: BoxDecoration(
           color: galleryPink,
           borderRadius: borderRadius4,

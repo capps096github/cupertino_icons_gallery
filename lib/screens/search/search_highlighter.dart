@@ -30,7 +30,7 @@ class SearchHighlighter extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final textStyleHighlight = TextStyle(
+    final textStyleHighlight = GoogleFonts.urbanist(
       fontSize: fontSize,
       fontWeight: FontWeight.normal,
       color: textColor,
@@ -50,7 +50,7 @@ class SearchHighlighter extends ConsumerWidget {
       textStyle: textStyleHighlight.copyWith(fontSize: 14),
       textStyleHighlight: textStyleHighlight.copyWith(
         backgroundColor: galleryPink,
-        color: galleryWhite,
+        color: appWhite,
       ),
     );
   }

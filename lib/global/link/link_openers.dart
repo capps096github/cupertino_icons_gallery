@@ -15,6 +15,16 @@ Future<void> openXephasTwitter() async {
   await linkLauncher(xephasTwitter);
 }
 
+/// Open Xephas Twitter Account
+Future<void> openXephasPortfolio() async {
+  await linkLauncher(xephasTwitter);
+}
+
+/// Open Xephas Twitter Account
+Future<void> openGithub() async {
+  await linkLauncher(repoLink);
+}
+
 /// Open Xephas Twitter Account(For Flutter Community)
 Future<void> visitFlutterCommunity() async {
   await linkLauncher(flutterCommunityLink);

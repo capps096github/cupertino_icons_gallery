@@ -4,26 +4,42 @@ import 'appbar/icons_appbar.dart';
 import 'filter/filter_rail.dart';
 import 'grid/icon_grid.dart';
 import 'icons_rail.dart';
+
 ///CupertinoIconsScreen class creation
-class CupertinoIconsScreen extends StatelessWidget {
-///[CupertinoIconsScreen] constructor
+class CupertinoIconsScreen extends ConsumerWidget {
+  ///[CupertinoIconsScreen] constructor
   const CupertinoIconsScreen({super.key});
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
+    // check if we are on mobile
+    // check if we are on mobile
+    final responsiveness = ref.watch(responsivenessProvider(context));
+
+    final isMobile = responsiveness.isMobileScreen;
+
     // this will have a search and filter section too
     return Scaffold(
       appBar: iconsAppBar(),
-      key: UniqueKey(),
       extendBody: true,
-      body: const Row(
-        children: [
-          // filter rail
-          FilterRail(),
+      body: Padding(
+        padding: isMobile ? padding4 : padding8,
+        child: Row(
+          children: [
+            // filter rail
+            const FilterRail(),
 
-          Expanded(child: IconGrid()),
-          IconsRail(),
-        ],
+            if (!isMobile) const Spacing(of: spacing8),
+
+            const Expanded(child: IconGrid()),
+
+            // add this space if we aint on mobile
+            if (!isMobile) const Spacing(of: spacing8),
+
+            // icons rail
+            const IconsRail(),
+          ],
+        ),
       ),
     );
   }

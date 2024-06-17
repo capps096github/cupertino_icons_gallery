@@ -16,11 +16,12 @@ TextSpan linkTextSpan({
       ..onTap = () async {
         await linkLauncher(link);
       },
-    style: TextStyle(
+    style: GoogleFonts.urbanist(
       color: linkColor,
+      decorationColor: linkColor,
       fontWeight: FontWeight.bold,
       decoration: TextDecoration.underline,
-      height: 1.5,
+      fontSize: 12.5,
     ),
   );
 }

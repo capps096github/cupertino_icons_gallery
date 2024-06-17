@@ -40,7 +40,7 @@ class FilterRailItem extends ConsumerWidget {
 
     final isSelected = (selectedFilterIndex == filterIndex);
 
-    const iconColor = galleryWhite;
+    const iconColor = appWhite;
     final backgroundColor = isSelected ? galleryPink : galleryTransparent;
 
 // text style for the rail item
@@ -51,11 +51,11 @@ class FilterRailItem extends ConsumerWidget {
     );
 
     return Padding(
-      padding: const EdgeInsets.all(2),
+      padding: padding2,
       child: Material(
         color: backgroundColor,
         clipBehavior: Clip.antiAlias,
-        borderRadius: BorderRadius.circular(8),
+        borderRadius: borderRadius8,
         child: Tooltip(
           message: tooltip,
           textStyle: const TextStyle(color: iconColor),
@@ -76,7 +76,7 @@ class FilterRailItem extends ConsumerWidget {
             child: Ink(
               decoration: BoxDecoration(
                 color: backgroundColor,
-                borderRadius: BorderRadius.circular(8),
+                borderRadius: borderRadius8,
               ),
               child: Padding(
                 padding: const EdgeInsets.all(16),

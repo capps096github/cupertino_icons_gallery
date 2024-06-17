@@ -38,7 +38,7 @@ class IconTile extends StatefulWidget {
 }
 
 class _IconTileState extends State<IconTile> {
-  double elevation = 0;
+  // double elevation = 0;
 
   ///squareSize
   double squareSize = 120;
@@ -49,8 +49,10 @@ class _IconTileState extends State<IconTile> {
   ///iconSize
   double iconSize = 40;
 
+  bool isHovered = false;
+
   /// border radius
-  final borderRadius = BorderRadius.circular(8);
+  final borderRadius = borderRadius8;
 
   @override
   Widget build(BuildContext context) {
@@ -68,20 +70,19 @@ class _IconTileState extends State<IconTile> {
         // is selected icon index equal to the index of the subject
         final isSelected = (selectedIconIndex == widget.pointsIndex);
 
-        final iconTextColor = isSelected ? galleryWhite : galleryBlack;
-        final selectedColor = isSelected ? appColor : galleryWhite;
+        final iconTextColor = isSelected ? appWhite : galleryBlack;
+        final selectedColor = isSelected ? appColor : appWhite;
 
         return AnimatedSwitcher(
-          duration: oneSecond,
+          duration: halfSeconds,
           child: Material(
             key: ValueKey(iconName),
             color: iconTextColor.withOpacity(.2),
             borderRadius: borderRadius,
-            elevation: elevation,
-            shadowColor: iconTextColor,
+            // elevation: elevation,
             child: InkWell(
               splashColor: iconTextColor,
-              highlightColor: galleryBackground.withOpacity(.5),
+              highlightColor: iconTextColor.withOpacity(.5),
               borderRadius: borderRadius,
               // onTap: widget.onTap,
               onTap: () async {
@@ -104,13 +105,20 @@ class _IconTileState extends State<IconTile> {
               },
               onHover: (isHover) {
                 setState(() {
-                  isHover ? elevation = 10 : elevation = 0;
+                  isHovered = isHover;
+                  // isHover ? elevation = 10 : elevation = 0;
                 });
               },
               child: Ink(
                 decoration: BoxDecoration(
                   borderRadius: borderRadius,
                   color: selectedColor,
+                  border: isHovered
+                      ? Border.all(
+                          color: appColor,
+                          width: 2,
+                        )
+                      : null,
                 ),
                 child: Padding(
                   padding: const EdgeInsets.all(4),
@@ -126,7 +134,7 @@ class _IconTileState extends State<IconTile> {
                           color: iconTextColor,
                           size: iconSize,
                         ),
-                        if (widget.showText) const VerticalSpacing(of: 5),
+                        if (widget.showText) const Spacing(of: 5),
 
                         // search highlighter
                         if (widget.showText)

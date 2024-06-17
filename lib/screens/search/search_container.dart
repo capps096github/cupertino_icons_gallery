@@ -39,11 +39,10 @@ class SearchContainer extends ConsumerWidget {
         ref.watch(selectedIconIndexProvider.notifier).state = -1;
       },
       child: Container(
-        margin: const EdgeInsets.all(4),
         constraints: const BoxConstraints(maxWidth: 900),
-        decoration: BoxDecoration(
-          color: galleryWhite,
-          borderRadius: BorderRadius.circular(8),
+        decoration: const BoxDecoration(
+          color: appWhite,
+          borderRadius: borderRadius8,
         ),
         child: Row(
           children: [
@@ -57,8 +56,10 @@ class SearchContainer extends ConsumerWidget {
             Expanded(
               child: AnimatedTextKit(
                 animatedTexts: searchTexts
-                    .map((searchText) =>
-                        typewriterAnimatedText(searchText, appColor),)
+                    .map(
+                      (searchText) =>
+                          typewriterAnimatedText(searchText, appColor),
+                    )
                     .toList(),
                 onTap: () {
                   // search
@@ -76,15 +77,15 @@ class SearchContainer extends ConsumerWidget {
               ),
             ),
             Container(
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 color: appColor,
-                borderRadius: BorderRadius.circular(8),
+                borderRadius: borderRadius8,
               ),
               margin: const EdgeInsets.all(2),
               padding: const EdgeInsets.all(6),
               child: const Icon(
                 Icons.tune,
-                color: galleryWhite,
+                color: appWhite,
                 semanticLabel: 'filter',
               ),
             ),

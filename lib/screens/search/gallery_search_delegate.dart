@@ -7,7 +7,7 @@ import '../icons/icon_providers.dart';
 import 'search_icons_screen.dart';
 import 'ui/perform_search.dart';
 
-const _accentColor = galleryWhite;
+const _accentColor = appWhite;
 
 /// This is responsible for configuring all searching in the saved results
 // ignore: strict_raw_type
@@ -23,7 +23,7 @@ class GallerySearchDelegate extends SearchDelegate {
           searchFieldStyle: const TextStyle(
             fontSize: 16,
             fontWeight: FontWeight.normal,
-            color: galleryWhite,
+            color: appWhite,
           ),
         );
 
@@ -44,16 +44,16 @@ class GallerySearchDelegate extends SearchDelegate {
         hintStyle: GoogleFonts.assistant(
           fontSize: 16,
           fontWeight: FontWeight.normal,
-          color: galleryWhite.withOpacity(.5),
+          color: appWhite.withOpacity(.5),
         ),
         enabledBorder: UnderlineInputBorder(
           borderSide: BorderSide(
-            color: galleryWhite.withOpacity(.5),
+            color: appWhite.withOpacity(.5),
           ),
         ),
         focusedBorder: const UnderlineInputBorder(
           borderSide: BorderSide(
-            color: galleryWhite,
+            color: appWhite,
           ),
         ),
         border: const UnderlineInputBorder(
@@ -65,12 +65,12 @@ class GallerySearchDelegate extends SearchDelegate {
       //* -- text themes
       textTheme: galleryTheme.textTheme.copyWith().apply(
             fontFamily: const TextStyle().fontFamily,
-            displayColor: galleryWhite,
-            bodyColor: galleryWhite,
+            displayColor: appWhite,
+            bodyColor: appWhite,
           ),
       textSelectionTheme: TextSelectionThemeData(
-        selectionColor: galleryWhite.withOpacity(.4),
-        cursorColor: galleryWhite,
+        selectionColor: appWhite.withOpacity(.4),
+        cursorColor: appWhite,
       ),
     );
   }
@@ -84,28 +84,9 @@ class GallerySearchDelegate extends SearchDelegate {
       preferredSize: const Size.fromHeight(galleryAppbarHeight),
       child: Center(
         child: Padding(
-          padding: const EdgeInsets.all(8),
-          child: Row(
-            mainAxisSize: MainAxisSize.min,
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              // icon
-              const Icon(
-                Icons.noise_aware,
-                size: 40,
-                color: galleryWhite,
-              ),
-
-              // text
-              const HorizontalSpacing(of: 8),
-
-              // text
-              Flexible(
-                child: TitleBanner(
-                  homeTitle: isMobile ? 'Search' : 'Cupertino Icons Search',
-                ),
-              ),
-            ],
+          padding: padding8,
+          child: TitleBanner(
+            title: isMobile ? 'Search' : 'Search Cupertino Icons',
           ),
         ),
       ),

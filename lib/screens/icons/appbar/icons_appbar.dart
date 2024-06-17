@@ -8,11 +8,23 @@ import 'title_banner.dart';
 AppBar iconsAppBar() {
   return AppBar(
     automaticallyImplyLeading: false,
-    title: const AppLogo(),
-    bottom: const PreferredSize(
-      preferredSize: Size.fromHeight(kToolbarHeight),
-      child: TitleBanner(
-        homeTitle: 'Cupertino Icons',
+    title: const TitleBanner(),
+    bottom: PreferredSize(
+      preferredSize: const Size.fromHeight(kToolbarHeight),
+      child: Padding(
+        padding: padding8,
+        child: Center(
+          child: AppButton.small(
+            text: 'Explore on Github'.toUpperCase(),
+            iconWidget: const Icon(
+              Ionicons.logo_github,
+              color: appColor,
+            ),
+            onTap: openGithub,
+            textColor: appColor,
+            buttonColor: appWhite,
+          ),
+        ),
       ),
     ),
   );

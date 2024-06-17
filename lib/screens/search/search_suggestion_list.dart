@@ -5,12 +5,15 @@ import '../icons/details/icon_details.dart';
 import '../icons/grid/credits.dart';
 import '../icons/grid/icon_tiles_view.dart';
 import '../icons/icon_providers.dart';
+
 ///SearchSuggestionList class creation
 class SearchSuggestionList extends ConsumerWidget {
-///[SearchSuggestionList] constructor
+  ///[SearchSuggestionList] constructor
   const SearchSuggestionList({
-    required this.query, super.key,
+    required this.query,
+    super.key,
   });
+
   ///query
   final String query;
   @override
@@ -46,7 +49,7 @@ class SearchSuggestionList extends ConsumerWidget {
                   ? CustomScrollView(
                       slivers: [
                         SliverPadding(
-                          padding: const EdgeInsets.all(8),
+                          padding: padding8,
                           sliver: IconTilesView(
                             galleryIconList: searchList,
                             searchQuery: query,

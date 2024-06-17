@@ -7,12 +7,12 @@ import '../../../app_exporter.dart';
 class TitleBanner extends ConsumerWidget {
   ///[TitleBanner] constructor
   const TitleBanner({
-    required this.homeTitle,
     super.key,
+    this.title = 'Cupertino Icons',
   });
 
-  ///[homeTitle] is the title of the home page
-  final String homeTitle;
+  // title
+  final String title;
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
@@ -24,13 +24,15 @@ class TitleBanner extends ConsumerWidget {
     final isDesktop = responsiveness.isDesktopScreen;
 
     return Padding(
-      padding: const EdgeInsets.all(8),
-      child: Column(
+      padding: padding8,
+      child: Row(
         mainAxisSize: MainAxisSize.min,
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
+          const AppLogo(logoColor: appWhite),
+          const Spacing(of: spacing2),
           Text(
-            homeTitle,
+            title,
             textAlign: TextAlign.center,
             maxLines: 1,
             overflow: TextOverflow.ellipsis,
