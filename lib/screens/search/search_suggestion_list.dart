@@ -30,38 +30,55 @@ class SearchSuggestionList extends ConsumerWidget {
     final isMobile = responsiveness.isMobileScreen;
 
     // show Detail here only if we are onMobile
-    final showDetails = (selectedIconIndex != -1) && isMobile;
+    final showDetails = (selectedIconIndex != -1);
 
     return searchList.isNotEmpty
-        ? Container(
+        ? AnimatedContainer(
+            duration: oneSecond,
+            curve: Curves.easeInOutQuint,
             constraints: const BoxConstraints(minWidth: sideBarDesktopWidth),
-            child: AnimatedSwitcher(
-              duration: twoHundredMilliseconds,
-              reverseDuration: twoHundredMilliseconds,
-              switchInCurve: Curves.fastOutSlowIn,
-              transitionBuilder: (child, animation) {
-                return SlideFadeTransition(
-                  animation: animation,
-                  child: child,
-                );
-              },
-              child: (!showDetails)
-                  ? CustomScrollView(
-                      slivers: [
-                        SliverPadding(
-                          padding: padding8,
-                          sliver: IconTilesView(
-                            galleryIconList: searchList,
-                            searchQuery: query,
-                          ),
-                        ),
+            child: isMobile
+                ? AnimatedSwitcher(
+                    duration: twoHundredMilliseconds,
+                    reverseDuration: twoHundredMilliseconds,
+                    switchInCurve: Curves.fastOutSlowIn,
+                    transitionBuilder: (child, animation) {
+                      return SlideFadeTransition(
+                        animation: animation,
+                        child: child,
+                      );
+                    },
+                    child: showDetails
+                        ? const IconDetails()
+                        : CustomScrollView(
+                            slivers: [
+                              SliverPadding(
+                                padding: padding8,
+                                sliver: IconTilesView(
+                                  iconsList: searchList,
+                                  searchQuery: query,
+                                ),
+                              ),
 
-                        // app credits
-                        const GridCredits(),
-                      ],
-                    )
-                  : const IconDetails(),
-            ),
+                              // app credits
+                              const GridCredits(),
+                            ],
+                          ),
+                  )
+                : CustomScrollView(
+                    slivers: [
+                      SliverPadding(
+                        padding: padding8,
+                        sliver: IconTilesView(
+                          iconsList: searchList,
+                          searchQuery: query,
+                        ),
+                      ),
+
+                      // app credits
+                      const GridCredits(),
+                    ],
+                  ),
           )
         : CantFindIcon(errorText: 'Icon "$query" not found');
   }

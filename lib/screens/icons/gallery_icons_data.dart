@@ -477,6 +477,22 @@ List<GalleryIcon> cupertinoIcons = [
   // clear_circled_solid
   GalleryIcon(icon: CupertinoIcons.clear_circled_solid, name: 'clear_circled_solid'),
 
+// add
+  GalleryIcon(
+    name: 'add',
+    icon: CupertinoIcons.add,
+  ),
+  // add_circled
+  GalleryIcon(
+    name: 'add_circled',
+    icon: CupertinoIcons.add_circled,
+  ),
+  // add_circled_solid
+  GalleryIcon(
+    name: 'add_circled_solid',
+    icon: CupertinoIcons.add_circled_solid,
+  ),
+  
   // gear
   GalleryIcon(icon: CupertinoIcons.gear, name: 'gear'),
 
@@ -663,21 +679,7 @@ List<GalleryIcon> cupertinoIcons = [
 
   //
   // BEGIN GENERATED SF SYMBOLS NAMES
-  // add
-  GalleryIcon(
-    name: 'add',
-    icon: CupertinoIcons.add,
-  ),
-  // add_circled
-  GalleryIcon(
-    name: 'add_circled',
-    icon: CupertinoIcons.add_circled,
-  ),
-  // add_circled_solid
-  GalleryIcon(
-    name: 'add_circled_solid',
-    icon: CupertinoIcons.add_circled_solid,
-  ),
+  
   // airplane
   GalleryIcon(
     name: 'airplane',

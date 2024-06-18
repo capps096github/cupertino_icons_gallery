@@ -1,26 +1,34 @@
 // Project imports:
 
+// ignore_for_file: omit_local_variable_types
+
 // Project imports:
 import '../../../app_exporter.dart';
 import '../cant_find_icon.dart';
 import '../icon_providers.dart';
 import 'icon_tile.dart';
+
 ///IconTilesView class creation
 class IconTilesView extends ConsumerWidget {
   ///[IconTilesView] constructor
   const IconTilesView({
-    required this.galleryIconList,
+    this.iconsList,
     this.searchQuery = '',
     super.key,
   });
+
   ///galleryIconList list
-  final List<GalleryIcon> galleryIconList;
+  final List<GalleryIcon>? iconsList;
 
   /// search query
   final String searchQuery;
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
+    /// State Provider for all subjects
+    final List<GalleryIcon> galleryIconList =
+        iconsList ?? ref.watch(allIconsProvider);
+
     // provides the length of the subjects list
     final totalIconCount = galleryIconList.length;
 
@@ -85,12 +93,15 @@ class IconTilesView extends ConsumerWidget {
                         //update the selected value provider
                         // first check if its selected then update the value to -1 else update the value to the index of the subject
                         if (isSelected) {
-                          ref.watch(selectedIconIndexProvider.notifier).state = -1;
+                          ref.watch(selectedIconIndexProvider.notifier).state =
+                              -1;
                         } else {
-                          ref.watch(selectedIconIndexProvider.notifier).state = pointsIndex;
+                          ref.watch(selectedIconIndexProvider.notifier).state =
+                              pointsIndex;
                         }
 
-                        ref.watch(selectedGalleryIconProvider.notifier).state = selectedIcon;
+                        ref.watch(selectedGalleryIconProvider.notifier).state =
+                            selectedIcon;
                       },
                     );
                   },

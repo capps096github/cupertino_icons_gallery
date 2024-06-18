@@ -1,7 +1,6 @@
 // Project imports:
 import '../../../app_exporter.dart';
 import '../../search/search_container.dart';
-import '../icon_providers.dart';
 import 'credits.dart';
 import 'grid_intro.dart';
 import 'icon_tiles_view.dart';
@@ -14,38 +13,31 @@ class IconGridView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     //
-    return CustomScrollView(
+    return const CustomScrollView(
       slivers: [
         // search bar and filter
-        const SliverAppBar(
+        SliverAppBar(
           pinned: true,
           title: SearchContainer(),
         ),
 
         // container
-        const SliverToBoxAdapter(
+        SliverToBoxAdapter(
           child: IconGridIntro(),
         ),
 
         // tiles
         SliverPadding(
           padding: padding8,
-          sliver: Consumer(
-            builder: (context, ref, _) {
-              /// State Provider for all subjects
-              final galleryIconList = ref.watch(allIconsProvider);
-
-              //
-              return IconTilesView(galleryIconList: galleryIconList);
-            },
-          ),
+          sliver: IconTilesView(),
         ),
-        const SliverSpacing(of: spacing32),
+
+        SliverSpacing(of: spacing32),
 
         // built by
-        const GridCredits(),
+        GridCredits(),
 
-        const SliverSpacing(of: spacing8),
+        SliverSpacing(of: spacing8),
       ],
     );
   }

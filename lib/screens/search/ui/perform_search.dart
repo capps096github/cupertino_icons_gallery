@@ -56,7 +56,7 @@ class PerformSearch extends ConsumerWidget {
               SliverPadding(
                 padding: padding8,
                 sliver: IconTilesView(
-                  galleryIconList: galleryIconList,
+                  iconsList: galleryIconList,
                 ),
               ),
             ],

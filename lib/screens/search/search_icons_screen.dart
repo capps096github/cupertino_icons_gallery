@@ -2,11 +2,13 @@
 import '../../app_exporter.dart';
 import '../icons/icons_rail.dart';
 import 'search_suggestion_list.dart';
+
 ///SearchIconsScreen class creation
 class SearchIconsScreen extends StatelessWidget {
-///[SearchIconsScreen] constructor
+  ///[SearchIconsScreen] constructor
   const SearchIconsScreen({required this.searchQuery, super.key});
-///searchQuery
+
+  ///searchQuery
   final String searchQuery;
 
   @override
@@ -14,7 +16,10 @@ class SearchIconsScreen extends StatelessWidget {
     return Row(
       children: [
         Expanded(child: SearchSuggestionList(query: searchQuery)),
-        const IconsRail(),
+        const Padding(
+          padding: padding8,
+          child: IconsRail(),
+        ),
       ],
     );
   }

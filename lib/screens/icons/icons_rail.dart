@@ -22,24 +22,25 @@ class IconsRail extends ConsumerWidget {
     final showDetails = (selectedIconIndex != -1) && !isMobile;
 
     return AnimatedContainer(
-      duration: quarterSeconds,
+      duration: oneSecond,
       height: double.infinity,
+      curve: Curves.easeInOutQuint,
       width: showDetails ? iconDetailsWidth : 0,
       decoration: const BoxDecoration(
-        // color: appColor,
         borderRadius: borderRadius8,
       ),
       // this here is to prevent overflow errors when opening up the side bar
       child: AnimatedSwitcher(
         duration: quarterSeconds,
-        child: showDetails
-            ? IconDetails(
-                key: ValueKey(selectedIconIndex),
-              )
-            : const SizedBox(),
+        child: showDetails ? const IconDetails() : const SizedBox(),
         transitionBuilder: (child, animation) {
-          return ScaleTransition(
-            scale: animation,
+          final tweenAnimation = Tween<Offset>(
+            begin: const Offset(1, 0),
+            end: Offset.zero,
+          ).chain(CurveTween(curve: Curves.easeInOutQuint));
+
+          return SlideTransition(
+            position: animation.drive(tweenAnimation),
             child: child,
           );
         },

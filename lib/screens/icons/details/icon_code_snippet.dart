@@ -133,11 +133,13 @@ class CopyIcon extends StatelessWidget {
           children: [
             Icon(Icons.content_copy_rounded, size: 15, color: detailsTextColor),
             Spacing(of: spacing4),
-            Text(
-              'Copy Code',
-              style: TextStyle(
-                color: detailsTextColor,
-                fontSize: 10,
+            Flexible(
+              child: Text(
+                'Copy Code',
+                style: TextStyle(
+                  color: detailsTextColor,
+                  fontSize: 10,
+                ),
               ),
             ),
           ],

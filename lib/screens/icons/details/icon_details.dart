@@ -34,16 +34,22 @@ Icon(
     // iconDataSnippet
     final iconDataSnippet = 'CupertinoIcons.${selectedGalleryIcon.name}';
 
-    return ClipRRect(
-      borderRadius: isMobile ? borderRadius0 : borderRadius8,
+    return AnimatedContainer(
+      duration: oneSecond,
+      height: double.infinity,
+      curve: Curves.easeInOutQuint,
+      width: iconDetailsWidth,
+      clipBehavior: Clip.antiAlias,
+      decoration: BoxDecoration(
+        borderRadius: isMobile ? borderRadius0 : borderRadius8,
+      ),
+      // this here is to prevent overflow errors when opening up the side bar
       child: Scaffold(
         backgroundColor: appColor,
         appBar: detailsAppbar(),
         body: Padding(
           padding: padding8,
-          child: ExpandedScrollingColumn(
-            mainAxisAlignment: MainAxisAlignment.center,
-            crossAxisAlignment: CrossAxisAlignment.start,
+          child: ListView(
             children: [
               Center(
                 child: Container(
@@ -69,7 +75,10 @@ Icon(
               ),
 
               const Spacing(of: spacing16),
-              IconCodeSnippet(codeSnippet: iconDataSnippet, title: 'Icon Data'),
+              IconCodeSnippet(
+                codeSnippet: iconDataSnippet,
+                title: 'Icon Data',
+              ),
 
               const Spacing(of: spacing16),
               IconCodeSnippet(
@@ -83,7 +92,7 @@ Icon(
                 title: 'Flutter ID',
               ),
 
-              const Spacing(of: spacing16),
+              const Spacing(of: spacing32),
             ],
           ),
         ),

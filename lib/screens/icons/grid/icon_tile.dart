@@ -52,7 +52,7 @@ class _IconTileState extends State<IconTile> {
   bool isHovered = false;
 
   /// border radius
-  final borderRadius = borderRadius8;
+  // final borderRadius = borderRadius8;
 
   @override
   Widget build(BuildContext context) {
@@ -70,81 +70,74 @@ class _IconTileState extends State<IconTile> {
         // is selected icon index equal to the index of the subject
         final isSelected = (selectedIconIndex == widget.pointsIndex);
 
-        final iconTextColor = isSelected ? appWhite : galleryBlack;
+        final iconTextColor = isSelected ? appWhite : appColor;
         final selectedColor = isSelected ? appColor : appWhite;
 
-        return AnimatedSwitcher(
+        return AnimatedContainer(
           duration: halfSeconds,
-          child: Material(
-            color: iconTextColor.withOpacity(.2),
-            borderRadius: borderRadius,
-            elevation: elevation,
-            child: InkWell(
-              splashColor: iconTextColor,
-              highlightColor: iconTextColor.withOpacity(.5),
-              borderRadius: borderRadius,
-              // onTap: widget.onTap,
-              onTap: () async {
-                //update the selected value provider
-                // first check if its selected then update the value to -1 else update the value to the index of the subject
-                if (isSelected) {
-                  ref.watch(selectedIconIndexProvider.notifier).state = -1;
-                } else {
-                  ref.watch(selectedIconIndexProvider.notifier).state =
-                      widget.pointsIndex;
-                }
+          // curve: Curves.easeInOutQuint,
+          decoration: BoxDecoration(
+            borderRadius: borderRadius8,
+            border: Border.all(
+              color: isHovered ? appColor : appColor.withOpacity(.1),
+              width: isHovered ? 2 : .5,
+            ),
+            color: selectedColor,
+          ),
+          clipBehavior: Clip.antiAlias,
+          child: InkWell(
+            splashColor: iconTextColor.withOpacity(.5),
+            hoverColor: selectedColor.withOpacity(.1),
+            highlightColor: appWhite.withOpacity(.5),
+            borderRadius: borderRadius8,
+            onTap: () async {
+              //update the selected value provider
+              // first check if its selected then update the value to -1 else update the value to the index of the subject
+              if (isSelected) {
+                ref.watch(selectedIconIndexProvider.notifier).state = -1;
+              } else {
+                ref.watch(selectedIconIndexProvider.notifier).state =
+                    widget.pointsIndex;
+              }
 
-                ref.watch(selectedGalleryIconProvider.notifier).state =
-                    widget.selectedIcon;
+              ref.watch(selectedGalleryIconProvider.notifier).state =
+                  widget.selectedIcon;
 
-                // unfocus the search field if it is focused then unfocus it
-                if (widget.searchQuery.isNotEmpty) {
-                  FocusScope.of(context).unfocus();
-                }
-              },
-              onHover: (isHover) {
-                setState(() {
-                  isHovered = isHover;
-                  isHover ? elevation = 10 : elevation = 0;
-                });
-              },
-              child: Ink(
-                decoration: BoxDecoration(
-                  borderRadius: borderRadius,
-                  color: selectedColor,
-                  border: isHovered
-                      ? Border.all(
-                          color: appColor,
-                          width: 2,
-                        )
-                      : null,
-                ),
-                child: Padding(
-                  padding: padding4,
-                  child: SizedBox(
-                    height: squareSize,
-                    width: squareSize,
-                    child: Column(
-                      mainAxisSize: MainAxisSize.min,
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Icon(
-                          iconData,
-                          color: iconTextColor,
-                          size: iconSize,
-                        ),
-                        if (widget.showText) const Spacing(of: 5),
-
-                        // search highlighter
-                        if (widget.showText)
-                          SearchHighlighter(
-                            searchQuery: widget.searchQuery,
-                            text: iconName,
-                            textColor: iconTextColor,
-                          ),
-                      ],
+              // unfocus the search field if it is focused then unfocus it
+              if (widget.searchQuery.isNotEmpty) {
+                FocusScope.of(context).unfocus();
+              }
+            },
+            onHover: (isHover) {
+              setState(() {
+                isHovered = isHover;
+                isHover ? elevation = 10 : elevation = 0;
+              });
+            },
+            child: Padding(
+              padding: padding4,
+              child: SizedBox(
+                height: squareSize,
+                width: squareSize,
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Icon(
+                      iconData,
+                      color: iconTextColor,
+                      size: iconSize,
                     ),
-                  ),
+                    if (widget.showText) const Spacing(of: 5),
+
+                    // search highlighter
+                    if (widget.showText)
+                      SearchHighlighter(
+                        searchQuery: widget.searchQuery,
+                        text: iconName,
+                        textColor: iconTextColor,
+                      ),
+                  ],
                 ),
               ),
             ),

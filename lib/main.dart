@@ -20,7 +20,6 @@ void main() {
   );
 }
 
-// TODO: update README.md to reflect featured on Google Dev Library
 //  Add image of icons showcase to the readme file too
 // Add dark mode support
 // Post about it in group

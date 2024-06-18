@@ -20,9 +20,11 @@ class IconGrid extends ConsumerWidget {
     final isMobile = responsiveness.isMobileScreen;
 
     // show Detail here only if we are onMobile
-    final showDetails = (selectedIconIndex != -1) && isMobile;
+    final showDetails = (selectedIconIndex != -1);
 
-    return Container(
+    return AnimatedContainer(
+      duration: oneSecond,
+      curve: Curves.easeInOutQuint,
       constraints: const BoxConstraints(minWidth: sideBarDesktopWidth),
       margin: (showDetails && isMobile) ? margin0 : marginLeft4,
       decoration: BoxDecoration(
@@ -32,18 +34,20 @@ class IconGrid extends ConsumerWidget {
           width: 2,
         ),
       ),
-      child: AnimatedSwitcher(
-        duration: halfSeconds,
-        reverseDuration: halfSeconds,
-        switchInCurve: Curves.fastOutSlowIn,
-        child: showDetails ? const IconDetails() : const IconGridView(),
-        transitionBuilder: (child, animation) {
-          return SlideFadeTransition(
-            animation: animation,
-            child: child,
-          );
-        },
-      ),
+      child: isMobile
+          ? AnimatedSwitcher(
+              duration: halfSeconds,
+              reverseDuration: halfSeconds,
+              switchInCurve: Curves.fastOutSlowIn,
+              child: showDetails ? const IconDetails() : const IconGridView(),
+              transitionBuilder: (child, animation) {
+                return SlideFadeTransition(
+                  animation: animation,
+                  child: child,
+                );
+              },
+            )
+          : const IconGridView(),
     );
   }
 }
