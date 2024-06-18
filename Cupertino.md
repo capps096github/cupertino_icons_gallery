@@ -2,6 +2,7 @@
 
 This is an asset repo containing the default set of icon assets used by
 Flutter's [Cupertino widgets](https://github.com/flutter/flutter/tree/master/packages/flutter/lib/src/cupertino).
+flutter create --org com.capps096apps --project-name cupertino_icons_gallery .
 
 ## Usage
 

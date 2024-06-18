@@ -1,10 +1,10 @@
 // Project imports:
-import '../gallery_exporter.dart';
-
+import '../app_exporter.dart';
+///GalleryError class
 class GalleryError extends StatelessWidget {
   ///This widget displays Erro Messages for our App
-  const GalleryError({Key? key, required this.errorText}) : super(key: key);
-
+  const GalleryError({required this.errorText, super.key});
+///[errorText] is the error message
   final String errorText;
 
   @override

@@ -1,11 +1,11 @@
 {
-    "name": "Cupertino Icons Gallery",
+    "name": "Cupertino Icons Gallery | An Open-Source Home of over 1,335 Cupertino Icons used in Flutter",
     "short_name": "Cupertino Icons Gallery",
     "start_url": ".",
     "display": "standalone",
-    "background_color": "#0553B1",
-    "theme_color": "#0553B1",
-    "description": "Explore the Home of over 1,335 Cupertino Icons used in Flutter.",
+    "background_color": "#010E1E",
+    "theme_color": "#010E1E",
+    "description": "An Open-Source Collection of over 1,335 Cupertino Icons Used and Trusted by over 8K Flutter Developers around the World with thousands monthly active users.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "display_override": [
@@ -21,23 +21,23 @@
             "sizes": "16x16 32x32"
         },
         {
-            "src": "icons/icon-192.png",
+            "src": "icons/Icon-192.png",
             "type": "image/png",
             "sizes": "192x192"
         },
         {
-            "src": "icons/icon-512.png",
+            "src": "icons/Icon-512.png",
             "type": "image/png",
             "sizes": "512x512"
         },
         {
-            "src": "icons/icon-192-maskable.png",
+            "src": "icons/Icon-192-maskable.png",
             "type": "image/png",
             "sizes": "192x192",
             "purpose": "maskable"
         },
         {
-            "src": "icons/icon-512-maskable.png",
+            "src": "icons/Icon-512-maskable.png",
             "type": "image/png",
             "sizes": "512x512",
             "purpose": "maskable"
@@ -45,12 +45,16 @@
     ],
     "screenshots": [
         {
-            "src": "icons/CupertinoIcons.png",
+            "src": "images/CupertinoIcons.webp",
+            "sizes": "1920x1080",
+            "platform": "wide",
+            "label": "Explore the Home of over 1,335 Cupertino Icons used in Flutter."
+        },
+        {
+            "src": "images/cupertino_gallery_preview.webp",
             "sizes": "1920x1080",
             "platform": "wide",
             "label": "Explore the Home of over 1,335 Cupertino Icons used in Flutter."
         }
     ]
 }
-
-
