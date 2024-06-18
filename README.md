@@ -16,9 +16,8 @@
 - Watch a `Short YouTube Video` of Cupertino Icons Gallery App Here: <https://youtu.be/Aa59ucCQxhw>
 
 - **Cross-platform Access link:** to the Cupertino Icons Gallery App. [**https://cupertino.page.link/icons**](https://cupertino.page.link/icons)
-
 - On the **Web:** [**https://cupertino-icons.web.app/**](https://cupertino-icons.web.app/)
-
+- On **Google Dev Library:** [**https://devlibrary.withgoogle.com/products/flutter/repos/capps096github-cupertino_icons_gallery**](https://devlibrary.withgoogle.com/products/flutter/repos/capps096github-cupertino_icons_gallery)
 - On **Google Play Store:** [**https://play.google.com/store/apps/details?id=com.capps096apps.cupertino_icons_gallery**](https://play.google.com/store/apps/details?id=com.capps096apps.cupertino_icons_gallery)
 
 ## To Contribute to & Run the Cupertino Icons Gallery Repository
