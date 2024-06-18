@@ -1,5 +1,4 @@
 // Project imports:
-import 'package:flutter/cupertino.dart';
 
 import '../../../app_exporter.dart';
 import '../icon_providers.dart';
