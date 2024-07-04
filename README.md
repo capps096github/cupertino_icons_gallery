@@ -2,7 +2,9 @@
 
 ![Image of the Cupertino Icons Gallery App is here:](web/images/cupertino_gallery_preview.webp)
 
-**[Cupertino Icons Gallery](https://cupertino.page.link/icons)** - An Open-Source Collection of over 1,335 Flutter Cupertino Icons Used and Trusted by over 8K Flutter Developers around the World with thousands monthly active users.
+**[Cupertino Icons Gallery](https://cupertino.page.link/icons)** - An Open-Source Collection of over 1,335 Flutter Cupertino Icons Used and Trusted by over 8K Flutter Developers around the World with thousands of monthly active users.
+
+This Gallery is based on the [Official Cupertino Icons Documentation](https://api.flutter.dev/flutter/cupertino/CupertinoIcons-class.html) from the Flutter Website.
 
 ## Features of the Cupertino Icons Gallery App
 
