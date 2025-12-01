@@ -1,5 +1,5 @@
 /// initialLocation of the app
-const initialLocation = homePath;
+const String initialLocation = homePath;
 
 /// home
 const homePath = '/';

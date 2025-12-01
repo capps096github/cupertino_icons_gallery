@@ -57,14 +57,14 @@ class IconCodeSnippet extends StatelessWidget {
           // padding: padding8,
           width: double.infinity,
           decoration: BoxDecoration(
-            color: detailsColor.withOpacity(.4),
+            color: detailsColor.withValues(alpha: .4),
             borderRadius: const BorderRadius.only(
               bottomLeft: circularRadius6,
               bottomRight: circularRadius8,
               topRight: circularRadius6,
             ),
             border: Border.all(
-              color: detailsTextColor.withOpacity(.2),
+              color: detailsTextColor.withValues(alpha: .2),
             ),
           ),
           child: Column(
@@ -116,7 +116,7 @@ class CopyIcon extends StatelessWidget {
 
     return Container(
       decoration: BoxDecoration(
-        color: appWhite.withOpacity(.5),
+        color: appWhite.withValues(alpha: .5),
         borderRadius: const BorderRadius.only(
           bottomRight: circularRadius8,
           topLeft: circularRadius8,

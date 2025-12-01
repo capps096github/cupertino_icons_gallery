@@ -2,6 +2,7 @@
 
 // Project imports:
 import '../../app_exporter.dart';
+
 ///This is the measure we have used to the svg image heights and widths used in the app
 const double sideBarDesktopWidth = 300;
 
@@ -12,7 +13,7 @@ const double sideBarTabletWidth = 80;
 const double iconDetailsWidth = 350;
 
 /// icon details width on tablet (when open)
-const galleryAppbarHeight = kToolbarHeight * 1.5;
+const double galleryAppbarHeight = kToolbarHeight * 1.5;
 
 ///This is the measure we have used to the svg image heights and widths used in the app
 const double svgImageSize = 200;
@@ -41,7 +42,3 @@ const double maxAuthWidth = 500;
 /// profile clipper height
 // ignore: eol_at_end_of_file
 const double profileClipperHeight = 150;
-
-
-
-

@@ -54,7 +54,7 @@ Icon(
                 child: Container(
                   padding: const EdgeInsets.all(15),
                   decoration: BoxDecoration(
-                    color: detailsColor.withOpacity(.3),
+                    color: detailsColor.withValues(alpha: .3),
                     shape: BoxShape.circle,
                   ),
                   child: Icon(

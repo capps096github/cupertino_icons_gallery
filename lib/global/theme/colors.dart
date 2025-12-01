@@ -34,10 +34,10 @@ const galleryPink = Color(0xFFA60202);
 const galleryBlack = Color(0xFF000000);
 
 /// -------- Icon Details -------------
-const detailsColor = galleryColorDark;
+const Color detailsColor = galleryColorDark;
 // const detailsColor = galleryBlue;
 // const detailsColor = Color(0xFF042B59);
 // const detailsColor = galleryBlack;
 
 /// Details Text Color
-const detailsTextColor = appWhite;
+const Color detailsTextColor = appWhite;
