@@ -3,7 +3,7 @@ import '../../app_exporter.dart';
 /// * App Paddings following the 8px grid system
 
 // padding 0
-const padding0 = EdgeInsets.zero;
+const EdgeInsets padding0 = EdgeInsets.zero;
 
 /// padding 2
 const padding2 = EdgeInsets.all(spacing2);
@@ -42,5 +42,6 @@ const horizontalPadding4 = EdgeInsets.symmetric(horizontal: spacing4);
 
 /// padding 8
 const horizontalPadding8 = EdgeInsets.symmetric(horizontal: spacing8);
+
 /// padding 16
 const horizontalPadding16 = EdgeInsets.symmetric(horizontal: spacing16);

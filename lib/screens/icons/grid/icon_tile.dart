@@ -79,16 +79,16 @@ class _IconTileState extends State<IconTile> {
           decoration: BoxDecoration(
             borderRadius: borderRadius8,
             border: Border.all(
-              color: isHovered ? appColor : appColor.withOpacity(.1),
+              color: isHovered ? appColor : appColor.withValues(alpha: 0.1),
               width: isHovered ? 2 : .5,
             ),
             color: selectedColor,
           ),
           clipBehavior: Clip.antiAlias,
           child: InkWell(
-            splashColor: iconTextColor.withOpacity(.5),
-            hoverColor: selectedColor.withOpacity(.1),
-            highlightColor: appWhite.withOpacity(.5),
+            splashColor: iconTextColor.withValues(alpha: 0.5),
+            hoverColor: selectedColor.withValues(alpha: 0.1),
+            highlightColor: appWhite.withValues(alpha: 0.5),
             borderRadius: borderRadius8,
             onTap: () async {
               //update the selected value provider

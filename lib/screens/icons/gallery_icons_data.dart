@@ -5,6770 +5,9262 @@ import 'package:flutter/cupertino.dart';
 import 'gallery_icon/gallery_icon.dart';
 
 // this is the full list of all cupertino icons in Alphabetical order
-//source: https://api.flutter.dev/flutter/cupertino/CupertinoIcons-class.html#constants
+// source: https://api.flutter.dev/flutter/cupertino/CupertinoIcons-class.html#constants
 /// List of all cupertino icons
 List<GalleryIcon> cupertinoIcons = [
-// BEGIN LEGACY PRE SF SYMBOLS NAMES
-// We need to leave them as-is with the same codepoints for backward
-// compatibility with cupertino_icons <0.1.3.
 
-  // left_chevron
+  // add
   GalleryIcon(
-    icon: CupertinoIcons.left_chevron,
-    name: 'left_chevron',
-    aliases: [
-      'chevron_left',
-    ],
+    icon: CupertinoIcons.add,
+    name: 'add',
+    aliases: [],
   ),
 
-  // right_chevron
-
+  // add_circled
   GalleryIcon(
-    icon: CupertinoIcons.right_chevron,
-    name: 'right_chevron',
-    aliases: [
-      'chevron_right',
-    ],
+    icon: CupertinoIcons.add_circled,
+    name: 'add_circled',
+    aliases: [],
   ),
 
-  // share
+  // add_circled_solid
   GalleryIcon(
-    icon: CupertinoIcons.share,
-    name: 'share',
-    aliases: [
-      'share_solid',
-    ],
+    icon: CupertinoIcons.add_circled_solid,
+    name: 'add_circled_solid',
+    aliases: [],
   ),
 
-  // share_solid
+  // airplane
   GalleryIcon(
-    icon: CupertinoIcons.share_solid,
-    name: 'share_solid',
-    aliases: [
-      'share',
-    ],
+    icon: CupertinoIcons.airplane,
+    name: 'airplane',
+    aliases: [],
   ),
 
-  // book
+  // alarm
   GalleryIcon(
-    icon: CupertinoIcons.book,
-    name: 'book',
-    aliases: [
-      'book_solid',
-    ],
+    icon: CupertinoIcons.alarm,
+    name: 'alarm',
+    aliases: [],
   ),
 
-  // book_solid
+  // alarm_fill
   GalleryIcon(
-    icon: CupertinoIcons.book_solid,
-    name: 'book_solid',
-    aliases: [
-      'book',
-    ],
-  ),
-// bookmark
-  GalleryIcon(
-    icon: CupertinoIcons.bookmark,
-    name: 'bookmark',
-    aliases: [
-      'bookmark_solid',
-    ],
+    icon: CupertinoIcons.alarm_fill,
+    name: 'alarm_fill',
+    aliases: [],
   ),
 
-  // bookmark_solid
+  // alt
   GalleryIcon(
-    icon: CupertinoIcons.bookmark_solid,
-    name: 'bookmark_solid',
-    aliases: [
-      'bookmark',
-    ],
+    icon: CupertinoIcons.alt,
+    name: 'alt',
+    aliases: [],
   ),
 
-  // info
+  // ant
   GalleryIcon(
-    icon: CupertinoIcons.info,
-    name: 'info',
-    aliases: [
-      'info_solid',
-    ],
+    icon: CupertinoIcons.ant,
+    name: 'ant',
+    aliases: [],
   ),
 
-  // reply
+  // ant_circle
   GalleryIcon(
-    icon: CupertinoIcons.reply,
-    name: 'reply',
-    aliases: [
-      'reply_solid',
-    ],
+    icon: CupertinoIcons.ant_circle,
+    name: 'ant_circle',
+    aliases: [],
   ),
 
-  // conversation_bubble
+  // ant_circle_fill
   GalleryIcon(
-    icon: CupertinoIcons.conversation_bubble,
-    name: 'conversation_bubble',
-    aliases: [
-      'conversation_bubble_solid',
-    ],
+    icon: CupertinoIcons.ant_circle_fill,
+    name: 'ant_circle_fill',
+    aliases: [],
   ),
 
-  // profile_circled
+  // ant_fill
   GalleryIcon(
-    icon: CupertinoIcons.profile_circled,
-    name: 'profile_circled',
-    aliases: [
-      'profile_circled_solid',
-    ],
+    icon: CupertinoIcons.ant_fill,
+    name: 'ant_fill',
+    aliases: [],
   ),
 
-  // plus_circled
+  // antenna_radiowaves_left_right
   GalleryIcon(
-    icon: CupertinoIcons.plus_circled,
-    name: 'plus_circled',
-    aliases: [
-      'plus_circled_solid',
-    ],
+    icon: CupertinoIcons.antenna_radiowaves_left_right,
+    name: 'antenna_radiowaves_left_right',
+    aliases: [],
   ),
 
-  // minus_circled
+  // app
   GalleryIcon(
-    icon: CupertinoIcons.minus_circled,
-    name: 'minus_circled',
-    aliases: [
-      'minus_circled_solid',
-    ],
+    icon: CupertinoIcons.app,
+    name: 'app',
+    aliases: [],
   ),
 
-  // flag
+  // app_badge
   GalleryIcon(
-    icon: CupertinoIcons.flag,
-    name: 'flag',
-    aliases: [
-      'flag_solid',
-    ],
+    icon: CupertinoIcons.app_badge,
+    name: 'app_badge',
+    aliases: [],
   ),
 
-  // search
+  // app_badge_fill
   GalleryIcon(
-    icon: CupertinoIcons.search,
-    name: 'search',
-    aliases: [
-      'search_solid',
-    ],
+    icon: CupertinoIcons.app_badge_fill,
+    name: 'app_badge_fill',
+    aliases: [],
   ),
 
-  // check_mark
+  // app_fill
   GalleryIcon(
-    icon: CupertinoIcons.check_mark,
-    name: 'check_mark',
-    aliases: [
-      'check_mark_solid',
-    ],
+    icon: CupertinoIcons.app_fill,
+    name: 'app_fill',
+    aliases: [],
   ),
 
-  // check_mark_circled
+  // archivebox
   GalleryIcon(
-    icon: CupertinoIcons.check_mark_circled,
-    name: 'check_mark_circled',
-    aliases: [
-      'check_mark_circled_solid',
-    ],
+    icon: CupertinoIcons.archivebox,
+    name: 'archivebox',
+    aliases: [],
   ),
 
-  // check_mark_circled_solid
+  // archivebox_fill
   GalleryIcon(
-    icon: CupertinoIcons.check_mark_circled_solid,
-    name: 'check_mark_circled_solid',
-    aliases: [
-      'check_mark_circled',
-    ],
-  ),
-// circle
-  GalleryIcon(
-    icon: CupertinoIcons.circle,
-    name: 'circle',
-    aliases: [
-      'circle_solid',
-    ],
+    icon: CupertinoIcons.archivebox_fill,
+    name: 'archivebox_fill',
+    aliases: [],
   ),
 
-  // circle_filled
+  // arrow_2_circlepath
   GalleryIcon(
-    icon: CupertinoIcons.circle_filled,
-    name: 'circle_filled',
-    aliases: [
-      'circle',
-    ],
+    icon: CupertinoIcons.arrow_2_circlepath,
+    name: 'arrow_2_circlepath',
+    aliases: [],
+  ),
+
+  // arrow_2_circlepath_circle
+  GalleryIcon(
+    icon: CupertinoIcons.arrow_2_circlepath_circle,
+    name: 'arrow_2_circlepath_circle',
+    aliases: [],
+  ),
+
+  // arrow_2_circlepath_circle_fill
+  GalleryIcon(
+    icon: CupertinoIcons.arrow_2_circlepath_circle_fill,
+    name: 'arrow_2_circlepath_circle_fill',
+    aliases: [],
+  ),
+
+  // arrow_2_squarepath
+  GalleryIcon(
+    icon: CupertinoIcons.arrow_2_squarepath,
+    name: 'arrow_2_squarepath',
+    aliases: [],
+  ),
+
+  // arrow_3_trianglepath
+  GalleryIcon(
+    icon: CupertinoIcons.arrow_3_trianglepath,
+    name: 'arrow_3_trianglepath',
+    aliases: [],
+  ),
+
+  // arrow_branch
+  GalleryIcon(
+    icon: CupertinoIcons.arrow_branch,
+    name: 'arrow_branch',
+    aliases: [],
+  ),
+
+  // arrow_clockwise
+  GalleryIcon(
+    icon: CupertinoIcons.arrow_clockwise,
+    name: 'arrow_clockwise',
+    aliases: [],
+  ),
+
+  // arrow_clockwise_circle
+  GalleryIcon(
+    icon: CupertinoIcons.arrow_clockwise_circle,
+    name: 'arrow_clockwise_circle',
+    aliases: [],
+  ),
+
+  // arrow_clockwise_circle_fill
+  GalleryIcon(
+    icon: CupertinoIcons.arrow_clockwise_circle_fill,
+    name: 'arrow_clockwise_circle_fill',
+    aliases: [],
+  ),
+
+  // arrow_counterclockwise
+  GalleryIcon(
+    icon: CupertinoIcons.arrow_counterclockwise,
+    name: 'arrow_counterclockwise',
+    aliases: [],
+  ),
+
+  // arrow_counterclockwise_circle
+  GalleryIcon(
+    icon: CupertinoIcons.arrow_counterclockwise_circle,
+    name: 'arrow_counterclockwise_circle',
+    aliases: [],
+  ),
+
+  // arrow_counterclockwise_circle_fill
+  GalleryIcon(
+    icon: CupertinoIcons.arrow_counterclockwise_circle_fill,
+    name: 'arrow_counterclockwise_circle_fill',
+    aliases: [],
+  ),
+
+  // arrow_down
+  GalleryIcon(
+    icon: CupertinoIcons.arrow_down,
+    name: 'arrow_down',
+    aliases: [],
+  ),
+
+  // arrow_down_circle
+  GalleryIcon(
+    icon: CupertinoIcons.arrow_down_circle,
+    name: 'arrow_down_circle',
+    aliases: [],
+  ),
+
+  // arrow_down_circle_fill
+  GalleryIcon(
+    icon: CupertinoIcons.arrow_down_circle_fill,
+    name: 'arrow_down_circle_fill',
+    aliases: [],
+  ),
+
+  // arrow_down_doc
+  GalleryIcon(
+    icon: CupertinoIcons.arrow_down_doc,
+    name: 'arrow_down_doc',
+    aliases: [],
+  ),
+
+  // arrow_down_doc_fill
+  GalleryIcon(
+    icon: CupertinoIcons.arrow_down_doc_fill,
+    name: 'arrow_down_doc_fill',
+    aliases: [],
+  ),
+
+  // arrow_down_left
+  GalleryIcon(
+    icon: CupertinoIcons.arrow_down_left,
+    name: 'arrow_down_left',
+    aliases: [],
+  ),
+
+  // arrow_down_left_circle
+  GalleryIcon(
+    icon: CupertinoIcons.arrow_down_left_circle,
+    name: 'arrow_down_left_circle',
+    aliases: [],
+  ),
+
+  // arrow_down_left_circle_fill
+  GalleryIcon(
+    icon: CupertinoIcons.arrow_down_left_circle_fill,
+    name: 'arrow_down_left_circle_fill',
+    aliases: [],
+  ),
+
+  // arrow_down_left_square
+  GalleryIcon(
+    icon: CupertinoIcons.arrow_down_left_square,
+    name: 'arrow_down_left_square',
+    aliases: [],
+  ),
+
+  // arrow_down_left_square_fill
+  GalleryIcon(
+    icon: CupertinoIcons.arrow_down_left_square_fill,
+    name: 'arrow_down_left_square_fill',
+    aliases: [],
+  ),
+
+  // arrow_down_right
+  GalleryIcon(
+    icon: CupertinoIcons.arrow_down_right,
+    name: 'arrow_down_right',
+    aliases: [],
+  ),
+
+  // arrow_down_right_arrow_up_left
+  GalleryIcon(
+    icon: CupertinoIcons.arrow_down_right_arrow_up_left,
+    name: 'arrow_down_right_arrow_up_left',
+    aliases: [],
+  ),
+
+  // arrow_down_right_circle
+  GalleryIcon(
+    icon: CupertinoIcons.arrow_down_right_circle,
+    name: 'arrow_down_right_circle',
+    aliases: [],
+  ),
+
+  // arrow_down_right_circle_fill
+  GalleryIcon(
+    icon: CupertinoIcons.arrow_down_right_circle_fill,
+    name: 'arrow_down_right_circle_fill',
+    aliases: [],
+  ),
+
+  // arrow_down_right_square
+  GalleryIcon(
+    icon: CupertinoIcons.arrow_down_right_square,
+    name: 'arrow_down_right_square',
+    aliases: [],
+  ),
+
+  // arrow_down_right_square_fill
+  GalleryIcon(
+    icon: CupertinoIcons.arrow_down_right_square_fill,
+    name: 'arrow_down_right_square_fill',
+    aliases: [],
+  ),
+
+  // arrow_down_square
+  GalleryIcon(
+    icon: CupertinoIcons.arrow_down_square,
+    name: 'arrow_down_square',
+    aliases: [],
+  ),
+
+  // arrow_down_square_fill
+  GalleryIcon(
+    icon: CupertinoIcons.arrow_down_square_fill,
+    name: 'arrow_down_square_fill',
+    aliases: [],
+  ),
+
+  // arrow_down_to_line
+  GalleryIcon(
+    icon: CupertinoIcons.arrow_down_to_line,
+    name: 'arrow_down_to_line',
+    aliases: [],
+  ),
+
+  // arrow_down_to_line_alt
+  GalleryIcon(
+    icon: CupertinoIcons.arrow_down_to_line_alt,
+    name: 'arrow_down_to_line_alt',
+    aliases: [],
+  ),
+
+  // arrow_left
+  GalleryIcon(
+    icon: CupertinoIcons.arrow_left,
+    name: 'arrow_left',
+    aliases: [],
+  ),
+
+  // arrow_left_circle
+  GalleryIcon(
+    icon: CupertinoIcons.arrow_left_circle,
+    name: 'arrow_left_circle',
+    aliases: [],
+  ),
+
+  // arrow_left_circle_fill
+  GalleryIcon(
+    icon: CupertinoIcons.arrow_left_circle_fill,
+    name: 'arrow_left_circle_fill',
+    aliases: [],
+  ),
+
+  // arrow_left_right
+  GalleryIcon(
+    icon: CupertinoIcons.arrow_left_right,
+    name: 'arrow_left_right',
+    aliases: [],
+  ),
+
+  // arrow_left_right_circle
+  GalleryIcon(
+    icon: CupertinoIcons.arrow_left_right_circle,
+    name: 'arrow_left_right_circle',
+    aliases: [],
+  ),
+
+  // arrow_left_right_circle_fill
+  GalleryIcon(
+    icon: CupertinoIcons.arrow_left_right_circle_fill,
+    name: 'arrow_left_right_circle_fill',
+    aliases: [],
+  ),
+
+  // arrow_left_right_square
+  GalleryIcon(
+    icon: CupertinoIcons.arrow_left_right_square,
+    name: 'arrow_left_right_square',
+    aliases: [],
+  ),
+
+  // arrow_left_right_square_fill
+  GalleryIcon(
+    icon: CupertinoIcons.arrow_left_right_square_fill,
+    name: 'arrow_left_right_square_fill',
+    aliases: [],
+  ),
+
+  // arrow_left_square
+  GalleryIcon(
+    icon: CupertinoIcons.arrow_left_square,
+    name: 'arrow_left_square',
+    aliases: [],
+  ),
+
+  // arrow_left_square_fill
+  GalleryIcon(
+    icon: CupertinoIcons.arrow_left_square_fill,
+    name: 'arrow_left_square_fill',
+    aliases: [],
+  ),
+
+  // arrow_left_to_line
+  GalleryIcon(
+    icon: CupertinoIcons.arrow_left_to_line,
+    name: 'arrow_left_to_line',
+    aliases: [],
+  ),
+
+  // arrow_left_to_line_alt
+  GalleryIcon(
+    icon: CupertinoIcons.arrow_left_to_line_alt,
+    name: 'arrow_left_to_line_alt',
+    aliases: [],
+  ),
+
+  // arrow_merge
+  GalleryIcon(
+    icon: CupertinoIcons.arrow_merge,
+    name: 'arrow_merge',
+    aliases: [],
+  ),
+
+  // arrow_right
+  GalleryIcon(
+    icon: CupertinoIcons.arrow_right,
+    name: 'arrow_right',
+    aliases: [],
+  ),
+
+  // arrow_right_arrow_left
+  GalleryIcon(
+    icon: CupertinoIcons.arrow_right_arrow_left,
+    name: 'arrow_right_arrow_left',
+    aliases: [],
+  ),
+
+  // arrow_right_arrow_left_circle
+  GalleryIcon(
+    icon: CupertinoIcons.arrow_right_arrow_left_circle,
+    name: 'arrow_right_arrow_left_circle',
+    aliases: [],
+  ),
+
+  // arrow_right_arrow_left_circle_fill
+  GalleryIcon(
+    icon: CupertinoIcons.arrow_right_arrow_left_circle_fill,
+    name: 'arrow_right_arrow_left_circle_fill',
+    aliases: [],
+  ),
+
+  // arrow_right_arrow_left_square
+  GalleryIcon(
+    icon: CupertinoIcons.arrow_right_arrow_left_square,
+    name: 'arrow_right_arrow_left_square',
+    aliases: [],
+  ),
+
+  // arrow_right_arrow_left_square_fill
+  GalleryIcon(
+    icon: CupertinoIcons.arrow_right_arrow_left_square_fill,
+    name: 'arrow_right_arrow_left_square_fill',
+    aliases: [],
+  ),
+
+  // arrow_right_circle
+  GalleryIcon(
+    icon: CupertinoIcons.arrow_right_circle,
+    name: 'arrow_right_circle',
+    aliases: [],
+  ),
+
+  // arrow_right_circle_fill
+  GalleryIcon(
+    icon: CupertinoIcons.arrow_right_circle_fill,
+    name: 'arrow_right_circle_fill',
+    aliases: [],
+  ),
+
+  // arrow_right_square
+  GalleryIcon(
+    icon: CupertinoIcons.arrow_right_square,
+    name: 'arrow_right_square',
+    aliases: [],
+  ),
+
+  // arrow_right_square_fill
+  GalleryIcon(
+    icon: CupertinoIcons.arrow_right_square_fill,
+    name: 'arrow_right_square_fill',
+    aliases: [],
+  ),
+
+  // arrow_right_to_line
+  GalleryIcon(
+    icon: CupertinoIcons.arrow_right_to_line,
+    name: 'arrow_right_to_line',
+    aliases: [],
+  ),
+
+  // arrow_right_to_line_alt
+  GalleryIcon(
+    icon: CupertinoIcons.arrow_right_to_line_alt,
+    name: 'arrow_right_to_line_alt',
+    aliases: [],
+  ),
+
+  // arrow_swap
+  GalleryIcon(
+    icon: CupertinoIcons.arrow_swap,
+    name: 'arrow_swap',
+    aliases: [],
+  ),
+
+  // arrow_turn_down_left
+  GalleryIcon(
+    icon: CupertinoIcons.arrow_turn_down_left,
+    name: 'arrow_turn_down_left',
+    aliases: [],
+  ),
+
+  // arrow_turn_down_right
+  GalleryIcon(
+    icon: CupertinoIcons.arrow_turn_down_right,
+    name: 'arrow_turn_down_right',
+    aliases: [],
+  ),
+
+  // arrow_turn_left_down
+  GalleryIcon(
+    icon: CupertinoIcons.arrow_turn_left_down,
+    name: 'arrow_turn_left_down',
+    aliases: [],
+  ),
+
+  // arrow_turn_left_up
+  GalleryIcon(
+    icon: CupertinoIcons.arrow_turn_left_up,
+    name: 'arrow_turn_left_up',
+    aliases: [],
+  ),
+
+  // arrow_turn_right_down
+  GalleryIcon(
+    icon: CupertinoIcons.arrow_turn_right_down,
+    name: 'arrow_turn_right_down',
+    aliases: [],
+  ),
+
+  // arrow_turn_right_up
+  GalleryIcon(
+    icon: CupertinoIcons.arrow_turn_right_up,
+    name: 'arrow_turn_right_up',
+    aliases: [],
+  ),
+
+  // arrow_turn_up_left
+  GalleryIcon(
+    icon: CupertinoIcons.arrow_turn_up_left,
+    name: 'arrow_turn_up_left',
+    aliases: [],
+  ),
+
+  // arrow_turn_up_right
+  GalleryIcon(
+    icon: CupertinoIcons.arrow_turn_up_right,
+    name: 'arrow_turn_up_right',
+    aliases: [],
+  ),
+
+  // arrow_up
+  GalleryIcon(
+    icon: CupertinoIcons.arrow_up,
+    name: 'arrow_up',
+    aliases: [],
+  ),
+
+  // arrow_up_arrow_down
+  GalleryIcon(
+    icon: CupertinoIcons.arrow_up_arrow_down,
+    name: 'arrow_up_arrow_down',
+    aliases: [],
+  ),
+
+  // arrow_up_arrow_down_circle
+  GalleryIcon(
+    icon: CupertinoIcons.arrow_up_arrow_down_circle,
+    name: 'arrow_up_arrow_down_circle',
+    aliases: [],
+  ),
+
+  // arrow_up_arrow_down_circle_fill
+  GalleryIcon(
+    icon: CupertinoIcons.arrow_up_arrow_down_circle_fill,
+    name: 'arrow_up_arrow_down_circle_fill',
+    aliases: [],
+  ),
+
+  // arrow_up_arrow_down_square
+  GalleryIcon(
+    icon: CupertinoIcons.arrow_up_arrow_down_square,
+    name: 'arrow_up_arrow_down_square',
+    aliases: [],
+  ),
+
+  // arrow_up_arrow_down_square_fill
+  GalleryIcon(
+    icon: CupertinoIcons.arrow_up_arrow_down_square_fill,
+    name: 'arrow_up_arrow_down_square_fill',
+    aliases: [],
+  ),
+
+  // arrow_up_bin
+  GalleryIcon(
+    icon: CupertinoIcons.arrow_up_bin,
+    name: 'arrow_up_bin',
+    aliases: [],
+  ),
+
+  // arrow_up_bin_fill
+  GalleryIcon(
+    icon: CupertinoIcons.arrow_up_bin_fill,
+    name: 'arrow_up_bin_fill',
+    aliases: [],
+  ),
+
+  // arrow_up_circle
+  GalleryIcon(
+    icon: CupertinoIcons.arrow_up_circle,
+    name: 'arrow_up_circle',
+    aliases: [],
+  ),
+
+  // arrow_up_circle_fill
+  GalleryIcon(
+    icon: CupertinoIcons.arrow_up_circle_fill,
+    name: 'arrow_up_circle_fill',
+    aliases: [],
+  ),
+
+  // arrow_up_doc
+  GalleryIcon(
+    icon: CupertinoIcons.arrow_up_doc,
+    name: 'arrow_up_doc',
+    aliases: [],
+  ),
+
+  // arrow_up_doc_fill
+  GalleryIcon(
+    icon: CupertinoIcons.arrow_up_doc_fill,
+    name: 'arrow_up_doc_fill',
+    aliases: [],
+  ),
+
+  // arrow_up_down
+  GalleryIcon(
+    icon: CupertinoIcons.arrow_up_down,
+    name: 'arrow_up_down',
+    aliases: [],
+  ),
+
+  // arrow_up_down_circle
+  GalleryIcon(
+    icon: CupertinoIcons.arrow_up_down_circle,
+    name: 'arrow_up_down_circle',
+    aliases: [],
+  ),
+
+  // arrow_up_down_circle_fill
+  GalleryIcon(
+    icon: CupertinoIcons.arrow_up_down_circle_fill,
+    name: 'arrow_up_down_circle_fill',
+    aliases: [],
+  ),
+
+  // arrow_up_down_square
+  GalleryIcon(
+    icon: CupertinoIcons.arrow_up_down_square,
+    name: 'arrow_up_down_square',
+    aliases: [],
+  ),
+
+  // arrow_up_down_square_fill
+  GalleryIcon(
+    icon: CupertinoIcons.arrow_up_down_square_fill,
+    name: 'arrow_up_down_square_fill',
+    aliases: [],
+  ),
+
+  // arrow_up_left
+  GalleryIcon(
+    icon: CupertinoIcons.arrow_up_left,
+    name: 'arrow_up_left',
+    aliases: [],
+  ),
+
+  // arrow_up_left_arrow_down_right
+  GalleryIcon(
+    icon: CupertinoIcons.arrow_up_left_arrow_down_right,
+    name: 'arrow_up_left_arrow_down_right',
+    aliases: [],
+  ),
+
+  // arrow_up_left_circle
+  GalleryIcon(
+    icon: CupertinoIcons.arrow_up_left_circle,
+    name: 'arrow_up_left_circle',
+    aliases: [],
+  ),
+
+  // arrow_up_left_circle_fill
+  GalleryIcon(
+    icon: CupertinoIcons.arrow_up_left_circle_fill,
+    name: 'arrow_up_left_circle_fill',
+    aliases: [],
+  ),
+
+  // arrow_up_left_square
+  GalleryIcon(
+    icon: CupertinoIcons.arrow_up_left_square,
+    name: 'arrow_up_left_square',
+    aliases: [],
+  ),
+
+  // arrow_up_left_square_fill
+  GalleryIcon(
+    icon: CupertinoIcons.arrow_up_left_square_fill,
+    name: 'arrow_up_left_square_fill',
+    aliases: [],
+  ),
+
+  // arrow_up_right
+  GalleryIcon(
+    icon: CupertinoIcons.arrow_up_right,
+    name: 'arrow_up_right',
+    aliases: [],
+  ),
+
+  // arrow_up_right_circle
+  GalleryIcon(
+    icon: CupertinoIcons.arrow_up_right_circle,
+    name: 'arrow_up_right_circle',
+    aliases: [],
+  ),
+
+  // arrow_up_right_circle_fill
+  GalleryIcon(
+    icon: CupertinoIcons.arrow_up_right_circle_fill,
+    name: 'arrow_up_right_circle_fill',
+    aliases: [],
+  ),
+
+  // arrow_up_right_diamond
+  GalleryIcon(
+    icon: CupertinoIcons.arrow_up_right_diamond,
+    name: 'arrow_up_right_diamond',
+    aliases: [],
+  ),
+
+  // arrow_up_right_diamond_fill
+  GalleryIcon(
+    icon: CupertinoIcons.arrow_up_right_diamond_fill,
+    name: 'arrow_up_right_diamond_fill',
+    aliases: [],
+  ),
+
+  // arrow_up_right_square
+  GalleryIcon(
+    icon: CupertinoIcons.arrow_up_right_square,
+    name: 'arrow_up_right_square',
+    aliases: [],
+  ),
+
+  // arrow_up_right_square_fill
+  GalleryIcon(
+    icon: CupertinoIcons.arrow_up_right_square_fill,
+    name: 'arrow_up_right_square_fill',
+    aliases: [],
+  ),
+
+  // arrow_up_square
+  GalleryIcon(
+    icon: CupertinoIcons.arrow_up_square,
+    name: 'arrow_up_square',
+    aliases: [],
+  ),
+
+  // arrow_up_square_fill
+  GalleryIcon(
+    icon: CupertinoIcons.arrow_up_square_fill,
+    name: 'arrow_up_square_fill',
+    aliases: [],
+  ),
+
+  // arrow_up_to_line
+  GalleryIcon(
+    icon: CupertinoIcons.arrow_up_to_line,
+    name: 'arrow_up_to_line',
+    aliases: [],
+  ),
+
+  // arrow_up_to_line_alt
+  GalleryIcon(
+    icon: CupertinoIcons.arrow_up_to_line_alt,
+    name: 'arrow_up_to_line_alt',
+    aliases: [],
+  ),
+
+  // arrow_uturn_down
+  GalleryIcon(
+    icon: CupertinoIcons.arrow_uturn_down,
+    name: 'arrow_uturn_down',
+    aliases: [],
+  ),
+
+  // arrow_uturn_down_circle
+  GalleryIcon(
+    icon: CupertinoIcons.arrow_uturn_down_circle,
+    name: 'arrow_uturn_down_circle',
+    aliases: [],
+  ),
+
+  // arrow_uturn_down_circle_fill
+  GalleryIcon(
+    icon: CupertinoIcons.arrow_uturn_down_circle_fill,
+    name: 'arrow_uturn_down_circle_fill',
+    aliases: [],
+  ),
+
+  // arrow_uturn_down_square
+  GalleryIcon(
+    icon: CupertinoIcons.arrow_uturn_down_square,
+    name: 'arrow_uturn_down_square',
+    aliases: [],
+  ),
+
+  // arrow_uturn_down_square_fill
+  GalleryIcon(
+    icon: CupertinoIcons.arrow_uturn_down_square_fill,
+    name: 'arrow_uturn_down_square_fill',
+    aliases: [],
+  ),
+
+  // arrow_uturn_left
+  GalleryIcon(
+    icon: CupertinoIcons.arrow_uturn_left,
+    name: 'arrow_uturn_left',
+    aliases: [],
+  ),
+
+  // arrow_uturn_left_circle
+  GalleryIcon(
+    icon: CupertinoIcons.arrow_uturn_left_circle,
+    name: 'arrow_uturn_left_circle',
+    aliases: [],
+  ),
+
+  // arrow_uturn_left_circle_fill
+  GalleryIcon(
+    icon: CupertinoIcons.arrow_uturn_left_circle_fill,
+    name: 'arrow_uturn_left_circle_fill',
+    aliases: [],
+  ),
+
+  // arrow_uturn_left_square
+  GalleryIcon(
+    icon: CupertinoIcons.arrow_uturn_left_square,
+    name: 'arrow_uturn_left_square',
+    aliases: [],
+  ),
+
+  // arrow_uturn_left_square_fill
+  GalleryIcon(
+    icon: CupertinoIcons.arrow_uturn_left_square_fill,
+    name: 'arrow_uturn_left_square_fill',
+    aliases: [],
+  ),
+
+  // arrow_uturn_right
+  GalleryIcon(
+    icon: CupertinoIcons.arrow_uturn_right,
+    name: 'arrow_uturn_right',
+    aliases: [],
+  ),
+
+  // arrow_uturn_right_circle
+  GalleryIcon(
+    icon: CupertinoIcons.arrow_uturn_right_circle,
+    name: 'arrow_uturn_right_circle',
+    aliases: [],
+  ),
+
+  // arrow_uturn_right_circle_fill
+  GalleryIcon(
+    icon: CupertinoIcons.arrow_uturn_right_circle_fill,
+    name: 'arrow_uturn_right_circle_fill',
+    aliases: [],
+  ),
+
+  // arrow_uturn_right_square
+  GalleryIcon(
+    icon: CupertinoIcons.arrow_uturn_right_square,
+    name: 'arrow_uturn_right_square',
+    aliases: [],
+  ),
+
+  // arrow_uturn_right_square_fill
+  GalleryIcon(
+    icon: CupertinoIcons.arrow_uturn_right_square_fill,
+    name: 'arrow_uturn_right_square_fill',
+    aliases: [],
+  ),
+
+  // arrow_uturn_up
+  GalleryIcon(
+    icon: CupertinoIcons.arrow_uturn_up,
+    name: 'arrow_uturn_up',
+    aliases: [],
+  ),
+
+  // arrow_uturn_up_circle
+  GalleryIcon(
+    icon: CupertinoIcons.arrow_uturn_up_circle,
+    name: 'arrow_uturn_up_circle',
+    aliases: [],
+  ),
+
+  // arrow_uturn_up_circle_fill
+  GalleryIcon(
+    icon: CupertinoIcons.arrow_uturn_up_circle_fill,
+    name: 'arrow_uturn_up_circle_fill',
+    aliases: [],
+  ),
+
+  // arrow_uturn_up_square
+  GalleryIcon(
+    icon: CupertinoIcons.arrow_uturn_up_square,
+    name: 'arrow_uturn_up_square',
+    aliases: [],
+  ),
+
+  // arrow_uturn_up_square_fill
+  GalleryIcon(
+    icon: CupertinoIcons.arrow_uturn_up_square_fill,
+    name: 'arrow_uturn_up_square_fill',
+    aliases: [],
+  ),
+
+  // arrowshape_turn_up_left
+  GalleryIcon(
+    icon: CupertinoIcons.arrowshape_turn_up_left,
+    name: 'arrowshape_turn_up_left',
+    aliases: [],
+  ),
+
+  // arrowshape_turn_up_left_2
+  GalleryIcon(
+    icon: CupertinoIcons.arrowshape_turn_up_left_2,
+    name: 'arrowshape_turn_up_left_2',
+    aliases: [],
+  ),
+
+  // arrowshape_turn_up_left_2_fill
+  GalleryIcon(
+    icon: CupertinoIcons.arrowshape_turn_up_left_2_fill,
+    name: 'arrowshape_turn_up_left_2_fill',
+    aliases: [],
+  ),
+
+  // arrowshape_turn_up_left_circle
+  GalleryIcon(
+    icon: CupertinoIcons.arrowshape_turn_up_left_circle,
+    name: 'arrowshape_turn_up_left_circle',
+    aliases: [],
+  ),
+
+  // arrowshape_turn_up_left_circle_fill
+  GalleryIcon(
+    icon: CupertinoIcons.arrowshape_turn_up_left_circle_fill,
+    name: 'arrowshape_turn_up_left_circle_fill',
+    aliases: [],
+  ),
+
+  // arrowshape_turn_up_left_fill
+  GalleryIcon(
+    icon: CupertinoIcons.arrowshape_turn_up_left_fill,
+    name: 'arrowshape_turn_up_left_fill',
+    aliases: [],
+  ),
+
+  // arrowshape_turn_up_right
+  GalleryIcon(
+    icon: CupertinoIcons.arrowshape_turn_up_right,
+    name: 'arrowshape_turn_up_right',
+    aliases: [],
+  ),
+
+  // arrowshape_turn_up_right_circle
+  GalleryIcon(
+    icon: CupertinoIcons.arrowshape_turn_up_right_circle,
+    name: 'arrowshape_turn_up_right_circle',
+    aliases: [],
+  ),
+
+  // arrowshape_turn_up_right_circle_fill
+  GalleryIcon(
+    icon: CupertinoIcons.arrowshape_turn_up_right_circle_fill,
+    name: 'arrowshape_turn_up_right_circle_fill',
+    aliases: [],
+  ),
+
+  // arrowshape_turn_up_right_fill
+  GalleryIcon(
+    icon: CupertinoIcons.arrowshape_turn_up_right_fill,
+    name: 'arrowshape_turn_up_right_fill',
+    aliases: [],
+  ),
+
+  // arrowtriangle_down
+  GalleryIcon(
+    icon: CupertinoIcons.arrowtriangle_down,
+    name: 'arrowtriangle_down',
+    aliases: [],
+  ),
+
+  // arrowtriangle_down_circle
+  GalleryIcon(
+    icon: CupertinoIcons.arrowtriangle_down_circle,
+    name: 'arrowtriangle_down_circle',
+    aliases: [],
+  ),
+
+  // arrowtriangle_down_circle_fill
+  GalleryIcon(
+    icon: CupertinoIcons.arrowtriangle_down_circle_fill,
+    name: 'arrowtriangle_down_circle_fill',
+    aliases: [],
+  ),
+
+  // arrowtriangle_down_fill
+  GalleryIcon(
+    icon: CupertinoIcons.arrowtriangle_down_fill,
+    name: 'arrowtriangle_down_fill',
+    aliases: [],
+  ),
+
+  // arrowtriangle_down_square
+  GalleryIcon(
+    icon: CupertinoIcons.arrowtriangle_down_square,
+    name: 'arrowtriangle_down_square',
+    aliases: [],
+  ),
+
+  // arrowtriangle_down_square_fill
+  GalleryIcon(
+    icon: CupertinoIcons.arrowtriangle_down_square_fill,
+    name: 'arrowtriangle_down_square_fill',
+    aliases: [],
+  ),
+
+  // arrowtriangle_left
+  GalleryIcon(
+    icon: CupertinoIcons.arrowtriangle_left,
+    name: 'arrowtriangle_left',
+    aliases: [],
+  ),
+
+  // arrowtriangle_left_circle
+  GalleryIcon(
+    icon: CupertinoIcons.arrowtriangle_left_circle,
+    name: 'arrowtriangle_left_circle',
+    aliases: [],
+  ),
+
+  // arrowtriangle_left_circle_fill
+  GalleryIcon(
+    icon: CupertinoIcons.arrowtriangle_left_circle_fill,
+    name: 'arrowtriangle_left_circle_fill',
+    aliases: [],
+  ),
+
+  // arrowtriangle_left_fill
+  GalleryIcon(
+    icon: CupertinoIcons.arrowtriangle_left_fill,
+    name: 'arrowtriangle_left_fill',
+    aliases: [],
+  ),
+
+  // arrowtriangle_left_square
+  GalleryIcon(
+    icon: CupertinoIcons.arrowtriangle_left_square,
+    name: 'arrowtriangle_left_square',
+    aliases: [],
+  ),
+
+  // arrowtriangle_left_square_fill
+  GalleryIcon(
+    icon: CupertinoIcons.arrowtriangle_left_square_fill,
+    name: 'arrowtriangle_left_square_fill',
+    aliases: [],
+  ),
+
+  // arrowtriangle_right
+  GalleryIcon(
+    icon: CupertinoIcons.arrowtriangle_right,
+    name: 'arrowtriangle_right',
+    aliases: [],
+  ),
+
+  // arrowtriangle_right_circle
+  GalleryIcon(
+    icon: CupertinoIcons.arrowtriangle_right_circle,
+    name: 'arrowtriangle_right_circle',
+    aliases: [],
+  ),
+
+  // arrowtriangle_right_circle_fill
+  GalleryIcon(
+    icon: CupertinoIcons.arrowtriangle_right_circle_fill,
+    name: 'arrowtriangle_right_circle_fill',
+    aliases: [],
+  ),
+
+  // arrowtriangle_right_fill
+  GalleryIcon(
+    icon: CupertinoIcons.arrowtriangle_right_fill,
+    name: 'arrowtriangle_right_fill',
+    aliases: [],
+  ),
+
+  // arrowtriangle_right_square
+  GalleryIcon(
+    icon: CupertinoIcons.arrowtriangle_right_square,
+    name: 'arrowtriangle_right_square',
+    aliases: [],
+  ),
+
+  // arrowtriangle_right_square_fill
+  GalleryIcon(
+    icon: CupertinoIcons.arrowtriangle_right_square_fill,
+    name: 'arrowtriangle_right_square_fill',
+    aliases: [],
+  ),
+
+  // arrowtriangle_up
+  GalleryIcon(
+    icon: CupertinoIcons.arrowtriangle_up,
+    name: 'arrowtriangle_up',
+    aliases: [],
+  ),
+
+  // arrowtriangle_up_circle
+  GalleryIcon(
+    icon: CupertinoIcons.arrowtriangle_up_circle,
+    name: 'arrowtriangle_up_circle',
+    aliases: [],
+  ),
+
+  // arrowtriangle_up_circle_fill
+  GalleryIcon(
+    icon: CupertinoIcons.arrowtriangle_up_circle_fill,
+    name: 'arrowtriangle_up_circle_fill',
+    aliases: [],
+  ),
+
+  // arrowtriangle_up_fill
+  GalleryIcon(
+    icon: CupertinoIcons.arrowtriangle_up_fill,
+    name: 'arrowtriangle_up_fill',
+    aliases: [],
+  ),
+
+  // arrowtriangle_up_square
+  GalleryIcon(
+    icon: CupertinoIcons.arrowtriangle_up_square,
+    name: 'arrowtriangle_up_square',
+    aliases: [],
+  ),
+
+  // arrowtriangle_up_square_fill
+  GalleryIcon(
+    icon: CupertinoIcons.arrowtriangle_up_square_fill,
+    name: 'arrowtriangle_up_square_fill',
+    aliases: [],
+  ),
+
+  // asterisk_circle
+  GalleryIcon(
+    icon: CupertinoIcons.asterisk_circle,
+    name: 'asterisk_circle',
+    aliases: [],
+  ),
+
+  // asterisk_circle_fill
+  GalleryIcon(
+    icon: CupertinoIcons.asterisk_circle_fill,
+    name: 'asterisk_circle_fill',
+    aliases: [],
+  ),
+
+  // at
+  GalleryIcon(
+    icon: CupertinoIcons.at,
+    name: 'at',
+    aliases: [],
+  ),
+
+  // at_badge_minus
+  GalleryIcon(
+    icon: CupertinoIcons.at_badge_minus,
+    name: 'at_badge_minus',
+    aliases: [],
+  ),
+
+  // at_badge_plus
+  GalleryIcon(
+    icon: CupertinoIcons.at_badge_plus,
+    name: 'at_badge_plus',
+    aliases: [],
+  ),
+
+  // at_circle
+  GalleryIcon(
+    icon: CupertinoIcons.at_circle,
+    name: 'at_circle',
+    aliases: [],
+  ),
+
+  // at_circle_fill
+  GalleryIcon(
+    icon: CupertinoIcons.at_circle_fill,
+    name: 'at_circle_fill',
+    aliases: [],
   ),
 
   // back
   GalleryIcon(
     icon: CupertinoIcons.back,
     name: 'back',
-    aliases: [
-      'back_solid',
-    ],
+    aliases: [],
   ),
 
-  // forward
+  // backward
   GalleryIcon(
-    icon: CupertinoIcons.forward,
-    name: 'forward',
-    aliases: [
-      'forward_solid',
-    ],
+    icon: CupertinoIcons.backward,
+    name: 'backward',
+    aliases: [],
   ),
 
-  // home
+  // backward_end
   GalleryIcon(
-    icon: CupertinoIcons.home,
-    name: 'home',
-    aliases: [
-      'home_solid',
-    ],
+    icon: CupertinoIcons.backward_end,
+    name: 'backward_end',
+    aliases: [],
   ),
 
-  // shopping_cart
+  // backward_end_alt
   GalleryIcon(
-    icon: CupertinoIcons.shopping_cart,
-    name: 'shopping_cart',
-    aliases: [
-      'shopping_cart_solid',
-    ],
+    icon: CupertinoIcons.backward_end_alt,
+    name: 'backward_end_alt',
+    aliases: [],
   ),
 
-  // ellipsis
+  // backward_end_alt_fill
   GalleryIcon(
-    icon: CupertinoIcons.ellipsis,
-    name: 'ellipsis',
-    aliases: [
-      'ellipsis_solid',
-    ],
+    icon: CupertinoIcons.backward_end_alt_fill,
+    name: 'backward_end_alt_fill',
+    aliases: [],
   ),
 
-  // phone
+  // backward_end_fill
   GalleryIcon(
-    icon: CupertinoIcons.phone,
-    name: 'phone',
-    aliases: [
-      'phone_solid',
-    ],
+    icon: CupertinoIcons.backward_end_fill,
+    name: 'backward_end_fill',
+    aliases: [],
   ),
 
-  // phone_solid
+  // backward_fill
   GalleryIcon(
-    icon: CupertinoIcons.phone_solid,
-    name: 'phone_solid',
-    aliases: [
-      'phone',
-    ],
+    icon: CupertinoIcons.backward_fill,
+    name: 'backward_fill',
+    aliases: [],
   ),
 
-  // down_arrow
+  // badge_plus_radiowaves_right
   GalleryIcon(
-    icon: CupertinoIcons.down_arrow,
-    name: 'down_arrow',
-    aliases: [
-      'down_arrow_solid',
-    ],
+    icon: CupertinoIcons.badge_plus_radiowaves_right,
+    name: 'badge_plus_radiowaves_right',
+    aliases: [],
   ),
 
-  // up_arrow
+  // bag
   GalleryIcon(
-    icon: CupertinoIcons.up_arrow,
-    name: 'up_arrow',
-    aliases: [
-      'up_arrow_solid',
-    ],
+    icon: CupertinoIcons.bag,
+    name: 'bag',
+    aliases: [],
   ),
 
-  // battery_charging
+  // bag_badge_minus
   GalleryIcon(
-    icon: CupertinoIcons.battery_charging,
-    name: 'battery_charging',
-    aliases: [
-      'battery_charging_solid',
-    ],
+    icon: CupertinoIcons.bag_badge_minus,
+    name: 'bag_badge_minus',
+    aliases: [],
   ),
 
-  // battery_empty
+  // bag_badge_plus
   GalleryIcon(
-    icon: CupertinoIcons.battery_empty,
-    name: 'battery_empty',
-    aliases: [
-      'battery_empty_solid',
-    ],
+    icon: CupertinoIcons.bag_badge_plus,
+    name: 'bag_badge_plus',
+    aliases: [],
   ),
 
-  // battery_full
+  // bag_fill
   GalleryIcon(
-    icon: CupertinoIcons.battery_full,
-    name: 'battery_full',
-    aliases: [
-      'battery_full_solid',
-    ],
+    icon: CupertinoIcons.bag_fill,
+    name: 'bag_fill',
+    aliases: [],
   ),
 
-  // battery_75_percent
+  // bag_fill_badge_minus
   GalleryIcon(
-    icon: CupertinoIcons.battery_75_percent,
-    name: 'battery_75_percent',
+    icon: CupertinoIcons.bag_fill_badge_minus,
+    name: 'bag_fill_badge_minus',
+    aliases: [],
+  ),
+
+  // bag_fill_badge_plus
+  GalleryIcon(
+    icon: CupertinoIcons.bag_fill_badge_plus,
+    name: 'bag_fill_badge_plus',
+    aliases: [],
+  ),
+
+  // bandage
+  GalleryIcon(
+    icon: CupertinoIcons.bandage,
+    name: 'bandage',
+    aliases: [],
+  ),
+
+  // bandage_fill
+  GalleryIcon(
+    icon: CupertinoIcons.bandage_fill,
+    name: 'bandage_fill',
+    aliases: [],
+  ),
+
+  // barcode
+  GalleryIcon(
+    icon: CupertinoIcons.barcode,
+    name: 'barcode',
+    aliases: [],
+  ),
+
+  // barcode_viewfinder
+  GalleryIcon(
+    icon: CupertinoIcons.barcode_viewfinder,
+    name: 'barcode_viewfinder',
+    aliases: [],
+  ),
+
+  // bars
+  GalleryIcon(
+    icon: CupertinoIcons.bars,
+    name: 'bars',
+    aliases: [],
+  ),
+
+  // battery_0
+  GalleryIcon(
+    icon: CupertinoIcons.battery_0,
+    name: 'battery_0',
+    aliases: [],
+  ),
+
+  // battery_25
+  GalleryIcon(
+    icon: CupertinoIcons.battery_25,
+    name: 'battery_25',
+    aliases: [],
   ),
 
   // battery_25_percent
   GalleryIcon(
     icon: CupertinoIcons.battery_25_percent,
     name: 'battery_25_percent',
+    aliases: [],
+  ),
+
+  // battery_75_percent
+  GalleryIcon(
+    icon: CupertinoIcons.battery_75_percent,
+    name: 'battery_75_percent',
+    aliases: [],
+  ),
+
+  // battery_100
+  GalleryIcon(
+    icon: CupertinoIcons.battery_100,
+    name: 'battery_100',
+    aliases: [],
+  ),
+
+  // battery_charging
+  GalleryIcon(
+    icon: CupertinoIcons.battery_charging,
+    name: 'battery_charging',
+    aliases: [],
+  ),
+
+  // battery_empty
+  GalleryIcon(
+    icon: CupertinoIcons.battery_empty,
+    name: 'battery_empty',
+    aliases: [],
+  ),
+
+  // battery_full
+  GalleryIcon(
+    icon: CupertinoIcons.battery_full,
+    name: 'battery_full',
+    aliases: [],
+  ),
+
+  // bed_double
+  GalleryIcon(
+    icon: CupertinoIcons.bed_double,
+    name: 'bed_double',
+    aliases: [],
+  ),
+
+  // bed_double_fill
+  GalleryIcon(
+    icon: CupertinoIcons.bed_double_fill,
+    name: 'bed_double_fill',
+    aliases: [],
+  ),
+
+  // bell
+  GalleryIcon(
+    icon: CupertinoIcons.bell,
+    name: 'bell',
+    aliases: [],
+  ),
+
+  // bell_circle
+  GalleryIcon(
+    icon: CupertinoIcons.bell_circle,
+    name: 'bell_circle',
+    aliases: [],
+  ),
+
+  // bell_circle_fill
+  GalleryIcon(
+    icon: CupertinoIcons.bell_circle_fill,
+    name: 'bell_circle_fill',
+    aliases: [],
+  ),
+
+  // bell_fill
+  GalleryIcon(
+    icon: CupertinoIcons.bell_fill,
+    name: 'bell_fill',
+    aliases: [],
+  ),
+
+  // bell_slash
+  GalleryIcon(
+    icon: CupertinoIcons.bell_slash,
+    name: 'bell_slash',
+    aliases: [],
+  ),
+
+  // bell_slash_fill
+  GalleryIcon(
+    icon: CupertinoIcons.bell_slash_fill,
+    name: 'bell_slash_fill',
+    aliases: [],
+  ),
+
+  // bell_solid
+  GalleryIcon(
+    icon: CupertinoIcons.bell_solid,
+    name: 'bell_solid',
+    aliases: [],
+  ),
+
+  // bin_xmark
+  GalleryIcon(
+    icon: CupertinoIcons.bin_xmark,
+    name: 'bin_xmark',
+    aliases: [],
+  ),
+
+  // bin_xmark_fill
+  GalleryIcon(
+    icon: CupertinoIcons.bin_xmark_fill,
+    name: 'bin_xmark_fill',
+    aliases: [],
+  ),
+
+  // bitcoin
+  GalleryIcon(
+    icon: CupertinoIcons.bitcoin,
+    name: 'bitcoin',
+    aliases: [],
+  ),
+
+  // bitcoin_circle
+  GalleryIcon(
+    icon: CupertinoIcons.bitcoin_circle,
+    name: 'bitcoin_circle',
+    aliases: [],
+  ),
+
+  // bitcoin_circle_fill
+  GalleryIcon(
+    icon: CupertinoIcons.bitcoin_circle_fill,
+    name: 'bitcoin_circle_fill',
+    aliases: [],
   ),
 
   // bluetooth
   GalleryIcon(
     icon: CupertinoIcons.bluetooth,
     name: 'bluetooth',
-    aliases: [
-      'bluetooth_solid',
-    ],
+    aliases: [],
   ),
 
-  // restart
+  // bold
   GalleryIcon(
-    icon: CupertinoIcons.restart,
-    name: 'restart',
-    aliases: [
-      'restart_solid',
-    ],
+    icon: CupertinoIcons.bold,
+    name: 'bold',
+    aliases: [],
   ),
 
-  // reply_all
+  // bold_italic_underline
   GalleryIcon(
-    icon: CupertinoIcons.reply_all,
-    name: 'reply_all',
+    icon: CupertinoIcons.bold_italic_underline,
+    name: 'bold_italic_underline',
+    aliases: [],
   ),
 
-  // reply_thick_solid
+  // bold_underline
   GalleryIcon(
-    icon: CupertinoIcons.reply_thick_solid,
-    name: 'reply_thick_solid',
+    icon: CupertinoIcons.bold_underline,
+    name: 'bold_underline',
+    aliases: [],
   ),
 
-  // share_up
+  // bolt
   GalleryIcon(
-    icon: CupertinoIcons.share_up,
-    name: 'share_up',
+    icon: CupertinoIcons.bolt,
+    name: 'bolt',
+    aliases: [],
   ),
 
-  // shuffle
+  // bolt_badge_a
   GalleryIcon(
-    icon: CupertinoIcons.shuffle,
-    name: 'shuffle',
+    icon: CupertinoIcons.bolt_badge_a,
+    name: 'bolt_badge_a',
+    aliases: [],
   ),
 
-  // shuffle_medium
+  // bolt_badge_a_fill
   GalleryIcon(
-    icon: CupertinoIcons.shuffle_medium,
-    name: 'shuffle_medium',
+    icon: CupertinoIcons.bolt_badge_a_fill,
+    name: 'bolt_badge_a_fill',
+    aliases: [],
   ),
 
-  // shuffle_thick
+  // bolt_circle
   GalleryIcon(
-    icon: CupertinoIcons.shuffle_thick,
-    name: 'shuffle_thick',
+    icon: CupertinoIcons.bolt_circle,
+    name: 'bolt_circle',
+    aliases: [],
+  ),
+
+  // bolt_circle_fill
+  GalleryIcon(
+    icon: CupertinoIcons.bolt_circle_fill,
+    name: 'bolt_circle_fill',
+    aliases: [],
+  ),
+
+  // bolt_fill
+  GalleryIcon(
+    icon: CupertinoIcons.bolt_fill,
+    name: 'bolt_fill',
+    aliases: [],
+  ),
+
+  // bolt_horizontal
+  GalleryIcon(
+    icon: CupertinoIcons.bolt_horizontal,
+    name: 'bolt_horizontal',
+    aliases: [],
+  ),
+
+  // bolt_horizontal_circle
+  GalleryIcon(
+    icon: CupertinoIcons.bolt_horizontal_circle,
+    name: 'bolt_horizontal_circle',
+    aliases: [],
+  ),
+
+  // bolt_horizontal_circle_fill
+  GalleryIcon(
+    icon: CupertinoIcons.bolt_horizontal_circle_fill,
+    name: 'bolt_horizontal_circle_fill',
+    aliases: [],
+  ),
+
+  // bolt_horizontal_fill
+  GalleryIcon(
+    icon: CupertinoIcons.bolt_horizontal_fill,
+    name: 'bolt_horizontal_fill',
+    aliases: [],
+  ),
+
+  // bolt_slash
+  GalleryIcon(
+    icon: CupertinoIcons.bolt_slash,
+    name: 'bolt_slash',
+    aliases: [],
+  ),
+
+  // bolt_slash_fill
+  GalleryIcon(
+    icon: CupertinoIcons.bolt_slash_fill,
+    name: 'bolt_slash_fill',
+    aliases: [],
+  ),
+
+  // book
+  GalleryIcon(
+    icon: CupertinoIcons.book,
+    name: 'book',
+    aliases: [],
+  ),
+
+  // book_circle
+  GalleryIcon(
+    icon: CupertinoIcons.book_circle,
+    name: 'book_circle',
+    aliases: [],
+  ),
+
+  // book_circle_fill
+  GalleryIcon(
+    icon: CupertinoIcons.book_circle_fill,
+    name: 'book_circle_fill',
+    aliases: [],
+  ),
+
+  // book_fill
+  GalleryIcon(
+    icon: CupertinoIcons.book_fill,
+    name: 'book_fill',
+    aliases: [],
+  ),
+
+  // book_solid
+  GalleryIcon(
+    icon: CupertinoIcons.book_solid,
+    name: 'book_solid',
+    aliases: [],
+  ),
+
+  // bookmark
+  GalleryIcon(
+    icon: CupertinoIcons.bookmark,
+    name: 'bookmark',
+    aliases: [],
+  ),
+
+  // bookmark_fill
+  GalleryIcon(
+    icon: CupertinoIcons.bookmark_fill,
+    name: 'bookmark_fill',
+    aliases: [],
+  ),
+
+  // bookmark_solid
+  GalleryIcon(
+    icon: CupertinoIcons.bookmark_solid,
+    name: 'bookmark_solid',
+    aliases: [],
+  ),
+
+  // briefcase
+  GalleryIcon(
+    icon: CupertinoIcons.briefcase,
+    name: 'briefcase',
+    aliases: [],
+  ),
+
+  // briefcase_fill
+  GalleryIcon(
+    icon: CupertinoIcons.briefcase_fill,
+    name: 'briefcase_fill',
+    aliases: [],
+  ),
+
+  // brightness
+  GalleryIcon(
+    icon: CupertinoIcons.brightness,
+    name: 'brightness',
+    aliases: [],
+  ),
+
+  // brightness_solid
+  GalleryIcon(
+    icon: CupertinoIcons.brightness_solid,
+    name: 'brightness_solid',
+    aliases: [],
+  ),
+
+  // bubble_left
+  GalleryIcon(
+    icon: CupertinoIcons.bubble_left,
+    name: 'bubble_left',
+    aliases: [],
+  ),
+
+  // bubble_left_bubble_right
+  GalleryIcon(
+    icon: CupertinoIcons.bubble_left_bubble_right,
+    name: 'bubble_left_bubble_right',
+    aliases: [],
+  ),
+
+  // bubble_left_bubble_right_fill
+  GalleryIcon(
+    icon: CupertinoIcons.bubble_left_bubble_right_fill,
+    name: 'bubble_left_bubble_right_fill',
+    aliases: [],
+  ),
+
+  // bubble_left_fill
+  GalleryIcon(
+    icon: CupertinoIcons.bubble_left_fill,
+    name: 'bubble_left_fill',
+    aliases: [],
+  ),
+
+  // bubble_middle_bottom
+  GalleryIcon(
+    icon: CupertinoIcons.bubble_middle_bottom,
+    name: 'bubble_middle_bottom',
+    aliases: [],
+  ),
+
+  // bubble_middle_bottom_fill
+  GalleryIcon(
+    icon: CupertinoIcons.bubble_middle_bottom_fill,
+    name: 'bubble_middle_bottom_fill',
+    aliases: [],
+  ),
+
+  // bubble_middle_top
+  GalleryIcon(
+    icon: CupertinoIcons.bubble_middle_top,
+    name: 'bubble_middle_top',
+    aliases: [],
+  ),
+
+  // bubble_middle_top_fill
+  GalleryIcon(
+    icon: CupertinoIcons.bubble_middle_top_fill,
+    name: 'bubble_middle_top_fill',
+    aliases: [],
+  ),
+
+  // bubble_right
+  GalleryIcon(
+    icon: CupertinoIcons.bubble_right,
+    name: 'bubble_right',
+    aliases: [],
+  ),
+
+  // bubble_right_fill
+  GalleryIcon(
+    icon: CupertinoIcons.bubble_right_fill,
+    name: 'bubble_right_fill',
+    aliases: [],
+  ),
+
+  // building_2_fill
+  GalleryIcon(
+    icon: CupertinoIcons.building_2_fill,
+    name: 'building_2_fill',
+    aliases: [],
+  ),
+
+  // burn
+  GalleryIcon(
+    icon: CupertinoIcons.burn,
+    name: 'burn',
+    aliases: [],
+  ),
+
+  // burst
+  GalleryIcon(
+    icon: CupertinoIcons.burst,
+    name: 'burst',
+    aliases: [],
+  ),
+
+  // burst_fill
+  GalleryIcon(
+    icon: CupertinoIcons.burst_fill,
+    name: 'burst_fill',
+    aliases: [],
+  ),
+
+  // bus
+  GalleryIcon(
+    icon: CupertinoIcons.bus,
+    name: 'bus',
+    aliases: [],
+  ),
+
+  // calendar
+  GalleryIcon(
+    icon: CupertinoIcons.calendar,
+    name: 'calendar',
+    aliases: [],
+  ),
+
+  // calendar_badge_minus
+  GalleryIcon(
+    icon: CupertinoIcons.calendar_badge_minus,
+    name: 'calendar_badge_minus',
+    aliases: [],
+  ),
+
+  // calendar_badge_plus
+  GalleryIcon(
+    icon: CupertinoIcons.calendar_badge_plus,
+    name: 'calendar_badge_plus',
+    aliases: [],
+  ),
+
+  // calendar_circle
+  GalleryIcon(
+    icon: CupertinoIcons.calendar_circle,
+    name: 'calendar_circle',
+    aliases: [],
+  ),
+
+  // calendar_circle_fill
+  GalleryIcon(
+    icon: CupertinoIcons.calendar_circle_fill,
+    name: 'calendar_circle_fill',
+    aliases: [],
+  ),
+
+  // calendar_today
+  GalleryIcon(
+    icon: CupertinoIcons.calendar_today,
+    name: 'calendar_today',
+    aliases: [],
+  ),
+
+  // camera
+  GalleryIcon(
+    icon: CupertinoIcons.camera,
+    name: 'camera',
+    aliases: [],
+  ),
+
+  // camera_circle
+  GalleryIcon(
+    icon: CupertinoIcons.camera_circle,
+    name: 'camera_circle',
+    aliases: [],
+  ),
+
+  // camera_circle_fill
+  GalleryIcon(
+    icon: CupertinoIcons.camera_circle_fill,
+    name: 'camera_circle_fill',
+    aliases: [],
+  ),
+
+  // camera_fill
+  GalleryIcon(
+    icon: CupertinoIcons.camera_fill,
+    name: 'camera_fill',
+    aliases: [],
+  ),
+
+  // camera_on_rectangle
+  GalleryIcon(
+    icon: CupertinoIcons.camera_on_rectangle,
+    name: 'camera_on_rectangle',
+    aliases: [],
+  ),
+
+  // camera_on_rectangle_fill
+  GalleryIcon(
+    icon: CupertinoIcons.camera_on_rectangle_fill,
+    name: 'camera_on_rectangle_fill',
+    aliases: [],
+  ),
+
+  // camera_rotate
+  GalleryIcon(
+    icon: CupertinoIcons.camera_rotate,
+    name: 'camera_rotate',
+    aliases: [],
+  ),
+
+  // camera_rotate_fill
+  GalleryIcon(
+    icon: CupertinoIcons.camera_rotate_fill,
+    name: 'camera_rotate_fill',
+    aliases: [],
+  ),
+
+  // camera_viewfinder
+  GalleryIcon(
+    icon: CupertinoIcons.camera_viewfinder,
+    name: 'camera_viewfinder',
+    aliases: [],
+  ),
+
+  // capslock
+  GalleryIcon(
+    icon: CupertinoIcons.capslock,
+    name: 'capslock',
+    aliases: [],
+  ),
+
+  // capslock_fill
+  GalleryIcon(
+    icon: CupertinoIcons.capslock_fill,
+    name: 'capslock_fill',
+    aliases: [],
+  ),
+
+  // capsule
+  GalleryIcon(
+    icon: CupertinoIcons.capsule,
+    name: 'capsule',
+    aliases: [],
+  ),
+
+  // capsule_fill
+  GalleryIcon(
+    icon: CupertinoIcons.capsule_fill,
+    name: 'capsule_fill',
+    aliases: [],
+  ),
+
+  // captions_bubble
+  GalleryIcon(
+    icon: CupertinoIcons.captions_bubble,
+    name: 'captions_bubble',
+    aliases: [],
+  ),
+
+  // captions_bubble_fill
+  GalleryIcon(
+    icon: CupertinoIcons.captions_bubble_fill,
+    name: 'captions_bubble_fill',
+    aliases: [],
+  ),
+
+  // car
+  GalleryIcon(
+    icon: CupertinoIcons.car,
+    name: 'car',
+    aliases: [],
+  ),
+
+  // car_detailed
+  GalleryIcon(
+    icon: CupertinoIcons.car_detailed,
+    name: 'car_detailed',
+    aliases: [],
+  ),
+
+  // car_fill
+  GalleryIcon(
+    icon: CupertinoIcons.car_fill,
+    name: 'car_fill',
+    aliases: [],
+  ),
+
+  // cart
+  GalleryIcon(
+    icon: CupertinoIcons.cart,
+    name: 'cart',
+    aliases: [],
+  ),
+
+  // cart_badge_minus
+  GalleryIcon(
+    icon: CupertinoIcons.cart_badge_minus,
+    name: 'cart_badge_minus',
+    aliases: [],
+  ),
+
+  // cart_badge_plus
+  GalleryIcon(
+    icon: CupertinoIcons.cart_badge_plus,
+    name: 'cart_badge_plus',
+    aliases: [],
+  ),
+
+  // cart_fill
+  GalleryIcon(
+    icon: CupertinoIcons.cart_fill,
+    name: 'cart_fill',
+    aliases: [],
+  ),
+
+  // cart_fill_badge_minus
+  GalleryIcon(
+    icon: CupertinoIcons.cart_fill_badge_minus,
+    name: 'cart_fill_badge_minus',
+    aliases: [],
+  ),
+
+  // cart_fill_badge_plus
+  GalleryIcon(
+    icon: CupertinoIcons.cart_fill_badge_plus,
+    name: 'cart_fill_badge_plus',
+    aliases: [],
+  ),
+
+  // chart_bar
+  GalleryIcon(
+    icon: CupertinoIcons.chart_bar,
+    name: 'chart_bar',
+    aliases: [],
+  ),
+
+  // chart_bar_alt_fill
+  GalleryIcon(
+    icon: CupertinoIcons.chart_bar_alt_fill,
+    name: 'chart_bar_alt_fill',
+    aliases: [],
+  ),
+
+  // chart_bar_circle
+  GalleryIcon(
+    icon: CupertinoIcons.chart_bar_circle,
+    name: 'chart_bar_circle',
+    aliases: [],
+  ),
+
+  // chart_bar_circle_fill
+  GalleryIcon(
+    icon: CupertinoIcons.chart_bar_circle_fill,
+    name: 'chart_bar_circle_fill',
+    aliases: [],
+  ),
+
+  // chart_bar_fill
+  GalleryIcon(
+    icon: CupertinoIcons.chart_bar_fill,
+    name: 'chart_bar_fill',
+    aliases: [],
+  ),
+
+  // chart_bar_square
+  GalleryIcon(
+    icon: CupertinoIcons.chart_bar_square,
+    name: 'chart_bar_square',
+    aliases: [],
+  ),
+
+  // chart_bar_square_fill
+  GalleryIcon(
+    icon: CupertinoIcons.chart_bar_square_fill,
+    name: 'chart_bar_square_fill',
+    aliases: [],
+  ),
+
+  // chart_pie
+  GalleryIcon(
+    icon: CupertinoIcons.chart_pie,
+    name: 'chart_pie',
+    aliases: [],
+  ),
+
+  // chart_pie_fill
+  GalleryIcon(
+    icon: CupertinoIcons.chart_pie_fill,
+    name: 'chart_pie_fill',
+    aliases: [],
+  ),
+
+  // chat_bubble
+  GalleryIcon(
+    icon: CupertinoIcons.chat_bubble,
+    name: 'chat_bubble',
+    aliases: [],
+  ),
+
+  // chat_bubble_2
+  GalleryIcon(
+    icon: CupertinoIcons.chat_bubble_2,
+    name: 'chat_bubble_2',
+    aliases: [],
+  ),
+
+  // chat_bubble_2_fill
+  GalleryIcon(
+    icon: CupertinoIcons.chat_bubble_2_fill,
+    name: 'chat_bubble_2_fill',
+    aliases: [],
+  ),
+
+  // chat_bubble_fill
+  GalleryIcon(
+    icon: CupertinoIcons.chat_bubble_fill,
+    name: 'chat_bubble_fill',
+    aliases: [],
+  ),
+
+  // chat_bubble_text
+  GalleryIcon(
+    icon: CupertinoIcons.chat_bubble_text,
+    name: 'chat_bubble_text',
+    aliases: [],
+  ),
+
+  // chat_bubble_text_fill
+  GalleryIcon(
+    icon: CupertinoIcons.chat_bubble_text_fill,
+    name: 'chat_bubble_text_fill',
+    aliases: [],
+  ),
+
+  // check_mark
+  GalleryIcon(
+    icon: CupertinoIcons.check_mark,
+    name: 'check_mark',
+    aliases: [],
+  ),
+
+  // check_mark_circled
+  GalleryIcon(
+    icon: CupertinoIcons.check_mark_circled,
+    name: 'check_mark_circled',
+    aliases: [],
+  ),
+
+  // check_mark_circled_solid
+  GalleryIcon(
+    icon: CupertinoIcons.check_mark_circled_solid,
+    name: 'check_mark_circled_solid',
+    aliases: [],
+  ),
+
+  // checkmark
+  GalleryIcon(
+    icon: CupertinoIcons.checkmark,
+    name: 'checkmark',
+    aliases: [],
+  ),
+
+  // checkmark_alt
+  GalleryIcon(
+    icon: CupertinoIcons.checkmark_alt,
+    name: 'checkmark_alt',
+    aliases: [],
+  ),
+
+  // checkmark_alt_circle
+  GalleryIcon(
+    icon: CupertinoIcons.checkmark_alt_circle,
+    name: 'checkmark_alt_circle',
+    aliases: [],
+  ),
+
+  // checkmark_alt_circle_fill
+  GalleryIcon(
+    icon: CupertinoIcons.checkmark_alt_circle_fill,
+    name: 'checkmark_alt_circle_fill',
+    aliases: [],
+  ),
+
+  // checkmark_circle
+  GalleryIcon(
+    icon: CupertinoIcons.checkmark_circle,
+    name: 'checkmark_circle',
+    aliases: [],
+  ),
+
+  // checkmark_circle_fill
+  GalleryIcon(
+    icon: CupertinoIcons.checkmark_circle_fill,
+    name: 'checkmark_circle_fill',
+    aliases: [],
+  ),
+
+  // checkmark_rectangle
+  GalleryIcon(
+    icon: CupertinoIcons.checkmark_rectangle,
+    name: 'checkmark_rectangle',
+    aliases: [],
+  ),
+
+  // checkmark_rectangle_fill
+  GalleryIcon(
+    icon: CupertinoIcons.checkmark_rectangle_fill,
+    name: 'checkmark_rectangle_fill',
+    aliases: [],
+  ),
+
+  // checkmark_seal
+  GalleryIcon(
+    icon: CupertinoIcons.checkmark_seal,
+    name: 'checkmark_seal',
+    aliases: [],
+  ),
+
+  // checkmark_seal_fill
+  GalleryIcon(
+    icon: CupertinoIcons.checkmark_seal_fill,
+    name: 'checkmark_seal_fill',
+    aliases: [],
+  ),
+
+  // checkmark_shield
+  GalleryIcon(
+    icon: CupertinoIcons.checkmark_shield,
+    name: 'checkmark_shield',
+    aliases: [],
+  ),
+
+  // checkmark_shield_fill
+  GalleryIcon(
+    icon: CupertinoIcons.checkmark_shield_fill,
+    name: 'checkmark_shield_fill',
+    aliases: [],
+  ),
+
+  // checkmark_square
+  GalleryIcon(
+    icon: CupertinoIcons.checkmark_square,
+    name: 'checkmark_square',
+    aliases: [],
+  ),
+
+  // checkmark_square_fill
+  GalleryIcon(
+    icon: CupertinoIcons.checkmark_square_fill,
+    name: 'checkmark_square_fill',
+    aliases: [],
+  ),
+
+  // chevron_back
+  GalleryIcon(
+    icon: CupertinoIcons.chevron_back,
+    name: 'chevron_back',
+    aliases: [],
+  ),
+
+  // chevron_compact_down
+  GalleryIcon(
+    icon: CupertinoIcons.chevron_compact_down,
+    name: 'chevron_compact_down',
+    aliases: [],
+  ),
+
+  // chevron_compact_left
+  GalleryIcon(
+    icon: CupertinoIcons.chevron_compact_left,
+    name: 'chevron_compact_left',
+    aliases: [],
+  ),
+
+  // chevron_compact_right
+  GalleryIcon(
+    icon: CupertinoIcons.chevron_compact_right,
+    name: 'chevron_compact_right',
+    aliases: [],
+  ),
+
+  // chevron_compact_up
+  GalleryIcon(
+    icon: CupertinoIcons.chevron_compact_up,
+    name: 'chevron_compact_up',
+    aliases: [],
+  ),
+
+  // chevron_down
+  GalleryIcon(
+    icon: CupertinoIcons.chevron_down,
+    name: 'chevron_down',
+    aliases: [],
+  ),
+
+  // chevron_down_circle
+  GalleryIcon(
+    icon: CupertinoIcons.chevron_down_circle,
+    name: 'chevron_down_circle',
+    aliases: [],
+  ),
+
+  // chevron_down_circle_fill
+  GalleryIcon(
+    icon: CupertinoIcons.chevron_down_circle_fill,
+    name: 'chevron_down_circle_fill',
+    aliases: [],
+  ),
+
+  // chevron_down_square
+  GalleryIcon(
+    icon: CupertinoIcons.chevron_down_square,
+    name: 'chevron_down_square',
+    aliases: [],
+  ),
+
+  // chevron_down_square_fill
+  GalleryIcon(
+    icon: CupertinoIcons.chevron_down_square_fill,
+    name: 'chevron_down_square_fill',
+    aliases: [],
+  ),
+
+  // chevron_forward
+  GalleryIcon(
+    icon: CupertinoIcons.chevron_forward,
+    name: 'chevron_forward',
+    aliases: [],
+  ),
+
+  // chevron_left
+  GalleryIcon(
+    icon: CupertinoIcons.chevron_left,
+    name: 'chevron_left',
+    aliases: [],
+  ),
+
+  // chevron_left_2
+  GalleryIcon(
+    icon: CupertinoIcons.chevron_left_2,
+    name: 'chevron_left_2',
+    aliases: [],
+  ),
+
+  // chevron_left_circle
+  GalleryIcon(
+    icon: CupertinoIcons.chevron_left_circle,
+    name: 'chevron_left_circle',
+    aliases: [],
+  ),
+
+  // chevron_left_circle_fill
+  GalleryIcon(
+    icon: CupertinoIcons.chevron_left_circle_fill,
+    name: 'chevron_left_circle_fill',
+    aliases: [],
+  ),
+
+  // chevron_left_slash_chevron_right
+  GalleryIcon(
+    icon: CupertinoIcons.chevron_left_slash_chevron_right,
+    name: 'chevron_left_slash_chevron_right',
+    aliases: [],
+  ),
+
+  // chevron_left_square
+  GalleryIcon(
+    icon: CupertinoIcons.chevron_left_square,
+    name: 'chevron_left_square',
+    aliases: [],
+  ),
+
+  // chevron_left_square_fill
+  GalleryIcon(
+    icon: CupertinoIcons.chevron_left_square_fill,
+    name: 'chevron_left_square_fill',
+    aliases: [],
+  ),
+
+  // chevron_right
+  GalleryIcon(
+    icon: CupertinoIcons.chevron_right,
+    name: 'chevron_right',
+    aliases: [],
+  ),
+
+  // chevron_right_2
+  GalleryIcon(
+    icon: CupertinoIcons.chevron_right_2,
+    name: 'chevron_right_2',
+    aliases: [],
+  ),
+
+  // chevron_right_circle
+  GalleryIcon(
+    icon: CupertinoIcons.chevron_right_circle,
+    name: 'chevron_right_circle',
+    aliases: [],
+  ),
+
+  // chevron_right_circle_fill
+  GalleryIcon(
+    icon: CupertinoIcons.chevron_right_circle_fill,
+    name: 'chevron_right_circle_fill',
+    aliases: [],
+  ),
+
+  // chevron_right_square
+  GalleryIcon(
+    icon: CupertinoIcons.chevron_right_square,
+    name: 'chevron_right_square',
+    aliases: [],
+  ),
+
+  // chevron_right_square_fill
+  GalleryIcon(
+    icon: CupertinoIcons.chevron_right_square_fill,
+    name: 'chevron_right_square_fill',
+    aliases: [],
+  ),
+
+  // chevron_up
+  GalleryIcon(
+    icon: CupertinoIcons.chevron_up,
+    name: 'chevron_up',
+    aliases: [],
+  ),
+
+  // chevron_up_chevron_down
+  GalleryIcon(
+    icon: CupertinoIcons.chevron_up_chevron_down,
+    name: 'chevron_up_chevron_down',
+    aliases: [],
+  ),
+
+  // chevron_up_circle
+  GalleryIcon(
+    icon: CupertinoIcons.chevron_up_circle,
+    name: 'chevron_up_circle',
+    aliases: [],
+  ),
+
+  // chevron_up_circle_fill
+  GalleryIcon(
+    icon: CupertinoIcons.chevron_up_circle_fill,
+    name: 'chevron_up_circle_fill',
+    aliases: [],
+  ),
+
+  // chevron_up_square
+  GalleryIcon(
+    icon: CupertinoIcons.chevron_up_square,
+    name: 'chevron_up_square',
+    aliases: [],
+  ),
+
+  // chevron_up_square_fill
+  GalleryIcon(
+    icon: CupertinoIcons.chevron_up_square_fill,
+    name: 'chevron_up_square_fill',
+    aliases: [],
+  ),
+
+  // circle
+  GalleryIcon(
+    icon: CupertinoIcons.circle,
+    name: 'circle',
+    aliases: [],
+  ),
+
+  // circle_bottomthird_split
+  GalleryIcon(
+    icon: CupertinoIcons.circle_bottomthird_split,
+    name: 'circle_bottomthird_split',
+    aliases: [],
+  ),
+
+  // circle_fill
+  GalleryIcon(
+    icon: CupertinoIcons.circle_fill,
+    name: 'circle_fill',
+    aliases: [],
+  ),
+
+  // circle_filled
+  GalleryIcon(
+    icon: CupertinoIcons.circle_filled,
+    name: 'circle_filled',
+    aliases: [],
+  ),
+
+  // circle_grid_3x3
+  GalleryIcon(
+    icon: CupertinoIcons.circle_grid_3x3,
+    name: 'circle_grid_3x3',
+    aliases: [],
+  ),
+
+  // circle_grid_3x3_fill
+  GalleryIcon(
+    icon: CupertinoIcons.circle_grid_3x3_fill,
+    name: 'circle_grid_3x3_fill',
+    aliases: [],
+  ),
+
+  // circle_grid_hex
+  GalleryIcon(
+    icon: CupertinoIcons.circle_grid_hex,
+    name: 'circle_grid_hex',
+    aliases: [],
+  ),
+
+  // circle_grid_hex_fill
+  GalleryIcon(
+    icon: CupertinoIcons.circle_grid_hex_fill,
+    name: 'circle_grid_hex_fill',
+    aliases: [],
+  ),
+
+  // circle_lefthalf_fill
+  GalleryIcon(
+    icon: CupertinoIcons.circle_lefthalf_fill,
+    name: 'circle_lefthalf_fill',
+    aliases: [],
+  ),
+
+  // circle_righthalf_fill
+  GalleryIcon(
+    icon: CupertinoIcons.circle_righthalf_fill,
+    name: 'circle_righthalf_fill',
+    aliases: [],
+  ),
+
+  // clear
+  GalleryIcon(
+    icon: CupertinoIcons.clear,
+    name: 'clear',
+    aliases: [],
+  ),
+
+  // clear_circled
+  GalleryIcon(
+    icon: CupertinoIcons.clear_circled,
+    name: 'clear_circled',
+    aliases: [],
+  ),
+
+  // clear_circled_solid
+  GalleryIcon(
+    icon: CupertinoIcons.clear_circled_solid,
+    name: 'clear_circled_solid',
+    aliases: [],
+  ),
+
+  // clear_fill
+  GalleryIcon(
+    icon: CupertinoIcons.clear_fill,
+    name: 'clear_fill',
+    aliases: [],
+  ),
+
+  // clear_thick
+  GalleryIcon(
+    icon: CupertinoIcons.clear_thick,
+    name: 'clear_thick',
+    aliases: [],
+  ),
+
+  // clear_thick_circled
+  GalleryIcon(
+    icon: CupertinoIcons.clear_thick_circled,
+    name: 'clear_thick_circled',
+    aliases: [],
+  ),
+
+  // clock
+  GalleryIcon(
+    icon: CupertinoIcons.clock,
+    name: 'clock',
+    aliases: [],
+  ),
+
+  // clock_fill
+  GalleryIcon(
+    icon: CupertinoIcons.clock_fill,
+    name: 'clock_fill',
+    aliases: [],
+  ),
+
+  // clock_solid
+  GalleryIcon(
+    icon: CupertinoIcons.clock_solid,
+    name: 'clock_solid',
+    aliases: [],
+  ),
+
+  // cloud
+  GalleryIcon(
+    icon: CupertinoIcons.cloud,
+    name: 'cloud',
+    aliases: [],
+  ),
+
+  // cloud_bolt
+  GalleryIcon(
+    icon: CupertinoIcons.cloud_bolt,
+    name: 'cloud_bolt',
+    aliases: [],
+  ),
+
+  // cloud_bolt_fill
+  GalleryIcon(
+    icon: CupertinoIcons.cloud_bolt_fill,
+    name: 'cloud_bolt_fill',
+    aliases: [],
+  ),
+
+  // cloud_bolt_rain
+  GalleryIcon(
+    icon: CupertinoIcons.cloud_bolt_rain,
+    name: 'cloud_bolt_rain',
+    aliases: [],
+  ),
+
+  // cloud_bolt_rain_fill
+  GalleryIcon(
+    icon: CupertinoIcons.cloud_bolt_rain_fill,
+    name: 'cloud_bolt_rain_fill',
+    aliases: [],
+  ),
+
+  // cloud_download
+  GalleryIcon(
+    icon: CupertinoIcons.cloud_download,
+    name: 'cloud_download',
+    aliases: [],
+  ),
+
+  // cloud_download_fill
+  GalleryIcon(
+    icon: CupertinoIcons.cloud_download_fill,
+    name: 'cloud_download_fill',
+    aliases: [],
+  ),
+
+  // cloud_drizzle
+  GalleryIcon(
+    icon: CupertinoIcons.cloud_drizzle,
+    name: 'cloud_drizzle',
+    aliases: [],
+  ),
+
+  // cloud_drizzle_fill
+  GalleryIcon(
+    icon: CupertinoIcons.cloud_drizzle_fill,
+    name: 'cloud_drizzle_fill',
+    aliases: [],
+  ),
+
+  // cloud_fill
+  GalleryIcon(
+    icon: CupertinoIcons.cloud_fill,
+    name: 'cloud_fill',
+    aliases: [],
+  ),
+
+  // cloud_fog
+  GalleryIcon(
+    icon: CupertinoIcons.cloud_fog,
+    name: 'cloud_fog',
+    aliases: [],
+  ),
+
+  // cloud_fog_fill
+  GalleryIcon(
+    icon: CupertinoIcons.cloud_fog_fill,
+    name: 'cloud_fog_fill',
+    aliases: [],
+  ),
+
+  // cloud_hail
+  GalleryIcon(
+    icon: CupertinoIcons.cloud_hail,
+    name: 'cloud_hail',
+    aliases: [],
+  ),
+
+  // cloud_hail_fill
+  GalleryIcon(
+    icon: CupertinoIcons.cloud_hail_fill,
+    name: 'cloud_hail_fill',
+    aliases: [],
+  ),
+
+  // cloud_heavyrain
+  GalleryIcon(
+    icon: CupertinoIcons.cloud_heavyrain,
+    name: 'cloud_heavyrain',
+    aliases: [],
+  ),
+
+  // cloud_heavyrain_fill
+  GalleryIcon(
+    icon: CupertinoIcons.cloud_heavyrain_fill,
+    name: 'cloud_heavyrain_fill',
+    aliases: [],
+  ),
+
+  // cloud_moon
+  GalleryIcon(
+    icon: CupertinoIcons.cloud_moon,
+    name: 'cloud_moon',
+    aliases: [],
+  ),
+
+  // cloud_moon_bolt
+  GalleryIcon(
+    icon: CupertinoIcons.cloud_moon_bolt,
+    name: 'cloud_moon_bolt',
+    aliases: [],
+  ),
+
+  // cloud_moon_bolt_fill
+  GalleryIcon(
+    icon: CupertinoIcons.cloud_moon_bolt_fill,
+    name: 'cloud_moon_bolt_fill',
+    aliases: [],
+  ),
+
+  // cloud_moon_fill
+  GalleryIcon(
+    icon: CupertinoIcons.cloud_moon_fill,
+    name: 'cloud_moon_fill',
+    aliases: [],
+  ),
+
+  // cloud_moon_rain
+  GalleryIcon(
+    icon: CupertinoIcons.cloud_moon_rain,
+    name: 'cloud_moon_rain',
+    aliases: [],
+  ),
+
+  // cloud_moon_rain_fill
+  GalleryIcon(
+    icon: CupertinoIcons.cloud_moon_rain_fill,
+    name: 'cloud_moon_rain_fill',
+    aliases: [],
+  ),
+
+  // cloud_rain
+  GalleryIcon(
+    icon: CupertinoIcons.cloud_rain,
+    name: 'cloud_rain',
+    aliases: [],
+  ),
+
+  // cloud_rain_fill
+  GalleryIcon(
+    icon: CupertinoIcons.cloud_rain_fill,
+    name: 'cloud_rain_fill',
+    aliases: [],
+  ),
+
+  // cloud_sleet
+  GalleryIcon(
+    icon: CupertinoIcons.cloud_sleet,
+    name: 'cloud_sleet',
+    aliases: [],
+  ),
+
+  // cloud_sleet_fill
+  GalleryIcon(
+    icon: CupertinoIcons.cloud_sleet_fill,
+    name: 'cloud_sleet_fill',
+    aliases: [],
+  ),
+
+  // cloud_snow
+  GalleryIcon(
+    icon: CupertinoIcons.cloud_snow,
+    name: 'cloud_snow',
+    aliases: [],
+  ),
+
+  // cloud_snow_fill
+  GalleryIcon(
+    icon: CupertinoIcons.cloud_snow_fill,
+    name: 'cloud_snow_fill',
+    aliases: [],
+  ),
+
+  // cloud_sun
+  GalleryIcon(
+    icon: CupertinoIcons.cloud_sun,
+    name: 'cloud_sun',
+    aliases: [],
+  ),
+
+  // cloud_sun_bolt
+  GalleryIcon(
+    icon: CupertinoIcons.cloud_sun_bolt,
+    name: 'cloud_sun_bolt',
+    aliases: [],
+  ),
+
+  // cloud_sun_bolt_fill
+  GalleryIcon(
+    icon: CupertinoIcons.cloud_sun_bolt_fill,
+    name: 'cloud_sun_bolt_fill',
+    aliases: [],
+  ),
+
+  // cloud_sun_fill
+  GalleryIcon(
+    icon: CupertinoIcons.cloud_sun_fill,
+    name: 'cloud_sun_fill',
+    aliases: [],
+  ),
+
+  // cloud_sun_rain
+  GalleryIcon(
+    icon: CupertinoIcons.cloud_sun_rain,
+    name: 'cloud_sun_rain',
+    aliases: [],
+  ),
+
+  // cloud_sun_rain_fill
+  GalleryIcon(
+    icon: CupertinoIcons.cloud_sun_rain_fill,
+    name: 'cloud_sun_rain_fill',
+    aliases: [],
+  ),
+
+  // cloud_upload
+  GalleryIcon(
+    icon: CupertinoIcons.cloud_upload,
+    name: 'cloud_upload',
+    aliases: [],
+  ),
+
+  // cloud_upload_fill
+  GalleryIcon(
+    icon: CupertinoIcons.cloud_upload_fill,
+    name: 'cloud_upload_fill',
+    aliases: [],
+  ),
+
+  // collections
+  GalleryIcon(
+    icon: CupertinoIcons.collections,
+    name: 'collections',
+    aliases: [],
+  ),
+
+  // collections_solid
+  GalleryIcon(
+    icon: CupertinoIcons.collections_solid,
+    name: 'collections_solid',
+    aliases: [],
+  ),
+
+  // color_filter
+  GalleryIcon(
+    icon: CupertinoIcons.color_filter,
+    name: 'color_filter',
+    aliases: [],
+  ),
+
+  // color_filter_fill
+  GalleryIcon(
+    icon: CupertinoIcons.color_filter_fill,
+    name: 'color_filter_fill',
+    aliases: [],
+  ),
+
+  // command
+  GalleryIcon(
+    icon: CupertinoIcons.command,
+    name: 'command',
+    aliases: [],
+  ),
+
+  // compass
+  GalleryIcon(
+    icon: CupertinoIcons.compass,
+    name: 'compass',
+    aliases: [],
+  ),
+
+  // compass_fill
+  GalleryIcon(
+    icon: CupertinoIcons.compass_fill,
+    name: 'compass_fill',
+    aliases: [],
+  ),
+
+  // control
+  GalleryIcon(
+    icon: CupertinoIcons.control,
+    name: 'control',
+    aliases: [],
+  ),
+
+  // conversation_bubble
+  GalleryIcon(
+    icon: CupertinoIcons.conversation_bubble,
+    name: 'conversation_bubble',
+    aliases: [],
+  ),
+
+  // create
+  GalleryIcon(
+    icon: CupertinoIcons.create,
+    name: 'create',
+    aliases: [],
+  ),
+
+  // create_solid
+  GalleryIcon(
+    icon: CupertinoIcons.create_solid,
+    name: 'create_solid',
+    aliases: [],
+  ),
+
+  // creditcard
+  GalleryIcon(
+    icon: CupertinoIcons.creditcard,
+    name: 'creditcard',
+    aliases: [],
+  ),
+
+  // creditcard_fill
+  GalleryIcon(
+    icon: CupertinoIcons.creditcard_fill,
+    name: 'creditcard_fill',
+    aliases: [],
+  ),
+
+  // crop
+  GalleryIcon(
+    icon: CupertinoIcons.crop,
+    name: 'crop',
+    aliases: [],
+  ),
+
+  // crop_rotate
+  GalleryIcon(
+    icon: CupertinoIcons.crop_rotate,
+    name: 'crop_rotate',
+    aliases: [],
+  ),
+
+  // cube
+  GalleryIcon(
+    icon: CupertinoIcons.cube,
+    name: 'cube',
+    aliases: [],
+  ),
+
+  // cube_box
+  GalleryIcon(
+    icon: CupertinoIcons.cube_box,
+    name: 'cube_box',
+    aliases: [],
+  ),
+
+  // cube_box_fill
+  GalleryIcon(
+    icon: CupertinoIcons.cube_box_fill,
+    name: 'cube_box_fill',
+    aliases: [],
+  ),
+
+  // cube_fill
+  GalleryIcon(
+    icon: CupertinoIcons.cube_fill,
+    name: 'cube_fill',
+    aliases: [],
+  ),
+
+  // cursor_rays
+  GalleryIcon(
+    icon: CupertinoIcons.cursor_rays,
+    name: 'cursor_rays',
+    aliases: [],
+  ),
+
+  // decrease_indent
+  GalleryIcon(
+    icon: CupertinoIcons.decrease_indent,
+    name: 'decrease_indent',
+    aliases: [],
+  ),
+
+  // decrease_quotelevel
+  GalleryIcon(
+    icon: CupertinoIcons.decrease_quotelevel,
+    name: 'decrease_quotelevel',
+    aliases: [],
+  ),
+
+  // delete
+  GalleryIcon(
+    icon: CupertinoIcons.delete,
+    name: 'delete',
+    aliases: [],
+  ),
+
+  // delete_left
+  GalleryIcon(
+    icon: CupertinoIcons.delete_left,
+    name: 'delete_left',
+    aliases: [],
+  ),
+
+  // delete_left_fill
+  GalleryIcon(
+    icon: CupertinoIcons.delete_left_fill,
+    name: 'delete_left_fill',
+    aliases: [],
+  ),
+
+  // delete_right
+  GalleryIcon(
+    icon: CupertinoIcons.delete_right,
+    name: 'delete_right',
+    aliases: [],
+  ),
+
+  // delete_right_fill
+  GalleryIcon(
+    icon: CupertinoIcons.delete_right_fill,
+    name: 'delete_right_fill',
+    aliases: [],
+  ),
+
+  // delete_simple
+  GalleryIcon(
+    icon: CupertinoIcons.delete_simple,
+    name: 'delete_simple',
+    aliases: [],
+  ),
+
+  // delete_solid
+  GalleryIcon(
+    icon: CupertinoIcons.delete_solid,
+    name: 'delete_solid',
+    aliases: [],
+  ),
+
+  // desktopcomputer
+  GalleryIcon(
+    icon: CupertinoIcons.desktopcomputer,
+    name: 'desktopcomputer',
+    aliases: [],
+  ),
+
+  // device_desktop
+  GalleryIcon(
+    icon: CupertinoIcons.device_desktop,
+    name: 'device_desktop',
+    aliases: [],
+  ),
+
+  // device_laptop
+  GalleryIcon(
+    icon: CupertinoIcons.device_laptop,
+    name: 'device_laptop',
+    aliases: [],
+  ),
+
+  // device_phone_landscape
+  GalleryIcon(
+    icon: CupertinoIcons.device_phone_landscape,
+    name: 'device_phone_landscape',
+    aliases: [],
+  ),
+
+  // device_phone_portrait
+  GalleryIcon(
+    icon: CupertinoIcons.device_phone_portrait,
+    name: 'device_phone_portrait',
+    aliases: [],
+  ),
+
+  // dial
+  GalleryIcon(
+    icon: CupertinoIcons.dial,
+    name: 'dial',
+    aliases: [],
+  ),
+
+  // dial_fill
+  GalleryIcon(
+    icon: CupertinoIcons.dial_fill,
+    name: 'dial_fill',
+    aliases: [],
+  ),
+
+  // divide
+  GalleryIcon(
+    icon: CupertinoIcons.divide,
+    name: 'divide',
+    aliases: [],
+  ),
+
+  // divide_circle
+  GalleryIcon(
+    icon: CupertinoIcons.divide_circle,
+    name: 'divide_circle',
+    aliases: [],
+  ),
+
+  // divide_circle_fill
+  GalleryIcon(
+    icon: CupertinoIcons.divide_circle_fill,
+    name: 'divide_circle_fill',
+    aliases: [],
+  ),
+
+  // divide_square
+  GalleryIcon(
+    icon: CupertinoIcons.divide_square,
+    name: 'divide_square',
+    aliases: [],
+  ),
+
+  // divide_square_fill
+  GalleryIcon(
+    icon: CupertinoIcons.divide_square_fill,
+    name: 'divide_square_fill',
+    aliases: [],
+  ),
+
+  // doc
+  GalleryIcon(
+    icon: CupertinoIcons.doc,
+    name: 'doc',
+    aliases: [],
+  ),
+
+  // doc_append
+  GalleryIcon(
+    icon: CupertinoIcons.doc_append,
+    name: 'doc_append',
+    aliases: [],
+  ),
+
+  // doc_chart
+  GalleryIcon(
+    icon: CupertinoIcons.doc_chart,
+    name: 'doc_chart',
+    aliases: [],
+  ),
+
+  // doc_chart_fill
+  GalleryIcon(
+    icon: CupertinoIcons.doc_chart_fill,
+    name: 'doc_chart_fill',
+    aliases: [],
+  ),
+
+  // doc_checkmark
+  GalleryIcon(
+    icon: CupertinoIcons.doc_checkmark,
+    name: 'doc_checkmark',
+    aliases: [],
+  ),
+
+  // doc_checkmark_fill
+  GalleryIcon(
+    icon: CupertinoIcons.doc_checkmark_fill,
+    name: 'doc_checkmark_fill',
+    aliases: [],
+  ),
+
+  // doc_circle
+  GalleryIcon(
+    icon: CupertinoIcons.doc_circle,
+    name: 'doc_circle',
+    aliases: [],
+  ),
+
+  // doc_circle_fill
+  GalleryIcon(
+    icon: CupertinoIcons.doc_circle_fill,
+    name: 'doc_circle_fill',
+    aliases: [],
+  ),
+
+  // doc_fill
+  GalleryIcon(
+    icon: CupertinoIcons.doc_fill,
+    name: 'doc_fill',
+    aliases: [],
+  ),
+
+  // doc_on_clipboard
+  GalleryIcon(
+    icon: CupertinoIcons.doc_on_clipboard,
+    name: 'doc_on_clipboard',
+    aliases: [],
+  ),
+
+  // doc_on_clipboard_fill
+  GalleryIcon(
+    icon: CupertinoIcons.doc_on_clipboard_fill,
+    name: 'doc_on_clipboard_fill',
+    aliases: [],
+  ),
+
+  // doc_on_doc
+  GalleryIcon(
+    icon: CupertinoIcons.doc_on_doc,
+    name: 'doc_on_doc',
+    aliases: [],
+  ),
+
+  // doc_on_doc_fill
+  GalleryIcon(
+    icon: CupertinoIcons.doc_on_doc_fill,
+    name: 'doc_on_doc_fill',
+    aliases: [],
+  ),
+
+  // doc_person
+  GalleryIcon(
+    icon: CupertinoIcons.doc_person,
+    name: 'doc_person',
+    aliases: [],
+  ),
+
+  // doc_person_fill
+  GalleryIcon(
+    icon: CupertinoIcons.doc_person_fill,
+    name: 'doc_person_fill',
+    aliases: [],
+  ),
+
+  // doc_plaintext
+  GalleryIcon(
+    icon: CupertinoIcons.doc_plaintext,
+    name: 'doc_plaintext',
+    aliases: [],
+  ),
+
+  // doc_richtext
+  GalleryIcon(
+    icon: CupertinoIcons.doc_richtext,
+    name: 'doc_richtext',
+    aliases: [],
+  ),
+
+  // doc_text
+  GalleryIcon(
+    icon: CupertinoIcons.doc_text,
+    name: 'doc_text',
+    aliases: [],
+  ),
+
+  // doc_text_fill
+  GalleryIcon(
+    icon: CupertinoIcons.doc_text_fill,
+    name: 'doc_text_fill',
+    aliases: [],
+  ),
+
+  // doc_text_search
+  GalleryIcon(
+    icon: CupertinoIcons.doc_text_search,
+    name: 'doc_text_search',
+    aliases: [],
+  ),
+
+  // doc_text_viewfinder
+  GalleryIcon(
+    icon: CupertinoIcons.doc_text_viewfinder,
+    name: 'doc_text_viewfinder',
+    aliases: [],
+  ),
+
+  // dot_radiowaves_left_right
+  GalleryIcon(
+    icon: CupertinoIcons.dot_radiowaves_left_right,
+    name: 'dot_radiowaves_left_right',
+    aliases: [],
+  ),
+
+  // dot_radiowaves_right
+  GalleryIcon(
+    icon: CupertinoIcons.dot_radiowaves_right,
+    name: 'dot_radiowaves_right',
+    aliases: [],
+  ),
+
+  // dot_square
+  GalleryIcon(
+    icon: CupertinoIcons.dot_square,
+    name: 'dot_square',
+    aliases: [],
+  ),
+
+  // dot_square_fill
+  GalleryIcon(
+    icon: CupertinoIcons.dot_square_fill,
+    name: 'dot_square_fill',
+    aliases: [],
+  ),
+
+  // double_music_note
+  GalleryIcon(
+    icon: CupertinoIcons.double_music_note,
+    name: 'double_music_note',
+    aliases: [],
+  ),
+
+  // down_arrow
+  GalleryIcon(
+    icon: CupertinoIcons.down_arrow,
+    name: 'down_arrow',
+    aliases: [],
+  ),
+
+  // download_circle
+  GalleryIcon(
+    icon: CupertinoIcons.download_circle,
+    name: 'download_circle',
+    aliases: [],
+  ),
+
+  // download_circle_fill
+  GalleryIcon(
+    icon: CupertinoIcons.download_circle_fill,
+    name: 'download_circle_fill',
+    aliases: [],
+  ),
+
+  // drop
+  GalleryIcon(
+    icon: CupertinoIcons.drop,
+    name: 'drop',
+    aliases: [],
+  ),
+
+  // drop_fill
+  GalleryIcon(
+    icon: CupertinoIcons.drop_fill,
+    name: 'drop_fill',
+    aliases: [],
+  ),
+
+  // drop_triangle
+  GalleryIcon(
+    icon: CupertinoIcons.drop_triangle,
+    name: 'drop_triangle',
+    aliases: [],
+  ),
+
+  // drop_triangle_fill
+  GalleryIcon(
+    icon: CupertinoIcons.drop_triangle_fill,
+    name: 'drop_triangle_fill',
+    aliases: [],
+  ),
+
+  // ear
+  GalleryIcon(
+    icon: CupertinoIcons.ear,
+    name: 'ear',
+    aliases: [],
+  ),
+
+  // eject
+  GalleryIcon(
+    icon: CupertinoIcons.eject,
+    name: 'eject',
+    aliases: [],
+  ),
+
+  // eject_fill
+  GalleryIcon(
+    icon: CupertinoIcons.eject_fill,
+    name: 'eject_fill',
+    aliases: [],
+  ),
+
+  // ellipses_bubble
+  GalleryIcon(
+    icon: CupertinoIcons.ellipses_bubble,
+    name: 'ellipses_bubble',
+    aliases: [],
+  ),
+
+  // ellipses_bubble_fill
+  GalleryIcon(
+    icon: CupertinoIcons.ellipses_bubble_fill,
+    name: 'ellipses_bubble_fill',
+    aliases: [],
+  ),
+
+  // ellipsis
+  GalleryIcon(
+    icon: CupertinoIcons.ellipsis,
+    name: 'ellipsis',
+    aliases: [],
+  ),
+
+  // ellipsis_circle
+  GalleryIcon(
+    icon: CupertinoIcons.ellipsis_circle,
+    name: 'ellipsis_circle',
+    aliases: [],
+  ),
+
+  // ellipsis_circle_fill
+  GalleryIcon(
+    icon: CupertinoIcons.ellipsis_circle_fill,
+    name: 'ellipsis_circle_fill',
+    aliases: [],
+  ),
+
+  // ellipsis_vertical
+  GalleryIcon(
+    icon: CupertinoIcons.ellipsis_vertical,
+    name: 'ellipsis_vertical',
+    aliases: [],
+  ),
+
+  // ellipsis_vertical_circle
+  GalleryIcon(
+    icon: CupertinoIcons.ellipsis_vertical_circle,
+    name: 'ellipsis_vertical_circle',
+    aliases: [],
+  ),
+
+  // ellipsis_vertical_circle_fill
+  GalleryIcon(
+    icon: CupertinoIcons.ellipsis_vertical_circle_fill,
+    name: 'ellipsis_vertical_circle_fill',
+    aliases: [],
+  ),
+
+  // envelope
+  GalleryIcon(
+    icon: CupertinoIcons.envelope,
+    name: 'envelope',
+    aliases: [],
+  ),
+
+  // envelope_badge
+  GalleryIcon(
+    icon: CupertinoIcons.envelope_badge,
+    name: 'envelope_badge',
+    aliases: [],
+  ),
+
+  // envelope_badge_fill
+  GalleryIcon(
+    icon: CupertinoIcons.envelope_badge_fill,
+    name: 'envelope_badge_fill',
+    aliases: [],
+  ),
+
+  // envelope_circle
+  GalleryIcon(
+    icon: CupertinoIcons.envelope_circle,
+    name: 'envelope_circle',
+    aliases: [],
+  ),
+
+  // envelope_circle_fill
+  GalleryIcon(
+    icon: CupertinoIcons.envelope_circle_fill,
+    name: 'envelope_circle_fill',
+    aliases: [],
+  ),
+
+  // envelope_fill
+  GalleryIcon(
+    icon: CupertinoIcons.envelope_fill,
+    name: 'envelope_fill',
+    aliases: [],
+  ),
+
+  // envelope_open
+  GalleryIcon(
+    icon: CupertinoIcons.envelope_open,
+    name: 'envelope_open',
+    aliases: [],
+  ),
+
+  // envelope_open_fill
+  GalleryIcon(
+    icon: CupertinoIcons.envelope_open_fill,
+    name: 'envelope_open_fill',
+    aliases: [],
+  ),
+
+  // equal
+  GalleryIcon(
+    icon: CupertinoIcons.equal,
+    name: 'equal',
+    aliases: [],
+  ),
+
+  // equal_circle
+  GalleryIcon(
+    icon: CupertinoIcons.equal_circle,
+    name: 'equal_circle',
+    aliases: [],
+  ),
+
+  // equal_circle_fill
+  GalleryIcon(
+    icon: CupertinoIcons.equal_circle_fill,
+    name: 'equal_circle_fill',
+    aliases: [],
+  ),
+
+  // equal_square
+  GalleryIcon(
+    icon: CupertinoIcons.equal_square,
+    name: 'equal_square',
+    aliases: [],
+  ),
+
+  // equal_square_fill
+  GalleryIcon(
+    icon: CupertinoIcons.equal_square_fill,
+    name: 'equal_square_fill',
+    aliases: [],
+  ),
+
+  // escape
+  GalleryIcon(
+    icon: CupertinoIcons.escape,
+    name: 'escape',
+    aliases: [],
+  ),
+
+  // exclamationmark
+  GalleryIcon(
+    icon: CupertinoIcons.exclamationmark,
+    name: 'exclamationmark',
+    aliases: [],
+  ),
+
+  // exclamationmark_bubble
+  GalleryIcon(
+    icon: CupertinoIcons.exclamationmark_bubble,
+    name: 'exclamationmark_bubble',
+    aliases: [],
+  ),
+
+  // exclamationmark_bubble_fill
+  GalleryIcon(
+    icon: CupertinoIcons.exclamationmark_bubble_fill,
+    name: 'exclamationmark_bubble_fill',
+    aliases: [],
+  ),
+
+  // exclamationmark_circle
+  GalleryIcon(
+    icon: CupertinoIcons.exclamationmark_circle,
+    name: 'exclamationmark_circle',
+    aliases: [],
+  ),
+
+  // exclamationmark_circle_fill
+  GalleryIcon(
+    icon: CupertinoIcons.exclamationmark_circle_fill,
+    name: 'exclamationmark_circle_fill',
+    aliases: [],
+  ),
+
+  // exclamationmark_octagon
+  GalleryIcon(
+    icon: CupertinoIcons.exclamationmark_octagon,
+    name: 'exclamationmark_octagon',
+    aliases: [],
+  ),
+
+  // exclamationmark_octagon_fill
+  GalleryIcon(
+    icon: CupertinoIcons.exclamationmark_octagon_fill,
+    name: 'exclamationmark_octagon_fill',
+    aliases: [],
+  ),
+
+  // exclamationmark_shield
+  GalleryIcon(
+    icon: CupertinoIcons.exclamationmark_shield,
+    name: 'exclamationmark_shield',
+    aliases: [],
+  ),
+
+  // exclamationmark_shield_fill
+  GalleryIcon(
+    icon: CupertinoIcons.exclamationmark_shield_fill,
+    name: 'exclamationmark_shield_fill',
+    aliases: [],
+  ),
+
+  // exclamationmark_square
+  GalleryIcon(
+    icon: CupertinoIcons.exclamationmark_square,
+    name: 'exclamationmark_square',
+    aliases: [],
+  ),
+
+  // exclamationmark_square_fill
+  GalleryIcon(
+    icon: CupertinoIcons.exclamationmark_square_fill,
+    name: 'exclamationmark_square_fill',
+    aliases: [],
+  ),
+
+  // exclamationmark_triangle
+  GalleryIcon(
+    icon: CupertinoIcons.exclamationmark_triangle,
+    name: 'exclamationmark_triangle',
+    aliases: [],
+  ),
+
+  // exclamationmark_triangle_fill
+  GalleryIcon(
+    icon: CupertinoIcons.exclamationmark_triangle_fill,
+    name: 'exclamationmark_triangle_fill',
+    aliases: [],
+  ),
+
+  // eye
+  GalleryIcon(
+    icon: CupertinoIcons.eye,
+    name: 'eye',
+    aliases: [],
+  ),
+
+  // eye_fill
+  GalleryIcon(
+    icon: CupertinoIcons.eye_fill,
+    name: 'eye_fill',
+    aliases: [],
+  ),
+
+  // eye_slash
+  GalleryIcon(
+    icon: CupertinoIcons.eye_slash,
+    name: 'eye_slash',
+    aliases: [],
+  ),
+
+  // eye_slash_fill
+  GalleryIcon(
+    icon: CupertinoIcons.eye_slash_fill,
+    name: 'eye_slash_fill',
+    aliases: [],
+  ),
+
+  // eye_solid
+  GalleryIcon(
+    icon: CupertinoIcons.eye_solid,
+    name: 'eye_solid',
+    aliases: [],
+  ),
+
+  // eyedropper
+  GalleryIcon(
+    icon: CupertinoIcons.eyedropper,
+    name: 'eyedropper',
+    aliases: [],
+  ),
+
+  // eyedropper_full
+  GalleryIcon(
+    icon: CupertinoIcons.eyedropper_full,
+    name: 'eyedropper_full',
+    aliases: [],
+  ),
+
+  // eyedropper_halffull
+  GalleryIcon(
+    icon: CupertinoIcons.eyedropper_halffull,
+    name: 'eyedropper_halffull',
+    aliases: [],
+  ),
+
+  // eyeglasses
+  GalleryIcon(
+    icon: CupertinoIcons.eyeglasses,
+    name: 'eyeglasses',
+    aliases: [],
+  ),
+
+  // f_cursive
+  GalleryIcon(
+    icon: CupertinoIcons.f_cursive,
+    name: 'f_cursive',
+    aliases: [],
+  ),
+
+  // f_cursive_circle
+  GalleryIcon(
+    icon: CupertinoIcons.f_cursive_circle,
+    name: 'f_cursive_circle',
+    aliases: [],
+  ),
+
+  // f_cursive_circle_fill
+  GalleryIcon(
+    icon: CupertinoIcons.f_cursive_circle_fill,
+    name: 'f_cursive_circle_fill',
+    aliases: [],
+  ),
+
+  // film
+  GalleryIcon(
+    icon: CupertinoIcons.film,
+    name: 'film',
+    aliases: [],
+  ),
+
+  // film_fill
+  GalleryIcon(
+    icon: CupertinoIcons.film_fill,
+    name: 'film_fill',
+    aliases: [],
+  ),
+
+  // flag
+  GalleryIcon(
+    icon: CupertinoIcons.flag,
+    name: 'flag',
+    aliases: [],
+  ),
+
+  // flag_circle
+  GalleryIcon(
+    icon: CupertinoIcons.flag_circle,
+    name: 'flag_circle',
+    aliases: [],
+  ),
+
+  // flag_circle_fill
+  GalleryIcon(
+    icon: CupertinoIcons.flag_circle_fill,
+    name: 'flag_circle_fill',
+    aliases: [],
+  ),
+
+  // flag_fill
+  GalleryIcon(
+    icon: CupertinoIcons.flag_fill,
+    name: 'flag_fill',
+    aliases: [],
+  ),
+
+  // flag_slash
+  GalleryIcon(
+    icon: CupertinoIcons.flag_slash,
+    name: 'flag_slash',
+    aliases: [],
+  ),
+
+  // flag_slash_fill
+  GalleryIcon(
+    icon: CupertinoIcons.flag_slash_fill,
+    name: 'flag_slash_fill',
+    aliases: [],
+  ),
+
+  // flame
+  GalleryIcon(
+    icon: CupertinoIcons.flame,
+    name: 'flame',
+    aliases: [],
+  ),
+
+  // flame_fill
+  GalleryIcon(
+    icon: CupertinoIcons.flame_fill,
+    name: 'flame_fill',
+    aliases: [],
+  ),
+
+  // floppy_disk
+  GalleryIcon(
+    icon: CupertinoIcons.floppy_disk,
+    name: 'floppy_disk',
+    aliases: [],
+  ),
+
+  // flowchart
+  GalleryIcon(
+    icon: CupertinoIcons.flowchart,
+    name: 'flowchart',
+    aliases: [],
+  ),
+
+  // flowchart_fill
+  GalleryIcon(
+    icon: CupertinoIcons.flowchart_fill,
+    name: 'flowchart_fill',
+    aliases: [],
+  ),
+
+  // folder
+  GalleryIcon(
+    icon: CupertinoIcons.folder,
+    name: 'folder',
+    aliases: [],
+  ),
+
+  // folder_badge_minus
+  GalleryIcon(
+    icon: CupertinoIcons.folder_badge_minus,
+    name: 'folder_badge_minus',
+    aliases: [],
+  ),
+
+  // folder_badge_person_crop
+  GalleryIcon(
+    icon: CupertinoIcons.folder_badge_person_crop,
+    name: 'folder_badge_person_crop',
+    aliases: [],
+  ),
+
+  // folder_badge_plus
+  GalleryIcon(
+    icon: CupertinoIcons.folder_badge_plus,
+    name: 'folder_badge_plus',
+    aliases: [],
+  ),
+
+  // folder_circle
+  GalleryIcon(
+    icon: CupertinoIcons.folder_circle,
+    name: 'folder_circle',
+    aliases: [],
+  ),
+
+  // folder_circle_fill
+  GalleryIcon(
+    icon: CupertinoIcons.folder_circle_fill,
+    name: 'folder_circle_fill',
+    aliases: [],
+  ),
+
+  // folder_fill
+  GalleryIcon(
+    icon: CupertinoIcons.folder_fill,
+    name: 'folder_fill',
+    aliases: [],
+  ),
+
+  // folder_fill_badge_minus
+  GalleryIcon(
+    icon: CupertinoIcons.folder_fill_badge_minus,
+    name: 'folder_fill_badge_minus',
+    aliases: [],
+  ),
+
+  // folder_fill_badge_person_crop
+  GalleryIcon(
+    icon: CupertinoIcons.folder_fill_badge_person_crop,
+    name: 'folder_fill_badge_person_crop',
+    aliases: [],
+  ),
+
+  // folder_fill_badge_plus
+  GalleryIcon(
+    icon: CupertinoIcons.folder_fill_badge_plus,
+    name: 'folder_fill_badge_plus',
+    aliases: [],
+  ),
+
+  // folder_open
+  GalleryIcon(
+    icon: CupertinoIcons.folder_open,
+    name: 'folder_open',
+    aliases: [],
+  ),
+
+  // folder_solid
+  GalleryIcon(
+    icon: CupertinoIcons.folder_solid,
+    name: 'folder_solid',
+    aliases: [],
+  ),
+
+  // forward
+  GalleryIcon(
+    icon: CupertinoIcons.forward,
+    name: 'forward',
+    aliases: [],
+  ),
+
+  // forward_end
+  GalleryIcon(
+    icon: CupertinoIcons.forward_end,
+    name: 'forward_end',
+    aliases: [],
+  ),
+
+  // forward_end_alt
+  GalleryIcon(
+    icon: CupertinoIcons.forward_end_alt,
+    name: 'forward_end_alt',
+    aliases: [],
+  ),
+
+  // forward_end_alt_fill
+  GalleryIcon(
+    icon: CupertinoIcons.forward_end_alt_fill,
+    name: 'forward_end_alt_fill',
+    aliases: [],
+  ),
+
+  // forward_end_fill
+  GalleryIcon(
+    icon: CupertinoIcons.forward_end_fill,
+    name: 'forward_end_fill',
+    aliases: [],
+  ),
+
+  // forward_fill
+  GalleryIcon(
+    icon: CupertinoIcons.forward_fill,
+    name: 'forward_fill',
+    aliases: [],
+  ),
+
+  // fullscreen
+  GalleryIcon(
+    icon: CupertinoIcons.fullscreen,
+    name: 'fullscreen',
+    aliases: [],
+  ),
+
+  // fullscreen_exit
+  GalleryIcon(
+    icon: CupertinoIcons.fullscreen_exit,
+    name: 'fullscreen_exit',
+    aliases: [],
+  ),
+
+  // function
+  GalleryIcon(
+    icon: CupertinoIcons.function,
+    name: 'function',
+    aliases: [],
+  ),
+
+  // fx
+  GalleryIcon(
+    icon: CupertinoIcons.fx,
+    name: 'fx',
+    aliases: [],
+  ),
+
+  // game_controller
+  GalleryIcon(
+    icon: CupertinoIcons.game_controller,
+    name: 'game_controller',
+    aliases: [],
+  ),
+
+  // game_controller_solid
+  GalleryIcon(
+    icon: CupertinoIcons.game_controller_solid,
+    name: 'game_controller_solid',
+    aliases: [],
+  ),
+
+  // gamecontroller
+  GalleryIcon(
+    icon: CupertinoIcons.gamecontroller,
+    name: 'gamecontroller',
+    aliases: [],
+  ),
+
+  // gamecontroller_alt_fill
+  GalleryIcon(
+    icon: CupertinoIcons.gamecontroller_alt_fill,
+    name: 'gamecontroller_alt_fill',
+    aliases: [],
+  ),
+
+  // gamecontroller_fill
+  GalleryIcon(
+    icon: CupertinoIcons.gamecontroller_fill,
+    name: 'gamecontroller_fill',
+    aliases: [],
+  ),
+
+  // gauge
+  GalleryIcon(
+    icon: CupertinoIcons.gauge,
+    name: 'gauge',
+    aliases: [],
+  ),
+
+  // gauge_badge_minus
+  GalleryIcon(
+    icon: CupertinoIcons.gauge_badge_minus,
+    name: 'gauge_badge_minus',
+    aliases: [],
+  ),
+
+  // gauge_badge_plus
+  GalleryIcon(
+    icon: CupertinoIcons.gauge_badge_plus,
+    name: 'gauge_badge_plus',
+    aliases: [],
+  ),
+
+  // gear
+  GalleryIcon(
+    icon: CupertinoIcons.gear,
+    name: 'gear',
+    aliases: [],
+  ),
+
+  // gear_alt
+  GalleryIcon(
+    icon: CupertinoIcons.gear_alt,
+    name: 'gear_alt',
+    aliases: [],
+  ),
+
+  // gear_alt_fill
+  GalleryIcon(
+    icon: CupertinoIcons.gear_alt_fill,
+    name: 'gear_alt_fill',
+    aliases: [],
+  ),
+
+  // gear_big
+  GalleryIcon(
+    icon: CupertinoIcons.gear_big,
+    name: 'gear_big',
+    aliases: [],
+  ),
+
+  // gear_solid
+  GalleryIcon(
+    icon: CupertinoIcons.gear_solid,
+    name: 'gear_solid',
+    aliases: [],
+  ),
+
+  // gift
+  GalleryIcon(
+    icon: CupertinoIcons.gift,
+    name: 'gift',
+    aliases: [],
+  ),
+
+  // gift_alt
+  GalleryIcon(
+    icon: CupertinoIcons.gift_alt,
+    name: 'gift_alt',
+    aliases: [],
+  ),
+
+  // gift_alt_fill
+  GalleryIcon(
+    icon: CupertinoIcons.gift_alt_fill,
+    name: 'gift_alt_fill',
+    aliases: [],
+  ),
+
+  // gift_fill
+  GalleryIcon(
+    icon: CupertinoIcons.gift_fill,
+    name: 'gift_fill',
+    aliases: [],
+  ),
+
+  // globe
+  GalleryIcon(
+    icon: CupertinoIcons.globe,
+    name: 'globe',
+    aliases: [],
+  ),
+
+  // gobackward
+  GalleryIcon(
+    icon: CupertinoIcons.gobackward,
+    name: 'gobackward',
+    aliases: [],
+  ),
+
+  // gobackward_10
+  GalleryIcon(
+    icon: CupertinoIcons.gobackward_10,
+    name: 'gobackward_10',
+    aliases: [],
+  ),
+
+  // gobackward_15
+  GalleryIcon(
+    icon: CupertinoIcons.gobackward_15,
+    name: 'gobackward_15',
+    aliases: [],
+  ),
+
+  // gobackward_30
+  GalleryIcon(
+    icon: CupertinoIcons.gobackward_30,
+    name: 'gobackward_30',
+    aliases: [],
+  ),
+
+  // gobackward_45
+  GalleryIcon(
+    icon: CupertinoIcons.gobackward_45,
+    name: 'gobackward_45',
+    aliases: [],
+  ),
+
+  // gobackward_60
+  GalleryIcon(
+    icon: CupertinoIcons.gobackward_60,
+    name: 'gobackward_60',
+    aliases: [],
+  ),
+
+  // gobackward_75
+  GalleryIcon(
+    icon: CupertinoIcons.gobackward_75,
+    name: 'gobackward_75',
+    aliases: [],
+  ),
+
+  // gobackward_90
+  GalleryIcon(
+    icon: CupertinoIcons.gobackward_90,
+    name: 'gobackward_90',
+    aliases: [],
+  ),
+
+  // gobackward_minus
+  GalleryIcon(
+    icon: CupertinoIcons.gobackward_minus,
+    name: 'gobackward_minus',
+    aliases: [],
+  ),
+
+  // goforward
+  GalleryIcon(
+    icon: CupertinoIcons.goforward,
+    name: 'goforward',
+    aliases: [],
+  ),
+
+  // goforward_10
+  GalleryIcon(
+    icon: CupertinoIcons.goforward_10,
+    name: 'goforward_10',
+    aliases: [],
+  ),
+
+  // goforward_15
+  GalleryIcon(
+    icon: CupertinoIcons.goforward_15,
+    name: 'goforward_15',
+    aliases: [],
+  ),
+
+  // goforward_30
+  GalleryIcon(
+    icon: CupertinoIcons.goforward_30,
+    name: 'goforward_30',
+    aliases: [],
+  ),
+
+  // goforward_45
+  GalleryIcon(
+    icon: CupertinoIcons.goforward_45,
+    name: 'goforward_45',
+    aliases: [],
+  ),
+
+  // goforward_60
+  GalleryIcon(
+    icon: CupertinoIcons.goforward_60,
+    name: 'goforward_60',
+    aliases: [],
+  ),
+
+  // goforward_75
+  GalleryIcon(
+    icon: CupertinoIcons.goforward_75,
+    name: 'goforward_75',
+    aliases: [],
+  ),
+
+  // goforward_90
+  GalleryIcon(
+    icon: CupertinoIcons.goforward_90,
+    name: 'goforward_90',
+    aliases: [],
+  ),
+
+  // goforward_plus
+  GalleryIcon(
+    icon: CupertinoIcons.goforward_plus,
+    name: 'goforward_plus',
+    aliases: [],
+  ),
+
+  // graph_circle
+  GalleryIcon(
+    icon: CupertinoIcons.graph_circle,
+    name: 'graph_circle',
+    aliases: [],
+  ),
+
+  // graph_circle_fill
+  GalleryIcon(
+    icon: CupertinoIcons.graph_circle_fill,
+    name: 'graph_circle_fill',
+    aliases: [],
+  ),
+
+  // graph_square
+  GalleryIcon(
+    icon: CupertinoIcons.graph_square,
+    name: 'graph_square',
+    aliases: [],
+  ),
+
+  // graph_square_fill
+  GalleryIcon(
+    icon: CupertinoIcons.graph_square_fill,
+    name: 'graph_square_fill',
+    aliases: [],
+  ),
+
+  // greaterthan
+  GalleryIcon(
+    icon: CupertinoIcons.greaterthan,
+    name: 'greaterthan',
+    aliases: [],
+  ),
+
+  // greaterthan_circle
+  GalleryIcon(
+    icon: CupertinoIcons.greaterthan_circle,
+    name: 'greaterthan_circle',
+    aliases: [],
+  ),
+
+  // greaterthan_circle_fill
+  GalleryIcon(
+    icon: CupertinoIcons.greaterthan_circle_fill,
+    name: 'greaterthan_circle_fill',
+    aliases: [],
+  ),
+
+  // greaterthan_square
+  GalleryIcon(
+    icon: CupertinoIcons.greaterthan_square,
+    name: 'greaterthan_square',
+    aliases: [],
+  ),
+
+  // greaterthan_square_fill
+  GalleryIcon(
+    icon: CupertinoIcons.greaterthan_square_fill,
+    name: 'greaterthan_square_fill',
+    aliases: [],
+  ),
+
+  // grid
+  GalleryIcon(
+    icon: CupertinoIcons.grid,
+    name: 'grid',
+    aliases: [],
+  ),
+
+  // grid_circle
+  GalleryIcon(
+    icon: CupertinoIcons.grid_circle,
+    name: 'grid_circle',
+    aliases: [],
+  ),
+
+  // grid_circle_fill
+  GalleryIcon(
+    icon: CupertinoIcons.grid_circle_fill,
+    name: 'grid_circle_fill',
+    aliases: [],
+  ),
+
+  // group
+  GalleryIcon(
+    icon: CupertinoIcons.group,
+    name: 'group',
+    aliases: [],
+  ),
+
+  // group_solid
+  GalleryIcon(
+    icon: CupertinoIcons.group_solid,
+    name: 'group_solid',
+    aliases: [],
+  ),
+
+  // guitars
+  GalleryIcon(
+    icon: CupertinoIcons.guitars,
+    name: 'guitars',
+    aliases: [],
+  ),
+
+  // hammer
+  GalleryIcon(
+    icon: CupertinoIcons.hammer,
+    name: 'hammer',
+    aliases: [],
+  ),
+
+  // hammer_fill
+  GalleryIcon(
+    icon: CupertinoIcons.hammer_fill,
+    name: 'hammer_fill',
+    aliases: [],
+  ),
+
+  // hand_draw
+  GalleryIcon(
+    icon: CupertinoIcons.hand_draw,
+    name: 'hand_draw',
+    aliases: [],
+  ),
+
+  // hand_draw_fill
+  GalleryIcon(
+    icon: CupertinoIcons.hand_draw_fill,
+    name: 'hand_draw_fill',
+    aliases: [],
+  ),
+
+  // hand_point_left
+  GalleryIcon(
+    icon: CupertinoIcons.hand_point_left,
+    name: 'hand_point_left',
+    aliases: [],
+  ),
+
+  // hand_point_left_fill
+  GalleryIcon(
+    icon: CupertinoIcons.hand_point_left_fill,
+    name: 'hand_point_left_fill',
+    aliases: [],
+  ),
+
+  // hand_point_right
+  GalleryIcon(
+    icon: CupertinoIcons.hand_point_right,
+    name: 'hand_point_right',
+    aliases: [],
+  ),
+
+  // hand_point_right_fill
+  GalleryIcon(
+    icon: CupertinoIcons.hand_point_right_fill,
+    name: 'hand_point_right_fill',
+    aliases: [],
+  ),
+
+  // hand_raised
+  GalleryIcon(
+    icon: CupertinoIcons.hand_raised,
+    name: 'hand_raised',
+    aliases: [],
+  ),
+
+  // hand_raised_fill
+  GalleryIcon(
+    icon: CupertinoIcons.hand_raised_fill,
+    name: 'hand_raised_fill',
+    aliases: [],
+  ),
+
+  // hand_raised_slash
+  GalleryIcon(
+    icon: CupertinoIcons.hand_raised_slash,
+    name: 'hand_raised_slash',
+    aliases: [],
+  ),
+
+  // hand_raised_slash_fill
+  GalleryIcon(
+    icon: CupertinoIcons.hand_raised_slash_fill,
+    name: 'hand_raised_slash_fill',
+    aliases: [],
+  ),
+
+  // hand_thumbsdown
+  GalleryIcon(
+    icon: CupertinoIcons.hand_thumbsdown,
+    name: 'hand_thumbsdown',
+    aliases: [],
+  ),
+
+  // hand_thumbsdown_fill
+  GalleryIcon(
+    icon: CupertinoIcons.hand_thumbsdown_fill,
+    name: 'hand_thumbsdown_fill',
+    aliases: [],
+  ),
+
+  // hand_thumbsup
+  GalleryIcon(
+    icon: CupertinoIcons.hand_thumbsup,
+    name: 'hand_thumbsup',
+    aliases: [],
+  ),
+
+  // hand_thumbsup_fill
+  GalleryIcon(
+    icon: CupertinoIcons.hand_thumbsup_fill,
+    name: 'hand_thumbsup_fill',
+    aliases: [],
+  ),
+
+  // hare
+  GalleryIcon(
+    icon: CupertinoIcons.hare,
+    name: 'hare',
+    aliases: [],
+  ),
+
+  // hare_fill
+  GalleryIcon(
+    icon: CupertinoIcons.hare_fill,
+    name: 'hare_fill',
+    aliases: [],
+  ),
+
+  // headphones
+  GalleryIcon(
+    icon: CupertinoIcons.headphones,
+    name: 'headphones',
+    aliases: [],
+  ),
+
+  // heart
+  GalleryIcon(
+    icon: CupertinoIcons.heart,
+    name: 'heart',
+    aliases: [],
+  ),
+
+  // heart_circle
+  GalleryIcon(
+    icon: CupertinoIcons.heart_circle,
+    name: 'heart_circle',
+    aliases: [],
+  ),
+
+  // heart_circle_fill
+  GalleryIcon(
+    icon: CupertinoIcons.heart_circle_fill,
+    name: 'heart_circle_fill',
+    aliases: [],
+  ),
+
+  // heart_fill
+  GalleryIcon(
+    icon: CupertinoIcons.heart_fill,
+    name: 'heart_fill',
+    aliases: [],
+  ),
+
+  // heart_slash
+  GalleryIcon(
+    icon: CupertinoIcons.heart_slash,
+    name: 'heart_slash',
+    aliases: [],
+  ),
+
+  // heart_slash_circle
+  GalleryIcon(
+    icon: CupertinoIcons.heart_slash_circle,
+    name: 'heart_slash_circle',
+    aliases: [],
+  ),
+
+  // heart_slash_circle_fill
+  GalleryIcon(
+    icon: CupertinoIcons.heart_slash_circle_fill,
+    name: 'heart_slash_circle_fill',
+    aliases: [],
+  ),
+
+  // heart_slash_fill
+  GalleryIcon(
+    icon: CupertinoIcons.heart_slash_fill,
+    name: 'heart_slash_fill',
+    aliases: [],
+  ),
+
+  // heart_solid
+  GalleryIcon(
+    icon: CupertinoIcons.heart_solid,
+    name: 'heart_solid',
+    aliases: [],
+  ),
+
+  // helm
+  GalleryIcon(
+    icon: CupertinoIcons.helm,
+    name: 'helm',
+    aliases: [],
+  ),
+
+  // hexagon
+  GalleryIcon(
+    icon: CupertinoIcons.hexagon,
+    name: 'hexagon',
+    aliases: [],
+  ),
+
+  // hexagon_fill
+  GalleryIcon(
+    icon: CupertinoIcons.hexagon_fill,
+    name: 'hexagon_fill',
+    aliases: [],
+  ),
+
+  // hifispeaker
+  GalleryIcon(
+    icon: CupertinoIcons.hifispeaker,
+    name: 'hifispeaker',
+    aliases: [],
+  ),
+
+  // hifispeaker_fill
+  GalleryIcon(
+    icon: CupertinoIcons.hifispeaker_fill,
+    name: 'hifispeaker_fill',
+    aliases: [],
+  ),
+
+  // home
+  GalleryIcon(
+    icon: CupertinoIcons.home,
+    name: 'home',
+    aliases: [],
+  ),
+
+  // hourglass
+  GalleryIcon(
+    icon: CupertinoIcons.hourglass,
+    name: 'hourglass',
+    aliases: [],
+  ),
+
+  // hourglass_bottomhalf_fill
+  GalleryIcon(
+    icon: CupertinoIcons.hourglass_bottomhalf_fill,
+    name: 'hourglass_bottomhalf_fill',
+    aliases: [],
+  ),
+
+  // hourglass_tophalf_fill
+  GalleryIcon(
+    icon: CupertinoIcons.hourglass_tophalf_fill,
+    name: 'hourglass_tophalf_fill',
+    aliases: [],
+  ),
+
+  // house
+  GalleryIcon(
+    icon: CupertinoIcons.house,
+    name: 'house',
+    aliases: [],
+  ),
+
+  // house_alt
+  GalleryIcon(
+    icon: CupertinoIcons.house_alt,
+    name: 'house_alt',
+    aliases: [],
+  ),
+
+  // house_alt_fill
+  GalleryIcon(
+    icon: CupertinoIcons.house_alt_fill,
+    name: 'house_alt_fill',
+    aliases: [],
+  ),
+
+  // house_fill
+  GalleryIcon(
+    icon: CupertinoIcons.house_fill,
+    name: 'house_fill',
+    aliases: [],
+  ),
+
+  // hurricane
+  GalleryIcon(
+    icon: CupertinoIcons.hurricane,
+    name: 'hurricane',
+    aliases: [],
+  ),
+
+  // increase_indent
+  GalleryIcon(
+    icon: CupertinoIcons.increase_indent,
+    name: 'increase_indent',
+    aliases: [],
+  ),
+
+  // increase_quotelevel
+  GalleryIcon(
+    icon: CupertinoIcons.increase_quotelevel,
+    name: 'increase_quotelevel',
+    aliases: [],
+  ),
+
+  // infinite
+  GalleryIcon(
+    icon: CupertinoIcons.infinite,
+    name: 'infinite',
+    aliases: [],
+  ),
+
+  // info
+  GalleryIcon(
+    icon: CupertinoIcons.info,
+    name: 'info',
+    aliases: [],
+  ),
+
+  // info_circle
+  GalleryIcon(
+    icon: CupertinoIcons.info_circle,
+    name: 'info_circle',
+    aliases: [],
+  ),
+
+  // info_circle_fill
+  GalleryIcon(
+    icon: CupertinoIcons.info_circle_fill,
+    name: 'info_circle_fill',
+    aliases: [],
+  ),
+
+  // italic
+  GalleryIcon(
+    icon: CupertinoIcons.italic,
+    name: 'italic',
+    aliases: [],
+  ),
+
+  // keyboard
+  GalleryIcon(
+    icon: CupertinoIcons.keyboard,
+    name: 'keyboard',
+    aliases: [],
+  ),
+
+  // keyboard_chevron_compact_down
+  GalleryIcon(
+    icon: CupertinoIcons.keyboard_chevron_compact_down,
+    name: 'keyboard_chevron_compact_down',
+    aliases: [],
+  ),
+
+  // lab_flask
+  GalleryIcon(
+    icon: CupertinoIcons.lab_flask,
+    name: 'lab_flask',
+    aliases: [],
+  ),
+
+  // lab_flask_solid
+  GalleryIcon(
+    icon: CupertinoIcons.lab_flask_solid,
+    name: 'lab_flask_solid',
+    aliases: [],
+  ),
+
+  // largecircle_fill_circle
+  GalleryIcon(
+    icon: CupertinoIcons.largecircle_fill_circle,
+    name: 'largecircle_fill_circle',
+    aliases: [],
+  ),
+
+  // lasso
+  GalleryIcon(
+    icon: CupertinoIcons.lasso,
+    name: 'lasso',
+    aliases: [],
+  ),
+
+  // layers
+  GalleryIcon(
+    icon: CupertinoIcons.layers,
+    name: 'layers',
+    aliases: [],
+  ),
+
+  // layers_alt
+  GalleryIcon(
+    icon: CupertinoIcons.layers_alt,
+    name: 'layers_alt',
+    aliases: [],
+  ),
+
+  // layers_alt_fill
+  GalleryIcon(
+    icon: CupertinoIcons.layers_alt_fill,
+    name: 'layers_alt_fill',
+    aliases: [],
+  ),
+
+  // layers_fill
+  GalleryIcon(
+    icon: CupertinoIcons.layers_fill,
+    name: 'layers_fill',
+    aliases: [],
+  ),
+
+  // leaf_arrow_circlepath
+  GalleryIcon(
+    icon: CupertinoIcons.leaf_arrow_circlepath,
+    name: 'leaf_arrow_circlepath',
+    aliases: [],
+  ),
+
+  // left_chevron
+  GalleryIcon(
+    icon: CupertinoIcons.left_chevron,
+    name: 'left_chevron',
+    aliases: [],
+  ),
+
+  // lessthan
+  GalleryIcon(
+    icon: CupertinoIcons.lessthan,
+    name: 'lessthan',
+    aliases: [],
+  ),
+
+  // lessthan_circle
+  GalleryIcon(
+    icon: CupertinoIcons.lessthan_circle,
+    name: 'lessthan_circle',
+    aliases: [],
+  ),
+
+  // lessthan_circle_fill
+  GalleryIcon(
+    icon: CupertinoIcons.lessthan_circle_fill,
+    name: 'lessthan_circle_fill',
+    aliases: [],
+  ),
+
+  // lessthan_square
+  GalleryIcon(
+    icon: CupertinoIcons.lessthan_square,
+    name: 'lessthan_square',
+    aliases: [],
+  ),
+
+  // lessthan_square_fill
+  GalleryIcon(
+    icon: CupertinoIcons.lessthan_square_fill,
+    name: 'lessthan_square_fill',
+    aliases: [],
+  ),
+
+  // light_max
+  GalleryIcon(
+    icon: CupertinoIcons.light_max,
+    name: 'light_max',
+    aliases: [],
+  ),
+
+  // light_min
+  GalleryIcon(
+    icon: CupertinoIcons.light_min,
+    name: 'light_min',
+    aliases: [],
+  ),
+
+  // lightbulb
+  GalleryIcon(
+    icon: CupertinoIcons.lightbulb,
+    name: 'lightbulb',
+    aliases: [],
+  ),
+
+  // lightbulb_fill
+  GalleryIcon(
+    icon: CupertinoIcons.lightbulb_fill,
+    name: 'lightbulb_fill',
+    aliases: [],
+  ),
+
+  // lightbulb_slash
+  GalleryIcon(
+    icon: CupertinoIcons.lightbulb_slash,
+    name: 'lightbulb_slash',
+    aliases: [],
+  ),
+
+  // lightbulb_slash_fill
+  GalleryIcon(
+    icon: CupertinoIcons.lightbulb_slash_fill,
+    name: 'lightbulb_slash_fill',
+    aliases: [],
+  ),
+
+  // line_horizontal_3
+  GalleryIcon(
+    icon: CupertinoIcons.line_horizontal_3,
+    name: 'line_horizontal_3',
+    aliases: [],
+  ),
+
+  // line_horizontal_3_decrease
+  GalleryIcon(
+    icon: CupertinoIcons.line_horizontal_3_decrease,
+    name: 'line_horizontal_3_decrease',
+    aliases: [],
+  ),
+
+  // line_horizontal_3_decrease_circle
+  GalleryIcon(
+    icon: CupertinoIcons.line_horizontal_3_decrease_circle,
+    name: 'line_horizontal_3_decrease_circle',
+    aliases: [],
+  ),
+
+  // line_horizontal_3_decrease_circle_fill
+  GalleryIcon(
+    icon: CupertinoIcons.line_horizontal_3_decrease_circle_fill,
+    name: 'line_horizontal_3_decrease_circle_fill',
+    aliases: [],
+  ),
+
+  // link
+  GalleryIcon(
+    icon: CupertinoIcons.link,
+    name: 'link',
+    aliases: [],
+  ),
+
+  // link_circle
+  GalleryIcon(
+    icon: CupertinoIcons.link_circle,
+    name: 'link_circle',
+    aliases: [],
+  ),
+
+  // link_circle_fill
+  GalleryIcon(
+    icon: CupertinoIcons.link_circle_fill,
+    name: 'link_circle_fill',
+    aliases: [],
+  ),
+
+  // list_bullet
+  GalleryIcon(
+    icon: CupertinoIcons.list_bullet,
+    name: 'list_bullet',
+    aliases: [],
+  ),
+
+  // list_bullet_below_rectangle
+  GalleryIcon(
+    icon: CupertinoIcons.list_bullet_below_rectangle,
+    name: 'list_bullet_below_rectangle',
+    aliases: [],
+  ),
+
+  // list_bullet_indent
+  GalleryIcon(
+    icon: CupertinoIcons.list_bullet_indent,
+    name: 'list_bullet_indent',
+    aliases: [],
+  ),
+
+  // list_dash
+  GalleryIcon(
+    icon: CupertinoIcons.list_dash,
+    name: 'list_dash',
+    aliases: [],
+  ),
+
+  // list_number
+  GalleryIcon(
+    icon: CupertinoIcons.list_number,
+    name: 'list_number',
+    aliases: [],
+  ),
+
+  // list_number_rtl
+  GalleryIcon(
+    icon: CupertinoIcons.list_number_rtl,
+    name: 'list_number_rtl',
+    aliases: [],
+  ),
+
+  // location
+  GalleryIcon(
+    icon: CupertinoIcons.location,
+    name: 'location',
+    aliases: [],
+  ),
+
+  // location_circle
+  GalleryIcon(
+    icon: CupertinoIcons.location_circle,
+    name: 'location_circle',
+    aliases: [],
+  ),
+
+  // location_circle_fill
+  GalleryIcon(
+    icon: CupertinoIcons.location_circle_fill,
+    name: 'location_circle_fill',
+    aliases: [],
+  ),
+
+  // location_fill
+  GalleryIcon(
+    icon: CupertinoIcons.location_fill,
+    name: 'location_fill',
+    aliases: [],
+  ),
+
+  // location_north
+  GalleryIcon(
+    icon: CupertinoIcons.location_north,
+    name: 'location_north',
+    aliases: [],
+  ),
+
+  // location_north_fill
+  GalleryIcon(
+    icon: CupertinoIcons.location_north_fill,
+    name: 'location_north_fill',
+    aliases: [],
+  ),
+
+  // location_north_line
+  GalleryIcon(
+    icon: CupertinoIcons.location_north_line,
+    name: 'location_north_line',
+    aliases: [],
+  ),
+
+  // location_north_line_fill
+  GalleryIcon(
+    icon: CupertinoIcons.location_north_line_fill,
+    name: 'location_north_line_fill',
+    aliases: [],
+  ),
+
+  // location_slash
+  GalleryIcon(
+    icon: CupertinoIcons.location_slash,
+    name: 'location_slash',
+    aliases: [],
+  ),
+
+  // location_slash_fill
+  GalleryIcon(
+    icon: CupertinoIcons.location_slash_fill,
+    name: 'location_slash_fill',
+    aliases: [],
+  ),
+
+  // location_solid
+  GalleryIcon(
+    icon: CupertinoIcons.location_solid,
+    name: 'location_solid',
+    aliases: [],
+  ),
+
+  // lock
+  GalleryIcon(
+    icon: CupertinoIcons.lock,
+    name: 'lock',
+    aliases: [],
+  ),
+
+  // lock_circle
+  GalleryIcon(
+    icon: CupertinoIcons.lock_circle,
+    name: 'lock_circle',
+    aliases: [],
+  ),
+
+  // lock_circle_fill
+  GalleryIcon(
+    icon: CupertinoIcons.lock_circle_fill,
+    name: 'lock_circle_fill',
+    aliases: [],
+  ),
+
+  // lock_fill
+  GalleryIcon(
+    icon: CupertinoIcons.lock_fill,
+    name: 'lock_fill',
+    aliases: [],
+  ),
+
+  // lock_open
+  GalleryIcon(
+    icon: CupertinoIcons.lock_open,
+    name: 'lock_open',
+    aliases: [],
+  ),
+
+  // lock_open_fill
+  GalleryIcon(
+    icon: CupertinoIcons.lock_open_fill,
+    name: 'lock_open_fill',
+    aliases: [],
+  ),
+
+  // lock_rotation
+  GalleryIcon(
+    icon: CupertinoIcons.lock_rotation,
+    name: 'lock_rotation',
+    aliases: [],
+  ),
+
+  // lock_rotation_open
+  GalleryIcon(
+    icon: CupertinoIcons.lock_rotation_open,
+    name: 'lock_rotation_open',
+    aliases: [],
+  ),
+
+  // lock_shield
+  GalleryIcon(
+    icon: CupertinoIcons.lock_shield,
+    name: 'lock_shield',
+    aliases: [],
+  ),
+
+  // lock_shield_fill
+  GalleryIcon(
+    icon: CupertinoIcons.lock_shield_fill,
+    name: 'lock_shield_fill',
+    aliases: [],
+  ),
+
+  // lock_slash
+  GalleryIcon(
+    icon: CupertinoIcons.lock_slash,
+    name: 'lock_slash',
+    aliases: [],
+  ),
+
+  // lock_slash_fill
+  GalleryIcon(
+    icon: CupertinoIcons.lock_slash_fill,
+    name: 'lock_slash_fill',
+    aliases: [],
+  ),
+
+  // loop
+  GalleryIcon(
+    icon: CupertinoIcons.loop,
+    name: 'loop',
+    aliases: [],
+  ),
+
+  // loop_thick
+  GalleryIcon(
+    icon: CupertinoIcons.loop_thick,
+    name: 'loop_thick',
+    aliases: [],
+  ),
+
+  // macwindow
+  GalleryIcon(
+    icon: CupertinoIcons.macwindow,
+    name: 'macwindow',
+    aliases: [],
+  ),
+
+  // mail
+  GalleryIcon(
+    icon: CupertinoIcons.mail,
+    name: 'mail',
+    aliases: [],
+  ),
+
+  // mail_solid
+  GalleryIcon(
+    icon: CupertinoIcons.mail_solid,
+    name: 'mail_solid',
+    aliases: [],
+  ),
+
+  // map
+  GalleryIcon(
+    icon: CupertinoIcons.map,
+    name: 'map',
+    aliases: [],
+  ),
+
+  // map_fill
+  GalleryIcon(
+    icon: CupertinoIcons.map_fill,
+    name: 'map_fill',
+    aliases: [],
+  ),
+
+  // map_pin
+  GalleryIcon(
+    icon: CupertinoIcons.map_pin,
+    name: 'map_pin',
+    aliases: [],
+  ),
+
+  // map_pin_ellipse
+  GalleryIcon(
+    icon: CupertinoIcons.map_pin_ellipse,
+    name: 'map_pin_ellipse',
+    aliases: [],
+  ),
+
+  // map_pin_slash
+  GalleryIcon(
+    icon: CupertinoIcons.map_pin_slash,
+    name: 'map_pin_slash',
+    aliases: [],
+  ),
+
+  // memories
+  GalleryIcon(
+    icon: CupertinoIcons.memories,
+    name: 'memories',
+    aliases: [],
+  ),
+
+  // memories_badge_minus
+  GalleryIcon(
+    icon: CupertinoIcons.memories_badge_minus,
+    name: 'memories_badge_minus',
+    aliases: [],
+  ),
+
+  // memories_badge_plus
+  GalleryIcon(
+    icon: CupertinoIcons.memories_badge_plus,
+    name: 'memories_badge_plus',
+    aliases: [],
+  ),
+
+  // metronome
+  GalleryIcon(
+    icon: CupertinoIcons.metronome,
+    name: 'metronome',
+    aliases: [],
+  ),
+
+  // mic
+  GalleryIcon(
+    icon: CupertinoIcons.mic,
+    name: 'mic',
+    aliases: [],
+  ),
+
+  // mic_circle
+  GalleryIcon(
+    icon: CupertinoIcons.mic_circle,
+    name: 'mic_circle',
+    aliases: [],
+  ),
+
+  // mic_circle_fill
+  GalleryIcon(
+    icon: CupertinoIcons.mic_circle_fill,
+    name: 'mic_circle_fill',
+    aliases: [],
+  ),
+
+  // mic_fill
+  GalleryIcon(
+    icon: CupertinoIcons.mic_fill,
+    name: 'mic_fill',
+    aliases: [],
+  ),
+
+  // mic_off
+  GalleryIcon(
+    icon: CupertinoIcons.mic_off,
+    name: 'mic_off',
+    aliases: [],
+  ),
+
+  // mic_slash
+  GalleryIcon(
+    icon: CupertinoIcons.mic_slash,
+    name: 'mic_slash',
+    aliases: [],
+  ),
+
+  // mic_slash_fill
+  GalleryIcon(
+    icon: CupertinoIcons.mic_slash_fill,
+    name: 'mic_slash_fill',
+    aliases: [],
+  ),
+
+  // mic_solid
+  GalleryIcon(
+    icon: CupertinoIcons.mic_solid,
+    name: 'mic_solid',
+    aliases: [],
+  ),
+
+  // minus
+  GalleryIcon(
+    icon: CupertinoIcons.minus,
+    name: 'minus',
+    aliases: [],
+  ),
+
+  // minus_circle
+  GalleryIcon(
+    icon: CupertinoIcons.minus_circle,
+    name: 'minus_circle',
+    aliases: [],
+  ),
+
+  // minus_circle_fill
+  GalleryIcon(
+    icon: CupertinoIcons.minus_circle_fill,
+    name: 'minus_circle_fill',
+    aliases: [],
+  ),
+
+  // minus_circled
+  GalleryIcon(
+    icon: CupertinoIcons.minus_circled,
+    name: 'minus_circled',
+    aliases: [],
+  ),
+
+  // minus_rectangle
+  GalleryIcon(
+    icon: CupertinoIcons.minus_rectangle,
+    name: 'minus_rectangle',
+    aliases: [],
+  ),
+
+  // minus_rectangle_fill
+  GalleryIcon(
+    icon: CupertinoIcons.minus_rectangle_fill,
+    name: 'minus_rectangle_fill',
+    aliases: [],
+  ),
+
+  // minus_slash_plus
+  GalleryIcon(
+    icon: CupertinoIcons.minus_slash_plus,
+    name: 'minus_slash_plus',
+    aliases: [],
+  ),
+
+  // minus_square
+  GalleryIcon(
+    icon: CupertinoIcons.minus_square,
+    name: 'minus_square',
+    aliases: [],
+  ),
+
+  // minus_square_fill
+  GalleryIcon(
+    icon: CupertinoIcons.minus_square_fill,
+    name: 'minus_square_fill',
+    aliases: [],
+  ),
+
+  // money_dollar
+  GalleryIcon(
+    icon: CupertinoIcons.money_dollar,
+    name: 'money_dollar',
+    aliases: [],
+  ),
+
+  // money_dollar_circle
+  GalleryIcon(
+    icon: CupertinoIcons.money_dollar_circle,
+    name: 'money_dollar_circle',
+    aliases: [],
+  ),
+
+  // money_dollar_circle_fill
+  GalleryIcon(
+    icon: CupertinoIcons.money_dollar_circle_fill,
+    name: 'money_dollar_circle_fill',
+    aliases: [],
+  ),
+
+  // money_euro
+  GalleryIcon(
+    icon: CupertinoIcons.money_euro,
+    name: 'money_euro',
+    aliases: [],
+  ),
+
+  // money_euro_circle
+  GalleryIcon(
+    icon: CupertinoIcons.money_euro_circle,
+    name: 'money_euro_circle',
+    aliases: [],
+  ),
+
+  // money_euro_circle_fill
+  GalleryIcon(
+    icon: CupertinoIcons.money_euro_circle_fill,
+    name: 'money_euro_circle_fill',
+    aliases: [],
+  ),
+
+  // money_pound
+  GalleryIcon(
+    icon: CupertinoIcons.money_pound,
+    name: 'money_pound',
+    aliases: [],
+  ),
+
+  // money_pound_circle
+  GalleryIcon(
+    icon: CupertinoIcons.money_pound_circle,
+    name: 'money_pound_circle',
+    aliases: [],
+  ),
+
+  // money_pound_circle_fill
+  GalleryIcon(
+    icon: CupertinoIcons.money_pound_circle_fill,
+    name: 'money_pound_circle_fill',
+    aliases: [],
+  ),
+
+  // money_rubl
+  GalleryIcon(
+    icon: CupertinoIcons.money_rubl,
+    name: 'money_rubl',
+    aliases: [],
+  ),
+
+  // money_rubl_circle
+  GalleryIcon(
+    icon: CupertinoIcons.money_rubl_circle,
+    name: 'money_rubl_circle',
+    aliases: [],
+  ),
+
+  // money_rubl_circle_fill
+  GalleryIcon(
+    icon: CupertinoIcons.money_rubl_circle_fill,
+    name: 'money_rubl_circle_fill',
+    aliases: [],
+  ),
+
+  // money_yen
+  GalleryIcon(
+    icon: CupertinoIcons.money_yen,
+    name: 'money_yen',
+    aliases: [],
+  ),
+
+  // money_yen_circle
+  GalleryIcon(
+    icon: CupertinoIcons.money_yen_circle,
+    name: 'money_yen_circle',
+    aliases: [],
+  ),
+
+  // money_yen_circle_fill
+  GalleryIcon(
+    icon: CupertinoIcons.money_yen_circle_fill,
+    name: 'money_yen_circle_fill',
+    aliases: [],
+  ),
+
+  // moon
+  GalleryIcon(
+    icon: CupertinoIcons.moon,
+    name: 'moon',
+    aliases: [],
+  ),
+
+  // moon_circle
+  GalleryIcon(
+    icon: CupertinoIcons.moon_circle,
+    name: 'moon_circle',
+    aliases: [],
+  ),
+
+  // moon_circle_fill
+  GalleryIcon(
+    icon: CupertinoIcons.moon_circle_fill,
+    name: 'moon_circle_fill',
+    aliases: [],
+  ),
+
+  // moon_fill
+  GalleryIcon(
+    icon: CupertinoIcons.moon_fill,
+    name: 'moon_fill',
+    aliases: [],
+  ),
+
+  // moon_stars
+  GalleryIcon(
+    icon: CupertinoIcons.moon_stars,
+    name: 'moon_stars',
+    aliases: [],
+  ),
+
+  // moon_stars_fill
+  GalleryIcon(
+    icon: CupertinoIcons.moon_stars_fill,
+    name: 'moon_stars_fill',
+    aliases: [],
+  ),
+
+  // moon_zzz
+  GalleryIcon(
+    icon: CupertinoIcons.moon_zzz,
+    name: 'moon_zzz',
+    aliases: [],
+  ),
+
+  // moon_zzz_fill
+  GalleryIcon(
+    icon: CupertinoIcons.moon_zzz_fill,
+    name: 'moon_zzz_fill',
+    aliases: [],
+  ),
+
+  // move
+  GalleryIcon(
+    icon: CupertinoIcons.move,
+    name: 'move',
+    aliases: [],
+  ),
+
+  // multiply
+  GalleryIcon(
+    icon: CupertinoIcons.multiply,
+    name: 'multiply',
+    aliases: [],
+  ),
+
+  // multiply_circle
+  GalleryIcon(
+    icon: CupertinoIcons.multiply_circle,
+    name: 'multiply_circle',
+    aliases: [],
+  ),
+
+  // multiply_circle_fill
+  GalleryIcon(
+    icon: CupertinoIcons.multiply_circle_fill,
+    name: 'multiply_circle_fill',
+    aliases: [],
+  ),
+
+  // multiply_square
+  GalleryIcon(
+    icon: CupertinoIcons.multiply_square,
+    name: 'multiply_square',
+    aliases: [],
+  ),
+
+  // multiply_square_fill
+  GalleryIcon(
+    icon: CupertinoIcons.multiply_square_fill,
+    name: 'multiply_square_fill',
+    aliases: [],
+  ),
+
+  // music_albums
+  GalleryIcon(
+    icon: CupertinoIcons.music_albums,
+    name: 'music_albums',
+    aliases: [],
+  ),
+
+  // music_albums_fill
+  GalleryIcon(
+    icon: CupertinoIcons.music_albums_fill,
+    name: 'music_albums_fill',
+    aliases: [],
+  ),
+
+  // music_house
+  GalleryIcon(
+    icon: CupertinoIcons.music_house,
+    name: 'music_house',
+    aliases: [],
+  ),
+
+  // music_house_fill
+  GalleryIcon(
+    icon: CupertinoIcons.music_house_fill,
+    name: 'music_house_fill',
+    aliases: [],
+  ),
+
+  // music_mic
+  GalleryIcon(
+    icon: CupertinoIcons.music_mic,
+    name: 'music_mic',
+    aliases: [],
+  ),
+
+  // music_note
+  GalleryIcon(
+    icon: CupertinoIcons.music_note,
+    name: 'music_note',
+    aliases: [],
+  ),
+
+  // music_note_2
+  GalleryIcon(
+    icon: CupertinoIcons.music_note_2,
+    name: 'music_note_2',
+    aliases: [],
+  ),
+
+  // music_note_list
+  GalleryIcon(
+    icon: CupertinoIcons.music_note_list,
+    name: 'music_note_list',
+    aliases: [],
+  ),
+
+  // news
+  GalleryIcon(
+    icon: CupertinoIcons.news,
+    name: 'news',
+    aliases: [],
+  ),
+
+  // news_solid
+  GalleryIcon(
+    icon: CupertinoIcons.news_solid,
+    name: 'news_solid',
+    aliases: [],
+  ),
+
+  // nosign
+  GalleryIcon(
+    icon: CupertinoIcons.nosign,
+    name: 'nosign',
+    aliases: [],
+  ),
+
+  // number
+  GalleryIcon(
+    icon: CupertinoIcons.number,
+    name: 'number',
+    aliases: [],
+  ),
+
+  // number_circle
+  GalleryIcon(
+    icon: CupertinoIcons.number_circle,
+    name: 'number_circle',
+    aliases: [],
+  ),
+
+  // number_circle_fill
+  GalleryIcon(
+    icon: CupertinoIcons.number_circle_fill,
+    name: 'number_circle_fill',
+    aliases: [],
+  ),
+
+  // number_square
+  GalleryIcon(
+    icon: CupertinoIcons.number_square,
+    name: 'number_square',
+    aliases: [],
+  ),
+
+  // number_square_fill
+  GalleryIcon(
+    icon: CupertinoIcons.number_square_fill,
+    name: 'number_square_fill',
+    aliases: [],
+  ),
+
+  // option
+  GalleryIcon(
+    icon: CupertinoIcons.option,
+    name: 'option',
+    aliases: [],
+  ),
+
+  // padlock
+  GalleryIcon(
+    icon: CupertinoIcons.padlock,
+    name: 'padlock',
+    aliases: [],
+  ),
+
+  // padlock_solid
+  GalleryIcon(
+    icon: CupertinoIcons.padlock_solid,
+    name: 'padlock_solid',
+    aliases: [],
+  ),
+
+  // paintbrush
+  GalleryIcon(
+    icon: CupertinoIcons.paintbrush,
+    name: 'paintbrush',
+    aliases: [],
+  ),
+
+  // paintbrush_fill
+  GalleryIcon(
+    icon: CupertinoIcons.paintbrush_fill,
+    name: 'paintbrush_fill',
+    aliases: [],
+  ),
+
+  // pano
+  GalleryIcon(
+    icon: CupertinoIcons.pano,
+    name: 'pano',
+    aliases: [],
+  ),
+
+  // pano_fill
+  GalleryIcon(
+    icon: CupertinoIcons.pano_fill,
+    name: 'pano_fill',
+    aliases: [],
+  ),
+
+  // paperclip
+  GalleryIcon(
+    icon: CupertinoIcons.paperclip,
+    name: 'paperclip',
+    aliases: [],
+  ),
+
+  // paperplane
+  GalleryIcon(
+    icon: CupertinoIcons.paperplane,
+    name: 'paperplane',
+    aliases: [],
+  ),
+
+  // paperplane_fill
+  GalleryIcon(
+    icon: CupertinoIcons.paperplane_fill,
+    name: 'paperplane_fill',
+    aliases: [],
+  ),
+
+  // paragraph
+  GalleryIcon(
+    icon: CupertinoIcons.paragraph,
+    name: 'paragraph',
+    aliases: [],
+  ),
+
+  // pause
+  GalleryIcon(
+    icon: CupertinoIcons.pause,
+    name: 'pause',
+    aliases: [],
+  ),
+
+  // pause_circle
+  GalleryIcon(
+    icon: CupertinoIcons.pause_circle,
+    name: 'pause_circle',
+    aliases: [],
+  ),
+
+  // pause_circle_fill
+  GalleryIcon(
+    icon: CupertinoIcons.pause_circle_fill,
+    name: 'pause_circle_fill',
+    aliases: [],
+  ),
+
+  // pause_fill
+  GalleryIcon(
+    icon: CupertinoIcons.pause_fill,
+    name: 'pause_fill',
+    aliases: [],
+  ),
+
+  // pause_rectangle
+  GalleryIcon(
+    icon: CupertinoIcons.pause_rectangle,
+    name: 'pause_rectangle',
+    aliases: [],
+  ),
+
+  // pause_rectangle_fill
+  GalleryIcon(
+    icon: CupertinoIcons.pause_rectangle_fill,
+    name: 'pause_rectangle_fill',
+    aliases: [],
+  ),
+
+  // pause_solid
+  GalleryIcon(
+    icon: CupertinoIcons.pause_solid,
+    name: 'pause_solid',
+    aliases: [],
+  ),
+
+  // paw
+  GalleryIcon(
+    icon: CupertinoIcons.paw,
+    name: 'paw',
+    aliases: [],
+  ),
+
+  // paw_solid
+  GalleryIcon(
+    icon: CupertinoIcons.paw_solid,
+    name: 'paw_solid',
+    aliases: [],
+  ),
+
+  // pen
+  GalleryIcon(
+    icon: CupertinoIcons.pen,
+    name: 'pen',
+    aliases: [],
+  ),
+
+  // pencil
+  GalleryIcon(
+    icon: CupertinoIcons.pencil,
+    name: 'pencil',
+    aliases: [],
+  ),
+
+  // pencil_circle
+  GalleryIcon(
+    icon: CupertinoIcons.pencil_circle,
+    name: 'pencil_circle',
+    aliases: [],
+  ),
+
+  // pencil_circle_fill
+  GalleryIcon(
+    icon: CupertinoIcons.pencil_circle_fill,
+    name: 'pencil_circle_fill',
+    aliases: [],
+  ),
+
+  // pencil_ellipsis_rectangle
+  GalleryIcon(
+    icon: CupertinoIcons.pencil_ellipsis_rectangle,
+    name: 'pencil_ellipsis_rectangle',
+    aliases: [],
+  ),
+
+  // pencil_outline
+  GalleryIcon(
+    icon: CupertinoIcons.pencil_outline,
+    name: 'pencil_outline',
+    aliases: [],
+  ),
+
+  // pencil_slash
+  GalleryIcon(
+    icon: CupertinoIcons.pencil_slash,
+    name: 'pencil_slash',
+    aliases: [],
+  ),
+
+  // percent
+  GalleryIcon(
+    icon: CupertinoIcons.percent,
+    name: 'percent',
+    aliases: [],
+  ),
+
+  // person
+  GalleryIcon(
+    icon: CupertinoIcons.person,
+    name: 'person',
+    aliases: [],
+  ),
+
+  // person_2
+  GalleryIcon(
+    icon: CupertinoIcons.person_2,
+    name: 'person_2',
+    aliases: [],
+  ),
+
+  // person_2_alt
+  GalleryIcon(
+    icon: CupertinoIcons.person_2_alt,
+    name: 'person_2_alt',
+    aliases: [],
+  ),
+
+  // person_2_fill
+  GalleryIcon(
+    icon: CupertinoIcons.person_2_fill,
+    name: 'person_2_fill',
+    aliases: [],
+  ),
+
+  // person_2_square_stack
+  GalleryIcon(
+    icon: CupertinoIcons.person_2_square_stack,
+    name: 'person_2_square_stack',
+    aliases: [],
+  ),
+
+  // person_2_square_stack_fill
+  GalleryIcon(
+    icon: CupertinoIcons.person_2_square_stack_fill,
+    name: 'person_2_square_stack_fill',
+    aliases: [],
+  ),
+
+  // person_3
+  GalleryIcon(
+    icon: CupertinoIcons.person_3,
+    name: 'person_3',
+    aliases: [],
+  ),
+
+  // person_3_fill
+  GalleryIcon(
+    icon: CupertinoIcons.person_3_fill,
+    name: 'person_3_fill',
+    aliases: [],
+  ),
+
+  // person_add
+  GalleryIcon(
+    icon: CupertinoIcons.person_add,
+    name: 'person_add',
+    aliases: [],
+  ),
+
+  // person_add_solid
+  GalleryIcon(
+    icon: CupertinoIcons.person_add_solid,
+    name: 'person_add_solid',
+    aliases: [],
+  ),
+
+  // person_alt
+  GalleryIcon(
+    icon: CupertinoIcons.person_alt,
+    name: 'person_alt',
+    aliases: [],
+  ),
+
+  // person_alt_circle
+  GalleryIcon(
+    icon: CupertinoIcons.person_alt_circle,
+    name: 'person_alt_circle',
+    aliases: [],
+  ),
+
+  // person_alt_circle_fill
+  GalleryIcon(
+    icon: CupertinoIcons.person_alt_circle_fill,
+    name: 'person_alt_circle_fill',
+    aliases: [],
+  ),
+
+  // person_badge_minus
+  GalleryIcon(
+    icon: CupertinoIcons.person_badge_minus,
+    name: 'person_badge_minus',
+    aliases: [],
+  ),
+
+  // person_badge_minus_fill
+  GalleryIcon(
+    icon: CupertinoIcons.person_badge_minus_fill,
+    name: 'person_badge_minus_fill',
+    aliases: [],
+  ),
+
+  // person_badge_plus
+  GalleryIcon(
+    icon: CupertinoIcons.person_badge_plus,
+    name: 'person_badge_plus',
+    aliases: [],
+  ),
+
+  // person_badge_plus_fill
+  GalleryIcon(
+    icon: CupertinoIcons.person_badge_plus_fill,
+    name: 'person_badge_plus_fill',
+    aliases: [],
+  ),
+
+  // person_circle
+  GalleryIcon(
+    icon: CupertinoIcons.person_circle,
+    name: 'person_circle',
+    aliases: [],
+  ),
+
+  // person_circle_fill
+  GalleryIcon(
+    icon: CupertinoIcons.person_circle_fill,
+    name: 'person_circle_fill',
+    aliases: [],
+  ),
+
+  // person_crop_circle
+  GalleryIcon(
+    icon: CupertinoIcons.person_crop_circle,
+    name: 'person_crop_circle',
+    aliases: [],
+  ),
+
+  // person_crop_circle_badge_checkmark
+  GalleryIcon(
+    icon: CupertinoIcons.person_crop_circle_badge_checkmark,
+    name: 'person_crop_circle_badge_checkmark',
+    aliases: [],
+  ),
+
+  // person_crop_circle_badge_exclam
+  GalleryIcon(
+    icon: CupertinoIcons.person_crop_circle_badge_exclam,
+    name: 'person_crop_circle_badge_exclam',
+    aliases: [],
+  ),
+
+  // person_crop_circle_badge_minus
+  GalleryIcon(
+    icon: CupertinoIcons.person_crop_circle_badge_minus,
+    name: 'person_crop_circle_badge_minus',
+    aliases: [],
+  ),
+
+  // person_crop_circle_badge_plus
+  GalleryIcon(
+    icon: CupertinoIcons.person_crop_circle_badge_plus,
+    name: 'person_crop_circle_badge_plus',
+    aliases: [],
+  ),
+
+  // person_crop_circle_badge_xmark
+  GalleryIcon(
+    icon: CupertinoIcons.person_crop_circle_badge_xmark,
+    name: 'person_crop_circle_badge_xmark',
+    aliases: [],
+  ),
+
+  // person_crop_circle_fill
+  GalleryIcon(
+    icon: CupertinoIcons.person_crop_circle_fill,
+    name: 'person_crop_circle_fill',
+    aliases: [],
+  ),
+
+  // person_crop_circle_fill_badge_checkmark
+  GalleryIcon(
+    icon: CupertinoIcons.person_crop_circle_fill_badge_checkmark,
+    name: 'person_crop_circle_fill_badge_checkmark',
+    aliases: [],
+  ),
+
+  // person_crop_circle_fill_badge_exclam
+  GalleryIcon(
+    icon: CupertinoIcons.person_crop_circle_fill_badge_exclam,
+    name: 'person_crop_circle_fill_badge_exclam',
+    aliases: [],
+  ),
+
+  // person_crop_circle_fill_badge_minus
+  GalleryIcon(
+    icon: CupertinoIcons.person_crop_circle_fill_badge_minus,
+    name: 'person_crop_circle_fill_badge_minus',
+    aliases: [],
+  ),
+
+  // person_crop_circle_fill_badge_plus
+  GalleryIcon(
+    icon: CupertinoIcons.person_crop_circle_fill_badge_plus,
+    name: 'person_crop_circle_fill_badge_plus',
+    aliases: [],
+  ),
+
+  // person_crop_circle_fill_badge_xmark
+  GalleryIcon(
+    icon: CupertinoIcons.person_crop_circle_fill_badge_xmark,
+    name: 'person_crop_circle_fill_badge_xmark',
+    aliases: [],
+  ),
+
+  // person_crop_rectangle
+  GalleryIcon(
+    icon: CupertinoIcons.person_crop_rectangle,
+    name: 'person_crop_rectangle',
+    aliases: [],
+  ),
+
+  // person_crop_rectangle_fill
+  GalleryIcon(
+    icon: CupertinoIcons.person_crop_rectangle_fill,
+    name: 'person_crop_rectangle_fill',
+    aliases: [],
+  ),
+
+  // person_crop_square
+  GalleryIcon(
+    icon: CupertinoIcons.person_crop_square,
+    name: 'person_crop_square',
+    aliases: [],
+  ),
+
+  // person_crop_square_fill
+  GalleryIcon(
+    icon: CupertinoIcons.person_crop_square_fill,
+    name: 'person_crop_square_fill',
+    aliases: [],
+  ),
+
+  // person_fill
+  GalleryIcon(
+    icon: CupertinoIcons.person_fill,
+    name: 'person_fill',
+    aliases: [],
+  ),
+
+  // person_solid
+  GalleryIcon(
+    icon: CupertinoIcons.person_solid,
+    name: 'person_solid',
+    aliases: [],
+  ),
+
+  // personalhotspot
+  GalleryIcon(
+    icon: CupertinoIcons.personalhotspot,
+    name: 'personalhotspot',
+    aliases: [],
+  ),
+
+  // perspective
+  GalleryIcon(
+    icon: CupertinoIcons.perspective,
+    name: 'perspective',
+    aliases: [],
+  ),
+
+  // phone
+  GalleryIcon(
+    icon: CupertinoIcons.phone,
+    name: 'phone',
+    aliases: [],
+  ),
+
+  // phone_arrow_down_left
+  GalleryIcon(
+    icon: CupertinoIcons.phone_arrow_down_left,
+    name: 'phone_arrow_down_left',
+    aliases: [],
+  ),
+
+  // phone_arrow_right
+  GalleryIcon(
+    icon: CupertinoIcons.phone_arrow_right,
+    name: 'phone_arrow_right',
+    aliases: [],
+  ),
+
+  // phone_arrow_up_right
+  GalleryIcon(
+    icon: CupertinoIcons.phone_arrow_up_right,
+    name: 'phone_arrow_up_right',
+    aliases: [],
+  ),
+
+  // phone_badge_plus
+  GalleryIcon(
+    icon: CupertinoIcons.phone_badge_plus,
+    name: 'phone_badge_plus',
+    aliases: [],
+  ),
+
+  // phone_circle
+  GalleryIcon(
+    icon: CupertinoIcons.phone_circle,
+    name: 'phone_circle',
+    aliases: [],
+  ),
+
+  // phone_circle_fill
+  GalleryIcon(
+    icon: CupertinoIcons.phone_circle_fill,
+    name: 'phone_circle_fill',
+    aliases: [],
+  ),
+
+  // phone_down
+  GalleryIcon(
+    icon: CupertinoIcons.phone_down,
+    name: 'phone_down',
+    aliases: [],
+  ),
+
+  // phone_down_circle
+  GalleryIcon(
+    icon: CupertinoIcons.phone_down_circle,
+    name: 'phone_down_circle',
+    aliases: [],
+  ),
+
+  // phone_down_circle_fill
+  GalleryIcon(
+    icon: CupertinoIcons.phone_down_circle_fill,
+    name: 'phone_down_circle_fill',
+    aliases: [],
+  ),
+
+  // phone_down_fill
+  GalleryIcon(
+    icon: CupertinoIcons.phone_down_fill,
+    name: 'phone_down_fill',
+    aliases: [],
+  ),
+
+  // phone_fill
+  GalleryIcon(
+    icon: CupertinoIcons.phone_fill,
+    name: 'phone_fill',
+    aliases: [],
+  ),
+
+  // phone_fill_arrow_down_left
+  GalleryIcon(
+    icon: CupertinoIcons.phone_fill_arrow_down_left,
+    name: 'phone_fill_arrow_down_left',
+    aliases: [],
+  ),
+
+  // phone_fill_arrow_right
+  GalleryIcon(
+    icon: CupertinoIcons.phone_fill_arrow_right,
+    name: 'phone_fill_arrow_right',
+    aliases: [],
+  ),
+
+  // phone_fill_arrow_up_right
+  GalleryIcon(
+    icon: CupertinoIcons.phone_fill_arrow_up_right,
+    name: 'phone_fill_arrow_up_right',
+    aliases: [],
+  ),
+
+  // phone_fill_badge_plus
+  GalleryIcon(
+    icon: CupertinoIcons.phone_fill_badge_plus,
+    name: 'phone_fill_badge_plus',
+    aliases: [],
+  ),
+
+  // phone_solid
+  GalleryIcon(
+    icon: CupertinoIcons.phone_solid,
+    name: 'phone_solid',
+    aliases: [],
+  ),
+
+  // photo
+  GalleryIcon(
+    icon: CupertinoIcons.photo,
+    name: 'photo',
+    aliases: [],
   ),
 
   // photo_camera
   GalleryIcon(
     icon: CupertinoIcons.photo_camera,
     name: 'photo_camera',
+    aliases: [],
   ),
 
   // photo_camera_solid
   GalleryIcon(
     icon: CupertinoIcons.photo_camera_solid,
     name: 'photo_camera_solid',
+    aliases: [],
   ),
 
-  // video_camera
+  // photo_fill
   GalleryIcon(
-    icon: CupertinoIcons.video_camera,
-    name: 'video_camera',
+    icon: CupertinoIcons.photo_fill,
+    name: 'photo_fill',
+    aliases: [],
   ),
 
-  // video_camera_solid
+  // photo_fill_on_rectangle_fill
   GalleryIcon(
-    icon: CupertinoIcons.video_camera_solid,
-    name: 'video_camera_solid',
+    icon: CupertinoIcons.photo_fill_on_rectangle_fill,
+    name: 'photo_fill_on_rectangle_fill',
+    aliases: [],
+  ),
+
+  // photo_on_rectangle
+  GalleryIcon(
+    icon: CupertinoIcons.photo_on_rectangle,
+    name: 'photo_on_rectangle',
+    aliases: [],
+  ),
+
+  // piano
+  GalleryIcon(
+    icon: CupertinoIcons.piano,
+    name: 'piano',
+    aliases: [],
+  ),
+
+  // pin
+  GalleryIcon(
+    icon: CupertinoIcons.pin,
+    name: 'pin',
+    aliases: [],
+  ),
+
+  // pin_fill
+  GalleryIcon(
+    icon: CupertinoIcons.pin_fill,
+    name: 'pin_fill',
+    aliases: [],
+  ),
+
+  // pin_slash
+  GalleryIcon(
+    icon: CupertinoIcons.pin_slash,
+    name: 'pin_slash',
+    aliases: [],
+  ),
+
+  // pin_slash_fill
+  GalleryIcon(
+    icon: CupertinoIcons.pin_slash_fill,
+    name: 'pin_slash_fill',
+    aliases: [],
+  ),
+
+  // placemark
+  GalleryIcon(
+    icon: CupertinoIcons.placemark,
+    name: 'placemark',
+    aliases: [],
+  ),
+
+  // placemark_fill
+  GalleryIcon(
+    icon: CupertinoIcons.placemark_fill,
+    name: 'placemark_fill',
+    aliases: [],
+  ),
+
+  // play
+  GalleryIcon(
+    icon: CupertinoIcons.play,
+    name: 'play',
+    aliases: [],
+  ),
+
+  // play_arrow
+  GalleryIcon(
+    icon: CupertinoIcons.play_arrow,
+    name: 'play_arrow',
+    aliases: [],
+  ),
+
+  // play_arrow_solid
+  GalleryIcon(
+    icon: CupertinoIcons.play_arrow_solid,
+    name: 'play_arrow_solid',
+    aliases: [],
+  ),
+
+  // play_circle
+  GalleryIcon(
+    icon: CupertinoIcons.play_circle,
+    name: 'play_circle',
+    aliases: [],
+  ),
+
+  // play_circle_fill
+  GalleryIcon(
+    icon: CupertinoIcons.play_circle_fill,
+    name: 'play_circle_fill',
+    aliases: [],
+  ),
+
+  // play_fill
+  GalleryIcon(
+    icon: CupertinoIcons.play_fill,
+    name: 'play_fill',
+    aliases: [],
+  ),
+
+  // play_rectangle
+  GalleryIcon(
+    icon: CupertinoIcons.play_rectangle,
+    name: 'play_rectangle',
+    aliases: [],
+  ),
+
+  // play_rectangle_fill
+  GalleryIcon(
+    icon: CupertinoIcons.play_rectangle_fill,
+    name: 'play_rectangle_fill',
+    aliases: [],
+  ),
+
+  // playpause
+  GalleryIcon(
+    icon: CupertinoIcons.playpause,
+    name: 'playpause',
+    aliases: [],
+  ),
+
+  // playpause_fill
+  GalleryIcon(
+    icon: CupertinoIcons.playpause_fill,
+    name: 'playpause_fill',
+    aliases: [],
+  ),
+
+  // plus
+  GalleryIcon(
+    icon: CupertinoIcons.plus,
+    name: 'plus',
+    aliases: [],
+  ),
+
+  // plus_app
+  GalleryIcon(
+    icon: CupertinoIcons.plus_app,
+    name: 'plus_app',
+    aliases: [],
+  ),
+
+  // plus_app_fill
+  GalleryIcon(
+    icon: CupertinoIcons.plus_app_fill,
+    name: 'plus_app_fill',
+    aliases: [],
+  ),
+
+  // plus_bubble
+  GalleryIcon(
+    icon: CupertinoIcons.plus_bubble,
+    name: 'plus_bubble',
+    aliases: [],
+  ),
+
+  // plus_bubble_fill
+  GalleryIcon(
+    icon: CupertinoIcons.plus_bubble_fill,
+    name: 'plus_bubble_fill',
+    aliases: [],
+  ),
+
+  // plus_circle
+  GalleryIcon(
+    icon: CupertinoIcons.plus_circle,
+    name: 'plus_circle',
+    aliases: [],
+  ),
+
+  // plus_circle_fill
+  GalleryIcon(
+    icon: CupertinoIcons.plus_circle_fill,
+    name: 'plus_circle_fill',
+    aliases: [],
+  ),
+
+  // plus_circled
+  GalleryIcon(
+    icon: CupertinoIcons.plus_circled,
+    name: 'plus_circled',
+    aliases: [],
+  ),
+
+  // plus_rectangle
+  GalleryIcon(
+    icon: CupertinoIcons.plus_rectangle,
+    name: 'plus_rectangle',
+    aliases: [],
+  ),
+
+  // plus_rectangle_fill
+  GalleryIcon(
+    icon: CupertinoIcons.plus_rectangle_fill,
+    name: 'plus_rectangle_fill',
+    aliases: [],
+  ),
+
+  // plus_rectangle_fill_on_rectangle_fill
+  GalleryIcon(
+    icon: CupertinoIcons.plus_rectangle_fill_on_rectangle_fill,
+    name: 'plus_rectangle_fill_on_rectangle_fill',
+    aliases: [],
+  ),
+
+  // plus_rectangle_on_rectangle
+  GalleryIcon(
+    icon: CupertinoIcons.plus_rectangle_on_rectangle,
+    name: 'plus_rectangle_on_rectangle',
+    aliases: [],
+  ),
+
+  // plus_slash_minus
+  GalleryIcon(
+    icon: CupertinoIcons.plus_slash_minus,
+    name: 'plus_slash_minus',
+    aliases: [],
+  ),
+
+  // plus_square
+  GalleryIcon(
+    icon: CupertinoIcons.plus_square,
+    name: 'plus_square',
+    aliases: [],
+  ),
+
+  // plus_square_fill
+  GalleryIcon(
+    icon: CupertinoIcons.plus_square_fill,
+    name: 'plus_square_fill',
+    aliases: [],
+  ),
+
+  // plus_square_fill_on_square_fill
+  GalleryIcon(
+    icon: CupertinoIcons.plus_square_fill_on_square_fill,
+    name: 'plus_square_fill_on_square_fill',
+    aliases: [],
+  ),
+
+  // plus_square_on_square
+  GalleryIcon(
+    icon: CupertinoIcons.plus_square_on_square,
+    name: 'plus_square_on_square',
+    aliases: [],
+  ),
+
+  // plusminus
+  GalleryIcon(
+    icon: CupertinoIcons.plusminus,
+    name: 'plusminus',
+    aliases: [],
+  ),
+
+  // plusminus_circle
+  GalleryIcon(
+    icon: CupertinoIcons.plusminus_circle,
+    name: 'plusminus_circle',
+    aliases: [],
+  ),
+
+  // plusminus_circle_fill
+  GalleryIcon(
+    icon: CupertinoIcons.plusminus_circle_fill,
+    name: 'plusminus_circle_fill',
+    aliases: [],
+  ),
+
+  // power
+  GalleryIcon(
+    icon: CupertinoIcons.power,
+    name: 'power',
+    aliases: [],
+  ),
+
+  // printer
+  GalleryIcon(
+    icon: CupertinoIcons.printer,
+    name: 'printer',
+    aliases: [],
+  ),
+
+  // printer_fill
+  GalleryIcon(
+    icon: CupertinoIcons.printer_fill,
+    name: 'printer_fill',
+    aliases: [],
+  ),
+
+  // profile_circled
+  GalleryIcon(
+    icon: CupertinoIcons.profile_circled,
+    name: 'profile_circled',
+    aliases: [],
+  ),
+
+  // projective
+  GalleryIcon(
+    icon: CupertinoIcons.projective,
+    name: 'projective',
+    aliases: [],
+  ),
+
+  // purchased
+  GalleryIcon(
+    icon: CupertinoIcons.purchased,
+    name: 'purchased',
+    aliases: [],
+  ),
+
+  // purchased_circle
+  GalleryIcon(
+    icon: CupertinoIcons.purchased_circle,
+    name: 'purchased_circle',
+    aliases: [],
+  ),
+
+  // purchased_circle_fill
+  GalleryIcon(
+    icon: CupertinoIcons.purchased_circle_fill,
+    name: 'purchased_circle_fill',
+    aliases: [],
+  ),
+
+  // qrcode
+  GalleryIcon(
+    icon: CupertinoIcons.qrcode,
+    name: 'qrcode',
+    aliases: [],
+  ),
+
+  // qrcode_viewfinder
+  GalleryIcon(
+    icon: CupertinoIcons.qrcode_viewfinder,
+    name: 'qrcode_viewfinder',
+    aliases: [],
+  ),
+
+  // question
+  GalleryIcon(
+    icon: CupertinoIcons.question,
+    name: 'question',
+    aliases: [],
+  ),
+
+  // question_circle
+  GalleryIcon(
+    icon: CupertinoIcons.question_circle,
+    name: 'question_circle',
+    aliases: [],
+  ),
+
+  // question_circle_fill
+  GalleryIcon(
+    icon: CupertinoIcons.question_circle_fill,
+    name: 'question_circle_fill',
+    aliases: [],
+  ),
+
+  // question_diamond
+  GalleryIcon(
+    icon: CupertinoIcons.question_diamond,
+    name: 'question_diamond',
+    aliases: [],
+  ),
+
+  // question_diamond_fill
+  GalleryIcon(
+    icon: CupertinoIcons.question_diamond_fill,
+    name: 'question_diamond_fill',
+    aliases: [],
+  ),
+
+  // question_square
+  GalleryIcon(
+    icon: CupertinoIcons.question_square,
+    name: 'question_square',
+    aliases: [],
+  ),
+
+  // question_square_fill
+  GalleryIcon(
+    icon: CupertinoIcons.question_square_fill,
+    name: 'question_square_fill',
+    aliases: [],
+  ),
+
+  // quote_bubble
+  GalleryIcon(
+    icon: CupertinoIcons.quote_bubble,
+    name: 'quote_bubble',
+    aliases: [],
+  ),
+
+  // quote_bubble_fill
+  GalleryIcon(
+    icon: CupertinoIcons.quote_bubble_fill,
+    name: 'quote_bubble_fill',
+    aliases: [],
+  ),
+
+  // radiowaves_left
+  GalleryIcon(
+    icon: CupertinoIcons.radiowaves_left,
+    name: 'radiowaves_left',
+    aliases: [],
+  ),
+
+  // radiowaves_right
+  GalleryIcon(
+    icon: CupertinoIcons.radiowaves_right,
+    name: 'radiowaves_right',
+    aliases: [],
+  ),
+
+  // rays
+  GalleryIcon(
+    icon: CupertinoIcons.rays,
+    name: 'rays',
+    aliases: [],
+  ),
+
+  // recordingtape
+  GalleryIcon(
+    icon: CupertinoIcons.recordingtape,
+    name: 'recordingtape',
+    aliases: [],
+  ),
+
+  // rectangle
+  GalleryIcon(
+    icon: CupertinoIcons.rectangle,
+    name: 'rectangle',
+    aliases: [],
+  ),
+
+  // rectangle_3_offgrid
+  GalleryIcon(
+    icon: CupertinoIcons.rectangle_3_offgrid,
+    name: 'rectangle_3_offgrid',
+    aliases: [],
+  ),
+
+  // rectangle_3_offgrid_fill
+  GalleryIcon(
+    icon: CupertinoIcons.rectangle_3_offgrid_fill,
+    name: 'rectangle_3_offgrid_fill',
+    aliases: [],
+  ),
+
+  // rectangle_arrow_up_right_arrow_down_left
+  GalleryIcon(
+    icon: CupertinoIcons.rectangle_arrow_up_right_arrow_down_left,
+    name: 'rectangle_arrow_up_right_arrow_down_left',
+    aliases: [],
+  ),
+
+  // rectangle_arrow_up_right_arrow_down_left_slash
+  GalleryIcon(
+    icon: CupertinoIcons.rectangle_arrow_up_right_arrow_down_left_slash,
+    name: 'rectangle_arrow_up_right_arrow_down_left_slash',
+    aliases: [],
+  ),
+
+  // rectangle_badge_checkmark
+  GalleryIcon(
+    icon: CupertinoIcons.rectangle_badge_checkmark,
+    name: 'rectangle_badge_checkmark',
+    aliases: [],
+  ),
+
+  // rectangle_badge_xmark
+  GalleryIcon(
+    icon: CupertinoIcons.rectangle_badge_xmark,
+    name: 'rectangle_badge_xmark',
+    aliases: [],
+  ),
+
+  // rectangle_compress_vertical
+  GalleryIcon(
+    icon: CupertinoIcons.rectangle_compress_vertical,
+    name: 'rectangle_compress_vertical',
+    aliases: [],
+  ),
+
+  // rectangle_dock
+  GalleryIcon(
+    icon: CupertinoIcons.rectangle_dock,
+    name: 'rectangle_dock',
+    aliases: [],
+  ),
+
+  // rectangle_expand_vertical
+  GalleryIcon(
+    icon: CupertinoIcons.rectangle_expand_vertical,
+    name: 'rectangle_expand_vertical',
+    aliases: [],
+  ),
+
+  // rectangle_fill
+  GalleryIcon(
+    icon: CupertinoIcons.rectangle_fill,
+    name: 'rectangle_fill',
+    aliases: [],
+  ),
+
+  // rectangle_fill_badge_checkmark
+  GalleryIcon(
+    icon: CupertinoIcons.rectangle_fill_badge_checkmark,
+    name: 'rectangle_fill_badge_checkmark',
+    aliases: [],
+  ),
+
+  // rectangle_fill_badge_xmark
+  GalleryIcon(
+    icon: CupertinoIcons.rectangle_fill_badge_xmark,
+    name: 'rectangle_fill_badge_xmark',
+    aliases: [],
+  ),
+
+  // rectangle_fill_on_rectangle_angled_fill
+  GalleryIcon(
+    icon: CupertinoIcons.rectangle_fill_on_rectangle_angled_fill,
+    name: 'rectangle_fill_on_rectangle_angled_fill',
+    aliases: [],
+  ),
+
+  // rectangle_fill_on_rectangle_fill
+  GalleryIcon(
+    icon: CupertinoIcons.rectangle_fill_on_rectangle_fill,
+    name: 'rectangle_fill_on_rectangle_fill',
+    aliases: [],
+  ),
+
+  // rectangle_grid_1x2
+  GalleryIcon(
+    icon: CupertinoIcons.rectangle_grid_1x2,
+    name: 'rectangle_grid_1x2',
+    aliases: [],
+  ),
+
+  // rectangle_grid_1x2_fill
+  GalleryIcon(
+    icon: CupertinoIcons.rectangle_grid_1x2_fill,
+    name: 'rectangle_grid_1x2_fill',
+    aliases: [],
+  ),
+
+  // rectangle_grid_2x2
+  GalleryIcon(
+    icon: CupertinoIcons.rectangle_grid_2x2,
+    name: 'rectangle_grid_2x2',
+    aliases: [],
+  ),
+
+  // rectangle_grid_2x2_fill
+  GalleryIcon(
+    icon: CupertinoIcons.rectangle_grid_2x2_fill,
+    name: 'rectangle_grid_2x2_fill',
+    aliases: [],
+  ),
+
+  // rectangle_grid_3x2
+  GalleryIcon(
+    icon: CupertinoIcons.rectangle_grid_3x2,
+    name: 'rectangle_grid_3x2',
+    aliases: [],
+  ),
+
+  // rectangle_grid_3x2_fill
+  GalleryIcon(
+    icon: CupertinoIcons.rectangle_grid_3x2_fill,
+    name: 'rectangle_grid_3x2_fill',
+    aliases: [],
+  ),
+
+  // rectangle_on_rectangle
+  GalleryIcon(
+    icon: CupertinoIcons.rectangle_on_rectangle,
+    name: 'rectangle_on_rectangle',
+    aliases: [],
+  ),
+
+  // rectangle_on_rectangle_angled
+  GalleryIcon(
+    icon: CupertinoIcons.rectangle_on_rectangle_angled,
+    name: 'rectangle_on_rectangle_angled',
+    aliases: [],
+  ),
+
+  // rectangle_paperclip
+  GalleryIcon(
+    icon: CupertinoIcons.rectangle_paperclip,
+    name: 'rectangle_paperclip',
+    aliases: [],
+  ),
+
+  // rectangle_split_3x1
+  GalleryIcon(
+    icon: CupertinoIcons.rectangle_split_3x1,
+    name: 'rectangle_split_3x1',
+    aliases: [],
+  ),
+
+  // rectangle_split_3x1_fill
+  GalleryIcon(
+    icon: CupertinoIcons.rectangle_split_3x1_fill,
+    name: 'rectangle_split_3x1_fill',
+    aliases: [],
+  ),
+
+  // rectangle_split_3x3
+  GalleryIcon(
+    icon: CupertinoIcons.rectangle_split_3x3,
+    name: 'rectangle_split_3x3',
+    aliases: [],
+  ),
+
+  // rectangle_split_3x3_fill
+  GalleryIcon(
+    icon: CupertinoIcons.rectangle_split_3x3_fill,
+    name: 'rectangle_split_3x3_fill',
+    aliases: [],
+  ),
+
+  // rectangle_stack
+  GalleryIcon(
+    icon: CupertinoIcons.rectangle_stack,
+    name: 'rectangle_stack',
+    aliases: [],
+  ),
+
+  // rectangle_stack_badge_minus
+  GalleryIcon(
+    icon: CupertinoIcons.rectangle_stack_badge_minus,
+    name: 'rectangle_stack_badge_minus',
+    aliases: [],
+  ),
+
+  // rectangle_stack_badge_person_crop
+  GalleryIcon(
+    icon: CupertinoIcons.rectangle_stack_badge_person_crop,
+    name: 'rectangle_stack_badge_person_crop',
+    aliases: [],
+  ),
+
+  // rectangle_stack_badge_plus
+  GalleryIcon(
+    icon: CupertinoIcons.rectangle_stack_badge_plus,
+    name: 'rectangle_stack_badge_plus',
+    aliases: [],
+  ),
+
+  // rectangle_stack_fill
+  GalleryIcon(
+    icon: CupertinoIcons.rectangle_stack_fill,
+    name: 'rectangle_stack_fill',
+    aliases: [],
+  ),
+
+  // rectangle_stack_fill_badge_minus
+  GalleryIcon(
+    icon: CupertinoIcons.rectangle_stack_fill_badge_minus,
+    name: 'rectangle_stack_fill_badge_minus',
+    aliases: [],
+  ),
+
+  // rectangle_stack_fill_badge_person_crop
+  GalleryIcon(
+    icon: CupertinoIcons.rectangle_stack_fill_badge_person_crop,
+    name: 'rectangle_stack_fill_badge_person_crop',
+    aliases: [],
+  ),
+
+  // rectangle_stack_fill_badge_plus
+  GalleryIcon(
+    icon: CupertinoIcons.rectangle_stack_fill_badge_plus,
+    name: 'rectangle_stack_fill_badge_plus',
+    aliases: [],
+  ),
+
+  // rectangle_stack_person_crop
+  GalleryIcon(
+    icon: CupertinoIcons.rectangle_stack_person_crop,
+    name: 'rectangle_stack_person_crop',
+    aliases: [],
+  ),
+
+  // rectangle_stack_person_crop_fill
+  GalleryIcon(
+    icon: CupertinoIcons.rectangle_stack_person_crop_fill,
+    name: 'rectangle_stack_person_crop_fill',
+    aliases: [],
+  ),
+
+  // refresh
+  GalleryIcon(
+    icon: CupertinoIcons.refresh,
+    name: 'refresh',
+    aliases: [],
+  ),
+
+  // refresh_bold
+  GalleryIcon(
+    icon: CupertinoIcons.refresh_bold,
+    name: 'refresh_bold',
+    aliases: [],
+  ),
+
+  // refresh_circled
+  GalleryIcon(
+    icon: CupertinoIcons.refresh_circled,
+    name: 'refresh_circled',
+    aliases: [],
+  ),
+
+  // refresh_circled_solid
+  GalleryIcon(
+    icon: CupertinoIcons.refresh_circled_solid,
+    name: 'refresh_circled_solid',
+    aliases: [],
+  ),
+
+  // refresh_thick
+  GalleryIcon(
+    icon: CupertinoIcons.refresh_thick,
+    name: 'refresh_thick',
+    aliases: [],
+  ),
+
+  // refresh_thin
+  GalleryIcon(
+    icon: CupertinoIcons.refresh_thin,
+    name: 'refresh_thin',
+    aliases: [],
+  ),
+
+  // repeat
+  GalleryIcon(
+    icon: CupertinoIcons.repeat,
+    name: 'repeat',
+    aliases: [],
+  ),
+
+  // repeat_1
+  GalleryIcon(
+    icon: CupertinoIcons.repeat_1,
+    name: 'repeat_1',
+    aliases: [],
+  ),
+
+  // reply
+  GalleryIcon(
+    icon: CupertinoIcons.reply,
+    name: 'reply',
+    aliases: [],
+  ),
+
+  // reply_all
+  GalleryIcon(
+    icon: CupertinoIcons.reply_all,
+    name: 'reply_all',
+    aliases: [],
+  ),
+
+  // reply_thick_solid
+  GalleryIcon(
+    icon: CupertinoIcons.reply_thick_solid,
+    name: 'reply_thick_solid',
+    aliases: [],
+  ),
+
+  // resize
+  GalleryIcon(
+    icon: CupertinoIcons.resize,
+    name: 'resize',
+    aliases: [],
+  ),
+
+  // resize_h
+  GalleryIcon(
+    icon: CupertinoIcons.resize_h,
+    name: 'resize_h',
+    aliases: [],
+  ),
+
+  // resize_v
+  GalleryIcon(
+    icon: CupertinoIcons.resize_v,
+    name: 'resize_v',
+    aliases: [],
+  ),
+
+  // restart
+  GalleryIcon(
+    icon: CupertinoIcons.restart,
+    name: 'restart',
+    aliases: [],
+  ),
+
+  // return_icon
+  GalleryIcon(
+    icon: CupertinoIcons.return_icon,
+    name: 'return_icon',
+    aliases: [],
+  ),
+
+  // rhombus
+  GalleryIcon(
+    icon: CupertinoIcons.rhombus,
+    name: 'rhombus',
+    aliases: [],
+  ),
+
+  // rhombus_fill
+  GalleryIcon(
+    icon: CupertinoIcons.rhombus_fill,
+    name: 'rhombus_fill',
+    aliases: [],
+  ),
+
+  // right_chevron
+  GalleryIcon(
+    icon: CupertinoIcons.right_chevron,
+    name: 'right_chevron',
+    aliases: [],
+  ),
+
+  // rocket
+  GalleryIcon(
+    icon: CupertinoIcons.rocket,
+    name: 'rocket',
+    aliases: [],
+  ),
+
+  // rocket_fill
+  GalleryIcon(
+    icon: CupertinoIcons.rocket_fill,
+    name: 'rocket_fill',
+    aliases: [],
+  ),
+
+  // rosette
+  GalleryIcon(
+    icon: CupertinoIcons.rosette,
+    name: 'rosette',
+    aliases: [],
+  ),
+
+  // rotate_left
+  GalleryIcon(
+    icon: CupertinoIcons.rotate_left,
+    name: 'rotate_left',
+    aliases: [],
+  ),
+
+  // rotate_left_fill
+  GalleryIcon(
+    icon: CupertinoIcons.rotate_left_fill,
+    name: 'rotate_left_fill',
+    aliases: [],
+  ),
+
+  // rotate_right
+  GalleryIcon(
+    icon: CupertinoIcons.rotate_right,
+    name: 'rotate_right',
+    aliases: [],
+  ),
+
+  // rotate_right_fill
+  GalleryIcon(
+    icon: CupertinoIcons.rotate_right_fill,
+    name: 'rotate_right_fill',
+    aliases: [],
+  ),
+
+  // scissors
+  GalleryIcon(
+    icon: CupertinoIcons.scissors,
+    name: 'scissors',
+    aliases: [],
+  ),
+
+  // scissors_alt
+  GalleryIcon(
+    icon: CupertinoIcons.scissors_alt,
+    name: 'scissors_alt',
+    aliases: [],
+  ),
+
+  // scope
+  GalleryIcon(
+    icon: CupertinoIcons.scope,
+    name: 'scope',
+    aliases: [],
+  ),
+
+  // scribble
+  GalleryIcon(
+    icon: CupertinoIcons.scribble,
+    name: 'scribble',
+    aliases: [],
+  ),
+
+  // search
+  GalleryIcon(
+    icon: CupertinoIcons.search,
+    name: 'search',
+    aliases: [],
+  ),
+
+  // search_circle
+  GalleryIcon(
+    icon: CupertinoIcons.search_circle,
+    name: 'search_circle',
+    aliases: [],
+  ),
+
+  // search_circle_fill
+  GalleryIcon(
+    icon: CupertinoIcons.search_circle_fill,
+    name: 'search_circle_fill',
+    aliases: [],
+  ),
+
+  // selection_pin_in_out
+  GalleryIcon(
+    icon: CupertinoIcons.selection_pin_in_out,
+    name: 'selection_pin_in_out',
+    aliases: [],
+  ),
+
+  // settings
+  GalleryIcon(
+    icon: CupertinoIcons.settings,
+    name: 'settings',
+    aliases: [],
+  ),
+
+  // settings_solid
+  GalleryIcon(
+    icon: CupertinoIcons.settings_solid,
+    name: 'settings_solid',
+    aliases: [],
+  ),
+
+  // share
+  GalleryIcon(
+    icon: CupertinoIcons.share,
+    name: 'share',
+    aliases: [],
+  ),
+
+  // share_solid
+  GalleryIcon(
+    icon: CupertinoIcons.share_solid,
+    name: 'share_solid',
+    aliases: [],
+  ),
+
+  // share_up
+  GalleryIcon(
+    icon: CupertinoIcons.share_up,
+    name: 'share_up',
+    aliases: [],
+  ),
+
+  // shield
+  GalleryIcon(
+    icon: CupertinoIcons.shield,
+    name: 'shield',
+    aliases: [],
+  ),
+
+  // shield_fill
+  GalleryIcon(
+    icon: CupertinoIcons.shield_fill,
+    name: 'shield_fill',
+    aliases: [],
+  ),
+
+  // shield_lefthalf_fill
+  GalleryIcon(
+    icon: CupertinoIcons.shield_lefthalf_fill,
+    name: 'shield_lefthalf_fill',
+    aliases: [],
+  ),
+
+  // shield_slash
+  GalleryIcon(
+    icon: CupertinoIcons.shield_slash,
+    name: 'shield_slash',
+    aliases: [],
+  ),
+
+  // shield_slash_fill
+  GalleryIcon(
+    icon: CupertinoIcons.shield_slash_fill,
+    name: 'shield_slash_fill',
+    aliases: [],
+  ),
+
+  // shift
+  GalleryIcon(
+    icon: CupertinoIcons.shift,
+    name: 'shift',
+    aliases: [],
+  ),
+
+  // shift_fill
+  GalleryIcon(
+    icon: CupertinoIcons.shift_fill,
+    name: 'shift_fill',
+    aliases: [],
+  ),
+
+  // shopping_cart
+  GalleryIcon(
+    icon: CupertinoIcons.shopping_cart,
+    name: 'shopping_cart',
+    aliases: [],
+  ),
+
+  // shuffle
+  GalleryIcon(
+    icon: CupertinoIcons.shuffle,
+    name: 'shuffle',
+    aliases: [],
+  ),
+
+  // shuffle_medium
+  GalleryIcon(
+    icon: CupertinoIcons.shuffle_medium,
+    name: 'shuffle_medium',
+    aliases: [],
+  ),
+
+  // shuffle_thick
+  GalleryIcon(
+    icon: CupertinoIcons.shuffle_thick,
+    name: 'shuffle_thick',
+    aliases: [],
+  ),
+
+  // sidebar_left
+  GalleryIcon(
+    icon: CupertinoIcons.sidebar_left,
+    name: 'sidebar_left',
+    aliases: [],
+  ),
+
+  // sidebar_right
+  GalleryIcon(
+    icon: CupertinoIcons.sidebar_right,
+    name: 'sidebar_right',
+    aliases: [],
+  ),
+
+  // signature
+  GalleryIcon(
+    icon: CupertinoIcons.signature,
+    name: 'signature',
+    aliases: [],
+  ),
+
+  // skew
+  GalleryIcon(
+    icon: CupertinoIcons.skew,
+    name: 'skew',
+    aliases: [],
+  ),
+
+  // slash_circle
+  GalleryIcon(
+    icon: CupertinoIcons.slash_circle,
+    name: 'slash_circle',
+    aliases: [],
+  ),
+
+  // slash_circle_fill
+  GalleryIcon(
+    icon: CupertinoIcons.slash_circle_fill,
+    name: 'slash_circle_fill',
+    aliases: [],
+  ),
+
+  // slider_horizontal_3
+  GalleryIcon(
+    icon: CupertinoIcons.slider_horizontal_3,
+    name: 'slider_horizontal_3',
+    aliases: [],
+  ),
+
+  // slider_horizontal_below_rectangle
+  GalleryIcon(
+    icon: CupertinoIcons.slider_horizontal_below_rectangle,
+    name: 'slider_horizontal_below_rectangle',
+    aliases: [],
+  ),
+
+  // slowmo
+  GalleryIcon(
+    icon: CupertinoIcons.slowmo,
+    name: 'slowmo',
+    aliases: [],
+  ),
+
+  // smallcircle_circle
+  GalleryIcon(
+    icon: CupertinoIcons.smallcircle_circle,
+    name: 'smallcircle_circle',
+    aliases: [],
+  ),
+
+  // smallcircle_circle_fill
+  GalleryIcon(
+    icon: CupertinoIcons.smallcircle_circle_fill,
+    name: 'smallcircle_circle_fill',
+    aliases: [],
+  ),
+
+  // smallcircle_fill_circle
+  GalleryIcon(
+    icon: CupertinoIcons.smallcircle_fill_circle,
+    name: 'smallcircle_fill_circle',
+    aliases: [],
+  ),
+
+  // smallcircle_fill_circle_fill
+  GalleryIcon(
+    icon: CupertinoIcons.smallcircle_fill_circle_fill,
+    name: 'smallcircle_fill_circle_fill',
+    aliases: [],
+  ),
+
+  // smiley
+  GalleryIcon(
+    icon: CupertinoIcons.smiley,
+    name: 'smiley',
+    aliases: [],
+  ),
+
+  // smiley_fill
+  GalleryIcon(
+    icon: CupertinoIcons.smiley_fill,
+    name: 'smiley_fill',
+    aliases: [],
+  ),
+
+  // smoke
+  GalleryIcon(
+    icon: CupertinoIcons.smoke,
+    name: 'smoke',
+    aliases: [],
+  ),
+
+  // smoke_fill
+  GalleryIcon(
+    icon: CupertinoIcons.smoke_fill,
+    name: 'smoke_fill',
+    aliases: [],
+  ),
+
+  // snow
+  GalleryIcon(
+    icon: CupertinoIcons.snow,
+    name: 'snow',
+    aliases: [],
+  ),
+
+  // sort_down
+  GalleryIcon(
+    icon: CupertinoIcons.sort_down,
+    name: 'sort_down',
+    aliases: [],
+  ),
+
+  // sort_down_circle
+  GalleryIcon(
+    icon: CupertinoIcons.sort_down_circle,
+    name: 'sort_down_circle',
+    aliases: [],
+  ),
+
+  // sort_down_circle_fill
+  GalleryIcon(
+    icon: CupertinoIcons.sort_down_circle_fill,
+    name: 'sort_down_circle_fill',
+    aliases: [],
+  ),
+
+  // sort_up
+  GalleryIcon(
+    icon: CupertinoIcons.sort_up,
+    name: 'sort_up',
+    aliases: [],
+  ),
+
+  // sort_up_circle
+  GalleryIcon(
+    icon: CupertinoIcons.sort_up_circle,
+    name: 'sort_up_circle',
+    aliases: [],
+  ),
+
+  // sort_up_circle_fill
+  GalleryIcon(
+    icon: CupertinoIcons.sort_up_circle_fill,
+    name: 'sort_up_circle_fill',
+    aliases: [],
+  ),
+
+  // sparkles
+  GalleryIcon(
+    icon: CupertinoIcons.sparkles,
+    name: 'sparkles',
+    aliases: [],
+  ),
+
+  // speaker
+  GalleryIcon(
+    icon: CupertinoIcons.speaker,
+    name: 'speaker',
+    aliases: [],
+  ),
+
+  // speaker_1
+  GalleryIcon(
+    icon: CupertinoIcons.speaker_1,
+    name: 'speaker_1',
+    aliases: [],
+  ),
+
+  // speaker_1_fill
+  GalleryIcon(
+    icon: CupertinoIcons.speaker_1_fill,
+    name: 'speaker_1_fill',
+    aliases: [],
+  ),
+
+  // speaker_2
+  GalleryIcon(
+    icon: CupertinoIcons.speaker_2,
+    name: 'speaker_2',
+    aliases: [],
+  ),
+
+  // speaker_2_fill
+  GalleryIcon(
+    icon: CupertinoIcons.speaker_2_fill,
+    name: 'speaker_2_fill',
+    aliases: [],
+  ),
+
+  // speaker_3
+  GalleryIcon(
+    icon: CupertinoIcons.speaker_3,
+    name: 'speaker_3',
+    aliases: [],
+  ),
+
+  // speaker_3_fill
+  GalleryIcon(
+    icon: CupertinoIcons.speaker_3_fill,
+    name: 'speaker_3_fill',
+    aliases: [],
+  ),
+
+  // speaker_fill
+  GalleryIcon(
+    icon: CupertinoIcons.speaker_fill,
+    name: 'speaker_fill',
+    aliases: [],
+  ),
+
+  // speaker_slash
+  GalleryIcon(
+    icon: CupertinoIcons.speaker_slash,
+    name: 'speaker_slash',
+    aliases: [],
+  ),
+
+  // speaker_slash_fill
+  GalleryIcon(
+    icon: CupertinoIcons.speaker_slash_fill,
+    name: 'speaker_slash_fill',
+    aliases: [],
+  ),
+
+  // speaker_slash_fill_rtl
+  GalleryIcon(
+    icon: CupertinoIcons.speaker_slash_fill_rtl,
+    name: 'speaker_slash_fill_rtl',
+    aliases: [],
+  ),
+
+  // speaker_slash_rtl
+  GalleryIcon(
+    icon: CupertinoIcons.speaker_slash_rtl,
+    name: 'speaker_slash_rtl',
+    aliases: [],
+  ),
+
+  // speaker_zzz
+  GalleryIcon(
+    icon: CupertinoIcons.speaker_zzz,
+    name: 'speaker_zzz',
+    aliases: [],
+  ),
+
+  // speaker_zzz_fill
+  GalleryIcon(
+    icon: CupertinoIcons.speaker_zzz_fill,
+    name: 'speaker_zzz_fill',
+    aliases: [],
+  ),
+
+  // speaker_zzz_fill_rtl
+  GalleryIcon(
+    icon: CupertinoIcons.speaker_zzz_fill_rtl,
+    name: 'speaker_zzz_fill_rtl',
+    aliases: [],
+  ),
+
+  // speaker_zzz_rtl
+  GalleryIcon(
+    icon: CupertinoIcons.speaker_zzz_rtl,
+    name: 'speaker_zzz_rtl',
+    aliases: [],
+  ),
+
+  // speedometer
+  GalleryIcon(
+    icon: CupertinoIcons.speedometer,
+    name: 'speedometer',
+    aliases: [],
+  ),
+
+  // sportscourt
+  GalleryIcon(
+    icon: CupertinoIcons.sportscourt,
+    name: 'sportscourt',
+    aliases: [],
+  ),
+
+  // sportscourt_fill
+  GalleryIcon(
+    icon: CupertinoIcons.sportscourt_fill,
+    name: 'sportscourt_fill',
+    aliases: [],
+  ),
+
+  // square
+  GalleryIcon(
+    icon: CupertinoIcons.square,
+    name: 'square',
+    aliases: [],
+  ),
+
+  // square_arrow_down
+  GalleryIcon(
+    icon: CupertinoIcons.square_arrow_down,
+    name: 'square_arrow_down',
+    aliases: [],
+  ),
+
+  // square_arrow_down_fill
+  GalleryIcon(
+    icon: CupertinoIcons.square_arrow_down_fill,
+    name: 'square_arrow_down_fill',
+    aliases: [],
+  ),
+
+  // square_arrow_down_on_square
+  GalleryIcon(
+    icon: CupertinoIcons.square_arrow_down_on_square,
+    name: 'square_arrow_down_on_square',
+    aliases: [],
+  ),
+
+  // square_arrow_down_on_square_fill
+  GalleryIcon(
+    icon: CupertinoIcons.square_arrow_down_on_square_fill,
+    name: 'square_arrow_down_on_square_fill',
+    aliases: [],
+  ),
+
+  // square_arrow_left
+  GalleryIcon(
+    icon: CupertinoIcons.square_arrow_left,
+    name: 'square_arrow_left',
+    aliases: [],
+  ),
+
+  // square_arrow_left_fill
+  GalleryIcon(
+    icon: CupertinoIcons.square_arrow_left_fill,
+    name: 'square_arrow_left_fill',
+    aliases: [],
+  ),
+
+  // square_arrow_right
+  GalleryIcon(
+    icon: CupertinoIcons.square_arrow_right,
+    name: 'square_arrow_right',
+    aliases: [],
+  ),
+
+  // square_arrow_right_fill
+  GalleryIcon(
+    icon: CupertinoIcons.square_arrow_right_fill,
+    name: 'square_arrow_right_fill',
+    aliases: [],
+  ),
+
+  // square_arrow_up
+  GalleryIcon(
+    icon: CupertinoIcons.square_arrow_up,
+    name: 'square_arrow_up',
+    aliases: [],
+  ),
+
+  // square_arrow_up_fill
+  GalleryIcon(
+    icon: CupertinoIcons.square_arrow_up_fill,
+    name: 'square_arrow_up_fill',
+    aliases: [],
+  ),
+
+  // square_arrow_up_on_square
+  GalleryIcon(
+    icon: CupertinoIcons.square_arrow_up_on_square,
+    name: 'square_arrow_up_on_square',
+    aliases: [],
+  ),
+
+  // square_arrow_up_on_square_fill
+  GalleryIcon(
+    icon: CupertinoIcons.square_arrow_up_on_square_fill,
+    name: 'square_arrow_up_on_square_fill',
+    aliases: [],
+  ),
+
+  // square_favorites
+  GalleryIcon(
+    icon: CupertinoIcons.square_favorites,
+    name: 'square_favorites',
+    aliases: [],
+  ),
+
+  // square_favorites_alt
+  GalleryIcon(
+    icon: CupertinoIcons.square_favorites_alt,
+    name: 'square_favorites_alt',
+    aliases: [],
+  ),
+
+  // square_favorites_alt_fill
+  GalleryIcon(
+    icon: CupertinoIcons.square_favorites_alt_fill,
+    name: 'square_favorites_alt_fill',
+    aliases: [],
+  ),
+
+  // square_favorites_fill
+  GalleryIcon(
+    icon: CupertinoIcons.square_favorites_fill,
+    name: 'square_favorites_fill',
+    aliases: [],
+  ),
+
+  // square_fill
+  GalleryIcon(
+    icon: CupertinoIcons.square_fill,
+    name: 'square_fill',
+    aliases: [],
+  ),
+
+  // square_fill_line_vertical_square
+  GalleryIcon(
+    icon: CupertinoIcons.square_fill_line_vertical_square,
+    name: 'square_fill_line_vertical_square',
+    aliases: [],
+  ),
+
+  // square_fill_line_vertical_square_fill
+  GalleryIcon(
+    icon: CupertinoIcons.square_fill_line_vertical_square_fill,
+    name: 'square_fill_line_vertical_square_fill',
+    aliases: [],
+  ),
+
+  // square_fill_on_circle_fill
+  GalleryIcon(
+    icon: CupertinoIcons.square_fill_on_circle_fill,
+    name: 'square_fill_on_circle_fill',
+    aliases: [],
+  ),
+
+  // square_fill_on_square_fill
+  GalleryIcon(
+    icon: CupertinoIcons.square_fill_on_square_fill,
+    name: 'square_fill_on_square_fill',
+    aliases: [],
+  ),
+
+  // square_grid_2x2
+  GalleryIcon(
+    icon: CupertinoIcons.square_grid_2x2,
+    name: 'square_grid_2x2',
+    aliases: [],
+  ),
+
+  // square_grid_2x2_fill
+  GalleryIcon(
+    icon: CupertinoIcons.square_grid_2x2_fill,
+    name: 'square_grid_2x2_fill',
+    aliases: [],
+  ),
+
+  // square_grid_3x2
+  GalleryIcon(
+    icon: CupertinoIcons.square_grid_3x2,
+    name: 'square_grid_3x2',
+    aliases: [],
+  ),
+
+  // square_grid_3x2_fill
+  GalleryIcon(
+    icon: CupertinoIcons.square_grid_3x2_fill,
+    name: 'square_grid_3x2_fill',
+    aliases: [],
+  ),
+
+  // square_grid_4x3_fill
+  GalleryIcon(
+    icon: CupertinoIcons.square_grid_4x3_fill,
+    name: 'square_grid_4x3_fill',
+    aliases: [],
+  ),
+
+  // square_lefthalf_fill
+  GalleryIcon(
+    icon: CupertinoIcons.square_lefthalf_fill,
+    name: 'square_lefthalf_fill',
+    aliases: [],
+  ),
+
+  // square_line_vertical_square
+  GalleryIcon(
+    icon: CupertinoIcons.square_line_vertical_square,
+    name: 'square_line_vertical_square',
+    aliases: [],
+  ),
+
+  // square_line_vertical_square_fill
+  GalleryIcon(
+    icon: CupertinoIcons.square_line_vertical_square_fill,
+    name: 'square_line_vertical_square_fill',
+    aliases: [],
+  ),
+
+  // square_list
+  GalleryIcon(
+    icon: CupertinoIcons.square_list,
+    name: 'square_list',
+    aliases: [],
+  ),
+
+  // square_list_fill
+  GalleryIcon(
+    icon: CupertinoIcons.square_list_fill,
+    name: 'square_list_fill',
+    aliases: [],
+  ),
+
+  // square_on_circle
+  GalleryIcon(
+    icon: CupertinoIcons.square_on_circle,
+    name: 'square_on_circle',
+    aliases: [],
+  ),
+
+  // square_on_square
+  GalleryIcon(
+    icon: CupertinoIcons.square_on_square,
+    name: 'square_on_square',
+    aliases: [],
+  ),
+
+  // square_pencil
+  GalleryIcon(
+    icon: CupertinoIcons.square_pencil,
+    name: 'square_pencil',
+    aliases: [],
+  ),
+
+  // square_pencil_fill
+  GalleryIcon(
+    icon: CupertinoIcons.square_pencil_fill,
+    name: 'square_pencil_fill',
+    aliases: [],
+  ),
+
+  // square_righthalf_fill
+  GalleryIcon(
+    icon: CupertinoIcons.square_righthalf_fill,
+    name: 'square_righthalf_fill',
+    aliases: [],
+  ),
+
+  // square_split_1x2
+  GalleryIcon(
+    icon: CupertinoIcons.square_split_1x2,
+    name: 'square_split_1x2',
+    aliases: [],
+  ),
+
+  // square_split_1x2_fill
+  GalleryIcon(
+    icon: CupertinoIcons.square_split_1x2_fill,
+    name: 'square_split_1x2_fill',
+    aliases: [],
+  ),
+
+  // square_split_2x1
+  GalleryIcon(
+    icon: CupertinoIcons.square_split_2x1,
+    name: 'square_split_2x1',
+    aliases: [],
+  ),
+
+  // square_split_2x1_fill
+  GalleryIcon(
+    icon: CupertinoIcons.square_split_2x1_fill,
+    name: 'square_split_2x1_fill',
+    aliases: [],
+  ),
+
+  // square_split_2x2
+  GalleryIcon(
+    icon: CupertinoIcons.square_split_2x2,
+    name: 'square_split_2x2',
+    aliases: [],
+  ),
+
+  // square_split_2x2_fill
+  GalleryIcon(
+    icon: CupertinoIcons.square_split_2x2_fill,
+    name: 'square_split_2x2_fill',
+    aliases: [],
+  ),
+
+  // square_stack
+  GalleryIcon(
+    icon: CupertinoIcons.square_stack,
+    name: 'square_stack',
+    aliases: [],
+  ),
+
+  // square_stack_3d_down_dottedline
+  GalleryIcon(
+    icon: CupertinoIcons.square_stack_3d_down_dottedline,
+    name: 'square_stack_3d_down_dottedline',
+    aliases: [],
+  ),
+
+  // square_stack_3d_down_right
+  GalleryIcon(
+    icon: CupertinoIcons.square_stack_3d_down_right,
+    name: 'square_stack_3d_down_right',
+    aliases: [],
+  ),
+
+  // square_stack_3d_down_right_fill
+  GalleryIcon(
+    icon: CupertinoIcons.square_stack_3d_down_right_fill,
+    name: 'square_stack_3d_down_right_fill',
+    aliases: [],
+  ),
+
+  // square_stack_3d_up
+  GalleryIcon(
+    icon: CupertinoIcons.square_stack_3d_up,
+    name: 'square_stack_3d_up',
+    aliases: [],
+  ),
+
+  // square_stack_3d_up_fill
+  GalleryIcon(
+    icon: CupertinoIcons.square_stack_3d_up_fill,
+    name: 'square_stack_3d_up_fill',
+    aliases: [],
+  ),
+
+  // square_stack_3d_up_slash
+  GalleryIcon(
+    icon: CupertinoIcons.square_stack_3d_up_slash,
+    name: 'square_stack_3d_up_slash',
+    aliases: [],
+  ),
+
+  // square_stack_3d_up_slash_fill
+  GalleryIcon(
+    icon: CupertinoIcons.square_stack_3d_up_slash_fill,
+    name: 'square_stack_3d_up_slash_fill',
+    aliases: [],
+  ),
+
+  // square_stack_fill
+  GalleryIcon(
+    icon: CupertinoIcons.square_stack_fill,
+    name: 'square_stack_fill',
+    aliases: [],
+  ),
+
+  // squares_below_rectangle
+  GalleryIcon(
+    icon: CupertinoIcons.squares_below_rectangle,
+    name: 'squares_below_rectangle',
+    aliases: [],
+  ),
+
+  // star
+  GalleryIcon(
+    icon: CupertinoIcons.star,
+    name: 'star',
+    aliases: [],
+  ),
+
+  // star_circle
+  GalleryIcon(
+    icon: CupertinoIcons.star_circle,
+    name: 'star_circle',
+    aliases: [],
+  ),
+
+  // star_circle_fill
+  GalleryIcon(
+    icon: CupertinoIcons.star_circle_fill,
+    name: 'star_circle_fill',
+    aliases: [],
+  ),
+
+  // star_fill
+  GalleryIcon(
+    icon: CupertinoIcons.star_fill,
+    name: 'star_fill',
+    aliases: [],
+  ),
+
+  // star_lefthalf_fill
+  GalleryIcon(
+    icon: CupertinoIcons.star_lefthalf_fill,
+    name: 'star_lefthalf_fill',
+    aliases: [],
+  ),
+
+  // star_slash
+  GalleryIcon(
+    icon: CupertinoIcons.star_slash,
+    name: 'star_slash',
+    aliases: [],
+  ),
+
+  // star_slash_fill
+  GalleryIcon(
+    icon: CupertinoIcons.star_slash_fill,
+    name: 'star_slash_fill',
+    aliases: [],
+  ),
+
+  // staroflife
+  GalleryIcon(
+    icon: CupertinoIcons.staroflife,
+    name: 'staroflife',
+    aliases: [],
+  ),
+
+  // staroflife_fill
+  GalleryIcon(
+    icon: CupertinoIcons.staroflife_fill,
+    name: 'staroflife_fill',
+    aliases: [],
+  ),
+
+  // stop
+  GalleryIcon(
+    icon: CupertinoIcons.stop,
+    name: 'stop',
+    aliases: [],
+  ),
+
+  // stop_circle
+  GalleryIcon(
+    icon: CupertinoIcons.stop_circle,
+    name: 'stop_circle',
+    aliases: [],
+  ),
+
+  // stop_circle_fill
+  GalleryIcon(
+    icon: CupertinoIcons.stop_circle_fill,
+    name: 'stop_circle_fill',
+    aliases: [],
+  ),
+
+  // stop_fill
+  GalleryIcon(
+    icon: CupertinoIcons.stop_fill,
+    name: 'stop_fill',
+    aliases: [],
+  ),
+
+  // stopwatch
+  GalleryIcon(
+    icon: CupertinoIcons.stopwatch,
+    name: 'stopwatch',
+    aliases: [],
+  ),
+
+  // stopwatch_fill
+  GalleryIcon(
+    icon: CupertinoIcons.stopwatch_fill,
+    name: 'stopwatch_fill',
+    aliases: [],
+  ),
+
+  // strikethrough
+  GalleryIcon(
+    icon: CupertinoIcons.strikethrough,
+    name: 'strikethrough',
+    aliases: [],
+  ),
+
+  // suit_club
+  GalleryIcon(
+    icon: CupertinoIcons.suit_club,
+    name: 'suit_club',
+    aliases: [],
+  ),
+
+  // suit_club_fill
+  GalleryIcon(
+    icon: CupertinoIcons.suit_club_fill,
+    name: 'suit_club_fill',
+    aliases: [],
+  ),
+
+  // suit_diamond
+  GalleryIcon(
+    icon: CupertinoIcons.suit_diamond,
+    name: 'suit_diamond',
+    aliases: [],
+  ),
+
+  // suit_diamond_fill
+  GalleryIcon(
+    icon: CupertinoIcons.suit_diamond_fill,
+    name: 'suit_diamond_fill',
+    aliases: [],
+  ),
+
+  // suit_heart
+  GalleryIcon(
+    icon: CupertinoIcons.suit_heart,
+    name: 'suit_heart',
+    aliases: [],
+  ),
+
+  // suit_heart_fill
+  GalleryIcon(
+    icon: CupertinoIcons.suit_heart_fill,
+    name: 'suit_heart_fill',
+    aliases: [],
+  ),
+
+  // suit_spade
+  GalleryIcon(
+    icon: CupertinoIcons.suit_spade,
+    name: 'suit_spade',
+    aliases: [],
+  ),
+
+  // suit_spade_fill
+  GalleryIcon(
+    icon: CupertinoIcons.suit_spade_fill,
+    name: 'suit_spade_fill',
+    aliases: [],
+  ),
+
+  // sum
+  GalleryIcon(
+    icon: CupertinoIcons.sum,
+    name: 'sum',
+    aliases: [],
+  ),
+
+  // sun_dust
+  GalleryIcon(
+    icon: CupertinoIcons.sun_dust,
+    name: 'sun_dust',
+    aliases: [],
+  ),
+
+  // sun_dust_fill
+  GalleryIcon(
+    icon: CupertinoIcons.sun_dust_fill,
+    name: 'sun_dust_fill',
+    aliases: [],
+  ),
+
+  // sun_haze
+  GalleryIcon(
+    icon: CupertinoIcons.sun_haze,
+    name: 'sun_haze',
+    aliases: [],
+  ),
+
+  // sun_haze_fill
+  GalleryIcon(
+    icon: CupertinoIcons.sun_haze_fill,
+    name: 'sun_haze_fill',
+    aliases: [],
+  ),
+
+  // sun_max
+  GalleryIcon(
+    icon: CupertinoIcons.sun_max,
+    name: 'sun_max',
+    aliases: [],
+  ),
+
+  // sun_max_fill
+  GalleryIcon(
+    icon: CupertinoIcons.sun_max_fill,
+    name: 'sun_max_fill',
+    aliases: [],
+  ),
+
+  // sun_min
+  GalleryIcon(
+    icon: CupertinoIcons.sun_min,
+    name: 'sun_min',
+    aliases: [],
+  ),
+
+  // sun_min_fill
+  GalleryIcon(
+    icon: CupertinoIcons.sun_min_fill,
+    name: 'sun_min_fill',
+    aliases: [],
+  ),
+
+  // sunrise
+  GalleryIcon(
+    icon: CupertinoIcons.sunrise,
+    name: 'sunrise',
+    aliases: [],
+  ),
+
+  // sunrise_fill
+  GalleryIcon(
+    icon: CupertinoIcons.sunrise_fill,
+    name: 'sunrise_fill',
+    aliases: [],
+  ),
+
+  // sunset
+  GalleryIcon(
+    icon: CupertinoIcons.sunset,
+    name: 'sunset',
+    aliases: [],
+  ),
+
+  // sunset_fill
+  GalleryIcon(
+    icon: CupertinoIcons.sunset_fill,
+    name: 'sunset_fill',
+    aliases: [],
   ),
 
   // switch_camera
   GalleryIcon(
     icon: CupertinoIcons.switch_camera,
     name: 'switch_camera',
+    aliases: [],
   ),
 
   // switch_camera_solid
   GalleryIcon(
     icon: CupertinoIcons.switch_camera_solid,
     name: 'switch_camera_solid',
+    aliases: [],
   ),
 
-  // collections
-  GalleryIcon(icon: CupertinoIcons.collections, name: 'collections'),
-
-  // collections_solid
-  GalleryIcon(icon: CupertinoIcons.collections_solid, name: 'collections_solid'),
-
-  // folder
-  GalleryIcon(icon: CupertinoIcons.folder, name: 'folder'),
-
-  // folder_solid
-  GalleryIcon(icon: CupertinoIcons.folder_solid, name: 'folder_solid'),
-
-  // folder_open
-  GalleryIcon(icon: CupertinoIcons.folder_open, name: 'folder_open'),
-
-  // delete
-  GalleryIcon(icon: CupertinoIcons.delete, name: 'delete'),
-
-  // delete_solid
-  GalleryIcon(icon: CupertinoIcons.delete_solid, name: 'delete_solid'),
-
-  // delete_simple
-  GalleryIcon(icon: CupertinoIcons.delete_simple, name: 'delete_simple'),
-// pen
-  GalleryIcon(icon: CupertinoIcons.pen, name: 'pen'),
-// pencil
-  GalleryIcon(icon: CupertinoIcons.pencil, name: 'pencil'),
-
-  // create
-  GalleryIcon(icon: CupertinoIcons.create, name: 'create'),
-
-  // create_solid
-  GalleryIcon(icon: CupertinoIcons.create_solid, name: 'create_solid'),
-
-  // refresh
-  GalleryIcon(icon: CupertinoIcons.refresh, name: 'refresh'),
-
-  // refresh_circled
-  GalleryIcon(icon: CupertinoIcons.refresh_circled, name: 'refresh_circled'),
-
-  // refresh_circled_solid
-  GalleryIcon(icon: CupertinoIcons.refresh_circled_solid, name: 'refresh_circled_solid'),
-
-  // refresh_thin
-  GalleryIcon(icon: CupertinoIcons.refresh_thin, name: 'refresh_thin'),
-
-  // refresh_thick
-  GalleryIcon(icon: CupertinoIcons.refresh_thick, name: 'refresh_thick'),
-
-  // refresh_bold
-  GalleryIcon(icon: CupertinoIcons.refresh_bold, name: 'refresh_bold'),
-
-  // clear_thick
-  GalleryIcon(icon: CupertinoIcons.clear_thick, name: 'clear_thick'),
-
-  // clear_thick_circled
-  GalleryIcon(icon: CupertinoIcons.clear_thick_circled, name: 'clear_thick_circled'),
-
-  // clear
-  GalleryIcon(icon: CupertinoIcons.clear, name: 'clear'),
-
-  // clear_circled
-  GalleryIcon(icon: CupertinoIcons.clear_circled, name: 'clear_circled'),
-
-  // clear_circled_solid
-  GalleryIcon(icon: CupertinoIcons.clear_circled_solid, name: 'clear_circled_solid'),
-
-// add
+  // t_bubble
   GalleryIcon(
-    name: 'add',
-    icon: CupertinoIcons.add,
+    icon: CupertinoIcons.t_bubble,
+    name: 't_bubble',
+    aliases: [],
   ),
-  // add_circled
+
+  // t_bubble_fill
   GalleryIcon(
-    name: 'add_circled',
-    icon: CupertinoIcons.add_circled,
+    icon: CupertinoIcons.t_bubble_fill,
+    name: 't_bubble_fill',
+    aliases: [],
   ),
-  // add_circled_solid
+
+  // table
   GalleryIcon(
-    name: 'add_circled_solid',
-    icon: CupertinoIcons.add_circled_solid,
+    icon: CupertinoIcons.table,
+    name: 'table',
+    aliases: [],
   ),
-  
-  // gear
-  GalleryIcon(icon: CupertinoIcons.gear, name: 'gear'),
 
-  // gear_solid
-  GalleryIcon(icon: CupertinoIcons.gear_solid, name: 'gear_solid'),
+  // table_badge_more
+  GalleryIcon(
+    icon: CupertinoIcons.table_badge_more,
+    name: 'table_badge_more',
+    aliases: [],
+  ),
 
-  // gear_big
-  GalleryIcon(icon: CupertinoIcons.gear_big, name: 'gear_big'),
+  // table_badge_more_fill
+  GalleryIcon(
+    icon: CupertinoIcons.table_badge_more_fill,
+    name: 'table_badge_more_fill',
+    aliases: [],
+  ),
 
-  // settings
-  GalleryIcon(icon: CupertinoIcons.settings, name: 'settings'),
-
-  // settings_solid
-  GalleryIcon(icon: CupertinoIcons.settings_solid, name: 'settings_solid'),
-
-// music_note
-  GalleryIcon(icon: CupertinoIcons.music_note, name: 'music_note'),
-
-  // double_music_note
-  GalleryIcon(icon: CupertinoIcons.double_music_note, name: 'double_music_note'),
-
-  // play_arrow
-  GalleryIcon(icon: CupertinoIcons.play_arrow, name: 'play_arrow'),
-
-  // play_arrow_solid
-  GalleryIcon(icon: CupertinoIcons.play_arrow_solid, name: 'play_arrow_solid'),
-// pause
-  GalleryIcon(icon: CupertinoIcons.pause, name: 'pause'),
-
-  // pause_solid
-  GalleryIcon(icon: CupertinoIcons.pause_solid, name: 'pause_solid'),
-
-  // loop
-  GalleryIcon(icon: CupertinoIcons.loop, name: 'loop'),
-
-  // loop_thick
-  GalleryIcon(icon: CupertinoIcons.loop_thick, name: 'loop_thick'),
-
-  // volume_down
-  GalleryIcon(icon: CupertinoIcons.volume_down, name: 'volume_down'),
-
-  // volume_mute
-  GalleryIcon(icon: CupertinoIcons.volume_mute, name: 'volume_mute'),
-
-  // volume_off
-  GalleryIcon(icon: CupertinoIcons.volume_off, name: 'volume_off'),
-
-  // volume_up
-  GalleryIcon(icon: CupertinoIcons.volume_up, name: 'volume_up'),
-
-  // fullscreen
-  GalleryIcon(icon: CupertinoIcons.fullscreen, name: 'fullscreen'),
-
-  // fullscreen_exit
-  GalleryIcon(icon: CupertinoIcons.fullscreen_exit, name: 'fullscreen_exit'),
-
-  // mic_off
-  GalleryIcon(icon: CupertinoIcons.mic_off, name: 'mic_off'),
-
-  // mic
-  GalleryIcon(icon: CupertinoIcons.mic, name: 'mic'),
-
-  // mic_solid
-  GalleryIcon(icon: CupertinoIcons.mic_solid, name: 'mic_solid'),
-
-  // clock
-  GalleryIcon(icon: CupertinoIcons.clock, name: 'clock'),
-
-  // clock_solid
-  GalleryIcon(icon: CupertinoIcons.clock_solid, name: 'clock_solid'),
-
-  // time
-  GalleryIcon(icon: CupertinoIcons.time, name: 'time'),
-
-  // time_solid
-  GalleryIcon(icon: CupertinoIcons.time_solid, name: 'time_solid'),
-
-  // padlock
-  GalleryIcon(icon: CupertinoIcons.padlock, name: 'padlock'),
-
-  // padlock_solid
-  GalleryIcon(icon: CupertinoIcons.padlock_solid, name: 'padlock_solid'),
-// eye
-  GalleryIcon(icon: CupertinoIcons.eye, name: 'eye'),
-
-  // eye_solid
-  GalleryIcon(icon: CupertinoIcons.eye_solid, name: 'eye_solid'),
-
-  // person
-  GalleryIcon(icon: CupertinoIcons.person, name: 'person'),
-
-  // person_solid
-  GalleryIcon(icon: CupertinoIcons.person_solid, name: 'person_solid'),
-
-  // person_add
-  GalleryIcon(icon: CupertinoIcons.person_add, name: 'person_add'),
-
-  // person_add_solid
-  GalleryIcon(icon: CupertinoIcons.person_add_solid, name: 'person_add_solid'),
-
-  // group
-  GalleryIcon(icon: CupertinoIcons.group, name: 'group'),
-
-  // group_solid
-  GalleryIcon(icon: CupertinoIcons.group_solid, name: 'group_solid'),
-
-  // mail
-  GalleryIcon(icon: CupertinoIcons.mail, name: 'mail'),
-
-  // mail_solid
-  GalleryIcon(icon: CupertinoIcons.mail_solid, name: 'mail_solid'),
-
-  // location
-  GalleryIcon(icon: CupertinoIcons.location, name: 'location'),
-
-  // location_solid
-  GalleryIcon(icon: CupertinoIcons.location_solid, name: 'location_solid'),
+  // table_fill
+  GalleryIcon(
+    icon: CupertinoIcons.table_fill,
+    name: 'table_fill',
+    aliases: [],
+  ),
 
   // tag
-  GalleryIcon(icon: CupertinoIcons.tag, name: 'tag'),
+  GalleryIcon(
+    icon: CupertinoIcons.tag,
+    name: 'tag',
+    aliases: [],
+  ),
+
+  // tag_circle
+  GalleryIcon(
+    icon: CupertinoIcons.tag_circle,
+    name: 'tag_circle',
+    aliases: [],
+  ),
+
+  // tag_circle_fill
+  GalleryIcon(
+    icon: CupertinoIcons.tag_circle_fill,
+    name: 'tag_circle_fill',
+    aliases: [],
+  ),
+
+  // tag_fill
+  GalleryIcon(
+    icon: CupertinoIcons.tag_fill,
+    name: 'tag_fill',
+    aliases: [],
+  ),
 
   // tag_solid
-  GalleryIcon(icon: CupertinoIcons.tag_solid, name: 'tag_solid'),
+  GalleryIcon(
+    icon: CupertinoIcons.tag_solid,
+    name: 'tag_solid',
+    aliases: [],
+  ),
 
   // tags
-  GalleryIcon(icon: CupertinoIcons.tags, name: 'tags'),
+  GalleryIcon(
+    icon: CupertinoIcons.tags,
+    name: 'tags',
+    aliases: [],
+  ),
 
   // tags_solid
-  GalleryIcon(icon: CupertinoIcons.tags_solid, name: 'tags_solid'),
+  GalleryIcon(
+    icon: CupertinoIcons.tags_solid,
+    name: 'tags_solid',
+    aliases: [],
+  ),
 
-  // bus
-  GalleryIcon(icon: CupertinoIcons.bus, name: 'bus'),
+  // text_aligncenter
+  GalleryIcon(
+    icon: CupertinoIcons.text_aligncenter,
+    name: 'text_aligncenter',
+    aliases: [],
+  ),
 
-  // car
-  GalleryIcon(icon: CupertinoIcons.car, name: 'car'),
+  // text_alignleft
+  GalleryIcon(
+    icon: CupertinoIcons.text_alignleft,
+    name: 'text_alignleft',
+    aliases: [],
+  ),
 
-  // car_detailed
-  GalleryIcon(icon: CupertinoIcons.car_detailed, name: 'car_detailed'),
+  // text_alignright
+  GalleryIcon(
+    icon: CupertinoIcons.text_alignright,
+    name: 'text_alignright',
+    aliases: [],
+  ),
+
+  // text_append
+  GalleryIcon(
+    icon: CupertinoIcons.text_append,
+    name: 'text_append',
+    aliases: [],
+  ),
+
+  // text_badge_checkmark
+  GalleryIcon(
+    icon: CupertinoIcons.text_badge_checkmark,
+    name: 'text_badge_checkmark',
+    aliases: [],
+  ),
+
+  // text_badge_minus
+  GalleryIcon(
+    icon: CupertinoIcons.text_badge_minus,
+    name: 'text_badge_minus',
+    aliases: [],
+  ),
+
+  // text_badge_plus
+  GalleryIcon(
+    icon: CupertinoIcons.text_badge_plus,
+    name: 'text_badge_plus',
+    aliases: [],
+  ),
+
+  // text_badge_star
+  GalleryIcon(
+    icon: CupertinoIcons.text_badge_star,
+    name: 'text_badge_star',
+    aliases: [],
+  ),
+
+  // text_badge_xmark
+  GalleryIcon(
+    icon: CupertinoIcons.text_badge_xmark,
+    name: 'text_badge_xmark',
+    aliases: [],
+  ),
+
+  // text_bubble
+  GalleryIcon(
+    icon: CupertinoIcons.text_bubble,
+    name: 'text_bubble',
+    aliases: [],
+  ),
+
+  // text_bubble_fill
+  GalleryIcon(
+    icon: CupertinoIcons.text_bubble_fill,
+    name: 'text_bubble_fill',
+    aliases: [],
+  ),
+
+  // text_cursor
+  GalleryIcon(
+    icon: CupertinoIcons.text_cursor,
+    name: 'text_cursor',
+    aliases: [],
+  ),
+
+  // text_insert
+  GalleryIcon(
+    icon: CupertinoIcons.text_insert,
+    name: 'text_insert',
+    aliases: [],
+  ),
+
+  // text_justify
+  GalleryIcon(
+    icon: CupertinoIcons.text_justify,
+    name: 'text_justify',
+    aliases: [],
+  ),
+
+  // text_justifyleft
+  GalleryIcon(
+    icon: CupertinoIcons.text_justifyleft,
+    name: 'text_justifyleft',
+    aliases: [],
+  ),
+
+  // text_justifyright
+  GalleryIcon(
+    icon: CupertinoIcons.text_justifyright,
+    name: 'text_justifyright',
+    aliases: [],
+  ),
+
+  // text_quote
+  GalleryIcon(
+    icon: CupertinoIcons.text_quote,
+    name: 'text_quote',
+    aliases: [],
+  ),
+
+  // textbox
+  GalleryIcon(
+    icon: CupertinoIcons.textbox,
+    name: 'textbox',
+    aliases: [],
+  ),
+
+  // textformat
+  GalleryIcon(
+    icon: CupertinoIcons.textformat,
+    name: 'textformat',
+    aliases: [],
+  ),
+
+  // textformat_123
+  GalleryIcon(
+    icon: CupertinoIcons.textformat_123,
+    name: 'textformat_123',
+    aliases: [],
+  ),
+
+  // textformat_abc
+  GalleryIcon(
+    icon: CupertinoIcons.textformat_abc,
+    name: 'textformat_abc',
+    aliases: [],
+  ),
+
+  // textformat_abc_dottedunderline
+  GalleryIcon(
+    icon: CupertinoIcons.textformat_abc_dottedunderline,
+    name: 'textformat_abc_dottedunderline',
+    aliases: [],
+  ),
+
+  // textformat_alt
+  GalleryIcon(
+    icon: CupertinoIcons.textformat_alt,
+    name: 'textformat_alt',
+    aliases: [],
+  ),
+
+  // textformat_size
+  GalleryIcon(
+    icon: CupertinoIcons.textformat_size,
+    name: 'textformat_size',
+    aliases: [],
+  ),
+
+  // textformat_subscript
+  GalleryIcon(
+    icon: CupertinoIcons.textformat_subscript,
+    name: 'textformat_subscript',
+    aliases: [],
+  ),
+
+  // textformat_superscript
+  GalleryIcon(
+    icon: CupertinoIcons.textformat_superscript,
+    name: 'textformat_superscript',
+    aliases: [],
+  ),
+
+  // thermometer
+  GalleryIcon(
+    icon: CupertinoIcons.thermometer,
+    name: 'thermometer',
+    aliases: [],
+  ),
+
+  // thermometer_snowflake
+  GalleryIcon(
+    icon: CupertinoIcons.thermometer_snowflake,
+    name: 'thermometer_snowflake',
+    aliases: [],
+  ),
+
+  // thermometer_sun
+  GalleryIcon(
+    icon: CupertinoIcons.thermometer_sun,
+    name: 'thermometer_sun',
+    aliases: [],
+  ),
+
+  // ticket
+  GalleryIcon(
+    icon: CupertinoIcons.ticket,
+    name: 'ticket',
+    aliases: [],
+  ),
+
+  // ticket_fill
+  GalleryIcon(
+    icon: CupertinoIcons.ticket_fill,
+    name: 'ticket_fill',
+    aliases: [],
+  ),
+
+  // tickets
+  GalleryIcon(
+    icon: CupertinoIcons.tickets,
+    name: 'tickets',
+    aliases: [],
+  ),
+
+  // tickets_fill
+  GalleryIcon(
+    icon: CupertinoIcons.tickets_fill,
+    name: 'tickets_fill',
+    aliases: [],
+  ),
+
+  // time
+  GalleryIcon(
+    icon: CupertinoIcons.time,
+    name: 'time',
+    aliases: [],
+  ),
+
+  // time_solid
+  GalleryIcon(
+    icon: CupertinoIcons.time_solid,
+    name: 'time_solid',
+    aliases: [],
+  ),
+
+  // timelapse
+  GalleryIcon(
+    icon: CupertinoIcons.timelapse,
+    name: 'timelapse',
+    aliases: [],
+  ),
+
+  // timer
+  GalleryIcon(
+    icon: CupertinoIcons.timer,
+    name: 'timer',
+    aliases: [],
+  ),
+
+  // timer_fill
+  GalleryIcon(
+    icon: CupertinoIcons.timer_fill,
+    name: 'timer_fill',
+    aliases: [],
+  ),
+
+  // today
+  GalleryIcon(
+    icon: CupertinoIcons.today,
+    name: 'today',
+    aliases: [],
+  ),
+
+  // today_fill
+  GalleryIcon(
+    icon: CupertinoIcons.today_fill,
+    name: 'today_fill',
+    aliases: [],
+  ),
+
+  // tornado
+  GalleryIcon(
+    icon: CupertinoIcons.tornado,
+    name: 'tornado',
+    aliases: [],
+  ),
+
+  // tortoise
+  GalleryIcon(
+    icon: CupertinoIcons.tortoise,
+    name: 'tortoise',
+    aliases: [],
+  ),
+
+  // tortoise_fill
+  GalleryIcon(
+    icon: CupertinoIcons.tortoise_fill,
+    name: 'tortoise_fill',
+    aliases: [],
+  ),
 
   // train_style_one
-  GalleryIcon(icon: CupertinoIcons.train_style_one, name: 'train_style_one'),
+  GalleryIcon(
+    icon: CupertinoIcons.train_style_one,
+    name: 'train_style_one',
+    aliases: [],
+  ),
 
   // train_style_two
-  GalleryIcon(icon: CupertinoIcons.train_style_two, name: 'train_style_two'),
-// paw
-  GalleryIcon(icon: CupertinoIcons.paw, name: 'paw'),
-
-  // paw_solid
-  GalleryIcon(icon: CupertinoIcons.paw_solid, name: 'paw_solid'),
-
-  // game_controller
-  GalleryIcon(icon: CupertinoIcons.game_controller, name: 'game_controller'),
-
-  // game_controller_solid
-  GalleryIcon(icon: CupertinoIcons.game_controller_solid, name: 'game_controller_solid'),
-
-  // lab_flask
-  GalleryIcon(icon: CupertinoIcons.lab_flask, name: 'lab_flask'),
-
-  // lab_flask_solid
-  GalleryIcon(icon: CupertinoIcons.lab_flask_solid, name: 'lab_flask_solid'),
-// heart
-  GalleryIcon(icon: CupertinoIcons.heart, name: 'heart'),
-
-  // heart_solid
-  GalleryIcon(icon: CupertinoIcons.heart_solid, name: 'heart_solid'),
-// bell
-  GalleryIcon(icon: CupertinoIcons.bell, name: 'bell'),
-
-  // bell_solid
-  GalleryIcon(icon: CupertinoIcons.bell_solid, name: 'bell_solid'),
-
-  // news
-  GalleryIcon(icon: CupertinoIcons.news, name: 'news'),
-
-  // news_solid
-  GalleryIcon(icon: CupertinoIcons.news_solid, name: 'news_solid'),
-
-  // brightness
-  GalleryIcon(icon: CupertinoIcons.brightness, name: 'brightness'),
-
-  // brightness_solid
-  GalleryIcon(icon: CupertinoIcons.brightness_solid, name: 'brightness_solid'),
-
-  //
-  // BEGIN GENERATED SF SYMBOLS NAMES
-  
-  // airplane
-  GalleryIcon(
-    name: 'airplane',
-    icon: CupertinoIcons.airplane,
-  ),
-  // alarm
-  GalleryIcon(
-    name: 'alarm',
-    icon: CupertinoIcons.alarm,
-  ),
-  // alarm_fill
-  GalleryIcon(
-    name: 'alarm_fill',
-    icon: CupertinoIcons.alarm_fill,
-  ),
-  // alt
-  GalleryIcon(
-    name: 'alt',
-    icon: CupertinoIcons.alt,
-  ),
-  // ant
-  GalleryIcon(
-    name: 'ant',
-    icon: CupertinoIcons.ant,
-  ),
-  // ant_circle
-  GalleryIcon(
-    name: 'ant_circle',
-    icon: CupertinoIcons.ant_circle,
-  ),
-  // ant_circle_fill
-  GalleryIcon(
-    name: 'ant_circle_fill',
-    icon: CupertinoIcons.ant_circle_fill,
-  ),
-  // ant_fill
-  GalleryIcon(
-    name: 'ant_fill',
-    icon: CupertinoIcons.ant_fill,
-  ),
-  // antenna_radiowaves_left_right
-  GalleryIcon(
-    name: 'antenna_radiowaves_left_right',
-    icon: CupertinoIcons.antenna_radiowaves_left_right,
-  ),
-  // app
-  GalleryIcon(
-    name: 'app',
-    icon: CupertinoIcons.app,
-  ),
-  // app_badge
-  GalleryIcon(
-    name: 'app_badge',
-    icon: CupertinoIcons.app_badge,
-  ),
-  // app_badge_fill
-  GalleryIcon(
-    name: 'app_badge_fill',
-    icon: CupertinoIcons.app_badge_fill,
-  ),
-  // app_fill
-  GalleryIcon(
-    name: 'app_fill',
-    icon: CupertinoIcons.app_fill,
-  ),
-  // archivebox
-  GalleryIcon(
-    name: 'archivebox',
-    icon: CupertinoIcons.archivebox,
-  ),
-  // archivebox_fill
-  GalleryIcon(
-    name: 'archivebox_fill',
-    icon: CupertinoIcons.archivebox_fill,
-  ),
-  // arrow_2_circlepath
-  GalleryIcon(
-    name: 'arrow_2_circlepath',
-    icon: CupertinoIcons.arrow_2_circlepath,
-  ),
-  // arrow_2_circlepath_circle
-  GalleryIcon(
-    name: 'arrow_2_circlepath_circle',
-    icon: CupertinoIcons.arrow_2_circlepath_circle,
-  ),
-  // arrow_2_circlepath_circle_fill
-  GalleryIcon(
-    name: 'arrow_2_circlepath_circle_fill',
-    icon: CupertinoIcons.arrow_2_circlepath_circle_fill,
-  ),
-  // arrow_2_squarepath
-  GalleryIcon(
-    name: 'arrow_2_squarepath',
-    icon: CupertinoIcons.arrow_2_squarepath,
-  ),
-  // arrow_3_trianglepath
-  GalleryIcon(
-    name: 'arrow_3_trianglepath',
-    icon: CupertinoIcons.arrow_3_trianglepath,
-  ),
-  // arrow_branch
-  GalleryIcon(
-    name: 'arrow_branch',
-    icon: CupertinoIcons.arrow_branch,
-  ),
-  // copy the order from above to here
-  // arrow_clockwise
-  GalleryIcon(
-    name: 'arrow_clockwise',
-    icon: CupertinoIcons.arrow_clockwise,
-  ),
-  // arrow_clockwise_circle
-  GalleryIcon(
-    name: 'arrow_clockwise_circle',
-    icon: CupertinoIcons.arrow_clockwise_circle,
-  ),
-  // arrow_clockwise_circle_fill
-  GalleryIcon(
-    name: 'arrow_clockwise_circle_fill',
-    icon: CupertinoIcons.arrow_clockwise_circle_fill,
-  ),
-  // arrow_down
-  GalleryIcon(
-    name: 'arrow_down',
-    icon: CupertinoIcons.arrow_down,
-  ),
-  // arrow_down_circle
-  GalleryIcon(
-    name: 'arrow_down_circle',
-    icon: CupertinoIcons.arrow_down_circle,
-  ),
-  // arrow_down_circle_fill
-  GalleryIcon(
-    name: 'arrow_down_circle_fill',
-    icon: CupertinoIcons.arrow_down_circle_fill,
-  ),
-
-  // arrow_down_doc
-  GalleryIcon(
-    name: 'arrow_down_doc',
-    icon: CupertinoIcons.arrow_down_doc,
-  ),
-
-  // arrow_down_doc_fill
-  GalleryIcon(
-    name: 'arrow_down_doc_fill',
-    icon: CupertinoIcons.arrow_down_doc_fill,
-  ),
-
-  // arrow_down_left
-  GalleryIcon(
-    name: 'arrow_down_left',
-    icon: CupertinoIcons.arrow_down_left,
-  ),
-
-  // arrow_down_left_circle
-  GalleryIcon(
-    name: 'arrow_down_left_circle',
-    icon: CupertinoIcons.arrow_down_left_circle,
-  ),
-
-  // arrow_down_left_circle_fill
-  GalleryIcon(
-    name: 'arrow_down_left_circle_fill',
-    icon: CupertinoIcons.arrow_down_left_circle_fill,
-  ),
-
-  // arrow_down_left_square
-  GalleryIcon(
-    name: 'arrow_down_left_square',
-    icon: CupertinoIcons.arrow_down_left_square,
-  ),
-  // arrow_down_left_square_fill
-  GalleryIcon(
-    name: 'arrow_down_left_square_fill',
-    icon: CupertinoIcons.arrow_down_left_square_fill,
-  ),
-  // arrow_down_right
-  GalleryIcon(
-    name: 'arrow_down_right',
-    icon: CupertinoIcons.arrow_down_right,
-  ),
-  // arrow_down_right_arrow_up_left
-  GalleryIcon(
-    name: 'arrow_down_right_arrow_up_left',
-    icon: CupertinoIcons.arrow_down_right_arrow_up_left,
-  ),
-  // arrow_down_right_circle
-  GalleryIcon(
-    name: 'arrow_down_right_circle',
-    icon: CupertinoIcons.arrow_down_right_circle,
-  ),
-  // arrow_down_right_circle_fill
-  GalleryIcon(
-    name: 'arrow_down_right_circle_fill',
-    icon: CupertinoIcons.arrow_down_right_circle_fill,
-  ),
-  // arrow_down_right_square
-  GalleryIcon(
-    name: 'arrow_down_right_square',
-    icon: CupertinoIcons.arrow_down_right_square,
-  ),
-  // arrow_down_right_square_fill
-  GalleryIcon(
-    name: 'arrow_down_right_square_fill',
-    icon: CupertinoIcons.arrow_down_right_square_fill,
-  ),
-
-  // arrow_down_square
-  GalleryIcon(
-    name: 'arrow_down_square',
-    icon: CupertinoIcons.arrow_down_square,
-  ),
-  // arrow_down_square_fill
-  GalleryIcon(
-    name: 'arrow_down_square_fill',
-    icon: CupertinoIcons.arrow_down_square_fill,
-  ),
-  // arrow_down_to_line
-  GalleryIcon(
-    name: 'arrow_down_to_line',
-    icon: CupertinoIcons.arrow_down_to_line,
-  ),
-  // arrow_down_to_line_alt
-  GalleryIcon(
-    name: 'arrow_down_to_line_alt',
-    icon: CupertinoIcons.arrow_down_to_line_alt,
-  ),
-  // arrow_left
-  GalleryIcon(
-    name: 'arrow_left',
-    icon: CupertinoIcons.arrow_left,
-  ),
-  //
-  // arrow_left_circle
-  GalleryIcon(
-    name: 'arrow_left_circle',
-    icon: CupertinoIcons.arrow_left_circle,
-  ),
-  // arrow_left_circle_fill
-  GalleryIcon(
-    name: 'arrow_left_circle_fill',
-    icon: CupertinoIcons.arrow_left_circle_fill,
-  ),
-  // arrow_left_right
-  GalleryIcon(
-    name: 'arrow_left_right',
-    icon: CupertinoIcons.arrow_left_right,
-  ),
-  // arrow_left_right_circle
-  GalleryIcon(
-    name: 'arrow_left_right_circle',
-    icon: CupertinoIcons.arrow_left_right_circle,
-  ),
-  // arrow_left_right_circle_fill
-  GalleryIcon(
-    name: 'arrow_left_right_circle_fill',
-    icon: CupertinoIcons.arrow_left_right_circle_fill,
-  ),
-  // arrow_left_right_square
-  GalleryIcon(
-    name: 'arrow_left_right_square',
-    icon: CupertinoIcons.arrow_left_right_square,
-  ),
-  // arrow_left_right_square_fill
-  GalleryIcon(
-    name: 'arrow_left_right_square_fill',
-    icon: CupertinoIcons.arrow_left_right_square_fill,
-  ),
-  // arrow_left_square
-  GalleryIcon(
-    name: 'arrow_left_square',
-    icon: CupertinoIcons.arrow_left_square,
-  ),
-  // arrow_left_square_fill
-  GalleryIcon(
-    name: 'arrow_left_square_fill',
-    icon: CupertinoIcons.arrow_left_square_fill,
-  ),
-  // arrow_left_to_line
-  GalleryIcon(
-    name: 'arrow_left_to_line',
-    icon: CupertinoIcons.arrow_left_to_line,
-  ),
-  // arrow_left_to_line_alt
-  GalleryIcon(
-    name: 'arrow_left_to_line_alt',
-    icon: CupertinoIcons.arrow_left_to_line_alt,
-  ),
-  // arrow_merge
-  GalleryIcon(
-    name: 'arrow_merge',
-    icon: CupertinoIcons.arrow_merge,
-  ),
-  // arrow_right
-  GalleryIcon(
-    name: 'arrow_right',
-    icon: CupertinoIcons.arrow_right,
-  ),
-  // arrow_right_arrow_left
-  GalleryIcon(
-    name: 'arrow_right_arrow_left',
-    icon: CupertinoIcons.arrow_right_arrow_left,
-  ),
-
-// arrow_right_arrow_left_circle
-  GalleryIcon(
-    name: 'arrow_right_arrow_left_circle',
-    icon: CupertinoIcons.arrow_right_arrow_left_circle,
-  ),
-  // arrow_right_arrow_left_circle_fill
-  GalleryIcon(
-    name: 'arrow_right_arrow_left_circle_fill',
-    icon: CupertinoIcons.arrow_right_arrow_left_circle_fill,
-  ),
-  // arrow_right_arrow_left_square
-  GalleryIcon(
-    name: 'arrow_right_arrow_left_square',
-    icon: CupertinoIcons.arrow_right_arrow_left_square,
-  ),
-  // arrow_right_arrow_left_square_fill
-  GalleryIcon(
-    name: 'arrow_right_arrow_left_square_fill',
-    icon: CupertinoIcons.arrow_right_arrow_left_square_fill,
-  ),
-  // arrow_right_circle
-  GalleryIcon(
-    name: 'arrow_right_circle',
-    icon: CupertinoIcons.arrow_right_circle,
-  ),
-  // arrow_right_circle_fill
-  GalleryIcon(
-    name: 'arrow_right_circle_fill',
-    icon: CupertinoIcons.arrow_right_circle_fill,
-  ),
-  // arrow_right_square
-  GalleryIcon(
-    name: 'arrow_right_square',
-    icon: CupertinoIcons.arrow_right_square,
-  ),
-  // arrow_right_square_fill
-  GalleryIcon(
-    name: 'arrow_right_square_fill',
-    icon: CupertinoIcons.arrow_right_square_fill,
-  ),
-  // arrow_right_to_line
-  GalleryIcon(
-    name: 'arrow_right_to_line',
-    icon: CupertinoIcons.arrow_right_to_line,
-  ),
-  // arrow_right_to_line_alt
-  GalleryIcon(
-    name: 'arrow_right_to_line_alt',
-    icon: CupertinoIcons.arrow_right_to_line_alt,
-  ),
-  // arrow_swap
-  GalleryIcon(
-    name: 'arrow_swap',
-    icon: CupertinoIcons.arrow_swap,
-  ),
-  // arrow_turn_down_left
-  GalleryIcon(
-    name: 'arrow_turn_down_left',
-    icon: CupertinoIcons.arrow_turn_down_left,
-  ),
-  // arrow_turn_down_right
-  GalleryIcon(
-    name: 'arrow_turn_down_right',
-    icon: CupertinoIcons.arrow_turn_down_right,
-  ),
-  // arrow_turn_left_down
-  GalleryIcon(
-    name: 'arrow_turn_left_down',
-    icon: CupertinoIcons.arrow_turn_left_down,
-  ),
-  // arrow_turn_left_up
-  GalleryIcon(
-    name: 'arrow_turn_left_up',
-    icon: CupertinoIcons.arrow_turn_left_up,
-  ),
-  // arrow_turn_right_down
-  GalleryIcon(
-    name: 'arrow_turn_right_down',
-    icon: CupertinoIcons.arrow_turn_right_down,
-  ),
-  // arrow_turn_right_up
-  GalleryIcon(
-    name: 'arrow_turn_right_up',
-    icon: CupertinoIcons.arrow_turn_right_up,
-  ),
-  // arrow_turn_up_left
-  GalleryIcon(
-    name: 'arrow_turn_up_left',
-    icon: CupertinoIcons.arrow_turn_up_left,
-  ),
-  // arrow_turn_up_right
-  GalleryIcon(
-    name: 'arrow_turn_up_right',
-    icon: CupertinoIcons.arrow_turn_up_right,
-  ),
-  // arrow_up
-  GalleryIcon(
-    name: 'arrow_up',
-    icon: CupertinoIcons.arrow_up,
-  ),
-  // arrow_up_arrow_down
-  GalleryIcon(
-    name: 'arrow_up_arrow_down',
-    icon: CupertinoIcons.arrow_up_arrow_down,
-  ),
-  // arrow_up_arrow_down_circle
-  GalleryIcon(
-    name: 'arrow_up_arrow_down_circle',
-    icon: CupertinoIcons.arrow_up_arrow_down_circle,
-  ),
-  // arrow_up_arrow_down_circle_fill
-  GalleryIcon(
-    name: 'arrow_up_arrow_down_circle_fill',
-    icon: CupertinoIcons.arrow_up_arrow_down_circle_fill,
-  ),
-  // arrow_up_arrow_down_square
-  GalleryIcon(
-    name: 'arrow_up_arrow_down_square',
-    icon: CupertinoIcons.arrow_up_arrow_down_square,
-  ),
-  // arrow_up_arrow_down_square_fill
-  GalleryIcon(
-    name: 'arrow_up_arrow_down_square_fill',
-    icon: CupertinoIcons.arrow_up_arrow_down_square_fill,
-  ),
-
-  // arrow_up_bin
-  GalleryIcon(
-    name: 'arrow_up_bin',
-    icon: CupertinoIcons.arrow_up_bin,
-  ),
-  // arrow_up_bin_fill
-  GalleryIcon(
-    name: 'arrow_up_bin_fill',
-    icon: CupertinoIcons.arrow_up_bin_fill,
-  ),
-
-  // arrow_up_circle
-  GalleryIcon(
-    name: 'arrow_up_circle',
-    icon: CupertinoIcons.arrow_up_circle,
-  ),
-  // arrow_up_circle_fill
-  GalleryIcon(
-    name: 'arrow_up_circle_fill',
-    icon: CupertinoIcons.arrow_up_circle_fill,
-  ),
-
-  // arrow_up_doc
-  GalleryIcon(
-    name: 'arrow_up_doc',
-    icon: CupertinoIcons.arrow_up_doc,
-  ),
-  // arrow_up_doc_fill
-  GalleryIcon(
-    name: 'arrow_up_doc_fill',
-    icon: CupertinoIcons.arrow_up_doc_fill,
-  ),
-  // arrow_up_down
-  GalleryIcon(
-    name: 'arrow_up_down',
-    icon: CupertinoIcons.arrow_up_down,
-  ),
-  // arrow_up_down_circle
-  GalleryIcon(
-    name: 'arrow_up_down_circle',
-    icon: CupertinoIcons.arrow_up_down_circle,
-  ),
-
-  // arrow_up_down_circle_fill
-  GalleryIcon(
-    name: 'arrow_up_down_circle_fill',
-    icon: CupertinoIcons.arrow_up_down_circle_fill,
-  ),
-  // arrow_up_down_square
-  GalleryIcon(
-    name: 'arrow_up_down_square',
-    icon: CupertinoIcons.arrow_up_down_square,
-  ),
-  // arrow_up_down_square_fill
-  GalleryIcon(
-    name: 'arrow_up_down_square_fill',
-    icon: CupertinoIcons.arrow_up_down_square_fill,
-  ),
-  // arrow_up_left
-  GalleryIcon(
-    name: 'arrow_up_left',
-    icon: CupertinoIcons.arrow_up_left,
-  ),
-  // arrow_up_left_arrow_down_right
-  GalleryIcon(
-    name: 'arrow_up_left_arrow_down_right',
-    icon: CupertinoIcons.arrow_up_left_arrow_down_right,
-  ),
-  // arrow_up_left_circle
-  GalleryIcon(
-    name: 'arrow_up_left_circle',
-    icon: CupertinoIcons.arrow_up_left_circle,
-  ),
-  // arrow_up_left_circle_fill
-  GalleryIcon(
-    name: 'arrow_up_left_circle_fill',
-    icon: CupertinoIcons.arrow_up_left_circle_fill,
-  ),
-  // arrow_up_left_square
-  GalleryIcon(
-    name: 'arrow_up_left_square',
-    icon: CupertinoIcons.arrow_up_left_square,
-  ),
-  // arrow_up_left_square_fill
-  GalleryIcon(
-    name: 'arrow_up_left_square_fill',
-    icon: CupertinoIcons.arrow_up_left_square_fill,
-  ),
-  // arrow_up_bin
-  GalleryIcon(
-    name: 'arrow_up_bin',
-    icon: CupertinoIcons.arrow_up_bin,
-  ),
-  // arrow_up_bin_fill
-  GalleryIcon(
-    name: 'arrow_up_bin_fill',
-    icon: CupertinoIcons.arrow_up_bin_fill,
-  ),
-  // arrow_up_circle
-  GalleryIcon(
-    name: 'arrow_up_circle',
-    icon: CupertinoIcons.arrow_up_circle,
-  ),
-  // arrow_up_circle_fill
-  GalleryIcon(
-    name: 'arrow_up_circle_fill',
-    icon: CupertinoIcons.arrow_up_circle_fill,
-  ),
-  // arrow_up_doc
-  GalleryIcon(
-    name: 'arrow_up_doc',
-    icon: CupertinoIcons.arrow_up_doc,
-  ),
-  // arrow_up_doc_fill
-  GalleryIcon(
-    name: 'arrow_up_doc_fill',
-    icon: CupertinoIcons.arrow_up_doc_fill,
-  ),
-  // arrow_up_down
-  GalleryIcon(
-    name: 'arrow_up_down',
-    icon: CupertinoIcons.arrow_up_down,
-  ),
-  // arrow_up_down_circle
-  GalleryIcon(
-    name: 'arrow_up_down_circle',
-    icon: CupertinoIcons.arrow_up_down_circle,
-  ),
-  // arrow_up_down_circle_fill
-  GalleryIcon(
-    name: 'arrow_up_down_circle_fill',
-    icon: CupertinoIcons.arrow_up_down_circle_fill,
-  ),
-  // arrow_up_down_square
-  GalleryIcon(
-    name: 'arrow_up_down_square',
-    icon: CupertinoIcons.arrow_up_down_square,
-  ),
-  // arrow_up_down_square_fill
-  GalleryIcon(
-    name: 'arrow_up_down_square_fill',
-    icon: CupertinoIcons.arrow_up_down_square_fill,
-  ),
-  // arrow_up_left
-  GalleryIcon(
-    name: 'arrow_up_left',
-    icon: CupertinoIcons.arrow_up_left,
-  ),
-  // arrow_up_left_arrow_down_right
-  GalleryIcon(
-    name: 'arrow_up_left_arrow_down_right',
-    icon: CupertinoIcons.arrow_up_left_arrow_down_right,
-  ),
-  // arrow_up_left_circle
-  GalleryIcon(
-    name: 'arrow_up_left_circle',
-    icon: CupertinoIcons.arrow_up_left_circle,
-  ),
-  // arrow_up_left_circle_fill
-  GalleryIcon(
-    name: 'arrow_up_left_circle_fill',
-    icon: CupertinoIcons.arrow_up_left_circle_fill,
-  ),
-  // arrow_up_left_square
-  GalleryIcon(
-    name: 'arrow_up_left_square',
-    icon: CupertinoIcons.arrow_up_left_square,
-  ),
-  // arrow_up_left_square_fill
-  GalleryIcon(
-    name: 'arrow_up_left_square_fill',
-    icon: CupertinoIcons.arrow_up_left_square_fill,
-  ),
-  // arrow_up_right
-  GalleryIcon(
-    name: 'arrow_up_right',
-    icon: CupertinoIcons.arrow_up_right,
-  ),
-  // arrow_up_right_circle
-  GalleryIcon(
-    name: 'arrow_up_right_circle',
-    icon: CupertinoIcons.arrow_up_right_circle,
-  ),
-  // arrow_up_right_circle_fill
-  GalleryIcon(
-    name: 'arrow_up_right_circle_fill',
-    icon: CupertinoIcons.arrow_up_right_circle_fill,
-  ),
-  // arrow_up_right_diamond
-  GalleryIcon(
-    name: 'arrow_up_right_diamond',
-    icon: CupertinoIcons.arrow_up_right_diamond,
-  ),
-  // arrow_up_right_diamond_fill
-  GalleryIcon(
-    name: 'arrow_up_right_diamond_fill',
-    icon: CupertinoIcons.arrow_up_right_diamond_fill,
-  ),
-  // arrow_up_right_square
-  GalleryIcon(
-    name: 'arrow_up_right_square',
-    icon: CupertinoIcons.arrow_up_right_square,
-  ),
-  // arrow_up_right_square_fill
-  GalleryIcon(
-    name: 'arrow_up_right_square_fill',
-    icon: CupertinoIcons.arrow_up_right_square_fill,
-  ),
-  // arrow_up_square
-  GalleryIcon(
-    name: 'arrow_up_square',
-    icon: CupertinoIcons.arrow_up_square,
-  ),
-  // arrow_up_square_fill
-  GalleryIcon(
-    name: 'arrow_up_square_fill',
-    icon: CupertinoIcons.arrow_up_square_fill,
-  ),
-  // arrow_up_to_line
-  GalleryIcon(
-    name: 'arrow_up_to_line',
-    icon: CupertinoIcons.arrow_up_to_line,
-  ),
-  // arrow_up_to_line_alt
-  GalleryIcon(
-    name: 'arrow_up_to_line_alt',
-    icon: CupertinoIcons.arrow_up_to_line_alt,
-  ),
-  // arrow_uturn_down
-  GalleryIcon(
-    name: 'arrow_uturn_down',
-    icon: CupertinoIcons.arrow_uturn_down,
-  ),
-  // arrow_uturn_down_circle
-  GalleryIcon(
-    name: 'arrow_uturn_down_circle',
-    icon: CupertinoIcons.arrow_uturn_down_circle,
-  ),
-  // arrow_uturn_down_circle_fill
-  GalleryIcon(
-    name: 'arrow_uturn_down_circle_fill',
-    icon: CupertinoIcons.arrow_uturn_down_circle_fill,
-  ),
-  // arrow_uturn_down_square
-  GalleryIcon(
-    name: 'arrow_uturn_down_square',
-    icon: CupertinoIcons.arrow_uturn_down_square,
-  ),
-  // arrow_uturn_down_square_fill
-  GalleryIcon(
-    name: 'arrow_uturn_down_square_fill',
-    icon: CupertinoIcons.arrow_uturn_down_square_fill,
-  ),
-  // arrow_uturn_left
-  GalleryIcon(
-    name: 'arrow_uturn_left',
-    icon: CupertinoIcons.arrow_uturn_left,
-  ),
-  // arrow_uturn_left_circle
-  GalleryIcon(
-    name: 'arrow_uturn_left_circle',
-    icon: CupertinoIcons.arrow_uturn_left_circle,
-  ),
-  // arrow_uturn_left_circle
-  GalleryIcon(
-    name: 'arrow_uturn_left_circle',
-    icon: CupertinoIcons.arrow_uturn_left_circle,
-  ),
-  // arrow_uturn_left_circle
-  GalleryIcon(
-    name: 'arrow_uturn_left_circle',
-    icon: CupertinoIcons.arrow_uturn_left_circle,
-  ),
-  // arrow_uturn_left_circle_fill
-  GalleryIcon(
-    name: 'arrow_uturn_left_circle_fill',
-    icon: CupertinoIcons.arrow_uturn_left_circle_fill,
-  ),
-  // arrow_uturn_left_square
-  GalleryIcon(
-    name: 'arrow_uturn_left_square',
-    icon: CupertinoIcons.arrow_uturn_left_square,
-  ),
-  // arrow_uturn_left_square_fill
-  GalleryIcon(
-    name: 'arrow_uturn_left_square_fill',
-    icon: CupertinoIcons.arrow_uturn_left_square_fill,
-  ),
-  // arrow_uturn_right
-  GalleryIcon(
-    name: 'arrow_uturn_right',
-    icon: CupertinoIcons.arrow_uturn_right,
-  ),
-  // arrow_uturn_right_circle
-  GalleryIcon(
-    name: 'arrow_uturn_right_circle',
-    icon: CupertinoIcons.arrow_uturn_right_circle,
-  ),
-  // arrow_uturn_right_circle_fill
-  GalleryIcon(
-    name: 'arrow_uturn_right_circle_fill',
-    icon: CupertinoIcons.arrow_uturn_right_circle_fill,
-  ),
-  // arrow_uturn_right_square
-  GalleryIcon(
-    name: 'arrow_uturn_right_square',
-    icon: CupertinoIcons.arrow_uturn_right_square,
-  ),
-  // arrow_uturn_right_square_fill
-  GalleryIcon(
-    name: 'arrow_uturn_right_square_fill',
-    icon: CupertinoIcons.arrow_uturn_right_square_fill,
-  ),
-  // arrow_uturn_up
-  GalleryIcon(
-    name: 'arrow_uturn_up',
-    icon: CupertinoIcons.arrow_uturn_up,
-  ),
-  // arrow_uturn_up_circle
-  GalleryIcon(
-    name: 'arrow_uturn_up_circle',
-    icon: CupertinoIcons.arrow_uturn_up_circle,
-  ),
-  // arrow_uturn_up_circle_fill
-  GalleryIcon(
-    name: 'arrow_uturn_up_circle_fill',
-    icon: CupertinoIcons.arrow_uturn_up_circle_fill,
-  ),
-  // arrow_uturn_up_square
-  GalleryIcon(
-    name: 'arrow_uturn_up_square',
-    icon: CupertinoIcons.arrow_uturn_up_square,
-  ),
-  // arrow_uturn_up_square_fill
-  GalleryIcon(
-    name: 'arrow_uturn_up_square_fill',
-    icon: CupertinoIcons.arrow_uturn_up_square_fill,
-  ),
-  // arrowshape_turn_up_left
-  GalleryIcon(
-    name: 'arrowshape_turn_up_left',
-    icon: CupertinoIcons.arrowshape_turn_up_left,
-  ),
-  // arrowshape_turn_up_left_2
-  GalleryIcon(
-    name: 'arrowshape_turn_up_left_2',
-    icon: CupertinoIcons.arrowshape_turn_up_left_2,
-  ),
-  // arrowshape_turn_up_left_2_fill
-  GalleryIcon(
-    name: 'arrowshape_turn_up_left_2_fill',
-    icon: CupertinoIcons.arrowshape_turn_up_left_2_fill,
-  ),
-  // arrowshape_turn_up_left_circle
-  GalleryIcon(
-    name: 'arrowshape_turn_up_left_circle',
-    icon: CupertinoIcons.arrowshape_turn_up_left_circle,
-  ),
-  // arrowshape_turn_up_left_circle_fill
-  GalleryIcon(
-    name: 'arrowshape_turn_up_left_circle_fill',
-    icon: CupertinoIcons.arrowshape_turn_up_left_circle_fill,
-  ),
-  // arrowshape_turn_up_left_fill
-  GalleryIcon(
-    name: 'arrowshape_turn_up_left_fill',
-    icon: CupertinoIcons.arrowshape_turn_up_left_fill,
-  ),
-  // arrowshape_turn_up_right
-  GalleryIcon(
-    name: 'arrowshape_turn_up_right',
-    icon: CupertinoIcons.arrowshape_turn_up_right,
-  ),
-  // arrowshape_turn_up_right_circle
-  GalleryIcon(
-    name: 'arrowshape_turn_up_right_circle',
-    icon: CupertinoIcons.arrowshape_turn_up_right_circle,
-  ),
-  // arrowshape_turn_up_right_circle_fill
-  GalleryIcon(
-    name: 'arrowshape_turn_up_right_circle_fill',
-    icon: CupertinoIcons.arrowshape_turn_up_right_circle_fill,
-  ),
-  // arrowshape_turn_up_right_fill
-  GalleryIcon(
-    name: 'arrowshape_turn_up_right_fill',
-    icon: CupertinoIcons.arrowshape_turn_up_right_fill,
-  ),
-  // arrowtriangle_down
-  GalleryIcon(
-    name: 'arrowtriangle_down',
-    icon: CupertinoIcons.arrowtriangle_down,
-  ),
-  // arrowtriangle_down_circle
-  GalleryIcon(
-    name: 'arrowtriangle_down_circle',
-    icon: CupertinoIcons.arrowtriangle_down_circle,
-  ),
-  // arrowtriangle_down_circle_fill
-  GalleryIcon(
-    name: 'arrowtriangle_down_circle_fill',
-    icon: CupertinoIcons.arrowtriangle_down_circle_fill,
-  ),
-  // arrowtriangle_down_fill
-  GalleryIcon(
-    name: 'arrowtriangle_down_fill',
-    icon: CupertinoIcons.arrowtriangle_down_fill,
-  ),
-  // arrowtriangle_down_square
-  GalleryIcon(
-    name: 'arrowtriangle_down_square',
-    icon: CupertinoIcons.arrowtriangle_down_square,
-  ),
-  // arrowtriangle_down_square_fill
-  GalleryIcon(
-    name: 'arrowtriangle_down_square_fill',
-    icon: CupertinoIcons.arrowtriangle_down_square_fill,
-  ),
-  // arrowtriangle_left
-  GalleryIcon(
-    name: 'arrowtriangle_left',
-    icon: CupertinoIcons.arrowtriangle_left,
-  ),
-  // arrowtriangle_left_circle
-  GalleryIcon(
-    name: 'arrowtriangle_left_circle',
-    icon: CupertinoIcons.arrowtriangle_left_circle,
-  ),
-  // arrowtriangle_left_circle_fill
-  GalleryIcon(
-    name: 'arrowtriangle_left_circle_fill',
-    icon: CupertinoIcons.arrowtriangle_left_circle_fill,
-  ),
-  // arrowtriangle_left_fill
-  GalleryIcon(
-    name: 'arrowtriangle_left_fill',
-    icon: CupertinoIcons.arrowtriangle_left_fill,
-  ),
-  // arrowtriangle_left_square
-  GalleryIcon(
-    name: 'arrowtriangle_left_square',
-    icon: CupertinoIcons.arrowtriangle_left_square,
-  ),
-  // arrowtriangle_left_square_fill
-  GalleryIcon(
-    name: 'arrowtriangle_left_square_fill',
-    icon: CupertinoIcons.arrowtriangle_left_square_fill,
-  ),
-  // arrowtriangle_right
-  GalleryIcon(
-    name: 'arrowtriangle_right',
-    icon: CupertinoIcons.arrowtriangle_right,
-  ),
-  // arrowtriangle_right_circle
-  GalleryIcon(
-    name: 'arrowtriangle_right_circle',
-    icon: CupertinoIcons.arrowtriangle_right_circle,
-  ),
-  // arrowtriangle_right_circle_fill
-  GalleryIcon(
-    name: 'arrowtriangle_right_circle_fill',
-    icon: CupertinoIcons.arrowtriangle_right_circle_fill,
-  ),
-  // arrowtriangle_right_fill
-  GalleryIcon(
-    name: 'arrowtriangle_right_fill',
-    icon: CupertinoIcons.arrowtriangle_right_fill,
-  ),
-  // arrowtriangle_right_square
-  GalleryIcon(
-    name: 'arrowtriangle_right_square',
-    icon: CupertinoIcons.arrowtriangle_right_square,
-  ),
-  // arrowtriangle_right_square_fill
-  GalleryIcon(
-    name: 'arrowtriangle_right_square_fill',
-    icon: CupertinoIcons.arrowtriangle_right_square_fill,
-  ),
-  // arrowtriangle_up
-  GalleryIcon(
-    name: 'arrowtriangle_up',
-    icon: CupertinoIcons.arrowtriangle_up,
-  ),
-  // arrowtriangle_up_circle
-  GalleryIcon(
-    name: 'arrowtriangle_up_circle',
-    icon: CupertinoIcons.arrowtriangle_up_circle,
-  ),
-  // arrowtriangle_up_circle_fill
-  GalleryIcon(
-    name: 'arrowtriangle_up_circle_fill',
-    icon: CupertinoIcons.arrowtriangle_up_circle_fill,
-  ),
-  // arrowtriangle_up_fill
-  GalleryIcon(
-    name: 'arrowtriangle_up_fill',
-    icon: CupertinoIcons.arrowtriangle_up_fill,
-  ),
-  // arrowtriangle_up_square
-  GalleryIcon(
-    name: 'arrowtriangle_up_square',
-    icon: CupertinoIcons.arrowtriangle_up_square,
-  ),
-  // arrowtriangle_up_square_fill
-  GalleryIcon(
-    name: 'arrowtriangle_up_square_fill',
-    icon: CupertinoIcons.arrowtriangle_up_square_fill,
-  ),
-  // asterisk_circle
-  GalleryIcon(
-    name: 'asterisk_circle',
-    icon: CupertinoIcons.asterisk_circle,
-  ),
-  // asterisk_circle_fill
-  GalleryIcon(
-    name: 'asterisk_circle_fill',
-    icon: CupertinoIcons.asterisk_circle_fill,
-  ),
-  // at
-  GalleryIcon(
-    name: 'at',
-    icon: CupertinoIcons.at,
-  ),
-  // at_badge_minus
-  GalleryIcon(
-    name: 'at_badge_minus',
-    icon: CupertinoIcons.at_badge_minus,
-  ),
-  // at_badge_plus
-  GalleryIcon(
-    name: 'at_badge_plus',
-    icon: CupertinoIcons.at_badge_plus,
-  ),
-  // at_circle
-  GalleryIcon(
-    name: 'at_circle',
-    icon: CupertinoIcons.at_circle,
-  ),
-  // at_circle_fill
-  GalleryIcon(
-    name: 'at_circle_fill',
-    icon: CupertinoIcons.at_circle_fill,
-  ),
-  // backward
-  GalleryIcon(
-    name: 'backward',
-    icon: CupertinoIcons.backward,
-  ),
-  // backward_end
-  GalleryIcon(
-    name: 'backward_end',
-    icon: CupertinoIcons.backward_end,
-  ),
-  // backward_end_alt
-  GalleryIcon(
-    name: 'backward_end_alt',
-    icon: CupertinoIcons.backward_end_alt,
-  ),
-  // backward_end_alt_fill
-  GalleryIcon(
-    name: 'backward_end_alt_fill',
-    icon: CupertinoIcons.backward_end_alt_fill,
-  ),
-  // backward_end_fill
-  GalleryIcon(
-    name: 'backward_end_fill',
-    icon: CupertinoIcons.backward_end_fill,
-  ),
-  // backward_fill
-  GalleryIcon(
-    name: 'backward_fill',
-    icon: CupertinoIcons.backward_fill,
-  ),
-  // badge_plus_radiowaves_right
-  GalleryIcon(
-    name: 'badge_plus_radiowaves_right',
-    icon: CupertinoIcons.badge_plus_radiowaves_right,
-  ),
-  // bag
-  GalleryIcon(
-    name: 'bag',
-    icon: CupertinoIcons.bag,
-  ),
-  // bag_badge_minus
-  GalleryIcon(
-    name: 'bag_badge_minus',
-    icon: CupertinoIcons.bag_badge_minus,
-  ),
-  // bag_badge_plus
-  GalleryIcon(
-    name: 'bag_badge_plus',
-    icon: CupertinoIcons.bag_badge_plus,
-  ),
-  // bag_fill
-  GalleryIcon(
-    name: 'bag_fill',
-    icon: CupertinoIcons.bag_fill,
-  ),
-  // bag_fill_badge_minus
-  GalleryIcon(
-    name: 'bag_fill_badge_minus',
-    icon: CupertinoIcons.bag_fill_badge_minus,
-  ),
-  // bag_fill_badge_plus
-  GalleryIcon(
-    name: 'bag_fill_badge_plus',
-    icon: CupertinoIcons.bag_fill_badge_plus,
-  ),
-  // bandage
-  GalleryIcon(
-    name: 'bandage',
-    icon: CupertinoIcons.bandage,
-  ),
-  // bandage_fill
-  GalleryIcon(
-    name: 'bandage_fill',
-    icon: CupertinoIcons.bandage_fill,
-  ),
-  // barcode
-  GalleryIcon(
-    name: 'barcode',
-    icon: CupertinoIcons.barcode,
-  ),
-  // barcode_viewfinder
-  GalleryIcon(
-    name: 'barcode_viewfinder',
-    icon: CupertinoIcons.barcode_viewfinder,
-  ),
-  // bars
-  GalleryIcon(
-    name: 'bars',
-    icon: CupertinoIcons.bars,
-  ),
-  // battery_0
-  GalleryIcon(
-    name: 'battery_0',
-    icon: CupertinoIcons.battery_0,
-  ),
-  // battery_100
-  GalleryIcon(
-    name: 'battery_100',
-    icon: CupertinoIcons.battery_100,
-  ),
-  // battery_25
-  GalleryIcon(
-    name: 'battery_25',
-    icon: CupertinoIcons.battery_25,
-  ),
-  // bed_double
-  GalleryIcon(
-    name: 'bed_double',
-    icon: CupertinoIcons.bed_double,
-  ),
-  // bed_double_fill
-  GalleryIcon(
-    name: 'bed_double_fill',
-    icon: CupertinoIcons.bed_double_fill,
-  ),
-  // bell_circle
-  GalleryIcon(
-    name: 'bell_circle',
-    icon: CupertinoIcons.bell_circle,
-  ),
-  // bell_circle_fill
-  GalleryIcon(
-    name: 'bell_circle_fill',
-    icon: CupertinoIcons.bell_circle_fill,
-  ),
-  // bell_fill
-  GalleryIcon(
-    name: 'bell_fill',
-    icon: CupertinoIcons.bell_fill,
-  ),
-  // bell_slash
-  GalleryIcon(
-    name: 'bell_slash',
-    icon: CupertinoIcons.bell_slash,
-  ),
-  // bell_slash_fill
-  GalleryIcon(
-    name: 'bell_slash_fill',
-    icon: CupertinoIcons.bell_slash_fill,
-  ),
-  // bin_xmark
-  GalleryIcon(
-    name: 'bin_xmark',
-    icon: CupertinoIcons.bin_xmark,
-  ),
-  // bin_xmark_fill
-  GalleryIcon(
-    name: 'bin_xmark_fill',
-    icon: CupertinoIcons.bin_xmark_fill,
-  ),
-  // bitcoin
-  GalleryIcon(
-    name: 'bitcoin',
-    icon: CupertinoIcons.bitcoin,
-  ),
-  // bitcoin_circle
-  GalleryIcon(
-    name: 'bitcoin_circle',
-    icon: CupertinoIcons.bitcoin_circle,
-  ),
-  // bitcoin_circle_fill
-  GalleryIcon(
-    name: 'bitcoin_circle_fill',
-    icon: CupertinoIcons.bitcoin_circle_fill,
-  ),
-  // bold
-  GalleryIcon(
-    name: 'bold',
-    icon: CupertinoIcons.bold,
-  ),
-  // bold_italic_underline
-  GalleryIcon(
-    name: 'bold_italic_underline',
-    icon: CupertinoIcons.bold_italic_underline,
-  ),
-  // bold_underline
-  GalleryIcon(
-    name: 'bold_underline',
-    icon: CupertinoIcons.bold_underline,
-  ),
-  // bolt
-  GalleryIcon(
-    name: 'bolt',
-    icon: CupertinoIcons.bolt,
-  ),
-  // bolt_badge_a
-  GalleryIcon(
-    name: 'bolt_badge_a',
-    icon: CupertinoIcons.bolt_badge_a,
-  ),
-  // bolt_badge_a_fill
-  GalleryIcon(
-    name: 'bolt_badge_a_fill',
-    icon: CupertinoIcons.bolt_badge_a_fill,
-  ),
-  // bolt_circle
-  GalleryIcon(
-    name: 'bolt_circle',
-    icon: CupertinoIcons.bolt_circle,
-  ),
-  // bolt_circle_fill
-  GalleryIcon(
-    name: 'bolt_circle_fill',
-    icon: CupertinoIcons.bolt_circle_fill,
-  ),
-  // bolt_fill
-  GalleryIcon(
-    name: 'bolt_fill',
-    icon: CupertinoIcons.bolt_fill,
-  ),
-  // bolt_horizontal
-  GalleryIcon(
-    name: 'bolt_horizontal',
-    icon: CupertinoIcons.bolt_horizontal,
-  ),
-  // bolt_horizontal_circle
-  GalleryIcon(
-    name: 'bolt_horizontal_circle',
-    icon: CupertinoIcons.bolt_horizontal_circle,
-  ),
-  // bolt_horizontal_circle_fill
-  GalleryIcon(
-    name: 'bolt_horizontal_circle_fill',
-    icon: CupertinoIcons.bolt_horizontal_circle_fill,
-  ),
-  // bolt_horizontal_fill
-  GalleryIcon(
-    name: 'bolt_horizontal_fill',
-    icon: CupertinoIcons.bolt_horizontal_fill,
-  ),
-  // bolt_slash
-  GalleryIcon(
-    name: 'bolt_slash',
-    icon: CupertinoIcons.bolt_slash,
-  ),
-  // bolt_slash_fill
-  GalleryIcon(
-    name: 'bolt_slash_fill',
-    icon: CupertinoIcons.bolt_slash_fill,
-  ),
-  // book_circle
-  GalleryIcon(
-    name: 'book_circle',
-    icon: CupertinoIcons.book_circle,
-  ),
-  // book_circle_fill
-  GalleryIcon(
-    name: 'book_circle_fill',
-    icon: CupertinoIcons.book_circle_fill,
-  ),
-  // book_fill
-  GalleryIcon(
-    name: 'book_fill',
-    icon: CupertinoIcons.book_fill,
-  ),
-  // bookmark_fill
-  GalleryIcon(
-    name: 'bookmark_fill',
-    icon: CupertinoIcons.bookmark_fill,
-  ),
-  // briefcase
-  GalleryIcon(
-    name: 'briefcase',
-    icon: CupertinoIcons.briefcase,
-  ),
-  // briefcase_fill
-  GalleryIcon(
-    name: 'briefcase_fill',
-    icon: CupertinoIcons.briefcase_fill,
-  ),
-  // bubble_left
-  GalleryIcon(
-    name: 'bubble_left',
-    icon: CupertinoIcons.bubble_left,
-  ),
-  // bubble_left_bubble_right
-  GalleryIcon(
-    name: 'bubble_left_bubble_right',
-    icon: CupertinoIcons.bubble_left_bubble_right,
-  ),
-
-  // bubble_left_fill
-  GalleryIcon(
-    name: 'bubble_left_fill',
-    icon: CupertinoIcons.bubble_left_fill,
-  ),
-  // bubble_middle_bottom
-  GalleryIcon(
-    name: 'bubble_middle_bottom',
-    icon: CupertinoIcons.bubble_middle_bottom,
-  ),
-  // bubble_middle_bottom_fill
-  GalleryIcon(
-    name: 'bubble_middle_bottom_fill',
-    icon: CupertinoIcons.bubble_middle_bottom_fill,
-  ),
-  // bubble_middle_top
-  GalleryIcon(
-    name: 'bubble_middle_top',
-    icon: CupertinoIcons.bubble_middle_top,
-  ),
-  // bubble_middle_top_fill
-  GalleryIcon(
-    name: 'bubble_middle_top_fill',
-    icon: CupertinoIcons.bubble_middle_top_fill,
-  ),
-  // bubble_right
-  GalleryIcon(
-    name: 'bubble_right',
-    icon: CupertinoIcons.bubble_right,
-  ),
-  // bubble_right_fill
-  GalleryIcon(
-    name: 'bubble_right_fill',
-    icon: CupertinoIcons.bubble_right_fill,
-  ),
-  // building_2_fill
-  GalleryIcon(
-    name: 'building_2_fill',
-    icon: CupertinoIcons.building_2_fill,
-  ),
-  // burn
-  GalleryIcon(
-    name: 'burn',
-    icon: CupertinoIcons.burn,
-  ),
-  // burst
-  GalleryIcon(
-    name: 'burst',
-    icon: CupertinoIcons.burst,
-  ),
-  // burst_fill
-  GalleryIcon(
-    name: 'burst_fill',
-    icon: CupertinoIcons.burst_fill,
-  ),
-  // calendar
-  GalleryIcon(
-    name: 'calendar',
-    icon: CupertinoIcons.calendar,
-  ),
-  // calendar_badge_minus
-  GalleryIcon(
-    name: 'calendar_badge_minus',
-    icon: CupertinoIcons.calendar_badge_minus,
-  ),
-  // calendar_badge_plus
-  GalleryIcon(
-    name: 'calendar_badge_plus',
-    icon: CupertinoIcons.calendar_badge_plus,
-  ),
-  // calendar_circle
-  GalleryIcon(
-    name: 'calendar_circle',
-    icon: CupertinoIcons.calendar_circle,
-  ),
-  // calendar_circle_fill
-  GalleryIcon(
-    name: 'calendar_circle_fill',
-    icon: CupertinoIcons.calendar_circle_fill,
-  ),
-  // calendar_today
-  GalleryIcon(
-    name: 'calendar_today',
-    icon: CupertinoIcons.calendar_today,
-  ),
-  // camera
-  GalleryIcon(
-    name: 'camera',
-    icon: CupertinoIcons.camera,
-  ),
-  // camera_circle
-  GalleryIcon(
-    name: 'camera_circle',
-    icon: CupertinoIcons.camera_circle,
-  ),
-  // camera_circle_fill
-  GalleryIcon(
-    name: 'camera_circle_fill',
-    icon: CupertinoIcons.camera_circle_fill,
-  ),
-  // camera_fill
-  GalleryIcon(
-    name: 'camera_fill',
-    icon: CupertinoIcons.camera_fill,
-  ),
-  // camera_on_rectangle
-  GalleryIcon(
-    name: 'camera_on_rectangle',
-    icon: CupertinoIcons.camera_on_rectangle,
-  ),
-  // camera_on_rectangle_fill
-  GalleryIcon(
-    name: 'camera_on_rectangle_fill',
-    icon: CupertinoIcons.camera_on_rectangle_fill,
-  ),
-  // camera_rotate
-  GalleryIcon(
-    name: 'camera_rotate',
-    icon: CupertinoIcons.camera_rotate,
-  ),
-  // camera_rotate_fill
-  GalleryIcon(
-    name: 'camera_rotate_fill',
-    icon: CupertinoIcons.camera_rotate_fill,
-  ),
-  // camera_viewfinder
-  GalleryIcon(
-    name: 'camera_viewfinder',
-    icon: CupertinoIcons.camera_viewfinder,
-  ),
-  // capslock
-  GalleryIcon(
-    name: 'capslock',
-    icon: CupertinoIcons.capslock,
-  ),
-  // capslock_fill
-  GalleryIcon(
-    name: 'capslock_fill',
-    icon: CupertinoIcons.capslock_fill,
-  ),
-  // capsule
-  GalleryIcon(
-    name: 'capsule',
-    icon: CupertinoIcons.capsule,
-  ),
-  // capsule_fill
-  GalleryIcon(
-    name: 'capsule_fill',
-    icon: CupertinoIcons.capsule_fill,
-  ),
-  // captions_bubble
-  GalleryIcon(
-    name: 'captions_bubble',
-    icon: CupertinoIcons.captions_bubble,
-  ),
-  // captions_bubble_fill
-  GalleryIcon(
-    name: 'captions_bubble_fill',
-    icon: CupertinoIcons.captions_bubble_fill,
-  ),
-  // car_fill
-  GalleryIcon(
-    name: 'car_fill',
-    icon: CupertinoIcons.car_fill,
-  ),
-  // cart
-  GalleryIcon(
-    name: 'cart',
-    icon: CupertinoIcons.cart,
-  ),
-  // cart_badge_minus
-  GalleryIcon(
-    name: 'cart_badge_minus',
-    icon: CupertinoIcons.cart_badge_minus,
-  ),
-  // cart_badge_plus
-  GalleryIcon(
-    name: 'cart_badge_plus',
-    icon: CupertinoIcons.cart_badge_plus,
-  ),
-  // cart_fill
-  GalleryIcon(
-    name: 'cart_fill',
-    icon: CupertinoIcons.cart_fill,
-  ),
-  // cart_fill_badge_minus
-  GalleryIcon(
-    name: 'cart_fill_badge_minus',
-    icon: CupertinoIcons.cart_fill_badge_minus,
-  ),
-  // cart_fill_badge_plus
-  GalleryIcon(
-    name: 'cart_fill_badge_plus',
-    icon: CupertinoIcons.cart_fill_badge_plus,
-  ),
-  //  chart_bar
-  GalleryIcon(
-    name: 'chart_bar',
-    icon: CupertinoIcons.chart_bar,
-  ),
-//  chart_bar_alt_fill
-  GalleryIcon(
-    name: 'chart_bar_alt_fill',
-    icon: CupertinoIcons.chart_bar_alt_fill,
-  ),
-//  chart_bar_circle
-  GalleryIcon(
-    name: 'chart_bar_circle',
-    icon: CupertinoIcons.chart_bar_circle,
-  ),
-//  chart_bar_circle_fill
-  GalleryIcon(
-    name: 'chart_bar_circle_fill',
-    icon: CupertinoIcons.chart_bar_circle_fill,
-  ),
-//  chart_bar_fill
-  GalleryIcon(
-    name: 'chart_bar_fill',
-    icon: CupertinoIcons.chart_bar_fill,
-  ),
-//  chart_bar_square
-  GalleryIcon(
-    name: 'chart_bar_square',
-    icon: CupertinoIcons.chart_bar_square,
-  ),
-//  chart_bar_square_fill
-  GalleryIcon(
-    name: 'chart_bar_square_fill',
-    icon: CupertinoIcons.chart_bar_square_fill,
-  ),
-//  chart_pie
-  GalleryIcon(
-    name: 'chart_pie',
-    icon: CupertinoIcons.chart_pie,
-  ),
-//  chart_pie_fill
-  GalleryIcon(
-    name: 'chart_pie_fill',
-    icon: CupertinoIcons.chart_pie_fill,
-  ),
-
-//  chat_bubble
-  GalleryIcon(
-    name: 'chat_bubble',
-    icon: CupertinoIcons.chat_bubble,
-  ),
-//  chat_bubble_2
-  GalleryIcon(
-    name: 'chat_bubble_2',
-    icon: CupertinoIcons.chat_bubble_2,
-  ),
-//  chat_bubble_2_fill
-  GalleryIcon(
-    name: 'chat_bubble_2_fill',
-    icon: CupertinoIcons.chat_bubble_2_fill,
-  ),
-//  chat_bubble_fill
-  GalleryIcon(
-    name: 'chat_bubble_fill',
-    icon: CupertinoIcons.chat_bubble_fill,
-  ),
-//  chat_bubble_text
-  GalleryIcon(
-    name: 'chat_bubble_text',
-    icon: CupertinoIcons.chat_bubble_text,
-  ),
-//  chat_bubble_text_fill
-  GalleryIcon(
-    name: 'chat_bubble_text_fill',
-    icon: CupertinoIcons.chat_bubble_text_fill,
-  ),
-  // checkmark
-  GalleryIcon(
-    name: 'checkmark',
-    icon: CupertinoIcons.checkmark,
-  ),
-//  checkmark_alt
-  GalleryIcon(
-    name: 'checkmark_alt',
-    icon: CupertinoIcons.checkmark_alt,
-  ),
-//  checkmark_alt_circle
-  GalleryIcon(
-    name: 'checkmark_alt_circle',
-    icon: CupertinoIcons.checkmark_alt_circle,
-  ),
-//  checkmark_alt_circle_fill
-  GalleryIcon(
-    name: 'checkmark_alt_circle_fill',
-    icon: CupertinoIcons.checkmark_alt_circle_fill,
-  ),
-
-//  checkmark_circle
-  GalleryIcon(
-    name: 'checkmark_circle',
-    icon: CupertinoIcons.checkmark_circle,
-  ),
-
-//  checkmark_circle_fill
-  GalleryIcon(
-    name: 'checkmark_circle_fill',
-    icon: CupertinoIcons.checkmark_circle_fill,
-  ),
-//  checkmark_rectangle
-  GalleryIcon(
-    name: 'checkmark_rectangle',
-    icon: CupertinoIcons.checkmark_rectangle,
-  ),
-//  checkmark_rectangle_fill
-  GalleryIcon(
-    name: 'checkmark_rectangle_fill',
-    icon: CupertinoIcons.checkmark_rectangle_fill,
-  ),
-//  checkmark_seal
-  GalleryIcon(
-    name: 'checkmark_seal',
-    icon: CupertinoIcons.checkmark_seal,
-  ),
-//  checkmark_seal_fill
-  GalleryIcon(
-    name: 'checkmark_seal_fill',
-    icon: CupertinoIcons.checkmark_seal_fill,
-  ),
-//  checkmark_shield
-  GalleryIcon(
-    name: 'checkmark_shield',
-    icon: CupertinoIcons.checkmark_shield,
-  ),
-//  checkmark_shield_fill
-  GalleryIcon(
-    name: 'checkmark_shield_fill',
-    icon: CupertinoIcons.checkmark_shield_fill,
-  ),
-//  checkmark_square
-  GalleryIcon(
-    name: 'checkmark_square',
-    icon: CupertinoIcons.checkmark_square,
-  ),
-//  checkmark_square_fill
-  GalleryIcon(
-    name: 'checkmark_square_fill',
-    icon: CupertinoIcons.checkmark_square_fill,
-  ),
-
-//  chevron_back
-  GalleryIcon(
-    name: 'chevron_back',
-    icon: CupertinoIcons.chevron_back,
-  ),
-//  chevron_compact_down
-  GalleryIcon(
-    name: 'chevron_compact_down',
-    icon: CupertinoIcons.chevron_compact_down,
-  ),
-//  chevron_compact_left
-  GalleryIcon(
-    name: 'chevron_compact_left',
-    icon: CupertinoIcons.chevron_compact_left,
-  ),
-//  chevron_compact_right
-  GalleryIcon(
-    name: 'chevron_compact_right',
-    icon: CupertinoIcons.chevron_compact_right,
-  ),
-//  chevron_compact_up
-  GalleryIcon(
-    name: 'chevron_compact_up',
-    icon: CupertinoIcons.chevron_compact_up,
-  ),
-//  chevron_down
-  GalleryIcon(
-    name: 'chevron_down',
-    icon: CupertinoIcons.chevron_down,
-  ),
-//  chevron_down_circle
-  GalleryIcon(
-    name: 'chevron_down_circle',
-    icon: CupertinoIcons.chevron_down_circle,
-  ),
-//  chevron_down_circle_fill
-  GalleryIcon(
-    name: 'chevron_down_circle_fill',
-    icon: CupertinoIcons.chevron_down_circle_fill,
-  ),
-//  chevron_down_square
-  GalleryIcon(
-    name: 'chevron_down_square',
-    icon: CupertinoIcons.chevron_down_square,
-  ),
-//  chevron_down_square_fill
-  GalleryIcon(
-    name: 'chevron_down_square_fill',
-    icon: CupertinoIcons.chevron_down_square_fill,
-  ),
-
-//  chevron_forward
-  GalleryIcon(
-    name: 'chevron_forward',
-    icon: CupertinoIcons.chevron_forward,
-  ),
-
-//  chevron_left
-  GalleryIcon(
-    name: 'chevron_left',
-    icon: CupertinoIcons.chevron_left,
-  ),
-//  chevron_left_2
-  GalleryIcon(
-    name: 'chevron_left_2',
-    icon: CupertinoIcons.chevron_left_2,
-  ),
-//  chevron_left_circle
-  GalleryIcon(
-    name: 'chevron_left_circle',
-    icon: CupertinoIcons.chevron_left_circle,
-  ),
-//  chevron_left_circle_fill
-  GalleryIcon(
-    name: 'chevron_left_circle_fill',
-    icon: CupertinoIcons.chevron_left_circle_fill,
-  ),
-//  chevron_left_slash_chevron_right
-  GalleryIcon(
-    name: 'chevron_left_slash_chevron_right',
-    icon: CupertinoIcons.chevron_left_slash_chevron_right,
-  ),
-//  chevron_left_square
-  GalleryIcon(
-    name: 'chevron_left_square',
-    icon: CupertinoIcons.chevron_left_square,
-  ),
-//  chevron_left_square_fill
-  GalleryIcon(
-    name: 'chevron_left_square_fill',
-    icon: CupertinoIcons.chevron_left_square_fill,
-  ),
-
-//  chevron_right
-  GalleryIcon(
-    name: 'chevron_right',
-    icon: CupertinoIcons.chevron_right,
-  ),
-//  chevron_right_2
-  GalleryIcon(
-    name: 'chevron_right_2',
-    icon: CupertinoIcons.chevron_right_2,
-  ),
-//  chevron_right_circle
-  GalleryIcon(
-    name: 'chevron_right_circle',
-    icon: CupertinoIcons.chevron_right_circle,
-  ),
-//  chevron_right_circle_fill
-  GalleryIcon(
-    name: 'chevron_right_circle_fill',
-    icon: CupertinoIcons.chevron_right_circle_fill,
-  ),
-//  chevron_right_square
-  GalleryIcon(
-    name: 'chevron_right_square',
-    icon: CupertinoIcons.chevron_right_square,
-  ),
-//  chevron_right_square_fill
-  GalleryIcon(
-    name: 'chevron_right_square_fill',
-    icon: CupertinoIcons.chevron_right_square_fill,
-  ),
-//  chevron_up
-  GalleryIcon(
-    name: 'chevron_up',
-    icon: CupertinoIcons.chevron_up,
-  ),
-//  chevron_up_chevron_down
-  GalleryIcon(
-    name: 'chevron_up_chevron_down',
-    icon: CupertinoIcons.chevron_up_chevron_down,
-  ),
-//  chevron_up_circle
-  GalleryIcon(
-    name: 'chevron_up_circle',
-    icon: CupertinoIcons.chevron_up_circle,
-  ),
-//  chevron_up_circle_fill
-  GalleryIcon(
-    name: 'chevron_up_circle_fill',
-    icon: CupertinoIcons.chevron_up_circle_fill,
-  ),
-//  chevron_up_square
-  GalleryIcon(
-    name: 'chevron_up_square',
-    icon: CupertinoIcons.chevron_up_square,
-  ),
-//  chevron_up_square_fill
-  GalleryIcon(
-    name: 'chevron_up_square_fill',
-    icon: CupertinoIcons.chevron_up_square_fill,
-  ),
-//  circle_bottomthird_split
-  GalleryIcon(
-    name: 'circle_bottomthird_split',
-    icon: CupertinoIcons.circle_bottomthird_split,
-  ),
-
-//  circle_fill
-  GalleryIcon(
-    name: 'circle_fill',
-    icon: CupertinoIcons.circle_fill,
-  ),
-//  circle_grid_3x3
-  GalleryIcon(
-    name: 'circle_grid_3x3',
-    icon: CupertinoIcons.circle_grid_3x3,
-  ),
-//  circle_grid_3x3_fill
-  GalleryIcon(
-    name: 'circle_grid_3x3_fill',
-    icon: CupertinoIcons.circle_grid_3x3_fill,
-  ),
-//  circle_grid_hex
-  GalleryIcon(
-    name: 'circle_grid_hex',
-    icon: CupertinoIcons.circle_grid_hex,
-  ),
-//  circle_grid_hex_fill
-  GalleryIcon(
-    name: 'circle_grid_hex_fill',
-    icon: CupertinoIcons.circle_grid_hex_fill,
-  ),
-//  circle_lefthalf_fill
-  GalleryIcon(
-    name: 'circle_lefthalf_fill',
-    icon: CupertinoIcons.circle_lefthalf_fill,
-  ),
-//  circle_righthalf_fill
-  GalleryIcon(
-    name: 'circle_righthalf_fill',
-    icon: CupertinoIcons.circle_righthalf_fill,
-  ),
-//  clear_fill
-  GalleryIcon(
-    name: 'clear_fill',
-    icon: CupertinoIcons.clear_fill,
-  ),
-
-//  clock_fill
-  GalleryIcon(
-    name: 'clock_fill',
-    icon: CupertinoIcons.clock_fill,
-  ),
-//  cloud
-  GalleryIcon(
-    name: 'cloud',
-    icon: CupertinoIcons.cloud,
-  ),
-//  cloud_bolt
-  GalleryIcon(
-    name: 'cloud_bolt',
-    icon: CupertinoIcons.cloud_bolt,
-  ),
-//  cloud_bolt_fill
-  GalleryIcon(
-    name: 'cloud_bolt_fill',
-    icon: CupertinoIcons.cloud_bolt_fill,
-  ),
-//  cloud_bolt_rain
-  GalleryIcon(
-    name: 'cloud_bolt_rain',
-    icon: CupertinoIcons.cloud_bolt_rain,
-  ),
-//  cloud_bolt_rain_fill
-  GalleryIcon(
-    name: 'cloud_bolt_rain_fill',
-    icon: CupertinoIcons.cloud_bolt_rain_fill,
-  ),
-//  cloud_download
-  GalleryIcon(
-    name: 'cloud_download',
-    icon: CupertinoIcons.cloud_download,
-  ),
-//  cloud_download_fill
-  GalleryIcon(
-    name: 'cloud_download_fill',
-    icon: CupertinoIcons.cloud_download_fill,
-  ),
-//  cloud_drizzle
-  GalleryIcon(
-    name: 'cloud_drizzle',
-    icon: CupertinoIcons.cloud_drizzle,
-  ),
-//  cloud_drizzle_fill
-  GalleryIcon(
-    name: 'cloud_drizzle_fill',
-    icon: CupertinoIcons.cloud_drizzle_fill,
-  ),
-//  cloud_fill
-  GalleryIcon(
-    name: 'cloud_fill',
-    icon: CupertinoIcons.cloud_fill,
-  ),
-//  cloud_fog
-  GalleryIcon(
-    name: 'cloud_fog',
-    icon: CupertinoIcons.cloud_fog,
-  ),
-//  cloud_fog_fill
-  GalleryIcon(
-    name: 'cloud_fog_fill',
-    icon: CupertinoIcons.cloud_fog_fill,
-  ),
-//  cloud_hail
-  GalleryIcon(
-    name: 'cloud_hail',
-    icon: CupertinoIcons.cloud_hail,
-  ),
-//  cloud_hail_fill
-  GalleryIcon(
-    name: 'cloud_hail_fill',
-    icon: CupertinoIcons.cloud_hail_fill,
-  ),
-//  cloud_heavyrain
-  GalleryIcon(
-    name: 'cloud_heavyrain',
-    icon: CupertinoIcons.cloud_heavyrain,
-  ),
-//  cloud_heavyrain_fill
-  GalleryIcon(
-    name: 'cloud_heavyrain_fill',
-    icon: CupertinoIcons.cloud_heavyrain_fill,
-  ),
-//  cloud_moon
-  GalleryIcon(
-    name: 'cloud_moon',
-    icon: CupertinoIcons.cloud_moon,
-  ),
-//  cloud_moon_bolt
-  GalleryIcon(
-    name: 'cloud_moon_bolt',
-    icon: CupertinoIcons.cloud_moon_bolt,
-  ),
-//  cloud_moon_bolt_fill
-  GalleryIcon(
-    name: 'cloud_moon_bolt_fill',
-    icon: CupertinoIcons.cloud_moon_bolt_fill,
-  ),
-//  cloud_moon_fill
-  GalleryIcon(
-    name: 'cloud_moon_fill',
-    icon: CupertinoIcons.cloud_moon_fill,
-  ),
-//  cloud_moon_rain
-  GalleryIcon(
-    name: 'cloud_moon_rain',
-    icon: CupertinoIcons.cloud_moon_rain,
-  ),
-//  cloud_moon_rain_fill
-  GalleryIcon(
-    name: 'cloud_moon_rain_fill',
-    icon: CupertinoIcons.cloud_moon_rain_fill,
-  ),
-//  cloud_rain
-  GalleryIcon(
-    name: 'cloud_rain',
-    icon: CupertinoIcons.cloud_rain,
-  ),
-//  cloud_rain_fill
-  GalleryIcon(
-    name: 'cloud_rain_fill',
-    icon: CupertinoIcons.cloud_rain_fill,
-  ),
-//  cloud_sleet
-  GalleryIcon(
-    name: 'cloud_sleet',
-    icon: CupertinoIcons.cloud_sleet,
-  ),
-//  cloud_sleet_fill
-  GalleryIcon(
-    name: 'cloud_sleet_fill',
-    icon: CupertinoIcons.cloud_sleet_fill,
-  ),
-//  cloud_snow
-  GalleryIcon(
-    name: 'cloud_snow',
-    icon: CupertinoIcons.cloud_snow,
-  ),
-//  cloud_snow_fill
-  GalleryIcon(
-    name: 'cloud_snow_fill',
-    icon: CupertinoIcons.cloud_snow_fill,
-  ),
-//  cloud_sun
-  GalleryIcon(
-    name: 'cloud_sun',
-    icon: CupertinoIcons.cloud_sun,
-  ),
-//  cloud_sun_bolt
-  GalleryIcon(
-    name: 'cloud_sun_bolt',
-    icon: CupertinoIcons.cloud_sun_bolt,
-  ),
-//  cloud_sun_bolt_fill
-  GalleryIcon(
-    name: 'cloud_sun_bolt_fill',
-    icon: CupertinoIcons.cloud_sun_bolt_fill,
-  ),
-//  cloud_sun_fill
-  GalleryIcon(
-    name: 'cloud_sun_fill',
-    icon: CupertinoIcons.cloud_sun_fill,
-  ),
-//  cloud_sun_rain
-  GalleryIcon(
-    name: 'cloud_sun_rain',
-    icon: CupertinoIcons.cloud_sun_rain,
-  ),
-//  cloud_sun_rain_fill
-  GalleryIcon(
-    name: 'cloud_sun_rain_fill',
-    icon: CupertinoIcons.cloud_sun_rain_fill,
-  ),
-//  cloud_upload
-  GalleryIcon(
-    name: 'cloud_upload',
-    icon: CupertinoIcons.cloud_upload,
-  ),
-//  cloud_upload_fill
-  GalleryIcon(
-    name: 'cloud_upload_fill',
-    icon: CupertinoIcons.cloud_upload_fill,
-  ),
-//  color_filter
-  GalleryIcon(
-    name: 'color_filter',
-    icon: CupertinoIcons.color_filter,
-  ),
-//  color_filter_fill
-  GalleryIcon(
-    name: 'color_filter_fill',
-    icon: CupertinoIcons.color_filter_fill,
-  ),
-//  command
-  GalleryIcon(
-    name: 'command',
-    icon: CupertinoIcons.command,
-  ),
-//  compass
-  GalleryIcon(
-    name: 'compass',
-    icon: CupertinoIcons.compass,
-  ),
-//  compass_fill
-  GalleryIcon(
-    name: 'compass_fill',
-    icon: CupertinoIcons.compass_fill,
-  ),
-//  control
-  GalleryIcon(
-    name: 'control',
-    icon: CupertinoIcons.control,
-  ),
-//  creditcard
-  GalleryIcon(
-    name: 'creditcard',
-    icon: CupertinoIcons.creditcard,
-  ),
-//  creditcard_fill
-  GalleryIcon(
-    name: 'creditcard_fill',
-    icon: CupertinoIcons.creditcard_fill,
-  ),
-//  crop
-  GalleryIcon(
-    name: 'crop',
-    icon: CupertinoIcons.crop,
-  ),
-//  crop_rotate
-  GalleryIcon(
-    name: 'crop_rotate',
-    icon: CupertinoIcons.crop_rotate,
-  ),
-//  cube
-  GalleryIcon(
-    name: 'cube',
-    icon: CupertinoIcons.cube,
-  ),
-//  cube_box
-  GalleryIcon(
-    name: 'cube_box',
-    icon: CupertinoIcons.cube_box,
-  ),
-//  cube_box_fill
-  GalleryIcon(
-    name: 'cube_box_fill',
-    icon: CupertinoIcons.cube_box_fill,
-  ),
-//  cube_fill
-  GalleryIcon(
-    name: 'cube_fill',
-    icon: CupertinoIcons.cube_fill,
-  ),
-
-//  cursor_rays
-  GalleryIcon(
-    name: 'cursor_rays',
-    icon: CupertinoIcons.cursor_rays,
-  ),
-
-//  decrease_indent
-  GalleryIcon(
-    name: 'decrease_indent',
-    icon: CupertinoIcons.decrease_indent,
-  ),
-//  decrease_quotelevel
-
-  GalleryIcon(
-    name: 'decrease_quotelevel',
-    icon: CupertinoIcons.decrease_quotelevel,
-  ),
-  //  delete_left
-
-  GalleryIcon(
-    name: 'delete_left',
-    icon: CupertinoIcons.delete_left,
-  ),
-  //  delete_left_fill
-
-  GalleryIcon(
-    name: 'delete_left_fill',
-    icon: CupertinoIcons.delete_left_fill,
-  ),
-  //  delete_right
-
-  GalleryIcon(
-    name: 'delete_right',
-    icon: CupertinoIcons.delete_right,
-  ),
-  //  delete_right_fill
-
-  GalleryIcon(
-    name: 'delete_right_fill',
-    icon: CupertinoIcons.delete_right_fill,
-  ),
-  //  desktopcomputer
-
-  GalleryIcon(
-    name: 'desktopcomputer',
-    icon: CupertinoIcons.desktopcomputer,
-  ),
-  //  device_desktop
-
-  GalleryIcon(
-    name: 'device_desktop',
-    icon: CupertinoIcons.device_desktop,
-  ),
-  //  device_laptop
-
-  GalleryIcon(
-    name: 'device_laptop',
-    icon: CupertinoIcons.device_laptop,
-  ),
-  //  device_phone_landscape
-  GalleryIcon(
-    name: 'device_phone_landscape',
-    icon: CupertinoIcons.device_phone_landscape,
-  ),
-//  device_phone_portrait
-
-  GalleryIcon(
-    name: 'device_phone_portrait',
-    icon: CupertinoIcons.device_phone_portrait,
-  ),
-
-//  dial
-  GalleryIcon(
-    name: 'dial',
-    icon: CupertinoIcons.dial,
-  ),
-//  dial_fill
-  GalleryIcon(
-    name: 'dial_fill',
-    icon: CupertinoIcons.dial_fill,
-  ),
-//  divide
-  GalleryIcon(
-    name: 'divide',
-    icon: CupertinoIcons.divide,
-  ),
-//  divide_circle
-  GalleryIcon(
-    name: 'divide_circle',
-    icon: CupertinoIcons.divide_circle,
-  ),
-//  divide_circle_fill
-  GalleryIcon(
-    name: 'divide_circle_fill',
-    icon: CupertinoIcons.divide_circle_fill,
-  ),
-//  divide_square
-  GalleryIcon(
-    name: 'divide_square',
-    icon: CupertinoIcons.divide_square,
-  ),
-//  divide_square_fill
-  GalleryIcon(
-    name: 'divide_square_fill',
-    icon: CupertinoIcons.divide_square_fill,
-  ),
-//  doc
-  GalleryIcon(
-    name: 'doc',
-    icon: CupertinoIcons.doc,
-  ),
-//  doc_append
-  GalleryIcon(
-    name: 'doc_append',
-    icon: CupertinoIcons.doc_append,
-  ),
-//  doc_chart
-  GalleryIcon(
-    name: 'doc_chart',
-    icon: CupertinoIcons.doc_chart,
-  ),
-//  doc_chart_fill
-  GalleryIcon(
-    name: 'doc_chart_fill',
-    icon: CupertinoIcons.doc_chart_fill,
-  ),
-//  doc_checkmark
-  GalleryIcon(
-    name: 'doc_checkmark',
-    icon: CupertinoIcons.doc_checkmark,
-  ),
-//  doc_checkmark_fill
-  GalleryIcon(
-    name: 'doc_checkmark_fill',
-    icon: CupertinoIcons.doc_checkmark_fill,
-  ),
-//  doc_circle
-  GalleryIcon(
-    name: 'doc_circle',
-    icon: CupertinoIcons.doc_circle,
-  ),
-//  doc_circle_fill
-  GalleryIcon(
-    name: 'doc_circle_fill',
-    icon: CupertinoIcons.doc_circle_fill,
-  ),
-//  doc_fill
-  GalleryIcon(
-    name: 'doc_fill',
-    icon: CupertinoIcons.doc_fill,
-  ),
-//  doc_on_clipboard
-  GalleryIcon(
-    name: 'doc_on_clipboard',
-    icon: CupertinoIcons.doc_on_clipboard,
-  ),
-//  doc_on_clipboard_fill
-  GalleryIcon(
-    name: 'doc_on_clipboard_fill',
-    icon: CupertinoIcons.doc_on_clipboard_fill,
-  ),
-//  doc_on_doc
-  GalleryIcon(
-    name: 'doc_on_doc',
-    icon: CupertinoIcons.doc_on_doc,
-  ),
-//  doc_on_doc_fill
-  GalleryIcon(
-    name: 'doc_on_doc_fill',
-    icon: CupertinoIcons.doc_on_doc_fill,
-  ),
-//  doc_person
-  GalleryIcon(
-    name: 'doc_person',
-    icon: CupertinoIcons.doc_person,
-  ),
-//  doc_person_fill
-  GalleryIcon(
-    name: 'doc_person_fill',
-    icon: CupertinoIcons.doc_person_fill,
-  ),
-//  doc_plaintext
-  GalleryIcon(
-    name: 'doc_plaintext',
-    icon: CupertinoIcons.doc_plaintext,
-  ),
-//  doc_richtext
-  GalleryIcon(
-    name: 'doc_richtext',
-    icon: CupertinoIcons.doc_richtext,
-  ),
-//  doc_text
-  GalleryIcon(
-    name: 'doc_text',
-    icon: CupertinoIcons.doc_text,
-  ),
-//  doc_text_fill
-  GalleryIcon(
-    name: 'doc_text_fill',
-    icon: CupertinoIcons.doc_text_fill,
-  ),
-//  doc_text_search
-  GalleryIcon(
-    name: 'doc_text_search',
-    icon: CupertinoIcons.doc_text_search,
-  ),
-//  doc_text_viewfinder
-  GalleryIcon(
-    name: 'doc_text_viewfinder',
-    icon: CupertinoIcons.doc_text_viewfinder,
-  ),
-//  dot_radiowaves_left_right
-  GalleryIcon(
-    name: 'dot_radiowaves_left_right',
-    icon: CupertinoIcons.dot_radiowaves_left_right,
-  ),
-//  dot_radiowaves_right
-  GalleryIcon(
-    name: 'dot_radiowaves_right',
-    icon: CupertinoIcons.dot_radiowaves_right,
-  ),
-//  dot_square
-  GalleryIcon(
-    name: 'dot_square',
-    icon: CupertinoIcons.dot_square,
-  ),
-//  dot_square_fill
-  GalleryIcon(
-    name: 'dot_square_fill',
-    icon: CupertinoIcons.dot_square_fill,
-  ),
-//  download_circle
-  GalleryIcon(
-    name: 'download_circle',
-    icon: CupertinoIcons.download_circle,
-  ),
-//  download_circle_fill
-  GalleryIcon(
-    name: 'download_circle_fill',
-    icon: CupertinoIcons.download_circle_fill,
-  ),
-//  drop
-  GalleryIcon(
-    name: 'drop',
-    icon: CupertinoIcons.drop,
-  ),
-//  drop_fill
-  GalleryIcon(
-    name: 'drop_fill',
-    icon: CupertinoIcons.drop_fill,
-  ),
-//  drop_triangle
-  GalleryIcon(
-    name: 'drop_triangle',
-    icon: CupertinoIcons.drop_triangle,
-  ),
-//  drop_triangle_fill
-  GalleryIcon(
-    name: 'drop_triangle_fill',
-    icon: CupertinoIcons.drop_triangle_fill,
-  ),
-//  ear
-  GalleryIcon(
-    name: 'ear',
-    icon: CupertinoIcons.ear,
-  ),
-//  eject
-  GalleryIcon(
-    name: 'eject',
-    icon: CupertinoIcons.eject,
-  ),
-//  eject_fill
-  GalleryIcon(
-    name: 'eject_fill',
-    icon: CupertinoIcons.eject_fill,
-  ),
-//  ellipses_bubble
-  GalleryIcon(
-    name: 'ellipses_bubble',
-    icon: CupertinoIcons.ellipses_bubble,
-  ),
-//  ellipses_bubble_fill
-  GalleryIcon(
-    name: 'ellipses_bubble_fill',
-    icon: CupertinoIcons.ellipses_bubble_fill,
-  ),
-//  ellipsis_circle
-  GalleryIcon(
-    name: 'ellipsis_circle',
-    icon: CupertinoIcons.ellipsis_circle,
-  ),
-//  ellipsis_circle_fill
-  GalleryIcon(
-    name: 'ellipsis_circle_fill',
-    icon: CupertinoIcons.ellipsis_circle_fill,
-  ),
-//  ellipsis_vertical
-  GalleryIcon(
-    name: 'ellipsis_vertical',
-    icon: CupertinoIcons.ellipsis_vertical,
-  ),
-//  ellipsis_vertical_circle
-  GalleryIcon(
-    name: 'ellipsis_vertical_circle',
-    icon: CupertinoIcons.ellipsis_vertical_circle,
-  ),
-//  ellipsis_vertical_circle_fill
-  GalleryIcon(
-    name: 'ellipsis_vertical_circle_fill',
-    icon: CupertinoIcons.ellipsis_vertical_circle_fill,
-  ),
-
-//  envelope
-  GalleryIcon(
-    name: 'envelope',
-    icon: CupertinoIcons.envelope,
-  ),
-//  envelope_badge
-  GalleryIcon(
-    name: 'envelope_badge',
-    icon: CupertinoIcons.envelope_badge,
-  ),
-//  envelope_badge_fill
-  GalleryIcon(
-    name: 'envelope_badge_fill',
-    icon: CupertinoIcons.envelope_badge_fill,
-  ),
-//  envelope_circle
-  GalleryIcon(
-    name: 'envelope_circle',
-    icon: CupertinoIcons.envelope_circle,
-  ),
-//  envelope_circle_fill
-  GalleryIcon(
-    name: 'envelope_circle_fill',
-    icon: CupertinoIcons.envelope_circle_fill,
-  ),
-
-//  envelope_fill
-  GalleryIcon(
-    name: 'envelope_fill',
-    icon: CupertinoIcons.envelope_fill,
-  ),
-//  envelope_open
-  GalleryIcon(
-    name: 'envelope_open',
-    icon: CupertinoIcons.envelope_open,
-  ),
-//  envelope_open_fill
-  GalleryIcon(
-    name: 'envelope_open_fill',
-    icon: CupertinoIcons.envelope_open_fill,
-  ),
-//  equal
-  GalleryIcon(
-    name: 'equal',
-    icon: CupertinoIcons.equal,
-  ),
-//  equal_circle
-  GalleryIcon(
-    name: 'equal_circle',
-    icon: CupertinoIcons.equal_circle,
-  ),
-//  equal_circle_fill
-  GalleryIcon(
-    name: 'equal_circle_fill',
-    icon: CupertinoIcons.equal_circle_fill,
-  ),
-//  equal_square
-  GalleryIcon(
-    name: 'equal_square',
-    icon: CupertinoIcons.equal_square,
-  ),
-//  equal_square_fill
-  GalleryIcon(
-    name: 'equal_square_fill',
-    icon: CupertinoIcons.equal_square_fill,
-  ),
-//  escape
-  GalleryIcon(
-    name: 'escape',
-    icon: CupertinoIcons.escape,
-  ),
-//  exclamationmark
-  GalleryIcon(
-    name: 'exclamationmark',
-    icon: CupertinoIcons.exclamationmark,
-  ),
-//  exclamationmark_bubble
-  GalleryIcon(
-    name: 'exclamationmark_bubble',
-    icon: CupertinoIcons.exclamationmark_bubble,
-  ),
-//  exclamationmark_bubble_fill
-  GalleryIcon(
-    name: 'exclamationmark_bubble_fill',
-    icon: CupertinoIcons.exclamationmark_bubble_fill,
-  ),
-//  exclamationmark_circle
-  GalleryIcon(
-    name: 'exclamationmark_circle',
-    icon: CupertinoIcons.exclamationmark_circle,
-  ),
-//  exclamationmark_circle_fill
-  GalleryIcon(
-    name: 'exclamationmark_circle_fill',
-    icon: CupertinoIcons.exclamationmark_circle_fill,
-  ),
-//  exclamationmark_octagon
-  GalleryIcon(
-    name: 'exclamationmark_octagon',
-    icon: CupertinoIcons.exclamationmark_octagon,
-  ),
-//  exclamationmark_octagon_fill
-  GalleryIcon(
-    name: 'exclamationmark_octagon_fill',
-    icon: CupertinoIcons.exclamationmark_octagon_fill,
-  ),
-//  exclamationmark_shield
-  GalleryIcon(
-    name: 'exclamationmark_shield',
-    icon: CupertinoIcons.exclamationmark_shield,
-  ),
-//  exclamationmark_shield_fill
-  GalleryIcon(
-    name: 'exclamationmark_shield_fill',
-    icon: CupertinoIcons.exclamationmark_shield_fill,
-  ),
-//  exclamationmark_square
-  GalleryIcon(
-    name: 'exclamationmark_square',
-    icon: CupertinoIcons.exclamationmark_square,
-  ),
-//  exclamationmark_square_fill
-  GalleryIcon(
-    name: 'exclamationmark_square_fill',
-    icon: CupertinoIcons.exclamationmark_square_fill,
-  ),
-//  exclamationmark_triangle
-  GalleryIcon(
-    name: 'exclamationmark_triangle',
-    icon: CupertinoIcons.exclamationmark_triangle,
-  ),
-//  exclamationmark_triangle_fill
-  GalleryIcon(
-    name: 'exclamationmark_triangle_fill',
-    icon: CupertinoIcons.exclamationmark_triangle_fill,
-  ),
-
-//  eye_fill
-  GalleryIcon(
-    name: 'eye_fill',
-    icon: CupertinoIcons.eye_fill,
-  ),
-//  eye_slash
-  GalleryIcon(
-    name: 'eye_slash',
-    icon: CupertinoIcons.eye_slash,
-  ),
-//  eye_slash_fill
-  GalleryIcon(
-    name: 'eye_slash_fill',
-    icon: CupertinoIcons.eye_slash_fill,
-  ),
-//  eyedropper
-  GalleryIcon(
-    name: 'eyedropper',
-    icon: CupertinoIcons.eyedropper,
-  ),
-//  eyedropper_full
-  GalleryIcon(
-    name: 'eyedropper_full',
-    icon: CupertinoIcons.eyedropper_full,
-  ),
-//  eyedropper_halffull
-  GalleryIcon(
-    name: 'eyedropper_halffull',
-    icon: CupertinoIcons.eyedropper_halffull,
-  ),
-//  eyeglasses
-  GalleryIcon(
-    name: 'eyeglasses',
-    icon: CupertinoIcons.eyeglasses,
-  ),
-//  f_cursive
-  GalleryIcon(
-    name: 'f_cursive',
-    icon: CupertinoIcons.f_cursive,
-  ),
-//  f_cursive_circle
-  GalleryIcon(
-    name: 'f_cursive_circle',
-    icon: CupertinoIcons.f_cursive_circle,
-  ),
-//  f_cursive_circle_fill
-  GalleryIcon(
-    name: 'f_cursive_circle_fill',
-    icon: CupertinoIcons.f_cursive_circle_fill,
-  ),
-//  film
-  GalleryIcon(
-    name: 'film',
-    icon: CupertinoIcons.film,
-  ),
-//  film_fill
-  GalleryIcon(
-    name: 'film_fill',
-    icon: CupertinoIcons.film_fill,
-  ),
-//  flag_circle
-  GalleryIcon(
-    name: 'flag_circle',
-    icon: CupertinoIcons.flag_circle,
-  ),
-//  flag_circle_fill
-  GalleryIcon(
-    name: 'flag_circle_fill',
-    icon: CupertinoIcons.flag_circle_fill,
-  ),
-//  flag_fill
-  GalleryIcon(
-    name: 'flag_fill',
-    icon: CupertinoIcons.flag_fill,
-  ),
-//  flag_slash
-  GalleryIcon(
-    name: 'flag_slash',
-    icon: CupertinoIcons.flag_slash,
-  ),
-//  flag_slash_fill
-  GalleryIcon(
-    name: 'flag_slash_fill',
-    icon: CupertinoIcons.flag_slash_fill,
-  ),
-//  flame
-  GalleryIcon(
-    name: 'flame',
-    icon: CupertinoIcons.flame,
-  ),
-//  flame_fill
-  GalleryIcon(
-    name: 'flame_fill',
-    icon: CupertinoIcons.flame_fill,
-  ),
-//  floppy_disk
-  GalleryIcon(
-    name: 'floppy_disk',
-    icon: CupertinoIcons.floppy_disk,
-  ),
-//  flowchart
-  GalleryIcon(
-    name: 'flowchart',
-    icon: CupertinoIcons.flowchart,
-  ),
-//  flowchart_fill
-  GalleryIcon(
-    name: 'flowchart_fill',
-    icon: CupertinoIcons.flowchart_fill,
-  ),
-//  folder_badge_minus
-  GalleryIcon(
-    name: 'folder_badge_minus',
-    icon: CupertinoIcons.folder_badge_minus,
-  ),
-//  folder_badge_person_crop
-  GalleryIcon(
-    name: 'folder_badge_person_crop',
-    icon: CupertinoIcons.folder_badge_person_crop,
-  ),
-//  folder_badge_plus
-  GalleryIcon(
-    name: 'folder_badge_plus',
-    icon: CupertinoIcons.folder_badge_plus,
-  ),
-//  folder_circle
-  GalleryIcon(
-    name: 'folder_circle',
-    icon: CupertinoIcons.folder_circle,
-  ),
-//  folder_circle_fill
-  GalleryIcon(
-    name: 'folder_circle_fill',
-    icon: CupertinoIcons.folder_circle_fill,
-  ),
-
-//  folder_fill
-  GalleryIcon(
-    name: 'folder_fill',
-    icon: CupertinoIcons.folder_fill,
-  ),
-//  folder_fill_badge_minus
-  GalleryIcon(
-    name: 'folder_fill_badge_minus',
-    icon: CupertinoIcons.folder_fill_badge_minus,
-  ),
-//  folder_fill_badge_person_crop
-  GalleryIcon(
-    name: 'folder_fill_badge_person_crop',
-    icon: CupertinoIcons.folder_fill_badge_person_crop,
-  ),
-//  folder_fill_badge_plus
-  GalleryIcon(
-    name: 'folder_fill_badge_plus',
-    icon: CupertinoIcons.folder_fill_badge_plus,
-  ),
-//  forward_end
-  GalleryIcon(
-    name: 'forward_end',
-    icon: CupertinoIcons.forward_end,
-  ),
-//  forward_end_alt
-  GalleryIcon(
-    name: 'forward_end_alt',
-    icon: CupertinoIcons.forward_end_alt,
-  ),
-//  forward_end_alt_fill
-  GalleryIcon(
-    name: 'forward_end_alt_fill',
-    icon: CupertinoIcons.forward_end_alt_fill,
-  ),
-//  forward_end_fill
-  GalleryIcon(
-    name: 'forward_end_fill',
-    icon: CupertinoIcons.forward_end_fill,
-  ),
-//  forward_fill
-  GalleryIcon(
-    name: 'forward_fill',
-    icon: CupertinoIcons.forward_fill,
-  ),
-//  function
-  GalleryIcon(
-    name: 'function',
-    icon: CupertinoIcons.function,
-  ),
-//  fx
-  GalleryIcon(
-    name: 'fx',
-    icon: CupertinoIcons.fx,
-  ),
-
-//  gamecontroller
-  GalleryIcon(
-    name: 'gamecontroller',
-    icon: CupertinoIcons.gamecontroller,
-  ),
-//  gamecontroller_alt_fill
-  GalleryIcon(
-    name: 'gamecontroller_alt_fill',
-    icon: CupertinoIcons.gamecontroller_alt_fill,
-  ),
-
-//  gamecontroller_fill
-  GalleryIcon(
-    name: 'gamecontroller_fill',
-    icon: CupertinoIcons.gamecontroller_fill,
-  ),
-//  gauge
-  GalleryIcon(
-    name: 'gauge',
-    icon: CupertinoIcons.gauge,
-  ),
-//  gauge_badge_minus
-  GalleryIcon(
-    name: 'gauge_badge_minus',
-    icon: CupertinoIcons.gauge_badge_minus,
-  ),
-//  gauge_badge_plus
-  GalleryIcon(
-    name: 'gauge_badge_plus',
-    icon: CupertinoIcons.gauge_badge_plus,
-  ),
-
-//  gear_alt
-  GalleryIcon(
-    name: 'gear_alt',
-    icon: CupertinoIcons.gear_alt,
-  ),
-
-//  gear_alt_fill
-  GalleryIcon(
-    name: 'gear_alt_fill',
-    icon: CupertinoIcons.gear_alt_fill,
-  ),
-//  gift
-  GalleryIcon(
-    name: 'gift',
-    icon: CupertinoIcons.gift,
-  ),
-//  gift_alt
-  GalleryIcon(
-    name: 'gift_alt',
-    icon: CupertinoIcons.gift_alt,
-  ),
-//  gift_alt_fill
-  GalleryIcon(
-    name: 'gift_alt_fill',
-    icon: CupertinoIcons.gift_alt_fill,
-  ),
-//  gift_fill
-  GalleryIcon(
-    name: 'gift_fill',
-    icon: CupertinoIcons.gift_fill,
-  ),
-//  globe
-  GalleryIcon(
-    name: 'globe',
-    icon: CupertinoIcons.globe,
-  ),
-//  gobackward
-  GalleryIcon(
-    name: 'gobackward',
-    icon: CupertinoIcons.gobackward,
-  ),
-//  gobackward_10
-  GalleryIcon(
-    name: 'gobackward_10',
-    icon: CupertinoIcons.gobackward_10,
-  ),
-//  gobackward_15
-  GalleryIcon(
-    name: 'gobackward_15',
-    icon: CupertinoIcons.gobackward_15,
-  ),
-//  gobackward_30
-  GalleryIcon(
-    name: 'gobackward_30',
-    icon: CupertinoIcons.gobackward_30,
-  ),
-//  gobackward_45
-  GalleryIcon(
-    name: 'gobackward_45',
-    icon: CupertinoIcons.gobackward_45,
-  ),
-//  gobackward_60
-  GalleryIcon(
-    name: 'gobackward_60',
-    icon: CupertinoIcons.gobackward_60,
-  ),
-//  gobackward_75
-  GalleryIcon(
-    name: 'gobackward_75',
-    icon: CupertinoIcons.gobackward_75,
-  ),
-//  gobackward_90
-  GalleryIcon(
-    name: 'gobackward_90',
-    icon: CupertinoIcons.gobackward_90,
-  ),
-//  gobackward_minus
-  GalleryIcon(
-    name: 'gobackward_minus',
-    icon: CupertinoIcons.gobackward_minus,
-  ),
-//  goforward
-  GalleryIcon(
-    name: 'goforward',
-    icon: CupertinoIcons.goforward,
-  ),
-//  goforward_10
-  GalleryIcon(
-    name: 'goforward_10',
-    icon: CupertinoIcons.goforward_10,
-  ),
-//  goforward_15
-  GalleryIcon(
-    name: 'goforward_15',
-    icon: CupertinoIcons.goforward_15,
-  ),
-//  goforward_30
-  GalleryIcon(
-    name: 'goforward_30',
-    icon: CupertinoIcons.goforward_30,
-  ),
-//  goforward_45
-  GalleryIcon(
-    name: 'goforward_45',
-    icon: CupertinoIcons.goforward_45,
-  ),
-//  goforward_60
-  GalleryIcon(
-    name: 'goforward_60',
-    icon: CupertinoIcons.goforward_60,
-  ),
-//  goforward_75
-  GalleryIcon(
-    name: 'goforward_75',
-    icon: CupertinoIcons.goforward_75,
-  ),
-//  goforward_90
-  GalleryIcon(
-    name: 'goforward_90',
-    icon: CupertinoIcons.goforward_90,
-  ),
-//  goforward_plus
-  GalleryIcon(
-    name: 'goforward_plus',
-    icon: CupertinoIcons.goforward_plus,
-  ),
-//  graph_circle
-  GalleryIcon(
-    name: 'graph_circle',
-    icon: CupertinoIcons.graph_circle,
-  ),
-//  graph_circle_fill
-  GalleryIcon(
-    name: 'graph_circle_fill',
-    icon: CupertinoIcons.graph_circle_fill,
-  ),
-//  graph_square
-  GalleryIcon(
-    name: 'graph_square',
-    icon: CupertinoIcons.graph_square,
-  ),
-//  graph_square_fill
-  GalleryIcon(
-    name: 'graph_square_fill',
-    icon: CupertinoIcons.graph_square_fill,
-  ),
-//  greaterthan
-  GalleryIcon(
-    name: 'greaterthan',
-    icon: CupertinoIcons.greaterthan,
-  ),
-//  greaterthan_circle
-  GalleryIcon(
-    name: 'greaterthan_circle',
-    icon: CupertinoIcons.greaterthan_circle,
-  ),
-//  greaterthan_circle_fill
-  GalleryIcon(
-    name: 'greaterthan_circle_fill',
-    icon: CupertinoIcons.greaterthan_circle_fill,
-  ),
-//  greaterthan_square
-  GalleryIcon(
-    name: 'greaterthan_square',
-    icon: CupertinoIcons.greaterthan_square,
-  ),
-//  greaterthan_square_fill
-  GalleryIcon(
-    name: 'greaterthan_square_fill',
-    icon: CupertinoIcons.greaterthan_square_fill,
-  ),
-//  grid
-  GalleryIcon(
-    name: 'grid',
-    icon: CupertinoIcons.grid,
-  ),
-//  grid_circle
-  GalleryIcon(
-    name: 'grid_circle',
-    icon: CupertinoIcons.grid_circle,
-  ),
-//  grid_circle_fill
-  GalleryIcon(
-    name: 'grid_circle_fill',
-    icon: CupertinoIcons.grid_circle_fill,
-  ),
-//  guitars
-  GalleryIcon(
-    name: 'guitars',
-    icon: CupertinoIcons.guitars,
-  ),
-//  hammer
-  GalleryIcon(
-    name: 'hammer',
-    icon: CupertinoIcons.hammer,
-  ),
-//  hammer_fill
-  GalleryIcon(
-    name: 'hammer_fill',
-    icon: CupertinoIcons.hammer_fill,
-  ),
-//  hand_draw
-  GalleryIcon(
-    name: 'hand_draw',
-    icon: CupertinoIcons.hand_draw,
-  ),
-//  hand_draw_fill
-  GalleryIcon(
-    name: 'hand_draw_fill',
-    icon: CupertinoIcons.hand_draw_fill,
-  ),
-//  hand_point_left
-  GalleryIcon(
-    name: 'hand_point_left',
-    icon: CupertinoIcons.hand_point_left,
-  ),
-//  hand_point_left_fill
-  GalleryIcon(
-    name: 'hand_point_left_fill',
-    icon: CupertinoIcons.hand_point_left_fill,
-  ),
-//  hand_point_right
-  GalleryIcon(
-    name: 'hand_point_right',
-    icon: CupertinoIcons.hand_point_right,
-  ),
-//  hand_point_right_fill
-  GalleryIcon(
-    name: 'hand_point_right_fill',
-    icon: CupertinoIcons.hand_point_right_fill,
-  ),
-//  hand_raised
-  GalleryIcon(
-    name: 'hand_raised',
-    icon: CupertinoIcons.hand_raised,
-  ),
-//  hand_raised_fill
-  GalleryIcon(
-    name: 'hand_raised_fill',
-    icon: CupertinoIcons.hand_raised_fill,
-  ),
-//  hand_raised_slash
-  GalleryIcon(
-    name: 'hand_raised_slash',
-    icon: CupertinoIcons.hand_raised_slash,
-  ),
-//  hand_raised_slash_fill
-  GalleryIcon(
-    name: 'hand_raised_slash_fill',
-    icon: CupertinoIcons.hand_raised_slash_fill,
-  ),
-//  hand_thumbsdown
-  GalleryIcon(
-    name: 'hand_thumbsdown',
-    icon: CupertinoIcons.hand_thumbsdown,
-  ),
-//  hand_thumbsdown_fill
-  GalleryIcon(
-    name: 'hand_thumbsdown_fill',
-    icon: CupertinoIcons.hand_thumbsdown_fill,
-  ),
-//  hand_thumbsup
-  GalleryIcon(
-    name: 'hand_thumbsup',
-    icon: CupertinoIcons.hand_thumbsup,
-  ),
-//  hand_thumbsup_fill
-  GalleryIcon(
-    name: 'hand_thumbsup_fill',
-    icon: CupertinoIcons.hand_thumbsup_fill,
-  ),
-//  hare
-  GalleryIcon(
-    name: 'hare',
-    icon: CupertinoIcons.hare,
-  ),
-//  hare_fill
-  GalleryIcon(
-    name: 'hare_fill',
-    icon: CupertinoIcons.hare_fill,
-  ),
-//  headphones
-  GalleryIcon(
-    name: 'headphones',
-    icon: CupertinoIcons.headphones,
-  ),
-//  heart_circle
-  GalleryIcon(
-    name: 'heart_circle',
-    icon: CupertinoIcons.heart_circle,
-  ),
-//  heart_circle_fill
-  GalleryIcon(
-    name: 'heart_circle_fill',
-    icon: CupertinoIcons.heart_circle_fill,
-  ),
-
-//  heart_fill
-  GalleryIcon(
-    name: 'heart_fill',
-    icon: CupertinoIcons.heart_fill,
-  ),
-//  heart_slash
-  GalleryIcon(
-    name: 'heart_slash',
-    icon: CupertinoIcons.heart_slash,
-  ),
-//  heart_slash_circle
-  GalleryIcon(
-    name: 'heart_slash_circle',
-    icon: CupertinoIcons.heart_slash_circle,
-  ),
-//  heart_slash_circle_fill
-  GalleryIcon(
-    name: 'heart_slash_circle_fill',
-    icon: CupertinoIcons.heart_slash_circle_fill,
-  ),
-//  heart_slash_fill
-  GalleryIcon(
-    name: 'heart_slash_fill',
-    icon: CupertinoIcons.heart_slash_fill,
-  ),
-//  helm
-  GalleryIcon(
-    name: 'helm',
-    icon: CupertinoIcons.helm,
-  ),
-//  hexagon
-  GalleryIcon(
-    name: 'hexagon',
-    icon: CupertinoIcons.hexagon,
-  ),
-//  hexagon_fill
-  GalleryIcon(
-    name: 'hexagon_fill',
-    icon: CupertinoIcons.hexagon_fill,
-  ),
-//  hifispeaker
-  GalleryIcon(
-    name: 'hifispeaker',
-    icon: CupertinoIcons.hifispeaker,
-  ),
-//  hifispeaker_fill
-  GalleryIcon(
-    name: 'hifispeaker_fill',
-    icon: CupertinoIcons.hifispeaker_fill,
-  ),
-//  hourglass
-  GalleryIcon(
-    name: 'hourglass',
-    icon: CupertinoIcons.hourglass,
-  ),
-//  hourglass_bottomhalf_fill
-  GalleryIcon(
-    name: 'hourglass_bottomhalf_fill',
-    icon: CupertinoIcons.hourglass_bottomhalf_fill,
-  ),
-//  hourglass_tophalf_fill
-  GalleryIcon(
-    name: 'hourglass_tophalf_fill',
-    icon: CupertinoIcons.hourglass_tophalf_fill,
-  ),
-
-//  house
-  GalleryIcon(
-    name: 'house',
-    icon: CupertinoIcons.house,
-  ),
-//  house_alt
-  GalleryIcon(
-    name: 'house_alt',
-    icon: CupertinoIcons.house_alt,
-  ),
-//  house_alt_fill
-  GalleryIcon(
-    name: 'house_alt_fill',
-    icon: CupertinoIcons.house_alt_fill,
-  ),
-//  house_fill
-  GalleryIcon(
-    name: 'house_fill',
-    icon: CupertinoIcons.house_fill,
-  ),
-//  hurricane
-  GalleryIcon(
-    name: 'hurricane',
-    icon: CupertinoIcons.hurricane,
-  ),
-//  increase_indent
-  GalleryIcon(
-    name: 'increase_indent',
-    icon: CupertinoIcons.increase_indent,
-  ),
-//  increase_quotelevel
-  GalleryIcon(
-    name: 'increase_quotelevel',
-    icon: CupertinoIcons.increase_quotelevel,
-  ),
-
-//  infinite
-  GalleryIcon(
-    name: 'infinite',
-    icon: CupertinoIcons.infinite,
-  ),
-
-//  info_circle
-  GalleryIcon(
-    name: 'info_circle',
-    icon: CupertinoIcons.info_circle,
-  ),
-//  info_circle_fill
-  GalleryIcon(
-    name: 'info_circle_fill',
-    icon: CupertinoIcons.info_circle_fill,
-  ),
-//  italic
-  GalleryIcon(
-    name: 'italic',
-    icon: CupertinoIcons.italic,
-  ),
-//  keyboard
-  GalleryIcon(
-    name: 'keyboard',
-    icon: CupertinoIcons.keyboard,
-  ),
-//  keyboard_chevron_compact_down
-  GalleryIcon(
-    name: 'keyboard_chevron_compact_down',
-    icon: CupertinoIcons.keyboard_chevron_compact_down,
-  ),
-//  largecircle_fill_circle
-  GalleryIcon(
-    name: 'largecircle_fill_circle',
-    icon: CupertinoIcons.largecircle_fill_circle,
-  ),
-//  lasso
-  GalleryIcon(
-    name: 'lasso',
-    icon: CupertinoIcons.lasso,
-  ),
-//  layers
-  GalleryIcon(
-    name: 'layers',
-    icon: CupertinoIcons.layers,
-  ),
-//  layers_alt
-  GalleryIcon(
-    name: 'layers_alt',
-    icon: CupertinoIcons.layers_alt,
-  ),
-//  layers_alt_fill
-  GalleryIcon(
-    name: 'layers_alt_fill',
-    icon: CupertinoIcons.layers_alt_fill,
-  ),
-//  layers_fill
-  GalleryIcon(
-    name: 'layers_fill',
-    icon: CupertinoIcons.layers_fill,
-  ),
-//  leaf_arrow_circlepath
-  GalleryIcon(
-    name: 'leaf_arrow_circlepath',
-    icon: CupertinoIcons.leaf_arrow_circlepath,
-  ),
-//  lessthan
-  GalleryIcon(
-    name: 'lessthan',
-    icon: CupertinoIcons.lessthan,
-  ),
-//  lessthan_circle
-  GalleryIcon(
-    name: 'lessthan_circle',
-    icon: CupertinoIcons.lessthan_circle,
-  ),
-//  lessthan_circle_fill
-  GalleryIcon(
-    name: 'lessthan_circle_fill',
-    icon: CupertinoIcons.lessthan_circle_fill,
-  ),
-//  lessthan_square
-  GalleryIcon(
-    name: 'lessthan_square',
-    icon: CupertinoIcons.lessthan_square,
-  ),
-//  lessthan_square_fill
-  GalleryIcon(
-    name: 'lessthan_square_fill',
-    icon: CupertinoIcons.lessthan_square_fill,
-  ),
-//  light_max
-  GalleryIcon(
-    name: 'light_max',
-    icon: CupertinoIcons.light_max,
-  ),
-//  light_min
-  GalleryIcon(
-    name: 'light_min',
-    icon: CupertinoIcons.light_min,
-  ),
-//  lightbulb
-  GalleryIcon(
-    name: 'lightbulb',
-    icon: CupertinoIcons.lightbulb,
-  ),
-//  lightbulb_fill
-  GalleryIcon(
-    name: 'lightbulb_fill',
-    icon: CupertinoIcons.lightbulb_fill,
-  ),
-//  lightbulb_slash
-  GalleryIcon(
-    name: 'lightbulb_slash',
-    icon: CupertinoIcons.lightbulb_slash,
-  ),
-//  lightbulb_slash_fill
-  GalleryIcon(
-    name: 'lightbulb_slash_fill',
-    icon: CupertinoIcons.lightbulb_slash_fill,
-  ),
-//  line_horizontal_3
-  GalleryIcon(
-    name: 'line_horizontal_3',
-    icon: CupertinoIcons.line_horizontal_3,
-  ),
-//  line_horizontal_3_decrease
-  GalleryIcon(
-    name: 'line_horizontal_3_decrease',
-    icon: CupertinoIcons.line_horizontal_3_decrease,
-  ),
-//  line_horizontal_3_decrease_circle
-  GalleryIcon(
-    name: 'line_horizontal_3_decrease_circle',
-    icon: CupertinoIcons.line_horizontal_3_decrease_circle,
-  ),
-//  line_horizontal_3_decrease_circle_fill
-  GalleryIcon(
-    name: 'line_horizontal_3_decrease_circle_fill',
-    icon: CupertinoIcons.line_horizontal_3_decrease_circle_fill,
-  ),
-//  link
-  GalleryIcon(
-    name: 'link',
-    icon: CupertinoIcons.link,
-  ),
-//  link_circle
-  GalleryIcon(
-    name: 'link_circle',
-    icon: CupertinoIcons.link_circle,
-  ),
-//  link_circle_fill
-  GalleryIcon(
-    name: 'link_circle_fill',
-    icon: CupertinoIcons.link_circle_fill,
-  ),
-//  list_bullet
-  GalleryIcon(
-    name: 'list_bullet',
-    icon: CupertinoIcons.list_bullet,
-  ),
-//  list_bullet_below_rectangle
-  GalleryIcon(
-    name: 'list_bullet_below_rectangle',
-    icon: CupertinoIcons.list_bullet_below_rectangle,
-  ),
-//  list_bullet_indent
-  GalleryIcon(
-    name: 'list_bullet_indent',
-    icon: CupertinoIcons.list_bullet_indent,
-  ),
-//  list_dash
-  GalleryIcon(
-    name: 'list_dash',
-    icon: CupertinoIcons.list_dash,
-  ),
-//  list_number
-  GalleryIcon(
-    name: 'list_number',
-    icon: CupertinoIcons.list_number,
-  ),
-//  list_number_rtl
-  GalleryIcon(
-    name: 'list_number_rtl',
-    icon: CupertinoIcons.list_number_rtl,
-  ),
-//  location_circle
-  GalleryIcon(
-    name: 'location_circle',
-    icon: CupertinoIcons.location_circle,
-  ),
-//  location_circle_fill
-  GalleryIcon(
-    name: 'location_circle_fill',
-    icon: CupertinoIcons.location_circle_fill,
-  ),
-//  location_fill
-
-  GalleryIcon(
-    name: 'location_fill',
-    icon: CupertinoIcons.location_fill,
-  ),
-//  location_north
-  GalleryIcon(
-    name: 'location_north',
-    icon: CupertinoIcons.location_north,
-  ),
-//  location_north_fill
-  GalleryIcon(
-    name: 'location_north_fill',
-    icon: CupertinoIcons.location_north_fill,
-  ),
-//  location_north_line
-  GalleryIcon(
-    name: 'location_north_line',
-    icon: CupertinoIcons.location_north_line,
-  ),
-//  location_north_line_fill
-  GalleryIcon(
-    name: 'location_north_line_fill',
-    icon: CupertinoIcons.location_north_line_fill,
-  ),
-//  location_slash
-  GalleryIcon(
-    name: 'location_slash',
-    icon: CupertinoIcons.location_slash,
-  ),
-//  location_slash_fill
-  GalleryIcon(
-    name: 'location_slash_fill',
-    icon: CupertinoIcons.location_slash_fill,
-  ),
-
-//  lock
-  GalleryIcon(
-    name: 'lock',
-    icon: CupertinoIcons.lock,
-  ),
-//  lock_circle
-  GalleryIcon(
-    name: 'lock_circle',
-    icon: CupertinoIcons.lock_circle,
-  ),
-//  lock_circle_fill
-  GalleryIcon(
-    name: 'lock_circle_fill',
-    icon: CupertinoIcons.lock_circle_fill,
-  ),
-
-//  lock_fill
-  GalleryIcon(
-    name: 'lock_fill',
-    icon: CupertinoIcons.lock_fill,
-  ),
-//  lock_open
-  GalleryIcon(
-    name: 'lock_open',
-    icon: CupertinoIcons.lock_open,
-  ),
-//  lock_open_fill
-  GalleryIcon(
-    name: 'lock_open_fill',
-    icon: CupertinoIcons.lock_open_fill,
-  ),
-//  lock_rotation
-  GalleryIcon(
-    name: 'lock_rotation',
-    icon: CupertinoIcons.lock_rotation,
-  ),
-//  lock_rotation_open
-  GalleryIcon(
-    name: 'lock_rotation_open',
-    icon: CupertinoIcons.lock_rotation_open,
-  ),
-//  lock_shield
-  GalleryIcon(
-    name: 'lock_shield',
-    icon: CupertinoIcons.lock_shield,
-  ),
-//  lock_shield_fill
-  GalleryIcon(
-    name: 'lock_shield_fill',
-    icon: CupertinoIcons.lock_shield_fill,
-  ),
-//  lock_slash
-  GalleryIcon(
-    name: 'lock_slash',
-    icon: CupertinoIcons.lock_slash,
-  ),
-//  lock_slash_fill
-  GalleryIcon(
-    name: 'lock_slash_fill',
-    icon: CupertinoIcons.lock_slash_fill,
-  ),
-//  macwindow
-  GalleryIcon(
-    name: 'macwindow',
-    icon: CupertinoIcons.macwindow,
-  ),
-//  map
-  GalleryIcon(
-    name: 'map',
-    icon: CupertinoIcons.map,
-  ),
-//  map_fill
-  GalleryIcon(
-    name: 'map_fill',
-    icon: CupertinoIcons.map_fill,
-  ),
-//  map_pin
-  GalleryIcon(
-    name: 'map_pin',
-    icon: CupertinoIcons.map_pin,
-  ),
-//  map_pin_ellipse
-  GalleryIcon(
-    name: 'map_pin_ellipse',
-    icon: CupertinoIcons.map_pin_ellipse,
-  ),
-//  map_pin_slash
-  GalleryIcon(
-    name: 'map_pin_slash',
-    icon: CupertinoIcons.map_pin_slash,
-  ),
-//  memories
-  GalleryIcon(
-    name: 'memories',
-    icon: CupertinoIcons.memories,
-  ),
-//  memories_badge_minus
-  GalleryIcon(
-    name: 'memories_badge_minus',
-    icon: CupertinoIcons.memories_badge_minus,
-  ),
-//  memories_badge_plus
-  GalleryIcon(
-    name: 'memories_badge_plus',
-    icon: CupertinoIcons.memories_badge_plus,
-  ),
-//  metronome
-  GalleryIcon(
-    name: 'metronome',
-    icon: CupertinoIcons.metronome,
-  ),
-//  mic_circle
-  GalleryIcon(
-    name: 'mic_circle',
-    icon: CupertinoIcons.mic_circle,
-  ),
-//  mic_circle_fill
-  GalleryIcon(
-    name: 'mic_circle_fill',
-    icon: CupertinoIcons.mic_circle_fill,
-  ),
-
-//  mic_fill
-  GalleryIcon(
-    name: 'mic_fill',
-    icon: CupertinoIcons.mic_fill,
-  ),
-
-//  mic_slash
-  GalleryIcon(
-    name: 'mic_slash',
-    icon: CupertinoIcons.mic_slash,
-  ),
-//  mic_slash_fill
-  GalleryIcon(
-    name: 'mic_slash_fill',
-    icon: CupertinoIcons.mic_slash_fill,
-  ),
-//  minus
-  GalleryIcon(
-    name: 'minus',
-    icon: CupertinoIcons.minus,
-  ),
-
-//  minus_circle
-  GalleryIcon(
-    name: 'minus_circle',
-    icon: CupertinoIcons.minus_circle,
-  ),
-//  minus_circle_fill
-  GalleryIcon(
-    name: 'minus_circle_fill',
-    icon: CupertinoIcons.minus_circle_fill,
-  ),
-//  minus_rectangle
-  GalleryIcon(
-    name: 'minus_rectangle',
-    icon: CupertinoIcons.minus_rectangle,
-  ),
-//  minus_rectangle_fill
-  GalleryIcon(
-    name: 'minus_rectangle_fill',
-    icon: CupertinoIcons.minus_rectangle_fill,
-  ),
-//  minus_slash_plus
-  GalleryIcon(
-    name: 'minus_slash_plus',
-    icon: CupertinoIcons.minus_slash_plus,
-  ),
-//  minus_square
-  GalleryIcon(
-    name: 'minus_square',
-    icon: CupertinoIcons.minus_square,
-  ),
-//  minus_square_fill
-  GalleryIcon(
-    name: 'minus_square_fill',
-    icon: CupertinoIcons.minus_square_fill,
-  ),
-//  money_dollar
-  GalleryIcon(
-    name: 'money_dollar',
-    icon: CupertinoIcons.money_dollar,
-  ),
-//  money_dollar_circle
-  GalleryIcon(
-    name: 'money_dollar_circle',
-    icon: CupertinoIcons.money_dollar_circle,
-  ),
-//  money_dollar_circle_fill
-  GalleryIcon(
-    name: 'money_dollar_circle_fill',
-    icon: CupertinoIcons.money_dollar_circle_fill,
-  ),
-//  money_euro
-  GalleryIcon(
-    name: 'money_euro',
-    icon: CupertinoIcons.money_euro,
-  ),
-//  money_euro_circle
-  GalleryIcon(
-    name: 'money_euro_circle',
-    icon: CupertinoIcons.money_euro_circle,
-  ),
-//  money_euro_circle_fill
-  GalleryIcon(
-    name: 'money_euro_circle_fill',
-    icon: CupertinoIcons.money_euro_circle_fill,
-  ),
-//  money_pound
-  GalleryIcon(
-    name: 'money_pound',
-    icon: CupertinoIcons.money_pound,
-  ),
-//  money_pound_circle
-  GalleryIcon(
-    name: 'money_pound_circle',
-    icon: CupertinoIcons.money_pound_circle,
-  ),
-//  money_pound_circle_fill
-  GalleryIcon(
-    name: 'money_pound_circle_fill',
-    icon: CupertinoIcons.money_pound_circle_fill,
-  ),
-//  money_rubl
-  GalleryIcon(
-    name: 'money_rubl',
-    icon: CupertinoIcons.money_rubl,
-  ),
-//  money_rubl_circle
-  GalleryIcon(
-    name: 'money_rubl_circle',
-    icon: CupertinoIcons.money_rubl_circle,
-  ),
-//  money_rubl_circle_fill
-  GalleryIcon(
-    name: 'money_rubl_circle_fill',
-    icon: CupertinoIcons.money_rubl_circle_fill,
-  ),
-//  money_yen
-  GalleryIcon(
-    name: 'money_yen',
-    icon: CupertinoIcons.money_yen,
-  ),
-//  money_yen_circle
-  GalleryIcon(
-    name: 'money_yen_circle',
-    icon: CupertinoIcons.money_yen_circle,
-  ),
-//  money_yen_circle_fill
-  GalleryIcon(
-    name: 'money_yen_circle_fill',
-    icon: CupertinoIcons.money_yen_circle_fill,
-  ),
-//  moon
-  GalleryIcon(
-    name: 'moon',
-    icon: CupertinoIcons.moon,
-  ),
-//  moon_circle
-  GalleryIcon(
-    name: 'moon_circle',
-    icon: CupertinoIcons.moon_circle,
-  ),
-//  moon_circle_fill
-  GalleryIcon(
-    name: 'moon_circle_fill',
-    icon: CupertinoIcons.moon_circle_fill,
-  ),
-//  moon_fill
-  GalleryIcon(
-    name: 'moon_fill',
-    icon: CupertinoIcons.moon_fill,
-  ),
-//  moon_stars
-  GalleryIcon(
-    name: 'moon_stars',
-    icon: CupertinoIcons.moon_stars,
-  ),
-//  moon_stars_fill
-  GalleryIcon(
-    name: 'moon_stars_fill',
-    icon: CupertinoIcons.moon_stars_fill,
-  ),
-//  moon_zzz
-  GalleryIcon(
-    name: 'moon_zzz',
-    icon: CupertinoIcons.moon_zzz,
-  ),
-//  moon_zzz_fill
-  GalleryIcon(
-    name: 'moon_zzz_fill',
-    icon: CupertinoIcons.moon_zzz_fill,
-  ),
-//  move
-  GalleryIcon(
-    name: 'move',
-    icon: CupertinoIcons.move,
-  ),
-//  multiply
-  GalleryIcon(
-    name: 'multiply',
-    icon: CupertinoIcons.multiply,
-  ),
-//  multiply_circle
-  GalleryIcon(
-    name: 'multiply_circle',
-    icon: CupertinoIcons.multiply_circle,
-  ),
-//  multiply_circle_fill
-  GalleryIcon(
-    name: 'multiply_circle_fill',
-    icon: CupertinoIcons.multiply_circle_fill,
-  ),
-//  multiply_square
-  GalleryIcon(
-    name: 'multiply_square',
-    icon: CupertinoIcons.multiply_square,
-  ),
-//  multiply_square_fill
-  GalleryIcon(
-    name: 'multiply_square_fill',
-    icon: CupertinoIcons.multiply_square_fill,
-  ),
-//  music_albums
-  GalleryIcon(
-    name: 'music_albums',
-    icon: CupertinoIcons.music_albums,
-  ),
-//  music_albums_fill
-  GalleryIcon(
-    name: 'music_albums_fill',
-    icon: CupertinoIcons.music_albums_fill,
-  ),
-//  music_house
-  GalleryIcon(
-    name: 'music_house',
-    icon: CupertinoIcons.music_house,
-  ),
-//  music_house_fill
-  GalleryIcon(
-    name: 'music_house_fill',
-    icon: CupertinoIcons.music_house_fill,
-  ),
-//  music_mic
-  GalleryIcon(
-    name: 'music_mic',
-    icon: CupertinoIcons.music_mic,
-  ),
-
-//  music_note_2
-  GalleryIcon(
-    name: 'music_note_2',
-    icon: CupertinoIcons.music_note_2,
-  ),
-//  music_note_list
-  GalleryIcon(
-    name: 'music_note_list',
-    icon: CupertinoIcons.music_note_list,
-  ),
-//  nosign
-  GalleryIcon(
-    name: 'nosign',
-    icon: CupertinoIcons.nosign,
-  ),
-//  number
-  GalleryIcon(
-    name: 'number',
-    icon: CupertinoIcons.number,
-  ),
-//  number_circle
-  GalleryIcon(
-    name: 'number_circle',
-    icon: CupertinoIcons.number_circle,
-  ),
-//  number_circle_fill
-  GalleryIcon(
-    name: 'number_circle_fill',
-    icon: CupertinoIcons.number_circle_fill,
-  ),
-//  number_square
-  GalleryIcon(
-    name: 'number_square',
-    icon: CupertinoIcons.number_square,
-  ),
-//  number_square_fill
-  GalleryIcon(
-    name: 'number_square_fill',
-    icon: CupertinoIcons.number_square_fill,
-  ),
-
-//  option
-  GalleryIcon(
-    name: 'option',
-    icon: CupertinoIcons.option,
-  ),
-//  paintbrush
-  GalleryIcon(
-    name: 'paintbrush',
-    icon: CupertinoIcons.paintbrush,
-  ),
-//  paintbrush_fill
-  GalleryIcon(
-    name: 'paintbrush_fill',
-    icon: CupertinoIcons.paintbrush_fill,
-  ),
-//  pano
-  GalleryIcon(
-    name: 'pano',
-    icon: CupertinoIcons.pano,
-  ),
-//  pano_fill
-  GalleryIcon(
-    name: 'pano_fill',
-    icon: CupertinoIcons.pano_fill,
-  ),
-//  paperclip
-  GalleryIcon(
-    name: 'paperclip',
-    icon: CupertinoIcons.paperclip,
-  ),
-//  paperplane
-  GalleryIcon(
-    name: 'paperplane',
-    icon: CupertinoIcons.paperplane,
-  ),
-//  paperplane_fill
-  GalleryIcon(
-    name: 'paperplane_fill',
-    icon: CupertinoIcons.paperplane_fill,
-  ),
-//  paragraph
-  GalleryIcon(
-    name: 'paragraph',
-    icon: CupertinoIcons.paragraph,
-  ),
-//  pause_circle
-  GalleryIcon(
-    name: 'pause_circle',
-    icon: CupertinoIcons.pause_circle,
-  ),
-//  pause_circle_fill
-  GalleryIcon(
-    name: 'pause_circle_fill',
-    icon: CupertinoIcons.pause_circle_fill,
-  ),
-
-//  pause_fill
-  GalleryIcon(
-    name: 'pause_fill',
-    icon: CupertinoIcons.pause_fill,
-  ),
-//  pause_rectangle
-  GalleryIcon(
-    name: 'pause_rectangle',
-    icon: CupertinoIcons.pause_rectangle,
-  ),
-//  pause_rectangle_fill
-  GalleryIcon(
-    name: 'pause_rectangle_fill',
-    icon: CupertinoIcons.pause_rectangle_fill,
-  ),
-//  pencil_circle
-  GalleryIcon(
-    name: 'pencil_circle',
-    icon: CupertinoIcons.pencil_circle,
-  ),
-//  pencil_circle_fill
-  GalleryIcon(
-    name: 'pencil_circle_fill',
-    icon: CupertinoIcons.pencil_circle_fill,
-  ),
-//  pencil_ellipsis_rectangle
-  GalleryIcon(
-    name: 'pencil_ellipsis_rectangle',
-    icon: CupertinoIcons.pencil_ellipsis_rectangle,
-  ),
-//  pencil_outline
-  GalleryIcon(
-    name: 'pencil_outline',
-    icon: CupertinoIcons.pencil_outline,
-  ),
-//  pencil_slash
-  GalleryIcon(
-    name: 'pencil_slash',
-    icon: CupertinoIcons.pencil_slash,
-  ),
-//  percent
-  GalleryIcon(
-    name: 'percent',
-    icon: CupertinoIcons.percent,
-  ),
-//  person_2
-  GalleryIcon(
-    name: 'person_2',
-    icon: CupertinoIcons.person_2,
-  ),
-//  person_2_alt
-  GalleryIcon(
-    name: 'person_2_alt',
-    icon: CupertinoIcons.person_2_alt,
-  ),
-//  person_2_fill
-  GalleryIcon(
-    name: 'person_2_fill',
-    icon: CupertinoIcons.person_2_fill,
-  ),
-//  person_2_square_stack
-  GalleryIcon(
-    name: 'person_2_square_stack',
-    icon: CupertinoIcons.person_2_square_stack,
-  ),
-//  person_2_square_stack_fill
-  GalleryIcon(
-    name: 'person_2_square_stack_fill',
-    icon: CupertinoIcons.person_2_square_stack_fill,
-  ),
-
-//  person_3
-  GalleryIcon(
-    name: 'person_3',
-    icon: CupertinoIcons.person_3,
-  ),
-
-//  person_3_fill
-  GalleryIcon(
-    name: 'person_3_fill',
-    icon: CupertinoIcons.person_3_fill,
-  ),
-//  person_alt
-  GalleryIcon(
-    name: 'person_alt',
-    icon: CupertinoIcons.person_alt,
-  ),
-//  person_alt_circle
-  GalleryIcon(
-    name: 'person_alt_circle',
-    icon: CupertinoIcons.person_alt_circle,
-  ),
-//  person_alt_circle_fill
-  GalleryIcon(
-    name: 'person_alt_circle_fill',
-    icon: CupertinoIcons.person_alt_circle_fill,
-  ),
-//  person_badge_minus
-  GalleryIcon(
-    name: 'person_badge_minus',
-    icon: CupertinoIcons.person_badge_minus,
-  ),
-//  person_badge_minus_fill
-  GalleryIcon(
-    name: 'person_badge_minus_fill',
-    icon: CupertinoIcons.person_badge_minus_fill,
-  ),
-
-//  person_badge_plus
-  GalleryIcon(
-    name: 'person_badge_plus',
-    icon: CupertinoIcons.person_badge_plus,
-  ),
-
-//  person_badge_plus_fill
-  GalleryIcon(
-    name: 'person_badge_plus_fill',
-    icon: CupertinoIcons.person_badge_plus_fill,
-  ),
-//  person_circle
-  GalleryIcon(
-    name: 'person_circle',
-    icon: CupertinoIcons.person_circle,
-  ),
-//  person_circle_fill
-  GalleryIcon(
-    name: 'person_circle_fill',
-    icon: CupertinoIcons.person_circle_fill,
-  ),
-
-//  person_crop_circle
-  GalleryIcon(
-    name: 'person_crop_circle',
-    icon: CupertinoIcons.person_crop_circle,
-  ),
-//  person_crop_circle_badge_checkmark
-  GalleryIcon(
-    name: 'person_crop_circle_badge_checkmark',
-    icon: CupertinoIcons.person_crop_circle_badge_checkmark,
-  ),
-//  person_crop_circle_badge_exclam
-  GalleryIcon(
-    name: 'person_crop_circle_badge_exclam',
-    icon: CupertinoIcons.person_crop_circle_badge_exclam,
-  ),
-//  person_crop_circle_badge_minus
-  GalleryIcon(
-    name: 'person_crop_circle_badge_minus',
-    icon: CupertinoIcons.person_crop_circle_badge_minus,
-  ),
-//  person_crop_circle_badge_plus
-  GalleryIcon(
-    name: 'person_crop_circle_badge_plus',
-    icon: CupertinoIcons.person_crop_circle_badge_plus,
-  ),
-//  person_crop_circle_badge_xmark
-  GalleryIcon(
-    name: 'person_crop_circle_badge_xmark',
-    icon: CupertinoIcons.person_crop_circle_badge_xmark,
-  ),
-//  person_crop_circle_fill
-  GalleryIcon(
-    name: 'person_crop_circle_fill',
-    icon: CupertinoIcons.person_crop_circle_fill,
-  ),
-//  person_crop_circle_fill_badge_checkmark
-  GalleryIcon(
-    name: 'person_crop_circle_fill_badge_checkmark',
-    icon: CupertinoIcons.person_crop_circle_fill_badge_checkmark,
-  ),
-//  person_crop_circle_fill_badge_exclam
-  GalleryIcon(
-    name: 'person_crop_circle_fill_badge_exclam',
-    icon: CupertinoIcons.person_crop_circle_fill_badge_exclam,
-  ),
-//  person_crop_circle_fill_badge_minus
-  GalleryIcon(
-    name: 'person_crop_circle_fill_badge_minus',
-    icon: CupertinoIcons.person_crop_circle_fill_badge_minus,
-  ),
-//  person_crop_circle_fill_badge_plus
-  GalleryIcon(
-    name: 'person_crop_circle_fill_badge_plus',
-    icon: CupertinoIcons.person_crop_circle_fill_badge_plus,
-  ),
-//  person_crop_circle_fill_badge_xmark
-  GalleryIcon(
-    name: 'person_crop_circle_fill_badge_xmark',
-    icon: CupertinoIcons.person_crop_circle_fill_badge_xmark,
-  ),
-//  person_crop_rectangle
-  GalleryIcon(
-    name: 'person_crop_rectangle',
-    icon: CupertinoIcons.person_crop_rectangle,
-  ),
-//  person_crop_rectangle_fill
-  GalleryIcon(
-    name: 'person_crop_rectangle_fill',
-    icon: CupertinoIcons.person_crop_rectangle_fill,
-  ),
-//  person_crop_square
-  GalleryIcon(
-    name: 'person_crop_square',
-    icon: CupertinoIcons.person_crop_square,
-  ),
-//  person_crop_square_fill
-  GalleryIcon(
-    name: 'person_crop_square_fill',
-    icon: CupertinoIcons.person_crop_square_fill,
-  ),
-
-//  person_fill
-  GalleryIcon(
-    name: 'person_fill',
-    icon: CupertinoIcons.person_fill,
-  ),
-//  personalhotspot
-  GalleryIcon(
-    name: 'personalhotspot',
-    icon: CupertinoIcons.personalhotspot,
-  ),
-//  perspective
-  GalleryIcon(
-    name: 'perspective',
-    icon: CupertinoIcons.perspective,
-  ),
-//  phone_arrow_down_left
-  GalleryIcon(
-    name: 'phone_arrow_down_left',
-    icon: CupertinoIcons.phone_arrow_down_left,
-  ),
-//  phone_arrow_right
-  GalleryIcon(
-    name: 'phone_arrow_right',
-    icon: CupertinoIcons.phone_arrow_right,
-  ),
-//  phone_arrow_up_right
-  GalleryIcon(
-    name: 'phone_arrow_up_right',
-    icon: CupertinoIcons.phone_arrow_up_right,
-  ),
-//  phone_badge_plus
-  GalleryIcon(
-    name: 'phone_badge_plus',
-    icon: CupertinoIcons.phone_badge_plus,
-  ),
-//  phone_circle
-  GalleryIcon(
-    name: 'phone_circle',
-    icon: CupertinoIcons.phone_circle,
-  ),
-//  phone_circle_fill
-  GalleryIcon(
-    name: 'phone_circle_fill',
-    icon: CupertinoIcons.phone_circle_fill,
-  ),
-//  phone_down
-  GalleryIcon(
-    name: 'phone_down',
-    icon: CupertinoIcons.phone_down,
-  ),
-//  phone_down_circle
-  GalleryIcon(
-    name: 'phone_down_circle',
-    icon: CupertinoIcons.phone_down_circle,
-  ),
-//  phone_down_circle_fill
-  GalleryIcon(
-    name: 'phone_down_circle_fill',
-    icon: CupertinoIcons.phone_down_circle_fill,
-  ),
-//  phone_down_fill
-  GalleryIcon(
-    name: 'phone_down_fill',
-    icon: CupertinoIcons.phone_down_fill,
-  ),
-
-//  phone_fill
-  GalleryIcon(
-    name: 'phone_fill',
-    icon: CupertinoIcons.phone_fill,
-  ),
-//  phone_fill_arrow_down_left
-  GalleryIcon(
-    name: 'phone_fill_arrow_down_left',
-    icon: CupertinoIcons.phone_fill_arrow_down_left,
-  ),
-//  phone_fill_arrow_right
-  GalleryIcon(
-    name: 'phone_fill_arrow_right',
-    icon: CupertinoIcons.phone_fill_arrow_right,
-  ),
-//  phone_fill_arrow_up_right
-  GalleryIcon(
-    name: 'phone_fill_arrow_up_right',
-    icon: CupertinoIcons.phone_fill_arrow_up_right,
-  ),
-//  phone_fill_badge_plus
-  GalleryIcon(
-    name: 'phone_fill_badge_plus',
-    icon: CupertinoIcons.phone_fill_badge_plus,
-  ),
-//  photo
-  GalleryIcon(
-    name: 'photo',
-    icon: CupertinoIcons.photo,
-  ),
-//  photo_fill
-  GalleryIcon(
-    name: 'photo_fill',
-    icon: CupertinoIcons.photo_fill,
-  ),
-//  photo_fill_on_rectangle_fill
-  GalleryIcon(
-    name: 'photo_fill_on_rectangle_fill',
-    icon: CupertinoIcons.photo_fill_on_rectangle_fill,
-  ),
-//  photo_on_rectangle
-  GalleryIcon(
-    name: 'photo_on_rectangle',
-    icon: CupertinoIcons.photo_on_rectangle,
-  ),
-//  piano
-  GalleryIcon(
-    name: 'piano',
-    icon: CupertinoIcons.piano,
-  ),
-//  pin
-  GalleryIcon(
-    name: 'pin',
-    icon: CupertinoIcons.pin,
-  ),
-//  pin_fill
-  GalleryIcon(
-    name: 'pin_fill',
-    icon: CupertinoIcons.pin_fill,
-  ),
-//  pin_slash
-  GalleryIcon(
-    name: 'pin_slash',
-    icon: CupertinoIcons.pin_slash,
-  ),
-//  pin_slash_fill
-  GalleryIcon(
-    name: 'pin_slash_fill',
-    icon: CupertinoIcons.pin_slash_fill,
-  ),
-
-//  placemark
-  GalleryIcon(
-    name: 'placemark',
-    icon: CupertinoIcons.placemark,
-  ),
-
-//  placemark_fill
-  GalleryIcon(
-    name: 'placemark_fill',
-    icon: CupertinoIcons.placemark_fill,
-  ),
-
-//  play
-  GalleryIcon(
-    name: 'play',
-    icon: CupertinoIcons.play,
-  ),
-//  play_circle
-  GalleryIcon(
-    name: 'play_circle',
-    icon: CupertinoIcons.play_circle,
-  ),
-//  play_circle_fill
-  GalleryIcon(
-    name: 'play_circle_fill',
-    icon: CupertinoIcons.play_circle_fill,
-  ),
-
-//  play_fill
-  GalleryIcon(
-    name: 'play_fill',
-    icon: CupertinoIcons.play_fill,
-  ),
-
-//  play_rectangle
-  GalleryIcon(
-    name: 'play_rectangle',
-    icon: CupertinoIcons.play_rectangle,
-  ),
-//  play_rectangle_fill
-  GalleryIcon(
-    name: 'play_rectangle_fill',
-    icon: CupertinoIcons.play_rectangle_fill,
-  ),
-//  playpause
-  GalleryIcon(
-    name: 'playpause',
-    icon: CupertinoIcons.playpause,
-  ),
-//  playpause_fill
-  GalleryIcon(
-    name: 'playpause_fill',
-    icon: CupertinoIcons.playpause_fill,
-  ),
-
-//  plus
-  GalleryIcon(
-    name: 'plus',
-    icon: CupertinoIcons.plus,
-  ),
-//  plus_app
-  GalleryIcon(
-    name: 'plus_app',
-    icon: CupertinoIcons.plus_app,
-  ),
-//  plus_app_fill
-  GalleryIcon(
-    name: 'plus_app_fill',
-    icon: CupertinoIcons.plus_app_fill,
-  ),
-//  plus_bubble
-  GalleryIcon(
-    name: 'plus_bubble',
-    icon: CupertinoIcons.plus_bubble,
-  ),
-//  plus_bubble_fill
-  GalleryIcon(
-    name: 'plus_bubble_fill',
-    icon: CupertinoIcons.plus_bubble_fill,
-  ),
-
-//  plus_circle
-  GalleryIcon(
-    name: 'plus_circle',
-    icon: CupertinoIcons.plus_circle,
-  ),
-
-//  plus_circle_fill
-  GalleryIcon(
-    name: 'plus_circle_fill',
-    icon: CupertinoIcons.plus_circle_fill,
-  ),
-//  plus_rectangle
-  GalleryIcon(
-    name: 'plus_rectangle',
-    icon: CupertinoIcons.plus_rectangle,
-  ),
-//  plus_rectangle_fill
-  GalleryIcon(
-    name: 'plus_rectangle_fill',
-    icon: CupertinoIcons.plus_rectangle_fill,
-  ),
-//  plus_rectangle_fill_on_rectangle_fill
-  GalleryIcon(
-    name: 'plus_rectangle_fill_on_rectangle_fill',
-    icon: CupertinoIcons.plus_rectangle_fill_on_rectangle_fill,
-  ),
-//  plus_rectangle_on_rectangle
-  GalleryIcon(
-    name: 'plus_rectangle_on_rectangle',
-    icon: CupertinoIcons.plus_rectangle_on_rectangle,
-  ),
-//  plus_slash_minus
-  GalleryIcon(
-    name: 'plus_slash_minus',
-    icon: CupertinoIcons.plus_slash_minus,
-  ),
-//  plus_square
-  GalleryIcon(
-    name: 'plus_square',
-    icon: CupertinoIcons.plus_square,
-  ),
-//  plus_square_fill
-  GalleryIcon(
-    name: 'plus_square_fill',
-    icon: CupertinoIcons.plus_square_fill,
-  ),
-//  plus_square_fill_on_square_fill
-  GalleryIcon(
-    name: 'plus_square_fill_on_square_fill',
-    icon: CupertinoIcons.plus_square_fill_on_square_fill,
-  ),
-//  plus_square_on_square
-  GalleryIcon(
-    name: 'plus_square_on_square',
-    icon: CupertinoIcons.plus_square_on_square,
-  ),
-//  plusminus
-  GalleryIcon(
-    name: 'plusminus',
-    icon: CupertinoIcons.plusminus,
-  ),
-//  plusminus_circle
-  GalleryIcon(
-    name: 'plusminus_circle',
-    icon: CupertinoIcons.plusminus_circle,
-  ),
-//  plusminus_circle_fill
-  GalleryIcon(
-    name: 'plusminus_circle_fill',
-    icon: CupertinoIcons.plusminus_circle_fill,
-  ),
-//  power
-  GalleryIcon(
-    name: 'power',
-    icon: CupertinoIcons.power,
-  ),
-//  printer
-  GalleryIcon(
-    name: 'printer',
-    icon: CupertinoIcons.printer,
-  ),
-//  printer_fill
-  GalleryIcon(
-    name: 'printer_fill',
-    icon: CupertinoIcons.printer_fill,
-  ),
-//  projective
-  GalleryIcon(
-    name: 'projective',
-    icon: CupertinoIcons.projective,
-  ),
-//  purchased
-
-  GalleryIcon(
-    name: 'purchased',
-    icon: CupertinoIcons.purchased,
-  ),
-//  purchased_circle
-  GalleryIcon(
-    name: 'purchased_circle',
-    icon: CupertinoIcons.purchased_circle,
-  ),
-//  purchased_circle_fill
-  GalleryIcon(
-    name: 'purchased_circle_fill',
-    icon: CupertinoIcons.purchased_circle_fill,
-  ),
-//  qrcode
-  GalleryIcon(
-    name: 'qrcode',
-    icon: CupertinoIcons.qrcode,
-  ),
-//  qrcode_viewfinder
-  GalleryIcon(
-    name: 'qrcode_viewfinder',
-    icon: CupertinoIcons.qrcode_viewfinder,
-  ),
-//  question
-  GalleryIcon(
-    name: 'question',
-    icon: CupertinoIcons.question,
-  ),
-//  question_circle
-  GalleryIcon(
-    name: 'question_circle',
-    icon: CupertinoIcons.question_circle,
-  ),
-//  question_circle_fill
-  GalleryIcon(
-    name: 'question_circle_fill',
-    icon: CupertinoIcons.question_circle_fill,
-  ),
-//  question_diamond
-  GalleryIcon(
-    name: 'question_diamond',
-    icon: CupertinoIcons.question_diamond,
-  ),
-//  question_diamond_fill
-  GalleryIcon(
-    name: 'question_diamond_fill',
-    icon: CupertinoIcons.question_diamond_fill,
-  ),
-//  question_square
-  GalleryIcon(
-    name: 'question_square',
-    icon: CupertinoIcons.question_square,
-  ),
-//  question_square_fill
-  GalleryIcon(
-    name: 'question_square_fill',
-    icon: CupertinoIcons.question_square_fill,
-  ),
-//  quote_bubble
-  GalleryIcon(
-    name: 'quote_bubble',
-    icon: CupertinoIcons.quote_bubble,
-  ),
-//  quote_bubble_fill
-  GalleryIcon(
-    name: 'quote_bubble_fill',
-    icon: CupertinoIcons.quote_bubble_fill,
-  ),
-//  radiowaves_left
-  GalleryIcon(
-    name: 'radiowaves_left',
-    icon: CupertinoIcons.radiowaves_left,
-  ),
-//  radiowaves_right
-  GalleryIcon(
-    name: 'radiowaves_right',
-    icon: CupertinoIcons.radiowaves_right,
-  ),
-//  rays
-  GalleryIcon(
-    name: 'rays',
-    icon: CupertinoIcons.rays,
-  ),
-//  recordingtape
-  GalleryIcon(
-    name: 'recordingtape',
-    icon: CupertinoIcons.recordingtape,
-  ),
-//  rectangle
-  GalleryIcon(
-    name: 'rectangle',
-    icon: CupertinoIcons.rectangle,
-  ),
-//  rectangle_3_offgrid
-  GalleryIcon(
-    name: 'rectangle_3_offgrid',
-    icon: CupertinoIcons.rectangle_3_offgrid,
-  ),
-//  rectangle_3_offgrid_fill
-  GalleryIcon(
-    name: 'rectangle_3_offgrid_fill',
-    icon: CupertinoIcons.rectangle_3_offgrid_fill,
-  ),
-//  rectangle_arrow_up_right_arrow_down_left
-  GalleryIcon(
-    name: 'rectangle_arrow_up_right_arrow_down_left',
-    icon: CupertinoIcons.rectangle_arrow_up_right_arrow_down_left,
-  ),
-//  rectangle_arrow_up_right_arrow_down_left_slash
-  GalleryIcon(
-    name: 'rectangle_arrow_up_right_arrow_down_left_slash',
-    icon: CupertinoIcons.rectangle_arrow_up_right_arrow_down_left_slash,
-  ),
-//  rectangle_badge_checkmark
-  GalleryIcon(
-    name: 'rectangle_badge_checkmark',
-    icon: CupertinoIcons.rectangle_badge_checkmark,
-  ),
-//  rectangle_badge_xmark
-  GalleryIcon(
-    name: 'rectangle_badge_xmark',
-    icon: CupertinoIcons.rectangle_badge_xmark,
-  ),
-//  rectangle_compress_vertical
-  GalleryIcon(
-    name: 'rectangle_compress_vertical',
-    icon: CupertinoIcons.rectangle_compress_vertical,
-  ),
-//  rectangle_dock
-  GalleryIcon(
-    name: 'rectangle_dock',
-    icon: CupertinoIcons.rectangle_dock,
-  ),
-//  rectangle_expand_vertical
-  GalleryIcon(
-    name: 'rectangle_expand_vertical',
-    icon: CupertinoIcons.rectangle_expand_vertical,
-  ),
-//  rectangle_fill
-  GalleryIcon(
-    name: 'rectangle_fill',
-    icon: CupertinoIcons.rectangle_fill,
-  ),
-//  rectangle_fill_badge_checkmark
-  GalleryIcon(
-    name: 'rectangle_fill_badge_checkmark',
-    icon: CupertinoIcons.rectangle_fill_badge_checkmark,
-  ),
-//  rectangle_fill_badge_xmark
-  GalleryIcon(
-    name: 'rectangle_fill_badge_xmark',
-    icon: CupertinoIcons.rectangle_fill_badge_xmark,
-  ),
-//  rectangle_fill_on_rectangle_angled_fill
-  GalleryIcon(
-    name: 'rectangle_fill_on_rectangle_angled_fill',
-    icon: CupertinoIcons.rectangle_fill_on_rectangle_angled_fill,
-  ),
-//  rectangle_fill_on_rectangle_fill
-  GalleryIcon(
-    name: 'rectangle_fill_on_rectangle_fill',
-    icon: CupertinoIcons.rectangle_fill_on_rectangle_fill,
-  ),
-//  rectangle_grid_1x2
-  GalleryIcon(
-    name: 'rectangle_grid_1x2',
-    icon: CupertinoIcons.rectangle_grid_1x2,
-  ),
-//  rectangle_grid_1x2_fill
-  GalleryIcon(
-    name: 'rectangle_grid_1x2_fill',
-    icon: CupertinoIcons.rectangle_grid_1x2_fill,
-  ),
-//  rectangle_grid_2x2
-  GalleryIcon(
-    name: 'rectangle_grid_2x2',
-    icon: CupertinoIcons.rectangle_grid_2x2,
-  ),
-//  rectangle_grid_2x2_fill
-  GalleryIcon(
-    name: 'rectangle_grid_2x2_fill',
-    icon: CupertinoIcons.rectangle_grid_2x2_fill,
-  ),
-//  rectangle_grid_3x2
-  GalleryIcon(
-    name: 'rectangle_grid_3x2',
-    icon: CupertinoIcons.rectangle_grid_3x2,
-  ),
-//  rectangle_grid_3x2_fill
-  GalleryIcon(
-    name: 'rectangle_grid_3x2_fill',
-    icon: CupertinoIcons.rectangle_grid_3x2_fill,
-  ),
-//  rectangle_on_rectangle
-  GalleryIcon(
-    name: 'rectangle_on_rectangle',
-    icon: CupertinoIcons.rectangle_on_rectangle,
-  ),
-//  rectangle_on_rectangle_angled
-  GalleryIcon(
-    name: 'rectangle_on_rectangle_angled',
-    icon: CupertinoIcons.rectangle_on_rectangle_angled,
-  ),
-//  rectangle_paperclip
-  GalleryIcon(
-    name: 'rectangle_paperclip',
-    icon: CupertinoIcons.rectangle_paperclip,
-  ),
-//  rectangle_split_3x1
-  GalleryIcon(
-    name: 'rectangle_split_3x1',
-    icon: CupertinoIcons.rectangle_split_3x1,
-  ),
-//  rectangle_split_3x1_fill
-  GalleryIcon(
-    name: 'rectangle_split_3x1_fill',
-    icon: CupertinoIcons.rectangle_split_3x1_fill,
-  ),
-//  rectangle_split_3x3
-  GalleryIcon(
-    name: 'rectangle_split_3x3',
-    icon: CupertinoIcons.rectangle_split_3x3,
-  ),
-//  rectangle_split_3x3_fill
-  GalleryIcon(
-    name: 'rectangle_split_3x3_fill',
-    icon: CupertinoIcons.rectangle_split_3x3_fill,
-  ),
-
-//  rectangle_stack
-  GalleryIcon(
-    name: 'rectangle_stack',
-    icon: CupertinoIcons.rectangle_stack,
-  ),
-//  rectangle_stack_badge_minus
-  GalleryIcon(
-    name: 'rectangle_stack_badge_minus',
-    icon: CupertinoIcons.rectangle_stack_badge_minus,
-  ),
-//  rectangle_stack_badge_person_crop
-  GalleryIcon(
-    name: 'rectangle_stack_badge_person_crop',
-    icon: CupertinoIcons.rectangle_stack_badge_person_crop,
-  ),
-//  rectangle_stack_badge_plus
-  GalleryIcon(
-    name: 'rectangle_stack_badge_plus',
-    icon: CupertinoIcons.rectangle_stack_badge_plus,
-  ),
-
-//  rectangle_stack_fill
-  GalleryIcon(
-    name: 'rectangle_stack_fill',
-    icon: CupertinoIcons.rectangle_stack_fill,
-  ),
-
-//  rectangle_stack_fill_badge_minus
-  GalleryIcon(
-    name: 'rectangle_stack_fill_badge_minus',
-    icon: CupertinoIcons.rectangle_stack_fill_badge_minus,
-  ),
-//  rectangle_stack_fill_badge_person_crop
-  GalleryIcon(
-    name: 'rectangle_stack_fill_badge_person_crop',
-    icon: CupertinoIcons.rectangle_stack_fill_badge_person_crop,
-  ),
-//  rectangle_stack_fill_badge_plus
-  GalleryIcon(
-    name: 'rectangle_stack_fill_badge_plus',
-    icon: CupertinoIcons.rectangle_stack_fill_badge_plus,
-  ),
-//  rectangle_stack_person_crop
-  GalleryIcon(
-    name: 'rectangle_stack_person_crop',
-    icon: CupertinoIcons.rectangle_stack_person_crop,
-  ),
-//  rectangle_stack_person_crop_fill
-  GalleryIcon(
-    name: 'rectangle_stack_person_crop_fill',
-    icon: CupertinoIcons.rectangle_stack_person_crop_fill,
-  ),
-//  repeat
-  GalleryIcon(
-    name: 'repeat',
-    icon: CupertinoIcons.repeat,
-  ),
-//  repeat_1
-  GalleryIcon(
-    name: 'repeat_1',
-    icon: CupertinoIcons.repeat_1,
-  ),
-//  resize
-  GalleryIcon(
-    name: 'resize',
-    icon: CupertinoIcons.resize,
-  ),
-//  resize_h
-  GalleryIcon(
-    name: 'resize_h',
-    icon: CupertinoIcons.resize_h,
-  ),
-//  resize_v
-  GalleryIcon(
-    name: 'resize_v',
-    icon: CupertinoIcons.resize_v,
-  ),
-//  return_icon
-  GalleryIcon(
-    name: 'return_icon',
-    icon: CupertinoIcons.return_icon,
-  ),
-//  rhombus
-  GalleryIcon(
-    name: 'rhombus',
-    icon: CupertinoIcons.rhombus,
-  ),
-//  rhombus_fill
-  GalleryIcon(
-    name: 'rhombus_fill',
-    icon: CupertinoIcons.rhombus_fill,
-  ),
-//  rocket
-  GalleryIcon(
-    name: 'rocket',
-    icon: CupertinoIcons.rocket,
-  ),
-
-//  rocket_fill
-  GalleryIcon(
-    name: 'rocket_fill',
-    icon: CupertinoIcons.rocket_fill,
-  ),
-//  rosette
-  GalleryIcon(
-    name: 'rosette',
-    icon: CupertinoIcons.rosette,
-  ),
-//  rotate_left
-  GalleryIcon(
-    name: 'rotate_left',
-    icon: CupertinoIcons.rotate_left,
-  ),
-//  rotate_left_fill
-  GalleryIcon(
-    name: 'rotate_left_fill',
-    icon: CupertinoIcons.rotate_left_fill,
-  ),
-//  rotate_right
-  GalleryIcon(
-    name: 'rotate_right',
-    icon: CupertinoIcons.rotate_right,
-  ),
-//  rotate_right_fill
-  GalleryIcon(
-    name: 'rotate_right_fill',
-    icon: CupertinoIcons.rotate_right_fill,
-  ),
-//  scissors
-  GalleryIcon(
-    name: 'scissors',
-    icon: CupertinoIcons.scissors,
-  ),
-//  scissors_alt
-  GalleryIcon(
-    name: 'scissors_alt',
-    icon: CupertinoIcons.scissors_alt,
-  ),
-//  scope
-  GalleryIcon(
-    name: 'scope',
-    icon: CupertinoIcons.scope,
-  ),
-//  scribble
-  GalleryIcon(
-    name: 'scribble',
-    icon: CupertinoIcons.scribble,
-  ),
-//  search_circle
-  GalleryIcon(
-    name: 'search_circle',
-    icon: CupertinoIcons.search_circle,
-  ),
-//  search_circle_fill
-  GalleryIcon(
-    name: 'search_circle_fill',
-    icon: CupertinoIcons.search_circle_fill,
-  ),
-//  selection_pin_in_out
-  GalleryIcon(
-    name: 'selection_pin_in_out',
-    icon: CupertinoIcons.selection_pin_in_out,
-  ),
-//  shield
-  GalleryIcon(
-    name: 'shield',
-    icon: CupertinoIcons.shield,
-  ),
-//  shield_fill
-  GalleryIcon(
-    name: 'shield_fill',
-    icon: CupertinoIcons.shield_fill,
-  ),
-//  shield_lefthalf_fill
-  GalleryIcon(
-    name: 'shield_lefthalf_fill',
-    icon: CupertinoIcons.shield_lefthalf_fill,
-  ),
-//  shield_slash
-  GalleryIcon(
-    name: 'shield_slash',
-    icon: CupertinoIcons.shield_slash,
-  ),
-//  shield_slash_fill
-  GalleryIcon(
-    name: 'shield_slash_fill',
-    icon: CupertinoIcons.shield_slash_fill,
-  ),
-//  shift
-  GalleryIcon(
-    name: 'shift',
-    icon: CupertinoIcons.shift,
-  ),
-//  shift_fill
-  GalleryIcon(
-    name: 'shift_fill',
-    icon: CupertinoIcons.shift_fill,
-  ),
-//  sidebar_left
-  GalleryIcon(
-    name: 'sidebar_left',
-    icon: CupertinoIcons.sidebar_left,
-  ),
-//  sidebar_right
-  GalleryIcon(
-    name: 'sidebar_right',
-    icon: CupertinoIcons.sidebar_right,
-  ),
-//  signature
-  GalleryIcon(
-    name: 'signature',
-    icon: CupertinoIcons.signature,
-  ),
-//  skew
-  GalleryIcon(
-    name: 'skew',
-    icon: CupertinoIcons.skew,
-  ),
-//  slash_circle
-  GalleryIcon(
-    name: 'slash_circle',
-    icon: CupertinoIcons.slash_circle,
-  ),
-//  slash_circle_fill
-  GalleryIcon(
-    name: 'slash_circle_fill',
-    icon: CupertinoIcons.slash_circle_fill,
-  ),
-//  slider_horizontal_3
-  GalleryIcon(
-    name: 'slider_horizontal_3',
-    icon: CupertinoIcons.slider_horizontal_3,
-  ),
-//  slider_horizontal_below_rectangle
-  GalleryIcon(
-    name: 'slider_horizontal_below_rectangle',
-    icon: CupertinoIcons.slider_horizontal_below_rectangle,
-  ),
-//  slowmo
-  GalleryIcon(
-    name: 'slowmo',
-    icon: CupertinoIcons.slowmo,
-  ),
-//  smallcircle_circle
-  GalleryIcon(
-    name: 'smallcircle_circle',
-    icon: CupertinoIcons.smallcircle_circle,
-  ),
-//  smallcircle_circle_fill
-  GalleryIcon(
-    name: 'smallcircle_circle_fill',
-    icon: CupertinoIcons.smallcircle_circle_fill,
-  ),
-//  smallcircle_fill_circle
-  GalleryIcon(
-    name: 'smallcircle_fill_circle',
-    icon: CupertinoIcons.smallcircle_fill_circle,
-  ),
-//  smallcircle_fill_circle_fill
-  GalleryIcon(
-    name: 'smallcircle_fill_circle_fill',
-    icon: CupertinoIcons.smallcircle_fill_circle_fill,
-  ),
-//  smiley
-  GalleryIcon(
-    name: 'smiley',
-    icon: CupertinoIcons.smiley,
-  ),
-//  smiley_fill
-  GalleryIcon(
-    name: 'smiley_fill',
-    icon: CupertinoIcons.smiley_fill,
-  ),
-//  smoke
-  GalleryIcon(
-    name: 'smoke',
-    icon: CupertinoIcons.smoke,
-  ),
-//  smoke_fill
-  GalleryIcon(
-    name: 'smoke_fill',
-    icon: CupertinoIcons.smoke_fill,
-  ),
-//  snow
-  GalleryIcon(
-    name: 'snow',
-    icon: CupertinoIcons.snow,
-  ),
-//  sort_down
-  GalleryIcon(
-    name: 'sort_down',
-    icon: CupertinoIcons.sort_down,
-  ),
-//  sort_down_circle
-  GalleryIcon(
-    name: 'sort_down_circle',
-    icon: CupertinoIcons.sort_down_circle,
-  ),
-//  sort_down_circle_fill
-  GalleryIcon(
-    name: 'sort_down_circle_fill',
-    icon: CupertinoIcons.sort_down_circle_fill,
-  ),
-//  sort_up
-  GalleryIcon(
-    name: 'sort_up',
-    icon: CupertinoIcons.sort_up,
-  ),
-//  sort_up_circle
-  GalleryIcon(
-    name: 'sort_up_circle',
-    icon: CupertinoIcons.sort_up_circle,
-  ),
-//  sort_up_circle_fill
-  GalleryIcon(
-    name: 'sort_up_circle_fill',
-    icon: CupertinoIcons.sort_up_circle_fill,
-  ),
-//  sparkles
-  GalleryIcon(
-    name: 'sparkles',
-    icon: CupertinoIcons.sparkles,
-  ),
-//  speaker
-  GalleryIcon(
-    name: 'speaker',
-    icon: CupertinoIcons.speaker,
-  ),
-//  speaker_1
-  GalleryIcon(
-    name: 'speaker_1',
-    icon: CupertinoIcons.speaker_1,
-  ),
-
-//  speaker_1_fill
-  GalleryIcon(
-    name: 'speaker_1_fill',
-    icon: CupertinoIcons.speaker_1_fill,
-  ),
-//  speaker_2
-  GalleryIcon(
-    name: 'speaker_2',
-    icon: CupertinoIcons.speaker_2,
-  ),
-//  speaker_2_fill
-  GalleryIcon(
-    name: 'speaker_2_fill',
-    icon: CupertinoIcons.speaker_2_fill,
-  ),
-//  speaker_3
-  GalleryIcon(
-    name: 'speaker_3',
-    icon: CupertinoIcons.speaker_3,
-  ),
-
-//  speaker_3_fill
-  GalleryIcon(
-    name: 'speaker_3_fill',
-    icon: CupertinoIcons.speaker_3_fill,
-  ),
-
-//  speaker_fill
-  GalleryIcon(
-    name: 'speaker_fill',
-    icon: CupertinoIcons.speaker_fill,
-  ),
-//  speaker_slash
-  GalleryIcon(
-    name: 'speaker_slash',
-    icon: CupertinoIcons.speaker_slash,
-  ),
-
-//  speaker_slash_fill
-  GalleryIcon(
-    name: 'speaker_slash_fill',
-    icon: CupertinoIcons.speaker_slash_fill,
-  ),
-
-//  speaker_slash_fill_rtl
-  GalleryIcon(
-    name: 'speaker_slash_fill_rtl',
-    icon: CupertinoIcons.speaker_slash_fill_rtl,
-  ),
-//  speaker_slash_rtl
-  GalleryIcon(
-    name: 'speaker_slash_rtl',
-    icon: CupertinoIcons.speaker_slash_rtl,
-  ),
-//  speaker_zzz
-  GalleryIcon(
-    name: 'speaker_zzz',
-    icon: CupertinoIcons.speaker_zzz,
-  ),
-//  speaker_zzz_fill
-  GalleryIcon(
-    name: 'speaker_zzz_fill',
-    icon: CupertinoIcons.speaker_zzz_fill,
-  ),
-//  speaker_zzz_fill_rtl
-  GalleryIcon(
-    name: 'speaker_zzz_fill_rtl',
-    icon: CupertinoIcons.speaker_zzz_fill_rtl,
-  ),
-//  speaker_zzz_rtl
-  GalleryIcon(
-    name: 'speaker_zzz_rtl',
-    icon: CupertinoIcons.speaker_zzz_rtl,
-  ),
-//  speedometer
-  GalleryIcon(
-    name: 'speedometer',
-    icon: CupertinoIcons.speedometer,
-  ),
-//  sportscourt
-  GalleryIcon(
-    name: 'sportscourt',
-    icon: CupertinoIcons.sportscourt,
-  ),
-//  sportscourt_fill
-  GalleryIcon(
-    name: 'sportscourt_fill',
-    icon: CupertinoIcons.sportscourt_fill,
-  ),
-//  square
-  GalleryIcon(
-    name: 'square',
-    icon: CupertinoIcons.square,
-  ),
-//  square_arrow_down
-  GalleryIcon(
-    name: 'square_arrow_down',
-    icon: CupertinoIcons.square_arrow_down,
-  ),
-//  square_arrow_down_fill
-  GalleryIcon(
-    name: 'square_arrow_down_fill',
-    icon: CupertinoIcons.square_arrow_down_fill,
-  ),
-//  square_arrow_down_on_square
-  GalleryIcon(
-    name: 'square_arrow_down_on_square',
-    icon: CupertinoIcons.square_arrow_down_on_square,
-  ),
-//  square_arrow_down_on_square_fill
-  GalleryIcon(
-    name: 'square_arrow_down_on_square_fill',
-    icon: CupertinoIcons.square_arrow_down_on_square_fill,
-  ),
-//  square_arrow_left
-  GalleryIcon(
-    name: 'square_arrow_left',
-    icon: CupertinoIcons.square_arrow_left,
-  ),
-//  square_arrow_left_fill
-  GalleryIcon(
-    name: 'square_arrow_left_fill',
-    icon: CupertinoIcons.square_arrow_left_fill,
-  ),
-//  square_arrow_right
-  GalleryIcon(
-    name: 'square_arrow_right',
-    icon: CupertinoIcons.square_arrow_right,
-  ),
-//  square_arrow_right_fill
-  GalleryIcon(
-    name: 'square_arrow_right_fill',
-    icon: CupertinoIcons.square_arrow_right_fill,
-  ),
-
-//  square_arrow_up
-  GalleryIcon(
-    name: 'square_arrow_up',
-    icon: CupertinoIcons.square_arrow_up,
-  ),
-
-//  square_arrow_up_fill
-  GalleryIcon(
-    name: 'square_arrow_up_fill',
-    icon: CupertinoIcons.square_arrow_up_fill,
-  ),
-//  square_arrow_up_on_square
-  GalleryIcon(
-    name: 'square_arrow_up_on_square',
-    icon: CupertinoIcons.square_arrow_up_on_square,
-  ),
-//  square_arrow_up_on_square_fill
-  GalleryIcon(
-    name: 'square_arrow_up_on_square_fill',
-    icon: CupertinoIcons.square_arrow_up_on_square_fill,
-  ),
-//  square_favorites
-  GalleryIcon(
-    name: 'square_favorites',
-    icon: CupertinoIcons.square_favorites,
-  ),
-//  square_favorites_alt
-  GalleryIcon(
-    name: 'square_favorites_alt',
-    icon: CupertinoIcons.square_favorites_alt,
-  ),
-//  square_favorites_alt_fill
-  GalleryIcon(
-    name: 'square_favorites_alt_fill',
-    icon: CupertinoIcons.square_favorites_alt_fill,
-  ),
-//  square_favorites_fill
-  GalleryIcon(
-    name: 'square_favorites_fill',
-    icon: CupertinoIcons.square_favorites_fill,
-  ),
-//  square_fill
-  GalleryIcon(
-    name: 'square_fill',
-    icon: CupertinoIcons.square_fill,
-  ),
-//  square_fill_line_vertical_square
-  GalleryIcon(
-    name: 'square_fill_line_vertical_square',
-    icon: CupertinoIcons.square_fill_line_vertical_square,
-  ),
-//  square_fill_line_vertical_square_fill
-  GalleryIcon(
-    name: 'square_fill_line_vertical_square_fill',
-    icon: CupertinoIcons.square_fill_line_vertical_square_fill,
-  ),
-//  square_fill_on_circle_fill
-  GalleryIcon(
-    name: 'square_fill_on_circle_fill',
-    icon: CupertinoIcons.square_fill_on_circle_fill,
-  ),
-//  square_fill_on_square_fill
-  GalleryIcon(
-    name: 'square_fill_on_square_fill',
-    icon: CupertinoIcons.square_fill_on_square_fill,
-  ),
-//  square_grid_2x2
-  GalleryIcon(
-    name: 'square_grid_2x2',
-    icon: CupertinoIcons.square_grid_2x2,
-  ),
-//  square_grid_2x2_fill
-  GalleryIcon(
-    name: 'square_grid_2x2_fill',
-    icon: CupertinoIcons.square_grid_2x2_fill,
-  ),
-//  square_grid_3x2
-  GalleryIcon(
-    name: 'square_grid_3x2',
-    icon: CupertinoIcons.square_grid_3x2,
-  ),
-//  square_grid_3x2_fill
-  GalleryIcon(
-    name: 'square_grid_3x2_fill',
-    icon: CupertinoIcons.square_grid_3x2_fill,
-  ),
-//  square_grid_4x3_fill
-  GalleryIcon(
-    name: 'square_grid_4x3_fill',
-    icon: CupertinoIcons.square_grid_4x3_fill,
-  ),
-//  square_lefthalf_fill
-  GalleryIcon(
-    name: 'square_lefthalf_fill',
-    icon: CupertinoIcons.square_lefthalf_fill,
-  ),
-//  square_line_vertical_square
-  GalleryIcon(
-    name: 'square_line_vertical_square',
-    icon: CupertinoIcons.square_line_vertical_square,
-  ),
-//  square_line_vertical_square_fill
-  GalleryIcon(
-    name: 'square_line_vertical_square_fill',
-    icon: CupertinoIcons.square_line_vertical_square_fill,
-  ),
-//  square_list
-  GalleryIcon(
-    name: 'square_list',
-    icon: CupertinoIcons.square_list,
-  ),
-//  square_list_fill
-  GalleryIcon(
-    name: 'square_list_fill',
-    icon: CupertinoIcons.square_list_fill,
-  ),
-//  square_on_circle
-  GalleryIcon(
-    name: 'square_on_circle',
-    icon: CupertinoIcons.square_on_circle,
-  ),
-//  square_on_square
-  GalleryIcon(
-    name: 'square_on_square',
-    icon: CupertinoIcons.square_on_square,
-  ),
-
-//  square_pencil
-  GalleryIcon(
-    name: 'square_pencil',
-    icon: CupertinoIcons.square_pencil,
-  ),
-
-//  square_pencil_fill
-  GalleryIcon(
-    name: 'square_pencil_fill',
-    icon: CupertinoIcons.square_pencil_fill,
-  ),
-//  square_righthalf_fill
-  GalleryIcon(
-    name: 'square_righthalf_fill',
-    icon: CupertinoIcons.square_righthalf_fill,
-  ),
-//  square_split_1x2
-  GalleryIcon(
-    name: 'square_split_1x2',
-    icon: CupertinoIcons.square_split_1x2,
-  ),
-//  square_split_1x2_fill
-  GalleryIcon(
-    name: 'square_split_1x2_fill',
-    icon: CupertinoIcons.square_split_1x2_fill,
-  ),
-//  square_split_2x1
-  GalleryIcon(
-    name: 'square_split_2x1',
-    icon: CupertinoIcons.square_split_2x1,
-  ),
-//  square_split_2x1_fill
-  GalleryIcon(
-    name: 'square_split_2x1_fill',
-    icon: CupertinoIcons.square_split_2x1_fill,
-  ),
-//  square_split_2x2
-  GalleryIcon(
-    name: 'square_split_2x2',
-    icon: CupertinoIcons.square_split_2x2,
-  ),
-//  square_split_2x2_fill
-  GalleryIcon(
-    name: 'square_split_2x2_fill',
-    icon: CupertinoIcons.square_split_2x2_fill,
-  ),
-//  square_stack
-  GalleryIcon(
-    name: 'square_stack',
-    icon: CupertinoIcons.square_stack,
-  ),
-//  square_stack_3d_down_dottedline
-  GalleryIcon(
-    name: 'square_stack_3d_down_dottedline',
-    icon: CupertinoIcons.square_stack_3d_down_dottedline,
-  ),
-//  square_stack_3d_down_right
-  GalleryIcon(
-    name: 'square_stack_3d_down_right',
-    icon: CupertinoIcons.square_stack_3d_down_right,
-  ),
-//  square_stack_3d_down_right_fill
-  GalleryIcon(
-    name: 'square_stack_3d_down_right_fill',
-    icon: CupertinoIcons.square_stack_3d_down_right_fill,
-  ),
-//  square_stack_3d_up
-  GalleryIcon(
-    name: 'square_stack_3d_up',
-    icon: CupertinoIcons.square_stack_3d_up,
-  ),
-//  square_stack_3d_up_fill
-  GalleryIcon(
-    name: 'square_stack_3d_up_fill',
-    icon: CupertinoIcons.square_stack_3d_up_fill,
-  ),
-//  square_stack_3d_up_slash
-  GalleryIcon(
-    name: 'square_stack_3d_up_slash',
-    icon: CupertinoIcons.square_stack_3d_up_slash,
-  ),
-//  square_stack_3d_up_slash_fill
-  GalleryIcon(
-    name: 'square_stack_3d_up_slash_fill',
-    icon: CupertinoIcons.square_stack_3d_up_slash_fill,
-  ),
-//  square_stack_fill
-  GalleryIcon(
-    name: 'square_stack_fill',
-    icon: CupertinoIcons.square_stack_fill,
-  ),
-//  squares_below_rectangle
-  GalleryIcon(
-    name: 'squares_below_rectangle',
-    icon: CupertinoIcons.squares_below_rectangle,
-  ),
-//  star
-  GalleryIcon(
-    name: 'star',
-    icon: CupertinoIcons.star,
-  ),
-//  star_circle
-  GalleryIcon(
-    name: 'star_circle',
-    icon: CupertinoIcons.star_circle,
-  ),
-//  star_circle_fill
-  GalleryIcon(
-    name: 'star_circle_fill',
-    icon: CupertinoIcons.star_circle_fill,
-  ),
-//  star_fill
-  GalleryIcon(
-    name: 'star_fill',
-    icon: CupertinoIcons.star_fill,
-  ),
-//  star_lefthalf_fill
-  GalleryIcon(
-    name: 'star_lefthalf_fill',
-    icon: CupertinoIcons.star_lefthalf_fill,
-  ),
-//  star_slash
-  GalleryIcon(
-    name: 'star_slash',
-    icon: CupertinoIcons.star_slash,
-  ),
-//  star_slash_fill
-  GalleryIcon(
-    name: 'star_slash_fill',
-    icon: CupertinoIcons.star_slash_fill,
-  ),
-//  staroflife
-  GalleryIcon(
-    name: 'staroflife',
-    icon: CupertinoIcons.staroflife,
-  ),
-//  staroflife_fill
-  GalleryIcon(
-    name: 'staroflife_fill',
-    icon: CupertinoIcons.staroflife_fill,
-  ),
-//  stop
-  GalleryIcon(
-    name: 'stop',
-    icon: CupertinoIcons.stop,
-  ),
-//  stop_circle
-  GalleryIcon(
-    name: 'stop_circle',
-    icon: CupertinoIcons.stop_circle,
-  ),
-//  stop_circle_fill
-  GalleryIcon(
-    name: 'stop_circle_fill',
-    icon: CupertinoIcons.stop_circle_fill,
-  ),
-//  stop_fill
-  GalleryIcon(
-    name: 'stop_fill',
-    icon: CupertinoIcons.stop_fill,
-  ),
-//  stopwatch
-  GalleryIcon(
-    name: 'stopwatch',
-    icon: CupertinoIcons.stopwatch,
-  ),
-//  stopwatch_fill
-  GalleryIcon(
-    name: 'stopwatch_fill',
-    icon: CupertinoIcons.stopwatch_fill,
-  ),
-//  strikethrough
-  GalleryIcon(
-    name: 'strikethrough',
-    icon: CupertinoIcons.strikethrough,
-  ),
-//  suit_club
-  GalleryIcon(
-    name: 'suit_club',
-    icon: CupertinoIcons.suit_club,
-  ),
-//  suit_club_fill
-  GalleryIcon(
-    name: 'suit_club_fill',
-    icon: CupertinoIcons.suit_club_fill,
-  ),
-//  suit_diamond
-  GalleryIcon(
-    name: 'suit_diamond',
-    icon: CupertinoIcons.suit_diamond,
-  ),
-//  suit_diamond_fill
-  GalleryIcon(
-    name: 'suit_diamond_fill',
-    icon: CupertinoIcons.suit_diamond_fill,
-  ),
-//  suit_heart
-  GalleryIcon(
-    name: 'suit_heart',
-    icon: CupertinoIcons.suit_heart,
-  ),
-//  suit_heart_fill
-  GalleryIcon(
-    name: 'suit_heart_fill',
-    icon: CupertinoIcons.suit_heart_fill,
-  ),
-//  suit_spade
-  GalleryIcon(
-    name: 'suit_spade',
-    icon: CupertinoIcons.suit_spade,
-  ),
-//  suit_spade_fill
-  GalleryIcon(
-    name: 'suit_spade_fill',
-    icon: CupertinoIcons.suit_spade_fill,
-  ),
-//  sum
-  GalleryIcon(
-    name: 'sum',
-    icon: CupertinoIcons.sum,
-  ),
-//  sun_dust
-  GalleryIcon(
-    name: 'sun_dust',
-    icon: CupertinoIcons.sun_dust,
-  ),
-//  sun_dust_fill
-  GalleryIcon(
-    name: 'sun_dust_fill',
-    icon: CupertinoIcons.sun_dust_fill,
-  ),
-//  sun_haze
-  GalleryIcon(
-    name: 'sun_haze',
-    icon: CupertinoIcons.sun_haze,
-  ),
-//  sun_haze_fill
-  GalleryIcon(
-    name: 'sun_haze_fill',
-    icon: CupertinoIcons.sun_haze_fill,
-  ),
-
-//  sun_max
-  GalleryIcon(
-    name: 'sun_max',
-    icon: CupertinoIcons.sun_max,
-  ),
-
-//  sun_max_fill
-  GalleryIcon(
-    name: 'sun_max_fill',
-    icon: CupertinoIcons.sun_max_fill,
-  ),
-//  sun_min
-  GalleryIcon(
-    name: 'sun_min',
-    icon: CupertinoIcons.sun_min,
-  ),
-//  sun_min_fill
-  GalleryIcon(
-    name: 'sun_min_fill',
-    icon: CupertinoIcons.sun_min_fill,
-  ),
-//  sunrise
-  GalleryIcon(
-    name: 'sunrise',
-    icon: CupertinoIcons.sunrise,
-  ),
-//  sunrise_fill
-  GalleryIcon(
-    name: 'sunrise_fill',
-    icon: CupertinoIcons.sunrise_fill,
-  ),
-//  sunset
-  GalleryIcon(
-    name: 'sunset',
-    icon: CupertinoIcons.sunset,
-  ),
-//  sunset_fill
-  GalleryIcon(
-    name: 'sunset_fill',
-    icon: CupertinoIcons.sunset_fill,
-  ),
-//  t_bubble
-  GalleryIcon(
-    name: 't_bubble',
-    icon: CupertinoIcons.t_bubble,
-  ),
-//  t_bubble_fill
-  GalleryIcon(
-    name: 't_bubble_fill',
-    icon: CupertinoIcons.t_bubble_fill,
-  ),
-//  table
-  GalleryIcon(
-    name: 'table',
-    icon: CupertinoIcons.table,
-  ),
-//  table_badge_more
-  GalleryIcon(
-    name: 'table_badge_more',
-    icon: CupertinoIcons.table_badge_more,
-  ),
-//  table_badge_more_fill
-  GalleryIcon(
-    name: 'table_badge_more_fill',
-    icon: CupertinoIcons.table_badge_more_fill,
-  ),
-//  table_fill
-  GalleryIcon(
-    name: 'table_fill',
-    icon: CupertinoIcons.table_fill,
-  ),
-//  tag_circle
-  GalleryIcon(
-    name: 'tag_circle',
-    icon: CupertinoIcons.tag_circle,
-  ),
-//  tag_circle_fill
   GalleryIcon(
-    name: 'tag_circle_fill',
-    icon: CupertinoIcons.tag_circle_fill,
+    icon: CupertinoIcons.train_style_two,
+    name: 'train_style_two',
+    aliases: [],
   ),
 
-//  tag_fill
-  GalleryIcon(
-    name: 'tag_fill',
-    icon: CupertinoIcons.tag_fill,
-  ),
-//  text_aligncenter
-  GalleryIcon(
-    name: 'text_aligncenter',
-    icon: CupertinoIcons.text_aligncenter,
-  ),
-//  text_alignleft
-  GalleryIcon(
-    name: 'text_alignleft',
-    icon: CupertinoIcons.text_alignleft,
-  ),
-//  text_alignright
-  GalleryIcon(
-    name: 'text_alignright',
-    icon: CupertinoIcons.text_alignright,
-  ),
-//  text_append
-  GalleryIcon(
-    name: 'text_append',
-    icon: CupertinoIcons.text_append,
-  ),
-//  text_badge_checkmark
-  GalleryIcon(
-    name: 'text_badge_checkmark',
-    icon: CupertinoIcons.text_badge_checkmark,
-  ),
-//  text_badge_minus
-  GalleryIcon(
-    name: 'text_badge_minus',
-    icon: CupertinoIcons.text_badge_minus,
-  ),
-//  text_badge_plus
-  GalleryIcon(
-    name: 'text_badge_plus',
-    icon: CupertinoIcons.text_badge_plus,
-  ),
-//  text_badge_star
-  GalleryIcon(
-    name: 'text_badge_star',
-    icon: CupertinoIcons.text_badge_star,
-  ),
-//  text_badge_xmark
-  GalleryIcon(
-    name: 'text_badge_xmark',
-    icon: CupertinoIcons.text_badge_xmark,
-  ),
-//  text_bubble
-  GalleryIcon(
-    name: 'text_bubble',
-    icon: CupertinoIcons.text_bubble,
-  ),
-//  text_bubble_fill
-  GalleryIcon(
-    name: 'text_bubble_fill',
-    icon: CupertinoIcons.text_bubble_fill,
-  ),
-//  text_cursor
-  GalleryIcon(
-    name: 'text_cursor',
-    icon: CupertinoIcons.text_cursor,
-  ),
-//  text_insert
-  GalleryIcon(
-    name: 'text_insert',
-    icon: CupertinoIcons.text_insert,
-  ),
-//  text_justify
-  GalleryIcon(
-    name: 'text_justify',
-    icon: CupertinoIcons.text_justify,
-  ),
-//  text_justifyleft
-  GalleryIcon(
-    name: 'text_justifyleft',
-    icon: CupertinoIcons.text_justifyleft,
-  ),
-//  text_justifyright
-  GalleryIcon(
-    name: 'text_justifyright',
-    icon: CupertinoIcons.text_justifyright,
-  ),
-//  text_quote
-  GalleryIcon(
-    name: 'text_quote',
-    icon: CupertinoIcons.text_quote,
-  ),
-//  textbox
-  GalleryIcon(
-    name: 'textbox',
-    icon: CupertinoIcons.textbox,
-  ),
-//  textformat
-  GalleryIcon(
-    name: 'textformat',
-    icon: CupertinoIcons.textformat,
-  ),
-//  textformat_123
-  GalleryIcon(
-    name: 'textformat_123',
-    icon: CupertinoIcons.textformat_123,
-  ),
-//  textformat_abc
-  GalleryIcon(
-    name: 'textformat_abc',
-    icon: CupertinoIcons.textformat_abc,
-  ),
-//  textformat_abc_dottedunderline
-  GalleryIcon(
-    name: 'textformat_abc_dottedunderline',
-    icon: CupertinoIcons.textformat_abc_dottedunderline,
-  ),
-//  textformat_alt
-  GalleryIcon(
-    name: 'textformat_alt',
-    icon: CupertinoIcons.textformat_alt,
-  ),
-//  textformat_size
-  GalleryIcon(
-    name: 'textformat_size',
-    icon: CupertinoIcons.textformat_size,
-  ),
-//  textformat_subscript
-  GalleryIcon(
-    name: 'textformat_subscript',
-    icon: CupertinoIcons.textformat_subscript,
-  ),
-//  textformat_superscript
-  GalleryIcon(
-    name: 'textformat_superscript',
-    icon: CupertinoIcons.textformat_superscript,
-  ),
-//  thermometer
-  GalleryIcon(
-    name: 'thermometer',
-    icon: CupertinoIcons.thermometer,
-  ),
-//  thermometer_snowflake
-  GalleryIcon(
-    name: 'thermometer_snowflake',
-    icon: CupertinoIcons.thermometer_snowflake,
-  ),
-//  thermometer_sun
-  GalleryIcon(
-    name: 'thermometer_sun',
-    icon: CupertinoIcons.thermometer_sun,
-  ),
-//  ticket
-  GalleryIcon(
-    name: 'ticket',
-    icon: CupertinoIcons.ticket,
-  ),
-//  ticket_fill
-  GalleryIcon(
-    name: 'ticket_fill',
-    icon: CupertinoIcons.ticket_fill,
-  ),
-//  tickets
-  GalleryIcon(
-    name: 'tickets',
-    icon: CupertinoIcons.tickets,
-  ),
-//  tickets_fill
-  GalleryIcon(
-    name: 'tickets_fill',
-    icon: CupertinoIcons.tickets_fill,
-  ),
-//  timelapse
-  GalleryIcon(
-    name: 'timelapse',
-    icon: CupertinoIcons.timelapse,
-  ),
-//  timer
-  GalleryIcon(
-    name: 'timer',
-    icon: CupertinoIcons.timer,
-  ),
-//  timer_fill
-  GalleryIcon(
-    name: 'timer_fill',
-    icon: CupertinoIcons.timer_fill,
-  ),
-//  today
-  GalleryIcon(
-    name: 'today',
-    icon: CupertinoIcons.today,
-  ),
-//  today_fill
-  GalleryIcon(
-    name: 'today_fill',
-    icon: CupertinoIcons.today_fill,
-  ),
-//  tornado
-  GalleryIcon(
-    name: 'tornado',
-    icon: CupertinoIcons.tornado,
-  ),
-//  tortoise
-  GalleryIcon(
-    name: 'tortoise',
-    icon: CupertinoIcons.tortoise,
-  ),
-//  tortoise_fill
-  GalleryIcon(
-    name: 'tortoise_fill',
-    icon: CupertinoIcons.tortoise_fill,
-  ),
-//  tram_fill
+  // tram_fill
   GalleryIcon(
-    name: 'tram_fill',
     icon: CupertinoIcons.tram_fill,
+    name: 'tram_fill',
+    aliases: [],
   ),
 
-//  trash
+  // trash
   GalleryIcon(
-    name: 'trash',
     icon: CupertinoIcons.trash,
+    name: 'trash',
+    aliases: [],
   ),
-//  trash_circle
+
+  // trash_circle
   GalleryIcon(
-    name: 'trash_circle',
     icon: CupertinoIcons.trash_circle,
+    name: 'trash_circle',
+    aliases: [],
   ),
-//  trash_circle_fill
+
+  // trash_circle_fill
   GalleryIcon(
-    name: 'trash_circle_fill',
     icon: CupertinoIcons.trash_circle_fill,
+    name: 'trash_circle_fill',
+    aliases: [],
   ),
 
-//  trash_fill
+  // trash_fill
   GalleryIcon(
-    name: 'trash_fill',
     icon: CupertinoIcons.trash_fill,
+    name: 'trash_fill',
+    aliases: [],
   ),
-//  trash_slash
+
+  // trash_slash
   GalleryIcon(
-    name: 'trash_slash',
     icon: CupertinoIcons.trash_slash,
+    name: 'trash_slash',
+    aliases: [],
   ),
-//  trash_slash_fill
+
+  // trash_slash_fill
   GalleryIcon(
-    name: 'trash_slash_fill',
     icon: CupertinoIcons.trash_slash_fill,
+    name: 'trash_slash_fill',
+    aliases: [],
   ),
-//  tray
+
+  // tray
   GalleryIcon(
-    name: 'tray',
     icon: CupertinoIcons.tray,
+    name: 'tray',
+    aliases: [],
   ),
-//  tray_2
+
+  // tray_2
   GalleryIcon(
-    name: 'tray_2',
     icon: CupertinoIcons.tray_2,
+    name: 'tray_2',
+    aliases: [],
   ),
-//  tray_2_fill
+
+  // tray_2_fill
   GalleryIcon(
-    name: 'tray_2_fill',
     icon: CupertinoIcons.tray_2_fill,
+    name: 'tray_2_fill',
+    aliases: [],
   ),
-//  tray_arrow_down
+
+  // tray_arrow_down
   GalleryIcon(
-    name: 'tray_arrow_down',
     icon: CupertinoIcons.tray_arrow_down,
+    name: 'tray_arrow_down',
+    aliases: [],
   ),
-//  tray_arrow_down_fill
+
+  // tray_arrow_down_fill
   GalleryIcon(
-    name: 'tray_arrow_down_fill',
     icon: CupertinoIcons.tray_arrow_down_fill,
+    name: 'tray_arrow_down_fill',
+    aliases: [],
   ),
-//  tray_arrow_up
+
+  // tray_arrow_up
   GalleryIcon(
-    name: 'tray_arrow_up',
     icon: CupertinoIcons.tray_arrow_up,
+    name: 'tray_arrow_up',
+    aliases: [],
   ),
-//  tray_arrow_up_fill
+
+  // tray_arrow_up_fill
   GalleryIcon(
-    name: 'tray_arrow_up_fill',
     icon: CupertinoIcons.tray_arrow_up_fill,
+    name: 'tray_arrow_up_fill',
+    aliases: [],
   ),
-//  tray_fill
+
+  // tray_fill
   GalleryIcon(
-    name: 'tray_fill',
     icon: CupertinoIcons.tray_fill,
+    name: 'tray_fill',
+    aliases: [],
   ),
-//  tray_full
+
+  // tray_full
   GalleryIcon(
-    name: 'tray_full',
     icon: CupertinoIcons.tray_full,
+    name: 'tray_full',
+    aliases: [],
   ),
-//  tray_full_fill
+
+  // tray_full_fill
   GalleryIcon(
-    name: 'tray_full_fill',
     icon: CupertinoIcons.tray_full_fill,
+    name: 'tray_full_fill',
+    aliases: [],
   ),
-//  tree
+
+  // tree
   GalleryIcon(
-    name: 'tree',
     icon: CupertinoIcons.tree,
+    name: 'tree',
+    aliases: [],
   ),
-//  triangle
+
+  // triangle
   GalleryIcon(
-    name: 'triangle',
     icon: CupertinoIcons.triangle,
+    name: 'triangle',
+    aliases: [],
   ),
-//  triangle_fill
+
+  // triangle_fill
   GalleryIcon(
-    name: 'triangle_fill',
     icon: CupertinoIcons.triangle_fill,
+    name: 'triangle_fill',
+    aliases: [],
   ),
-//  triangle_lefthalf_fill
+
+  // triangle_lefthalf_fill
   GalleryIcon(
-    name: 'triangle_lefthalf_fill',
     icon: CupertinoIcons.triangle_lefthalf_fill,
+    name: 'triangle_lefthalf_fill',
+    aliases: [],
   ),
-//  triangle_righthalf_fill
+
+  // triangle_righthalf_fill
   GalleryIcon(
-    name: 'triangle_righthalf_fill',
     icon: CupertinoIcons.triangle_righthalf_fill,
+    name: 'triangle_righthalf_fill',
+    aliases: [],
   ),
-//  tropicalstorm
+
+  // tropicalstorm
   GalleryIcon(
-    name: 'tropicalstorm',
     icon: CupertinoIcons.tropicalstorm,
+    name: 'tropicalstorm',
+    aliases: [],
   ),
-//  tuningfork
+
+  // tuningfork
   GalleryIcon(
-    name: 'tuningfork',
     icon: CupertinoIcons.tuningfork,
+    name: 'tuningfork',
+    aliases: [],
   ),
-//  tv
+
+  // tv
   GalleryIcon(
-    name: 'tv',
     icon: CupertinoIcons.tv,
+    name: 'tv',
+    aliases: [],
   ),
-//  tv_circle
+
+  // tv_circle
   GalleryIcon(
-    name: 'tv_circle',
     icon: CupertinoIcons.tv_circle,
+    name: 'tv_circle',
+    aliases: [],
   ),
-//  tv_circle_fill
+
+  // tv_circle_fill
   GalleryIcon(
-    name: 'tv_circle_fill',
     icon: CupertinoIcons.tv_circle_fill,
+    name: 'tv_circle_fill',
+    aliases: [],
   ),
-//  tv_fill
+
+  // tv_fill
   GalleryIcon(
-    name: 'tv_fill',
     icon: CupertinoIcons.tv_fill,
+    name: 'tv_fill',
+    aliases: [],
   ),
-//  tv_music_note
+
+  // tv_music_note
   GalleryIcon(
-    name: 'tv_music_note',
     icon: CupertinoIcons.tv_music_note,
+    name: 'tv_music_note',
+    aliases: [],
   ),
-//  tv_music_note_fill
+
+  // tv_music_note_fill
   GalleryIcon(
-    name: 'tv_music_note_fill',
     icon: CupertinoIcons.tv_music_note_fill,
+    name: 'tv_music_note_fill',
+    aliases: [],
   ),
-//  uiwindow_split_2x1
+
+  // uiwindow_split_2x1
   GalleryIcon(
-    name: 'uiwindow_split_2x1',
     icon: CupertinoIcons.uiwindow_split_2x1,
+    name: 'uiwindow_split_2x1',
+    aliases: [],
   ),
-//  umbrella
+
+  // umbrella
   GalleryIcon(
-    name: 'umbrella',
     icon: CupertinoIcons.umbrella,
+    name: 'umbrella',
+    aliases: [],
   ),
-//  umbrella_fill
+
+  // umbrella_fill
   GalleryIcon(
-    name: 'umbrella_fill',
     icon: CupertinoIcons.umbrella_fill,
+    name: 'umbrella_fill',
+    aliases: [],
   ),
-//  underline
+
+  // underline
   GalleryIcon(
-    name: 'underline',
     icon: CupertinoIcons.underline,
+    name: 'underline',
+    aliases: [],
   ),
-//  upload_circle
+
+  // up_arrow
   GalleryIcon(
-    name: 'upload_circle',
+    icon: CupertinoIcons.up_arrow,
+    name: 'up_arrow',
+    aliases: [],
+  ),
+
+  // upload_circle
+  GalleryIcon(
     icon: CupertinoIcons.upload_circle,
+    name: 'upload_circle',
+    aliases: [],
   ),
-//  upload_circle_fill
+
+  // upload_circle_fill
   GalleryIcon(
-    name: 'upload_circle_fill',
     icon: CupertinoIcons.upload_circle_fill,
+    name: 'upload_circle_fill',
+    aliases: [],
   ),
 
-//  videocam
+  // video_camera
   GalleryIcon(
-    name: 'videocam',
+    icon: CupertinoIcons.video_camera,
+    name: 'video_camera',
+    aliases: [],
+  ),
+
+  // video_camera_solid
+  GalleryIcon(
+    icon: CupertinoIcons.video_camera_solid,
+    name: 'video_camera_solid',
+    aliases: [],
+  ),
+
+  // videocam
+  GalleryIcon(
     icon: CupertinoIcons.videocam,
+    name: 'videocam',
+    aliases: [],
   ),
-//  videocam_circle
+
+  // videocam_circle
   GalleryIcon(
-    name: 'videocam_circle',
     icon: CupertinoIcons.videocam_circle,
+    name: 'videocam_circle',
+    aliases: [],
   ),
-//  videocam_circle_fill
+
+  // videocam_circle_fill
   GalleryIcon(
-    name: 'videocam_circle_fill',
     icon: CupertinoIcons.videocam_circle_fill,
+    name: 'videocam_circle_fill',
+    aliases: [],
   ),
 
-//  videocam_fill
+  // videocam_fill
   GalleryIcon(
-    name: 'videocam_fill',
     icon: CupertinoIcons.videocam_fill,
+    name: 'videocam_fill',
+    aliases: [],
   ),
-//  view_2d
+
+  // view_2d
   GalleryIcon(
-    name: 'view_2d',
     icon: CupertinoIcons.view_2d,
+    name: 'view_2d',
+    aliases: [],
   ),
-//  view_3d
+
+  // view_3d
   GalleryIcon(
-    name: 'view_3d',
     icon: CupertinoIcons.view_3d,
+    name: 'view_3d',
+    aliases: [],
   ),
-//  viewfinder
+
+  // viewfinder
   GalleryIcon(
-    name: 'viewfinder',
     icon: CupertinoIcons.viewfinder,
+    name: 'viewfinder',
+    aliases: [],
   ),
-//  viewfinder_circle
+
+  // viewfinder_circle
   GalleryIcon(
-    name: 'viewfinder_circle',
     icon: CupertinoIcons.viewfinder_circle,
+    name: 'viewfinder_circle',
+    aliases: [],
   ),
-//  viewfinder_circle_fill
+
+  // viewfinder_circle_fill
   GalleryIcon(
-    name: 'viewfinder_circle_fill',
     icon: CupertinoIcons.viewfinder_circle_fill,
+    name: 'viewfinder_circle_fill',
+    aliases: [],
   ),
-//  wand_rays
+
+  // volume_down
   GalleryIcon(
-    name: 'wand_rays',
+    icon: CupertinoIcons.volume_down,
+    name: 'volume_down',
+    aliases: [],
+  ),
+
+  // volume_mute
+  GalleryIcon(
+    icon: CupertinoIcons.volume_mute,
+    name: 'volume_mute',
+    aliases: [],
+  ),
+
+  // volume_off
+  GalleryIcon(
+    icon: CupertinoIcons.volume_off,
+    name: 'volume_off',
+    aliases: [],
+  ),
+
+  // volume_up
+  GalleryIcon(
+    icon: CupertinoIcons.volume_up,
+    name: 'volume_up',
+    aliases: [],
+  ),
+
+  // wand_rays
+  GalleryIcon(
     icon: CupertinoIcons.wand_rays,
+    name: 'wand_rays',
+    aliases: [],
   ),
-//  wand_rays_inverse
+
+  // wand_rays_inverse
   GalleryIcon(
-    name: 'wand_rays_inverse',
     icon: CupertinoIcons.wand_rays_inverse,
+    name: 'wand_rays_inverse',
+    aliases: [],
   ),
-//  wand_stars
+
+  // wand_stars
   GalleryIcon(
-    name: 'wand_stars',
     icon: CupertinoIcons.wand_stars,
+    name: 'wand_stars',
+    aliases: [],
   ),
-//  wand_stars_inverse
+
+  // wand_stars_inverse
   GalleryIcon(
-    name: 'wand_stars_inverse',
     icon: CupertinoIcons.wand_stars_inverse,
+    name: 'wand_stars_inverse',
+    aliases: [],
   ),
-//  waveform
+
+  // waveform
   GalleryIcon(
-    name: 'waveform',
     icon: CupertinoIcons.waveform,
+    name: 'waveform',
+    aliases: [],
   ),
-//  waveform_circle
+
+  // waveform_circle
   GalleryIcon(
-    name: 'waveform_circle',
     icon: CupertinoIcons.waveform_circle,
+    name: 'waveform_circle',
+    aliases: [],
   ),
-//  waveform_circle_fill
+
+  // waveform_circle_fill
   GalleryIcon(
-    name: 'waveform_circle_fill',
     icon: CupertinoIcons.waveform_circle_fill,
+    name: 'waveform_circle_fill',
+    aliases: [],
   ),
-//  waveform_path
+
+  // waveform_path
   GalleryIcon(
-    name: 'waveform_path',
     icon: CupertinoIcons.waveform_path,
+    name: 'waveform_path',
+    aliases: [],
   ),
-//  waveform_path_badge_minus
+
+  // waveform_path_badge_minus
   GalleryIcon(
-    name: 'waveform_path_badge_minus',
     icon: CupertinoIcons.waveform_path_badge_minus,
+    name: 'waveform_path_badge_minus',
+    aliases: [],
   ),
-//  waveform_path_badge_plus
+
+  // waveform_path_badge_plus
   GalleryIcon(
-    name: 'waveform_path_badge_plus',
     icon: CupertinoIcons.waveform_path_badge_plus,
+    name: 'waveform_path_badge_plus',
+    aliases: [],
   ),
-//  waveform_path_ecg
+
+  // waveform_path_ecg
   GalleryIcon(
-    name: 'waveform_path_ecg',
     icon: CupertinoIcons.waveform_path_ecg,
+    name: 'waveform_path_ecg',
+    aliases: [],
   ),
-//  wifi
+
+  // wifi
   GalleryIcon(
-    name: 'wifi',
     icon: CupertinoIcons.wifi,
+    name: 'wifi',
+    aliases: [],
   ),
-//  wifi_exclamationmark
+
+  // wifi_exclamationmark
   GalleryIcon(
-    name: 'wifi_exclamationmark',
     icon: CupertinoIcons.wifi_exclamationmark,
+    name: 'wifi_exclamationmark',
+    aliases: [],
   ),
-//  wifi_slash
+
+  // wifi_slash
   GalleryIcon(
-    name: 'wifi_slash',
     icon: CupertinoIcons.wifi_slash,
+    name: 'wifi_slash',
+    aliases: [],
   ),
-//  wind
+
+  // wind
   GalleryIcon(
-    name: 'wind',
     icon: CupertinoIcons.wind,
+    name: 'wind',
+    aliases: [],
   ),
-//  wind_snow
+
+  // wind_snow
   GalleryIcon(
-    name: 'wind_snow',
     icon: CupertinoIcons.wind_snow,
+    name: 'wind_snow',
+    aliases: [],
   ),
-//  wrench
+
+  // wrench
   GalleryIcon(
-    name: 'wrench',
     icon: CupertinoIcons.wrench,
+    name: 'wrench',
+    aliases: [],
   ),
-//  wrench_fill
+
+  // wrench_fill
   GalleryIcon(
-    name: 'wrench_fill',
     icon: CupertinoIcons.wrench_fill,
+    name: 'wrench_fill',
+    aliases: [],
   ),
 
-//  xmark
+  // xmark
   GalleryIcon(
-    name: 'xmark',
     icon: CupertinoIcons.xmark,
+    name: 'xmark',
+    aliases: [],
   ),
 
-//  xmark_circle
+  // xmark_circle
   GalleryIcon(
-    name: 'xmark_circle',
     icon: CupertinoIcons.xmark_circle,
+    name: 'xmark_circle',
+    aliases: [],
   ),
 
-//  xmark_circle_fill
+  // xmark_circle_fill
   GalleryIcon(
-    name: 'xmark_circle_fill',
     icon: CupertinoIcons.xmark_circle_fill,
+    name: 'xmark_circle_fill',
+    aliases: [],
   ),
-//  xmark_octagon
+
+  // xmark_octagon
   GalleryIcon(
-    name: 'xmark_octagon',
     icon: CupertinoIcons.xmark_octagon,
+    name: 'xmark_octagon',
+    aliases: [],
   ),
-//  xmark_octagon_fill
+
+  // xmark_octagon_fill
   GalleryIcon(
-    name: 'xmark_octagon_fill',
     icon: CupertinoIcons.xmark_octagon_fill,
+    name: 'xmark_octagon_fill',
+    aliases: [],
   ),
-//  xmark_rectangle
+
+  // xmark_rectangle
   GalleryIcon(
-    name: 'xmark_rectangle',
     icon: CupertinoIcons.xmark_rectangle,
+    name: 'xmark_rectangle',
+    aliases: [],
   ),
-//  xmark_rectangle_fill
+
+  // xmark_rectangle_fill
   GalleryIcon(
-    name: 'xmark_rectangle_fill',
     icon: CupertinoIcons.xmark_rectangle_fill,
+    name: 'xmark_rectangle_fill',
+    aliases: [],
   ),
-//  xmark_seal
+
+  // xmark_seal
   GalleryIcon(
-    name: 'xmark_seal',
     icon: CupertinoIcons.xmark_seal,
+    name: 'xmark_seal',
+    aliases: [],
   ),
-//  xmark_seal_fill
+
+  // xmark_seal_fill
   GalleryIcon(
-    name: 'xmark_seal_fill',
     icon: CupertinoIcons.xmark_seal_fill,
+    name: 'xmark_seal_fill',
+    aliases: [],
   ),
-//  xmark_shield
+
+  // xmark_shield
   GalleryIcon(
-    name: 'xmark_shield',
     icon: CupertinoIcons.xmark_shield,
+    name: 'xmark_shield',
+    aliases: [],
   ),
-//  xmark_shield_fill
+
+  // xmark_shield_fill
   GalleryIcon(
-    name: 'xmark_shield_fill',
     icon: CupertinoIcons.xmark_shield_fill,
+    name: 'xmark_shield_fill',
+    aliases: [],
   ),
-//  xmark_square
+
+  // xmark_square
   GalleryIcon(
-    name: 'xmark_square',
     icon: CupertinoIcons.xmark_square,
+    name: 'xmark_square',
+    aliases: [],
   ),
-//  xmark_square_fill
+
+  // xmark_square_fill
   GalleryIcon(
-    name: 'xmark_square_fill',
     icon: CupertinoIcons.xmark_square_fill,
+    name: 'xmark_square_fill',
+    aliases: [],
   ),
-//  zoom_in
+
+  // zoom_in
   GalleryIcon(
-    name: 'zoom_in',
     icon: CupertinoIcons.zoom_in,
+    name: 'zoom_in',
+    aliases: [],
   ),
-//  zoom_out
+
+  // zoom_out
   GalleryIcon(
-    name: 'zoom_out',
     icon: CupertinoIcons.zoom_out,
+    name: 'zoom_out',
+    aliases: [],
   ),
-//  zzz
+
+  // zzz
   GalleryIcon(
-    name: 'zzz',
     icon: CupertinoIcons.zzz,
+    name: 'zzz',
+    aliases: [],
   ),
+
 ];

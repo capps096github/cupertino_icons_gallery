@@ -2,7 +2,6 @@ import '../../app_exporter.dart';
 
 //* Circular Radii following the 8px grid system
 
-
 ///[circularRadius120] is a radius of 120
 const circularRadius120 = Radius.circular(120);
 
@@ -22,7 +21,7 @@ const circularRadius4 = Radius.circular(spacing4);
 const circularRadius2 = Radius.circular(spacing2);
 
 /// 0 circular radius
-const circularRadius0 = Radius.zero;
+const Radius circularRadius0 = Radius.zero;
 
 //* Border Radii following the 8px grid system
 /// 120 border radius
@@ -47,7 +46,7 @@ const borderRadius4 = BorderRadius.all(circularRadius4);
 const borderRadius2 = BorderRadius.all(circularRadius2);
 
 /// border radius 0
-const borderRadius0 = BorderRadius.zero;
+const BorderRadius borderRadius0 = BorderRadius.zero;
 
 /// toast border
 const toastBorder = RoundedRectangleBorder(borderRadius: borderRadius8);

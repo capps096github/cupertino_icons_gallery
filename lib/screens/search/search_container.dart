@@ -25,9 +25,9 @@ class SearchContainer extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     return InkWell(
-      onTap: () {
+      onTap: () async {
         // search
-        showSearch(
+        await showSearch(
           context: context,
           delegate: GallerySearchDelegate(ref: ref),
         );
@@ -61,9 +61,9 @@ class SearchContainer extends ConsumerWidget {
                           typewriterAnimatedText(searchText, appColor),
                     )
                     .toList(),
-                onTap: () {
+                onTap: () async {
                   // search
-                  showSearch(
+                  await showSearch(
                     context: context,
                     delegate: GallerySearchDelegate(ref: ref),
                   );

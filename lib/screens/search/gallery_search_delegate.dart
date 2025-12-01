@@ -7,7 +7,7 @@ import '../icons/icon_providers.dart';
 import 'search_icons_screen.dart';
 import 'ui/perform_search.dart';
 
-const _accentColor = appWhite;
+const Color _accentColor = appWhite;
 
 /// This is responsible for configuring all searching in the saved results
 // ignore: strict_raw_type
@@ -44,11 +44,11 @@ class GallerySearchDelegate extends SearchDelegate {
         hintStyle: GoogleFonts.assistant(
           fontSize: 16,
           fontWeight: FontWeight.normal,
-          color: appWhite.withOpacity(.5),
+          color: appWhite.withValues(alpha: 0.4),
         ),
         enabledBorder: UnderlineInputBorder(
           borderSide: BorderSide(
-            color: appWhite.withOpacity(.5),
+            color: appWhite.withValues(alpha: 0.4),
           ),
         ),
         focusedBorder: const UnderlineInputBorder(
@@ -69,7 +69,7 @@ class GallerySearchDelegate extends SearchDelegate {
             bodyColor: appWhite,
           ),
       textSelectionTheme: TextSelectionThemeData(
-        selectionColor: appWhite.withOpacity(.4),
+        selectionColor: appWhite.withValues(alpha: 0.4),
         cursorColor: appWhite,
       ),
     );
